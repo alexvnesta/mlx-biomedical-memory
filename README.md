@@ -78,6 +78,14 @@ Only `Qwen/Qwen3-4B-MLX-bf16` at revision
 `94e68620a4b9db944b2f5b3c3633fbdf621d871b` is currently supported by the experiment
 runner. Trainable memory dimensions 1 and 64 are exploratory settings, not
 established optimal designs. Default optimizer settings are deliberately exposed.
+Memory now starts at zero; use `--memory-initialization random` to reproduce the
+earlier random-row initialization, with the corresponding source revision. The
+three fresh zero-initialization seeds are 101, 202, and 303.
+
+A released prepared benchmark can also be replayed with
+`--dataset artifacts/<run>/dataset.json`. The loader verifies its checksum.
+This permits exact replay of the blinded ARAX task without redistributing the raw
+composite source graph or relying on a future live response being identical.
 
 ## What counts as evidence
 

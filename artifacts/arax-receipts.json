@@ -1,0 +1,185 @@
+[
+  {
+    "disease": "Fabry disease",
+    "identity": "MONDO:0010526",
+    "bound_edges": 80,
+    "returned_results": 30,
+    "warnings": 1,
+    "query_receipt": {
+      "url": "https://arax.ncats.io/api/arax/v1.4/query",
+      "retrieved_utc": "2026-10-18T18:39:02.163603+00:00",
+      "request": {
+        "message": {
+          "query_graph": {
+            "nodes": {
+              "disease": {
+                "ids": [
+                  "MONDO:0010526"
+                ]
+              },
+              "gene": {
+                "categories": [
+                  "biolink:Gene"
+                ],
+                "ids": [
+                  "NCBIGene:2717"
+                ]
+              },
+              "chemical": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            },
+            "edges": {
+              "gene_disease": {
+                "subject": "gene",
+                "object": "disease"
+              },
+              "chemical_gene": {
+                "subject": "chemical",
+                "object": "gene"
+              }
+            }
+          }
+        },
+        "operations": {
+          "actions": [
+            "expand()",
+            "resultify()",
+            "filter_results(action=limit_number_of_results,max_results=30)",
+            "return(message=true,store=false)"
+          ]
+        }
+      },
+      "http_status": 200,
+      "response_sha256": "b22b20f51630d02b5b57096c197e4e6a4b68281ee143cb2549fc1f3ca72f32d3",
+      "ok": true,
+      "provider_status": "Success",
+      "description": "Normal completion"
+    },
+    "qualifier_scope": "retained in local evidence browser; not encoded in predicate-level memory labels"
+  },
+  {
+    "disease": "Gaucher disease",
+    "identity": "MONDO:0018150",
+    "bound_edges": 84,
+    "returned_results": 30,
+    "warnings": 1,
+    "query_receipt": {
+      "url": "https://arax.ncats.io/api/arax/v1.4/query",
+      "retrieved_utc": "2026-10-18T18:39:04.023968+00:00",
+      "request": {
+        "message": {
+          "query_graph": {
+            "nodes": {
+              "disease": {
+                "ids": [
+                  "MONDO:0018150"
+                ]
+              },
+              "gene": {
+                "categories": [
+                  "biolink:Gene"
+                ],
+                "ids": [
+                  "NCBIGene:2629"
+                ]
+              },
+              "chemical": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            },
+            "edges": {
+              "gene_disease": {
+                "subject": "gene",
+                "object": "disease"
+              },
+              "chemical_gene": {
+                "subject": "chemical",
+                "object": "gene"
+              }
+            }
+          }
+        },
+        "operations": {
+          "actions": [
+            "expand()",
+            "resultify()",
+            "filter_results(action=limit_number_of_results,max_results=30)",
+            "return(message=true,store=false)"
+          ]
+        }
+      },
+      "http_status": 200,
+      "response_sha256": "ac263d1d3fd38cccd3b5c88facda8f059873394923bb2aa42704b3e1db8c651b",
+      "ok": true,
+      "provider_status": "Success",
+      "description": "Normal completion"
+    },
+    "qualifier_scope": "retained in local evidence browser; not encoded in predicate-level memory labels"
+  },
+  {
+    "disease": "Rett syndrome",
+    "identity": "MONDO:0010726",
+    "bound_edges": 84,
+    "returned_results": 30,
+    "warnings": 1,
+    "query_receipt": {
+      "url": "https://arax.ncats.io/api/arax/v1.4/query",
+      "retrieved_utc": "2026-10-18T18:39:06.509343+00:00",
+      "request": {
+        "message": {
+          "query_graph": {
+            "nodes": {
+              "disease": {
+                "ids": [
+                  "MONDO:0010726"
+                ]
+              },
+              "gene": {
+                "categories": [
+                  "biolink:Gene"
+                ],
+                "ids": [
+                  "NCBIGene:4204"
+                ]
+              },
+              "chemical": {
+                "categories": [
+                  "biolink:ChemicalEntity"
+                ]
+              }
+            },
+            "edges": {
+              "gene_disease": {
+                "subject": "gene",
+                "object": "disease"
+              },
+              "chemical_gene": {
+                "subject": "chemical",
+                "object": "gene"
+              }
+            }
+          }
+        },
+        "operations": {
+          "actions": [
+            "expand()",
+            "resultify()",
+            "filter_results(action=limit_number_of_results,max_results=30)",
+            "return(message=true,store=false)"
+          ]
+        }
+      },
+      "http_status": 200,
+      "response_sha256": "7144baca49bbfed8a237eff4c2e5d6f4c8099a4cf5be029d2805707180e779e0",
+      "ok": true,
+      "provider_status": "Success",
+      "description": "Normal completion"
+    },
+    "qualifier_scope": "retained in local evidence browser; not encoded in predicate-level memory labels"
+  }
+]

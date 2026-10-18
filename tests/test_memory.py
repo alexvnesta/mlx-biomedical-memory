@@ -58,3 +58,19 @@ def test_null_addresses_do_not_inject_trainable_background():
         base(tokens)[:, -1, :],
         atol=1e-5,
     ).item()
+
+
+def test_blank_memory_is_neutral_and_saved_memory_reloads(tmp_path):
+    tokens = mx.array([[1, 2, 3, 4]])
+    rows = mx.array([[0, 1, 0, 2]])
+    base = tiny_model()
+    blank = MemoryModel(base, slots=8, dimension=2, layer=1, initialization="zero")
+    assert mx.array_equal(blank(tokens, rows), base(tokens)[:, -1, :]).item()
+    trained = MemoryModel(base, slots=8, dimension=2, layer=1, initialization="random")
+    expected = trained(tokens, rows)
+    mx.eval(expected)
+    path = tmp_path / "memory.safetensors"
+    mx.save_safetensors(str(path), dict(tree_flatten(trained.memory.parameters())))
+    restored = MemoryModel(base, slots=8, dimension=2, layer=1)
+    restored.memory.load_weights(str(path))
+    assert mx.array_equal(restored(tokens, rows), expected).item()

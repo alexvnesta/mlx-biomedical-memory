@@ -50,6 +50,12 @@ normalization. The query's gene slot is screened for NCBIGene identifiers; broad
 family concepts such as "Enzymes" are excluded from the benchmark. This is a
 conservative operational screen, not comprehensive entity validation.
 
+The memory benchmark uses predicate-level edge membership: subject, predicate,
+object. It does not encode qualifier-specific mechanisms or source strength into
+the learned values. The local evidence browser retains those details separately.
+This intentional simplification must not be described as a complete biomedical
+knowledge representation.
+
 The graph labels are **recorded / unobserved**. Unobserved controls are endpoint
 corruptions using existing identifiers of the same CURIE family, absent from the
 union of retained bound edges. The shared gene remains unchanged, so positive
@@ -79,6 +85,12 @@ Atomic and composed batches alternate. Same-length token batches avoid padding
 changes. AdamW uses learning rate 0.003 and zero weight decay. The best validation
 checkpoint is selected at fixed evaluation intervals; ties retain the first.
 Memory and address manifests are saved independently of the backbone.
+
+After the random-row pilots and seeds 23/42/71, the implementation was revised to
+start memory rows at zero. The rationale is neutral initial behavior and avoiding
+large arbitrary values in rarely updated rows. Seeds 101/202/303 use this fixed
+initialization change; all preceding outcomes remain published. These are still
+small exploratory experiments, not a preregistered confirmatory study.
 
 The early 4-step execution smoke test, 64-dimensional pilot, and one-dimensional
 bottleneck pilot are exploratory. Architecture changes made after those outcomes

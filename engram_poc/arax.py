@@ -62,7 +62,7 @@ def request(url, directory, stem, body=None, timeout=120):
 
 
 def normalize(response):
-    """Keep query-bound edges and their supplied provenance, not every KG edge."""
+    """Separate query-bound edges from auxiliary supporting edges and provenance."""
     message = response.get("message") or {}
     kg = message.get("knowledge_graph") or {}
     nodes, edges = kg.get("nodes") or {}, kg.get("edges") or {}
@@ -109,6 +109,17 @@ def normalize(response):
         for row in response.get("logs", [])
         if row.get("level") in {"ERROR", "WARNING"}
     ]
+    auxiliary = message.get("auxiliary_graphs") or {}
+    support_ids = {
+        eid for graph in auxiliary.values() for eid in (graph.get("edges") or [])
+    }
+    support_edges = {eid: edges[eid] for eid in support_ids if eid in edges}
+    support_nodes = {
+        nid: nodes[nid]
+        for edge in support_edges.values()
+        for nid in (edge["subject"], edge["object"])
+        if nid in nodes
+    }
     return {
         "status": response.get("status"),
         "description": response.get("description"),
@@ -123,7 +134,10 @@ def normalize(response):
         "edges": list(retained.values()),
         "results": paths,
         "provider_warnings": logs,
-        "auxiliary_graphs": message.get("auxiliary_graphs") or {},
+        "auxiliary_graphs": auxiliary,
+        "support_edges": support_edges,
+        "support_nodes": support_nodes,
+        "source_missing_support_edge_ids": sorted(support_ids - set(edges)),
         "scope": "retrieved query-bound graph paths; primary claims not independently verified",
         "absence_means": "not observed in this bounded response, not biological absence",
     }

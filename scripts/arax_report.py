@@ -74,12 +74,14 @@ for case in summary["cases"]:
             f"<details><summary>{esc(title)}</summary><ul>{''.join(lines)}</ul></details>"
         )
     counts = Counter(w.get("level") for w in d["provider_warnings"])
+    diagnostics = " ".join(str(w.get("message", "")) for w in d["provider_warnings"])
     receipt = case["query_receipt"]
     sections.append(
         f"<section><h2>{esc(case['disease_requested'])}</h2>"
         f"<p>{len(d['results'])} returned results · {len(d['edges'])} bound edges · {dict(counts)} provider log messages.</p>"
-        '<p class="warning">Supporting auxiliary edges may be missing. These are retrieved graph records; '
-        "primary sources have not been adjudicated. Broad chemical entities are not necessarily drugs.</p>"
+        '<p class="warning">These are retrieved graph records; primary sources have not been adjudicated. '
+        "Broad chemical entities are not necessarily drugs.</p>"
+        f'<p class="meta">Provider diagnostics: {esc(diagnostics or "None returned")}</p>'
         f'<p class="meta">Retrieved {esc(receipt["retrieved_utc"])}<br>Response SHA256: {esc(receipt["response_sha256"])}</p>'
         + "".join(cards)
         + "</section>"

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this prototype, cite the repository and the exact commit and dataset hash."
+title: "MLX Biomedical Memory: Controlled Conditional-Memory and Graph-Composition Experiments"
+type: software
+authors:
+  - family-names: Nesta
+    given-names: Alex V.
+version: 0.1.0
+date-released: 2026-10-18
+url: "https://github.com/alexvnesta/mlx-biomedical-memory"
+license: MIT
+abstract: >-
+  An experimental Apple-silicon implementation of separately trained latent
+  memory for a frozen Qwen3-4B, with controlled supplied-path composition tests
+  and ARAX-derived rare-disease snapshot-membership tasks. Results are
+  exploratory and do not establish therapeutic efficacy or clinical utility.

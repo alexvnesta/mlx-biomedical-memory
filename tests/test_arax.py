@@ -83,3 +83,14 @@ def test_query_preserves_source_relations_without_inventing_treatment():
     assert all(
         "predicates" not in e for e in q["message"]["query_graph"]["edges"].values()
     )
+
+
+def test_support_edges_are_retained_separately_and_missing_references_disclosed():
+    data = response()
+    data["message"]["auxiliary_graphs"] = {
+        "support": {"edges": ["unbound", "missing-source-edge"]}
+    }
+    out = normalize(data)
+    assert [e["id"] for e in out["edges"]] == ["e1"]
+    assert "unbound" in out["support_edges"]
+    assert out["source_missing_support_edge_ids"] == ["missing-source-edge"]
