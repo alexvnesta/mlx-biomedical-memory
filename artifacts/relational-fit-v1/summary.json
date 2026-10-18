@@ -1,0 +1,20 @@
+{
+  "completed": true,
+  "requests": 30,
+  "fit_seconds": 905.0088623750053,
+  "allocation": {
+    "target_rows": 180,
+    "keys": 18,
+    "condition_number": 1721.5997314453125,
+    "calibration_documents": 30,
+    "allocation_mse": 0.05369202047586441
+  },
+  "dev_gold_correct": 5,
+  "dev_gold_proof_valid": 5,
+  "frozen_constants": {
+    "before": "62071913e0871f22b4cf3956cf5a3b1e4c6b45ae091ad8da8df4ee7202c8b34a",
+    "after": "62071913e0871f22b4cf3956cf5a3b1e4c6b45ae091ad8da8df4ee7202c8b34a",
+    "unchanged": true
+  },
+  "peak_metal_gb": 39.231161588
+}

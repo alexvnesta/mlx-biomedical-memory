@@ -1,0 +1,30 @@
+{
+  "dataset_sha256": "bc1fd8a8838788ff3fbc95680802094fd833c83f7c693a4f0001c6c3a6d71d49",
+  "projections": [
+    {
+      "snapshot": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "verified_records": 12,
+      "distinct_original_subjects": 8,
+      "distinct_original_objects": 1,
+      "direction_qualifiers_sources_and_alias_bijection_verified": true
+    },
+    {
+      "snapshot": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "verified_records": 12,
+      "distinct_original_subjects": 7,
+      "distinct_original_objects": 1,
+      "direction_qualifiers_sources_and_alias_bijection_verified": true
+    },
+    {
+      "snapshot": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "verified_records": 12,
+      "distinct_original_subjects": 6,
+      "distinct_original_objects": 1,
+      "direction_qualifiers_sources_and_alias_bijection_verified": true
+    }
+  ],
+  "audit_source_sha256": "764e19d12b4bc8b515e8b6f992ed9c7723d695f2b4be0c40663730e3b87d75cd"
+}

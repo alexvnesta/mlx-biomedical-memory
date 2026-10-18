@@ -1,0 +1,14 @@
+{
+  "completed_cells": 972,
+  "unique_cells": 972,
+  "all_expected_cells": true,
+  "fit_sha256": "bda6f96ccedff5dae8efbdae093c34daa03a814282a526e6dce206006bc423ee",
+  "dataset_sha256": "bc1fd8a8838788ff3fbc95680802094fd833c83f7c693a4f0001c6c3a6d71d49",
+  "interventions": 30,
+  "latency_requests": 72,
+  "training_entity_leakage": false,
+  "shuffled_atomic_same_target": 2,
+  "post_hoc_transfer_cells": 180,
+  "scoped_probe_exact_all": true,
+  "post_hoc_boundary_cells": 32
+}

@@ -1,0 +1,38 @@
+{
+  "model": "mlx-community/LongCat-Flash-Lite-4bit",
+  "revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "started_utc": "2026-10-18T21:11:29.866765+00:00",
+  "dataset_sha256": "bc1fd8a8838788ff3fbc95680802094fd833c83f7c693a4f0001c6c3a6d71d49",
+  "checkpoint_sha256": "bda6f96ccedff5dae8efbdae093c34daa03a814282a526e6dce206006bc423ee",
+  "source_sha256": "b643a5dede174a455d3bc07fff695c7106ef3b62ce563cb2fc333a6c393d86d7",
+  "methods": [
+    "gold_text",
+    "gold_scoped",
+    "gold_ngram",
+    "gold_shuffled",
+    "gold_native",
+    "bm25_text",
+    "hybrid_text",
+    "agent_text",
+    "agent_scoped",
+    "agent_native"
+  ],
+  "seed": 811,
+  "max_tokens": 192,
+  "dev_only": true,
+  "protocol": {
+    "memory_fitting": "24 atomic tuple values plus six generic rule texts; no composed answers, entity-specific proofs, or held-out cases fitted",
+    "rule_routing": "Explicit public motif subject and scope; oracle rule addressing is shared across conditions, not a learned semantic router",
+    "model": "Pinned native LongCat 4-bit; same delta-fitting recipe, at most 25 steps",
+    "graph_budget": {
+      "rounds": 4,
+      "lookups": 6,
+      "per_round": 2,
+      "records_per_lookup": 16
+    },
+    "rag": "SQLite FTS5 BM25 top12 over the global record corpus; rules supplied as text",
+    "synthetic": "Stipulated relational and sign algebra, not biological causal laws",
+    "arax": "Blinded retained metadata audit; no signed-path causal inference on real ARAX edges"
+  },
+  "reasoning_format": "Pinned native chat template, enable_thinking=False; literal recall uses raw continuation"
+}

@@ -1,0 +1,11 @@
+{
+  "model": "mlx-community/LongCat-Flash-Lite-4bit",
+  "revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "started_utc": "2026-10-18T21:22:45.033114+00:00",
+  "post_hoc": true,
+  "purpose": "Distinguish fitted-context access from prompt transfer; audit loaded injection against fitting probe",
+  "source_sha256": "b98b3bb7ca1776a7b1e5de9145c24eca54ae466479e1e0ed7f9ca6d29e0f23b8",
+  "dataset_sha256": "bc1fd8a8838788ff3fbc95680802094fd833c83f7c693a4f0001c6c3a6d71d49",
+  "checkpoint_sha256": "bda6f96ccedff5dae8efbdae093c34daa03a814282a526e6dce206006bc423ee",
+  "dependency_sha256": "a6e8c5c49bf7cd429b31582e3615c65dcb8c7be0e311ef365916fea9c59670e6"
+}

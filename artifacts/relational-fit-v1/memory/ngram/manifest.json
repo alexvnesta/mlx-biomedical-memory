@@ -1,0 +1,126 @@
+{
+  "format": "engramedit-mlx-v1",
+  "model_revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "updates_sha256": "4033baa70b5fdde0bef391344a8536573080570367e7377e9a16fdd05f0503a9",
+  "keys": {
+    "2": [
+      [
+        300,
+        2510
+      ],
+      [
+        618,
+        79425
+      ],
+      [
+        1107,
+        14678
+      ],
+      [
+        1385,
+        987
+      ],
+      [
+        5167,
+        30337
+      ],
+      [
+        12590,
+        77378
+      ]
+    ],
+    "3": [
+      [
+        578,
+        1385,
+        987
+      ],
+      [
+        618,
+        1107,
+        14678
+      ],
+      [
+        618,
+        5167,
+        30337
+      ],
+      [
+        11634,
+        12590,
+        77378
+      ],
+      [
+        15105,
+        618,
+        79425
+      ],
+      [
+        37810,
+        300,
+        2510
+      ]
+    ],
+    "4": [
+      [
+        249,
+        15105,
+        618,
+        79425
+      ],
+      [
+        302,
+        37810,
+        300,
+        2510
+      ],
+      [
+        574,
+        11634,
+        12590,
+        77378
+      ],
+      [
+        11852,
+        578,
+        1385,
+        987
+      ],
+      [
+        15105,
+        618,
+        1107,
+        14678
+      ],
+      [
+        15105,
+        618,
+        5167,
+        30337
+      ]
+    ]
+  },
+  "editor": {
+    "config": {
+      "model": "mlx-community/LongCat-Flash-Lite-4bit",
+      "revision": "0435b3bca4418830335d784317fe7f67f8383253",
+      "started_utc": "2026-10-18T20:53:17.084135+00:00",
+      "dataset_sha256": "bc1fd8a8838788ff3fbc95680802094fd833c83f7c693a4f0001c6c3a6d71d49",
+      "source_sha256": "28a7453b9563393b510005a1fac1d0e9b874053ea5943988fc750ebaef84f182",
+      "steps": 25,
+      "lr": 0.5,
+      "contexts": [
+        "{}",
+        "Reference lookup:\n{}"
+      ],
+      "supervision": "Atomic tuple values and six rule definitions only; no composed answers or test proofs"
+    },
+    "allocation": {
+      "target_rows": 180,
+      "keys": 18,
+      "condition_number": 1721.5997314453125,
+      "calibration_documents": 30,
+      "allocation_mse": 0.05369202047586441
+    }
+  }
+}

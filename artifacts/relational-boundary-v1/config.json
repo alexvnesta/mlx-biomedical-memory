@@ -1,0 +1,14 @@
+{
+  "model": "mlx-community/LongCat-Flash-Lite-4bit",
+  "revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "started_utc": "2026-10-18T21:27:31.618541+00:00",
+  "post_hoc": true,
+  "selection": "First four atomic records in frozen dataset order, irrespective of correctness",
+  "intervention": "Refit the same literal target followed by a newline; all other fitting settings fixed",
+  "dataset_sha256": "bc1fd8a8838788ff3fbc95680802094fd833c83f7c693a4f0001c6c3a6d71d49",
+  "checkpoint_sha256": "bda6f96ccedff5dae8efbdae093c34daa03a814282a526e6dce206006bc423ee",
+  "source_sha256": "1085fa2b7b639c858f16a7d063d0f99c18d679311095c347e8e6d52e047eca63",
+  "steps": 25,
+  "lr": 0.5,
+  "dependency_sha256": "a6e8c5c49bf7cd429b31582e3615c65dcb8c7be0e311ef365916fea9c59670e6"
+}

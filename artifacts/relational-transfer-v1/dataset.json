@@ -1,0 +1,7741 @@
+{
+  "seed": 503,
+  "atomic_requests": [
+    {
+      "id": "atomic-0",
+      "subject": "Entity Mira Tovak",
+      "relation": "gene_label",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "target": "G1",
+      "prompt": "Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Mira Tovak\",\"gene_label\",{\"species\":\"human\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-1",
+      "subject": "Entity Mira Tovak",
+      "relation": "gene_label",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "target": "G1",
+      "prompt": "Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Mira Tovak\",\"gene_label\",{\"species\":\"human\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-2",
+      "subject": "Entity Mira Tovak",
+      "relation": "gene_label",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "target": "G2",
+      "prompt": "Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Mira Tovak\",\"gene_label\",{\"species\":\"mouse\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-3",
+      "subject": "Entity Mira Tovak",
+      "relation": "gene_label",
+      "context": {
+        "species": "mouse",
+        "variant": "gof"
+      },
+      "target": "G5",
+      "prompt": "Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Mira Tovak\",\"gene_label\",{\"species\":\"mouse\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-4",
+      "subject": "Entity Mira Tovak",
+      "relation": "pathway_label",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "target": "P1",
+      "prompt": "Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Mira Tovak\",\"pathway_label\",{\"species\":\"human\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-5",
+      "subject": "Entity Mira Tovak",
+      "relation": "pathway_label",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "target": "P3",
+      "prompt": "Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Mira Tovak\",\"pathway_label\",{\"species\":\"human\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-6",
+      "subject": "Entity Mira Tovak",
+      "relation": "pathway_label",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "target": "P2",
+      "prompt": "Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Mira Tovak\",\"pathway_label\",{\"species\":\"mouse\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-7",
+      "subject": "Entity Mira Tovak",
+      "relation": "pathway_label",
+      "context": {
+        "species": "mouse",
+        "variant": "gof"
+      },
+      "target": "P1",
+      "prompt": "Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Mira Tovak\",\"pathway_label\",{\"species\":\"mouse\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-8",
+      "subject": "Entity Sova Trevik",
+      "relation": "gene_label",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "target": "G5",
+      "prompt": "Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Sova Trevik\",\"gene_label\",{\"species\":\"human\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-9",
+      "subject": "Entity Sova Trevik",
+      "relation": "gene_label",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "target": "G0",
+      "prompt": "Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Sova Trevik\",\"gene_label\",{\"species\":\"human\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-10",
+      "subject": "Entity Sova Trevik",
+      "relation": "gene_label",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "target": "G0",
+      "prompt": "Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Sova Trevik\",\"gene_label\",{\"species\":\"mouse\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-11",
+      "subject": "Entity Sova Trevik",
+      "relation": "gene_label",
+      "context": {
+        "species": "mouse",
+        "variant": "gof"
+      },
+      "target": "G3",
+      "prompt": "Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Sova Trevik\",\"gene_label\",{\"species\":\"mouse\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-12",
+      "subject": "Entity Sova Trevik",
+      "relation": "pathway_label",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "target": "P5",
+      "prompt": "Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Sova Trevik\",\"pathway_label\",{\"species\":\"human\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-13",
+      "subject": "Entity Sova Trevik",
+      "relation": "pathway_label",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "target": "P0",
+      "prompt": "Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Sova Trevik\",\"pathway_label\",{\"species\":\"human\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-14",
+      "subject": "Entity Sova Trevik",
+      "relation": "pathway_label",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "target": "P0",
+      "prompt": "Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Sova Trevik\",\"pathway_label\",{\"species\":\"mouse\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-15",
+      "subject": "Entity Sova Trevik",
+      "relation": "pathway_label",
+      "context": {
+        "species": "mouse",
+        "variant": "gof"
+      },
+      "target": "P0",
+      "prompt": "Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Sova Trevik\",\"pathway_label\",{\"species\":\"mouse\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-16",
+      "subject": "Entity Navo Kelmik",
+      "relation": "gene_label",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "target": "G5",
+      "prompt": "Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Navo Kelmik\",\"gene_label\",{\"species\":\"human\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=human, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-17",
+      "subject": "Entity Navo Kelmik",
+      "relation": "gene_label",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "target": "G4",
+      "prompt": "Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Navo Kelmik\",\"gene_label\",{\"species\":\"human\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=human, variant=gof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-18",
+      "subject": "Entity Navo Kelmik",
+      "relation": "gene_label",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "target": "G5",
+      "prompt": "Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Navo Kelmik\",\"gene_label\",{\"species\":\"mouse\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=mouse, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-19",
+      "subject": "Entity Navo Kelmik",
+      "relation": "gene_label",
+      "context": {
+        "species": "mouse",
+        "variant": "gof"
+      },
+      "target": "G3",
+      "prompt": "Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Navo Kelmik\",\"gene_label\",{\"species\":\"mouse\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=gene_label; species=mouse, variant=gof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-20",
+      "subject": "Entity Navo Kelmik",
+      "relation": "pathway_label",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "target": "P3",
+      "prompt": "Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Navo Kelmik\",\"pathway_label\",{\"species\":\"human\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=human, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-21",
+      "subject": "Entity Navo Kelmik",
+      "relation": "pathway_label",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "target": "P5",
+      "prompt": "Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Navo Kelmik\",\"pathway_label\",{\"species\":\"human\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=human, variant=gof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-22",
+      "subject": "Entity Navo Kelmik",
+      "relation": "pathway_label",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "target": "P0",
+      "prompt": "Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Navo Kelmik\",\"pathway_label\",{\"species\":\"mouse\",\"variant\":\"lof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=mouse, variant=lof.\nEntity: {}\nValue:"
+      ]
+    },
+    {
+      "id": "atomic-23",
+      "subject": "Entity Navo Kelmik",
+      "relation": "pathway_label",
+      "context": {
+        "species": "mouse",
+        "variant": "gof"
+      },
+      "target": "P0",
+      "prompt": "Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+      "key": "[\"Entity Navo Kelmik\",\"pathway_label\",{\"species\":\"mouse\",\"variant\":\"gof\"}]",
+      "expressions": [
+        "Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=pathway_label; species=mouse, variant=gof.\nEntity: {}\nValue:"
+      ]
+    }
+  ],
+  "motifs": [
+    {
+      "id": "motif-join",
+      "subject": "Motif Cedar",
+      "relation": "reasoning_rule",
+      "context": {
+        "scope": "R0"
+      },
+      "target": "SUPPORTED iff candidate_gene(C,G), gene_pathway(G,P), candidate_phenotype(C,H), and phenotype_pathway(H,P); otherwise UNKNOWN.",
+      "prompt": "Lookup relation=reasoning_rule; scope=R0.\nEntity: {}\nValue:",
+      "key": "[\"Motif Cedar\",\"reasoning_rule\",{\"scope\":\"R0\"}]",
+      "expressions": [
+        "Lookup relation=reasoning_rule; scope=R0.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=reasoning_rule; scope=R0.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=reasoning_rule; scope=R0.\nEntity: {}\nValue:"
+      ],
+      "family": "join"
+    },
+    {
+      "id": "motif-context",
+      "subject": "Motif Cedar",
+      "relation": "reasoning_rule",
+      "context": {
+        "scope": "R1"
+      },
+      "target": "Use only records matching every requested context field. Return UP, DOWN, BOTH, or UNKNOWN from their recorded directions.",
+      "prompt": "Lookup relation=reasoning_rule; scope=R1.\nEntity: {}\nValue:",
+      "key": "[\"Motif Cedar\",\"reasoning_rule\",{\"scope\":\"R1\"}]",
+      "expressions": [
+        "Lookup relation=reasoning_rule; scope=R1.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=reasoning_rule; scope=R1.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=reasoning_rule; scope=R1.\nEntity: {}\nValue:"
+      ],
+      "family": "context"
+    },
+    {
+      "id": "motif-sign",
+      "subject": "Motif Quartz",
+      "relation": "reasoning_rule",
+      "context": {
+        "scope": "R2"
+      },
+      "target": "Compose directed regulation signs within the requested context. Multiply signs along paths; return UP, DOWN, BOTH, or UNKNOWN.",
+      "prompt": "Lookup relation=reasoning_rule; scope=R2.\nEntity: {}\nValue:",
+      "key": "[\"Motif Quartz\",\"reasoning_rule\",{\"scope\":\"R2\"}]",
+      "expressions": [
+        "Lookup relation=reasoning_rule; scope=R2.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=reasoning_rule; scope=R2.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=reasoning_rule; scope=R2.\nEntity: {}\nValue:"
+      ],
+      "family": "sign"
+    },
+    {
+      "id": "motif-provenance",
+      "subject": "Motif Quartz",
+      "relation": "reasoning_rule",
+      "context": {
+        "scope": "R3"
+      },
+      "target": "Count distinct primary_source IDs for each sign. Two sources support a sign. Return SUPPORTED, REFUTED, BOTH, or UNKNOWN.",
+      "prompt": "Lookup relation=reasoning_rule; scope=R3.\nEntity: {}\nValue:",
+      "key": "[\"Motif Quartz\",\"reasoning_rule\",{\"scope\":\"R3\"}]",
+      "expressions": [
+        "Lookup relation=reasoning_rule; scope=R3.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=reasoning_rule; scope=R3.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=reasoning_rule; scope=R3.\nEntity: {}\nValue:"
+      ],
+      "family": "provenance"
+    },
+    {
+      "id": "motif-conflict",
+      "subject": "Motif Vela",
+      "relation": "reasoning_rule",
+      "context": {
+        "scope": "R4"
+      },
+      "target": "Match the claim and every context field. POS or UP supports, NEG or DOWN refutes. Return SUPPORTED, REFUTED, BOTH, or UNKNOWN; never resolve a conflict by majority vote.",
+      "prompt": "Lookup relation=reasoning_rule; scope=R4.\nEntity: {}\nValue:",
+      "key": "[\"Motif Vela\",\"reasoning_rule\",{\"scope\":\"R4\"}]",
+      "expressions": [
+        "Lookup relation=reasoning_rule; scope=R4.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=reasoning_rule; scope=R4.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=reasoning_rule; scope=R4.\nEntity: {}\nValue:"
+      ],
+      "family": "conflict"
+    },
+    {
+      "id": "motif-abduction",
+      "subject": "Motif Vela",
+      "relation": "reasoning_rule",
+      "context": {
+        "scope": "R5"
+      },
+      "target": "Choose which proposed missing edge completes the candidate_gene/gene_pathway/candidate_phenotype/phenotype_pathway join. Return A, B, MULTIPLE, or NONE.",
+      "prompt": "Lookup relation=reasoning_rule; scope=R5.\nEntity: {}\nValue:",
+      "key": "[\"Motif Vela\",\"reasoning_rule\",{\"scope\":\"R5\"}]",
+      "expressions": [
+        "Lookup relation=reasoning_rule; scope=R5.\nEntity: {}\nValue:",
+        "Frozen reference. Lookup relation=reasoning_rule; scope=R5.\nEntity: {}\nValue:",
+        "Read the stored record. Lookup relation=reasoning_rule; scope=R5.\nEntity: {}\nValue:"
+      ],
+      "family": "abduction"
+    }
+  ],
+  "records": [
+    {
+      "id": "W00F0",
+      "subject": "W00C",
+      "relation": "candidate_gene",
+      "object": "W00G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W00F1",
+      "subject": "W00G",
+      "relation": "gene_pathway",
+      "object": "W00P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W00F2",
+      "subject": "W00C",
+      "relation": "candidate_phenotype",
+      "object": "W00H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W00F3",
+      "subject": "W00H",
+      "relation": "phenotype_pathway",
+      "object": "W00P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W00F4",
+      "subject": "W00DECOY",
+      "relation": "claim",
+      "object": "W00OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W01F0",
+      "subject": "W01C",
+      "relation": "candidate_gene",
+      "object": "W01G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W01F1",
+      "subject": "W01G",
+      "relation": "gene_pathway",
+      "object": "W01P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W01F2",
+      "subject": "W01C",
+      "relation": "candidate_phenotype",
+      "object": "W01H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W01F3",
+      "subject": "W01H",
+      "relation": "phenotype_pathway",
+      "object": "W01Q",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W01F4",
+      "subject": "W01DECOY",
+      "relation": "claim",
+      "object": "W01OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W02F0",
+      "subject": "W02C",
+      "relation": "candidate_gene",
+      "object": "W02G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W02F1",
+      "subject": "W02G",
+      "relation": "gene_pathway",
+      "object": "W02P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W02F2",
+      "subject": "W02C",
+      "relation": "candidate_phenotype",
+      "object": "W02H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W02F3",
+      "subject": "W02H",
+      "relation": "phenotype_pathway",
+      "object": "W02P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W02F4",
+      "subject": "W02DECOY",
+      "relation": "claim",
+      "object": "W02OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W03F0",
+      "subject": "W03C",
+      "relation": "candidate_gene",
+      "object": "W03G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W03F1",
+      "subject": "W03G",
+      "relation": "gene_pathway",
+      "object": "W03P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W03F2",
+      "subject": "W03C",
+      "relation": "candidate_phenotype",
+      "object": "W03H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W03F3",
+      "subject": "W03H",
+      "relation": "phenotype_pathway",
+      "object": "W03Q",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W03F4",
+      "subject": "W03DECOY",
+      "relation": "claim",
+      "object": "W03OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W04F0",
+      "subject": "W04C",
+      "relation": "candidate_gene",
+      "object": "W04G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W04F1",
+      "subject": "W04G",
+      "relation": "gene_pathway",
+      "object": "W04P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W04F2",
+      "subject": "W04C",
+      "relation": "candidate_phenotype",
+      "object": "W04H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W04F3",
+      "subject": "W04H",
+      "relation": "phenotype_pathway",
+      "object": "W04P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W04F4",
+      "subject": "W04DECOY",
+      "relation": "claim",
+      "object": "W04OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W05F0",
+      "subject": "W05C",
+      "relation": "candidate_gene",
+      "object": "W05G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W05F1",
+      "subject": "W05G",
+      "relation": "gene_pathway",
+      "object": "W05P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W05F2",
+      "subject": "W05C",
+      "relation": "candidate_phenotype",
+      "object": "W05H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W05F3",
+      "subject": "W05H",
+      "relation": "phenotype_pathway",
+      "object": "W05Q",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W05F4",
+      "subject": "W05DECOY",
+      "relation": "claim",
+      "object": "W05OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W06F0",
+      "subject": "W06C",
+      "relation": "candidate_gene",
+      "object": "W06G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W06F1",
+      "subject": "W06G",
+      "relation": "gene_pathway",
+      "object": "W06P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W06F2",
+      "subject": "W06C",
+      "relation": "candidate_phenotype",
+      "object": "W06H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W06F3",
+      "subject": "W06H",
+      "relation": "phenotype_pathway",
+      "object": "W06P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W06F4",
+      "subject": "W06DECOY",
+      "relation": "claim",
+      "object": "W06OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W07F0",
+      "subject": "W07C",
+      "relation": "candidate_gene",
+      "object": "W07G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W07F1",
+      "subject": "W07G",
+      "relation": "gene_pathway",
+      "object": "W07P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W07F2",
+      "subject": "W07C",
+      "relation": "candidate_phenotype",
+      "object": "W07H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W07F3",
+      "subject": "W07H",
+      "relation": "phenotype_pathway",
+      "object": "W07Q",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W07F4",
+      "subject": "W07DECOY",
+      "relation": "claim",
+      "object": "W07OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W08F0",
+      "subject": "W08C",
+      "relation": "effect",
+      "object": "W08T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W08F1",
+      "subject": "W08C",
+      "relation": "effect",
+      "object": "W08T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W08F2",
+      "subject": "W08C",
+      "relation": "effect",
+      "object": "W08T",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W08F3",
+      "subject": "W08DECOY",
+      "relation": "claim",
+      "object": "W08OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W09F0",
+      "subject": "W09C",
+      "relation": "effect",
+      "object": "W09T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W09F1",
+      "subject": "W09C",
+      "relation": "effect",
+      "object": "W09T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W09F2",
+      "subject": "W09C",
+      "relation": "effect",
+      "object": "W09T",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W09F3",
+      "subject": "W09DECOY",
+      "relation": "claim",
+      "object": "W09OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W10F0",
+      "subject": "W10C",
+      "relation": "effect",
+      "object": "W10T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W10F1",
+      "subject": "W10C",
+      "relation": "effect",
+      "object": "W10T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W10F2",
+      "subject": "W10C",
+      "relation": "effect",
+      "object": "W10T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W10F3",
+      "subject": "W10C",
+      "relation": "effect",
+      "object": "W10T",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W10F4",
+      "subject": "W10DECOY",
+      "relation": "claim",
+      "object": "W10OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W11F0",
+      "subject": "W11C",
+      "relation": "effect",
+      "object": "W11T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W11F1",
+      "subject": "W11C",
+      "relation": "effect",
+      "object": "W11T",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W11F2",
+      "subject": "W11DECOY",
+      "relation": "claim",
+      "object": "W11OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W12F0",
+      "subject": "W12C",
+      "relation": "effect",
+      "object": "W12T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W12F1",
+      "subject": "W12C",
+      "relation": "effect",
+      "object": "W12T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W12F2",
+      "subject": "W12C",
+      "relation": "effect",
+      "object": "W12T",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W12F3",
+      "subject": "W12DECOY",
+      "relation": "claim",
+      "object": "W12OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W13F0",
+      "subject": "W13C",
+      "relation": "effect",
+      "object": "W13T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W13F1",
+      "subject": "W13C",
+      "relation": "effect",
+      "object": "W13T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W13F2",
+      "subject": "W13C",
+      "relation": "effect",
+      "object": "W13T",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W13F3",
+      "subject": "W13DECOY",
+      "relation": "claim",
+      "object": "W13OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W14F0",
+      "subject": "W14C",
+      "relation": "effect",
+      "object": "W14T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W14F1",
+      "subject": "W14C",
+      "relation": "effect",
+      "object": "W14T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W14F2",
+      "subject": "W14C",
+      "relation": "effect",
+      "object": "W14T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W14F3",
+      "subject": "W14C",
+      "relation": "effect",
+      "object": "W14T",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W14F4",
+      "subject": "W14DECOY",
+      "relation": "claim",
+      "object": "W14OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W15F0",
+      "subject": "W15C",
+      "relation": "effect",
+      "object": "W15T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W15F1",
+      "subject": "W15C",
+      "relation": "effect",
+      "object": "W15T",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W15F2",
+      "subject": "W15DECOY",
+      "relation": "claim",
+      "object": "W15OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W16F0",
+      "subject": "W16C",
+      "relation": "regulates",
+      "object": "W16G",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W16F1",
+      "subject": "W16G",
+      "relation": "regulates",
+      "object": "W16P",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W16F2",
+      "subject": "W16P",
+      "relation": "regulates",
+      "object": "W16T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W16F3",
+      "subject": "W16C",
+      "relation": "regulates",
+      "object": "W16T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W16F4",
+      "subject": "W16DECOY",
+      "relation": "claim",
+      "object": "W16OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W17F0",
+      "subject": "W17C",
+      "relation": "regulates",
+      "object": "W17G",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W17F1",
+      "subject": "W17G",
+      "relation": "regulates",
+      "object": "W17P",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W17F2",
+      "subject": "W17P",
+      "relation": "regulates",
+      "object": "W17T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W17F3",
+      "subject": "W17C",
+      "relation": "regulates",
+      "object": "W17T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W17F4",
+      "subject": "W17DECOY",
+      "relation": "claim",
+      "object": "W17OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W18F0",
+      "subject": "W18C",
+      "relation": "regulates",
+      "object": "W18G",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W18F1",
+      "subject": "W18G",
+      "relation": "regulates",
+      "object": "W18P",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W18F2",
+      "subject": "W18P",
+      "relation": "regulates",
+      "object": "W18T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W18F3",
+      "subject": "W18C",
+      "relation": "regulates",
+      "object": "W18T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W18F4",
+      "subject": "W18C",
+      "relation": "regulates",
+      "object": "W18T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W18F5",
+      "subject": "W18DECOY",
+      "relation": "claim",
+      "object": "W18OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W19F0",
+      "subject": "W19C",
+      "relation": "regulates",
+      "object": "W19G",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W19F1",
+      "subject": "W19G",
+      "relation": "regulates",
+      "object": "W19P",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W19F2",
+      "subject": "W19C",
+      "relation": "regulates",
+      "object": "W19T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W19F3",
+      "subject": "W19DECOY",
+      "relation": "claim",
+      "object": "W19OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W20F0",
+      "subject": "W20C",
+      "relation": "regulates",
+      "object": "W20G",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W20F1",
+      "subject": "W20G",
+      "relation": "regulates",
+      "object": "W20P",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W20F2",
+      "subject": "W20P",
+      "relation": "regulates",
+      "object": "W20T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W20F3",
+      "subject": "W20C",
+      "relation": "regulates",
+      "object": "W20T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W20F4",
+      "subject": "W20DECOY",
+      "relation": "claim",
+      "object": "W20OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W21F0",
+      "subject": "W21C",
+      "relation": "regulates",
+      "object": "W21G",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W21F1",
+      "subject": "W21G",
+      "relation": "regulates",
+      "object": "W21P",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W21F2",
+      "subject": "W21P",
+      "relation": "regulates",
+      "object": "W21T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W21F3",
+      "subject": "W21C",
+      "relation": "regulates",
+      "object": "W21T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W21F4",
+      "subject": "W21DECOY",
+      "relation": "claim",
+      "object": "W21OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W22F0",
+      "subject": "W22C",
+      "relation": "regulates",
+      "object": "W22G",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W22F1",
+      "subject": "W22G",
+      "relation": "regulates",
+      "object": "W22P",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W22F2",
+      "subject": "W22P",
+      "relation": "regulates",
+      "object": "W22T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W22F3",
+      "subject": "W22C",
+      "relation": "regulates",
+      "object": "W22T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W22F4",
+      "subject": "W22C",
+      "relation": "regulates",
+      "object": "W22T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W22F5",
+      "subject": "W22DECOY",
+      "relation": "claim",
+      "object": "W22OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W23F0",
+      "subject": "W23C",
+      "relation": "regulates",
+      "object": "W23G",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W23F1",
+      "subject": "W23G",
+      "relation": "regulates",
+      "object": "W23P",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W23F2",
+      "subject": "W23C",
+      "relation": "regulates",
+      "object": "W23T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W23F3",
+      "subject": "W23DECOY",
+      "relation": "claim",
+      "object": "W23OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W24F0",
+      "subject": "W24C",
+      "relation": "claim",
+      "object": "W24T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W24F1",
+      "subject": "W24C",
+      "relation": "claim",
+      "object": "W24T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W24F2",
+      "subject": "W24C",
+      "relation": "claim",
+      "object": "W24T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W24F3",
+      "subject": "W24DECOY",
+      "relation": "claim",
+      "object": "W24OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W25F0",
+      "subject": "W25C",
+      "relation": "claim",
+      "object": "W25T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W25F1",
+      "subject": "W25C",
+      "relation": "claim",
+      "object": "W25T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W25F2",
+      "subject": "W25C",
+      "relation": "claim",
+      "object": "W25T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W25F3",
+      "subject": "W25DECOY",
+      "relation": "claim",
+      "object": "W25OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W26F0",
+      "subject": "W26C",
+      "relation": "claim",
+      "object": "W26T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W26F1",
+      "subject": "W26C",
+      "relation": "claim",
+      "object": "W26T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W26F2",
+      "subject": "W26C",
+      "relation": "claim",
+      "object": "W26T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W26F3",
+      "subject": "W26C",
+      "relation": "claim",
+      "object": "W26T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W26F4",
+      "subject": "W26C",
+      "relation": "claim",
+      "object": "W26T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W26F5",
+      "subject": "W26DECOY",
+      "relation": "claim",
+      "object": "W26OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W27F0",
+      "subject": "W27C",
+      "relation": "claim",
+      "object": "W27T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "aggregators": [
+        "A1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W27F1",
+      "subject": "W27C",
+      "relation": "claim",
+      "object": "W27T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "aggregators": [
+        "A2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W27F2",
+      "subject": "W27C",
+      "relation": "claim",
+      "object": "W27T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "aggregators": [
+        "A3"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W27F3",
+      "subject": "W27C",
+      "relation": "claim",
+      "object": "W27T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W27F4",
+      "subject": "W27DECOY",
+      "relation": "claim",
+      "object": "W27OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W28F0",
+      "subject": "W28C",
+      "relation": "claim",
+      "object": "W28T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W28F1",
+      "subject": "W28C",
+      "relation": "claim",
+      "object": "W28T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W28F2",
+      "subject": "W28C",
+      "relation": "claim",
+      "object": "W28T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W28F3",
+      "subject": "W28DECOY",
+      "relation": "claim",
+      "object": "W28OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W29F0",
+      "subject": "W29C",
+      "relation": "claim",
+      "object": "W29T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W29F1",
+      "subject": "W29C",
+      "relation": "claim",
+      "object": "W29T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W29F2",
+      "subject": "W29C",
+      "relation": "claim",
+      "object": "W29T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W29F3",
+      "subject": "W29DECOY",
+      "relation": "claim",
+      "object": "W29OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W30F0",
+      "subject": "W30C",
+      "relation": "claim",
+      "object": "W30T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W30F1",
+      "subject": "W30C",
+      "relation": "claim",
+      "object": "W30T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W30F2",
+      "subject": "W30C",
+      "relation": "claim",
+      "object": "W30T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W30F3",
+      "subject": "W30C",
+      "relation": "claim",
+      "object": "W30T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W30F4",
+      "subject": "W30C",
+      "relation": "claim",
+      "object": "W30T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W30F5",
+      "subject": "W30DECOY",
+      "relation": "claim",
+      "object": "W30OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W31F0",
+      "subject": "W31C",
+      "relation": "claim",
+      "object": "W31T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "aggregators": [
+        "A1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W31F1",
+      "subject": "W31C",
+      "relation": "claim",
+      "object": "W31T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "aggregators": [
+        "A2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W31F2",
+      "subject": "W31C",
+      "relation": "claim",
+      "object": "W31T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "aggregators": [
+        "A3"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W31F3",
+      "subject": "W31C",
+      "relation": "claim",
+      "object": "W31T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W31F4",
+      "subject": "W31DECOY",
+      "relation": "claim",
+      "object": "W31OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W32F0",
+      "subject": "W32C",
+      "relation": "claim",
+      "object": "W32T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W32F1",
+      "subject": "W32C",
+      "relation": "claim",
+      "object": "W32T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W32F2",
+      "subject": "W32C",
+      "relation": "claim",
+      "object": "W32T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W32F3",
+      "subject": "W32DECOY",
+      "relation": "claim",
+      "object": "W32OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W33F0",
+      "subject": "W33C",
+      "relation": "claim",
+      "object": "W33T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W33F1",
+      "subject": "W33C",
+      "relation": "claim",
+      "object": "W33T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W33F2",
+      "subject": "W33C",
+      "relation": "claim",
+      "object": "W33T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W33F3",
+      "subject": "W33DECOY",
+      "relation": "claim",
+      "object": "W33OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W34F0",
+      "subject": "W34C",
+      "relation": "claim",
+      "object": "W34T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W34F1",
+      "subject": "W34C",
+      "relation": "claim",
+      "object": "W34T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W34F2",
+      "subject": "W34C",
+      "relation": "claim",
+      "object": "W34T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W34F3",
+      "subject": "W34C",
+      "relation": "claim",
+      "object": "W34T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W34F4",
+      "subject": "W34C",
+      "relation": "claim",
+      "object": "W34T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W34F5",
+      "subject": "W34DECOY",
+      "relation": "claim",
+      "object": "W34OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W35F0",
+      "subject": "W35C",
+      "relation": "claim",
+      "object": "W35T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W35F1",
+      "subject": "W35DECOY",
+      "relation": "claim",
+      "object": "W35OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W36F0",
+      "subject": "W36C",
+      "relation": "claim",
+      "object": "W36T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W36F1",
+      "subject": "W36C",
+      "relation": "claim",
+      "object": "W36T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W36F2",
+      "subject": "W36C",
+      "relation": "claim",
+      "object": "W36T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W36F3",
+      "subject": "W36DECOY",
+      "relation": "claim",
+      "object": "W36OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W37F0",
+      "subject": "W37C",
+      "relation": "claim",
+      "object": "W37T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W37F1",
+      "subject": "W37C",
+      "relation": "claim",
+      "object": "W37T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W37F2",
+      "subject": "W37C",
+      "relation": "claim",
+      "object": "W37T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W37F3",
+      "subject": "W37DECOY",
+      "relation": "claim",
+      "object": "W37OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W38F0",
+      "subject": "W38C",
+      "relation": "claim",
+      "object": "W38T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W38F1",
+      "subject": "W38C",
+      "relation": "claim",
+      "object": "W38T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W38F2",
+      "subject": "W38C",
+      "relation": "claim",
+      "object": "W38T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W38F3",
+      "subject": "W38C",
+      "relation": "claim",
+      "object": "W38T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W38F4",
+      "subject": "W38C",
+      "relation": "claim",
+      "object": "W38T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W38F5",
+      "subject": "W38DECOY",
+      "relation": "claim",
+      "object": "W38OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W39F0",
+      "subject": "W39C",
+      "relation": "claim",
+      "object": "W39T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W39F1",
+      "subject": "W39DECOY",
+      "relation": "claim",
+      "object": "W39OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W40F0",
+      "subject": "W40C",
+      "relation": "candidate_gene",
+      "object": "W40G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W40F1",
+      "subject": "W40G",
+      "relation": "gene_pathway",
+      "object": "W40P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W40F2",
+      "subject": "W40C",
+      "relation": "candidate_phenotype",
+      "object": "W40H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W40F3",
+      "subject": "W40DECOY",
+      "relation": "claim",
+      "object": "W40OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W41F0",
+      "subject": "W41C",
+      "relation": "candidate_gene",
+      "object": "W41G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W41F1",
+      "subject": "W41G",
+      "relation": "gene_pathway",
+      "object": "W41P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W41F2",
+      "subject": "W41C",
+      "relation": "candidate_phenotype",
+      "object": "W41H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W41F3",
+      "subject": "W41DECOY",
+      "relation": "claim",
+      "object": "W41OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W42F0",
+      "subject": "W42C",
+      "relation": "candidate_gene",
+      "object": "W42G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W42F1",
+      "subject": "W42G",
+      "relation": "gene_pathway",
+      "object": "W42P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W42F2",
+      "subject": "W42C",
+      "relation": "candidate_phenotype",
+      "object": "W42H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W42F3",
+      "subject": "W42DECOY",
+      "relation": "claim",
+      "object": "W42OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W43F0",
+      "subject": "W43C",
+      "relation": "candidate_gene",
+      "object": "W43G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W43F1",
+      "subject": "W43G",
+      "relation": "gene_pathway",
+      "object": "W43P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W43F2",
+      "subject": "W43C",
+      "relation": "candidate_phenotype",
+      "object": "W43H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W43F3",
+      "subject": "W43DECOY",
+      "relation": "claim",
+      "object": "W43OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W44F0",
+      "subject": "W44C",
+      "relation": "candidate_gene",
+      "object": "W44G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W44F1",
+      "subject": "W44G",
+      "relation": "gene_pathway",
+      "object": "W44P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W44F2",
+      "subject": "W44C",
+      "relation": "candidate_phenotype",
+      "object": "W44H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W44F3",
+      "subject": "W44DECOY",
+      "relation": "claim",
+      "object": "W44OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W45F0",
+      "subject": "W45C",
+      "relation": "candidate_gene",
+      "object": "W45G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W45F1",
+      "subject": "W45G",
+      "relation": "gene_pathway",
+      "object": "W45P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W45F2",
+      "subject": "W45C",
+      "relation": "candidate_phenotype",
+      "object": "W45H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W45F3",
+      "subject": "W45DECOY",
+      "relation": "claim",
+      "object": "W45OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W46F0",
+      "subject": "W46C",
+      "relation": "candidate_gene",
+      "object": "W46G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W46F1",
+      "subject": "W46G",
+      "relation": "gene_pathway",
+      "object": "W46P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W46F2",
+      "subject": "W46C",
+      "relation": "candidate_phenotype",
+      "object": "W46H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W46F3",
+      "subject": "W46DECOY",
+      "relation": "claim",
+      "object": "W46OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W47F0",
+      "subject": "W47C",
+      "relation": "candidate_gene",
+      "object": "W47G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W47F1",
+      "subject": "W47G",
+      "relation": "gene_pathway",
+      "object": "W47P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W47F2",
+      "subject": "W47C",
+      "relation": "candidate_phenotype",
+      "object": "W47H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W47F3",
+      "subject": "W47DECOY",
+      "relation": "claim",
+      "object": "W47OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W48F0",
+      "subject": "W48C",
+      "relation": "candidate_gene",
+      "object": "W48G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W48F1",
+      "subject": "W48G",
+      "relation": "gene_pathway",
+      "object": "W48P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W48F2",
+      "subject": "W48C",
+      "relation": "candidate_phenotype",
+      "object": "W48H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W48F3",
+      "subject": "W48H",
+      "relation": "phenotype_pathway",
+      "object": "W48P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W48F4",
+      "subject": "W48DECOY",
+      "relation": "claim",
+      "object": "W48OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W49F0",
+      "subject": "W49C",
+      "relation": "effect",
+      "object": "W49T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W49F1",
+      "subject": "W49C",
+      "relation": "effect",
+      "object": "W49T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W49F2",
+      "subject": "W49C",
+      "relation": "effect",
+      "object": "W49T",
+      "context": {
+        "species": "human",
+        "variant": "gof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W49F3",
+      "subject": "W49DECOY",
+      "relation": "claim",
+      "object": "W49OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W50F0",
+      "subject": "W50C",
+      "relation": "regulates",
+      "object": "W50G",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W50F1",
+      "subject": "W50G",
+      "relation": "regulates",
+      "object": "W50P",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "DOWN"
+    },
+    {
+      "id": "W50F2",
+      "subject": "W50P",
+      "relation": "regulates",
+      "object": "W50T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W50F3",
+      "subject": "W50C",
+      "relation": "regulates",
+      "object": "W50T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S0"
+      ],
+      "sign": "UP"
+    },
+    {
+      "id": "W50F4",
+      "subject": "W50DECOY",
+      "relation": "claim",
+      "object": "W50OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W51F0",
+      "subject": "W51C",
+      "relation": "claim",
+      "object": "W51T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W51F1",
+      "subject": "W51C",
+      "relation": "claim",
+      "object": "W51T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W51F2",
+      "subject": "W51C",
+      "relation": "claim",
+      "object": "W51T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W51F3",
+      "subject": "W51DECOY",
+      "relation": "claim",
+      "object": "W51OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W52F0",
+      "subject": "W52C",
+      "relation": "claim",
+      "object": "W52T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S1"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W52F1",
+      "subject": "W52C",
+      "relation": "claim",
+      "object": "W52T",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S2"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W52F2",
+      "subject": "W52C",
+      "relation": "claim",
+      "object": "W52T",
+      "context": {
+        "species": "mouse",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S3"
+      ],
+      "sign": "NEG"
+    },
+    {
+      "id": "W52F3",
+      "subject": "W52DECOY",
+      "relation": "claim",
+      "object": "W52OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "W53F0",
+      "subject": "W53C",
+      "relation": "candidate_gene",
+      "object": "W53G",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W53F1",
+      "subject": "W53G",
+      "relation": "gene_pathway",
+      "object": "W53P",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W53F2",
+      "subject": "W53C",
+      "relation": "candidate_phenotype",
+      "object": "W53H",
+      "context": {},
+      "primary_sources": [
+        "S0"
+      ]
+    },
+    {
+      "id": "W53F3",
+      "subject": "W53DECOY",
+      "relation": "claim",
+      "object": "W53OTHER",
+      "context": {
+        "species": "human",
+        "variant": "lof"
+      },
+      "primary_sources": [
+        "S9"
+      ],
+      "sign": "POS"
+    },
+    {
+      "id": "AR0F0",
+      "subject": "ARAXEntity0_0",
+      "relation": "affects",
+      "object": "ARAXGene0",
+      "sign": "DOWN",
+      "context": {
+        "aspect": "activity"
+      },
+      "primary_sources": [
+        "infores:ttd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR0F1",
+      "subject": "ARAXEntity0_1",
+      "relation": "affects",
+      "object": "ARAXGene0",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:10090",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR0F2",
+      "subject": "ARAXEntity0_1",
+      "relation": "affects",
+      "object": "ARAXGene0",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:10090",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR0F3",
+      "subject": "ARAXEntity0_2",
+      "relation": "affects",
+      "object": "ARAXGene0",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:10090",
+        "aspect": "methylation"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR0F4",
+      "subject": "ARAXEntity0_2",
+      "relation": "affects",
+      "object": "ARAXGene0",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:10116",
+        "aspect": "methylation"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR0F5",
+      "subject": "ARAXEntity0_3",
+      "relation": "affects",
+      "object": "ARAXGene0",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:7955",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR0F6",
+      "subject": "ARAXEntity0_4",
+      "relation": "affects",
+      "object": "ARAXGene0",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:9606",
+        "aspect": "abundance"
+      },
+      "primary_sources": [
+        "infores:chembl"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR0F7",
+      "subject": "ARAXEntity0_4",
+      "relation": "directly_physically_interacts_with",
+      "object": "ARAXGene0",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:9606",
+        "aspect": "activity"
+      },
+      "primary_sources": [
+        "infores:signor"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR0F8",
+      "subject": "ARAXEntity0_4",
+      "relation": "affects",
+      "object": "ARAXGene0",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:9606",
+        "aspect": "activity"
+      },
+      "primary_sources": [
+        "infores:chembl"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR0F9",
+      "subject": "ARAXEntity0_5",
+      "relation": "affects",
+      "object": "ARAXGene0",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:9606",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR0F10",
+      "subject": "ARAXEntity0_6",
+      "relation": "affects",
+      "object": "ARAXGene0",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:9606",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR0F11",
+      "subject": "ARAXEntity0_7",
+      "relation": "affects",
+      "object": "ARAXGene0",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:9606",
+        "aspect": "methylation"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F0",
+      "subject": "ARAXEntity1_0",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "DOWN",
+      "context": {
+        "aspect": "activity_or_abundance"
+      },
+      "primary_sources": [
+        "infores:text-mining-provider-targeted"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F1",
+      "subject": "ARAXEntity1_1",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "UP",
+      "context": {
+        "aspect": "activity_or_abundance"
+      },
+      "primary_sources": [
+        "infores:text-mining-provider-targeted"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F2",
+      "subject": "ARAXEntity1_2",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:10090",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F3",
+      "subject": "ARAXEntity1_3",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:10116",
+        "aspect": "activity"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F4",
+      "subject": "ARAXEntity1_4",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:10116",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F5",
+      "subject": "ARAXEntity1_4",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:10116",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F6",
+      "subject": "ARAXEntity1_5",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:8090",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F7",
+      "subject": "ARAXEntity1_0",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:9606",
+        "aspect": "abundance"
+      },
+      "primary_sources": [
+        "infores:chembl"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F8",
+      "subject": "ARAXEntity1_0",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:9606",
+        "aspect": "activity"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F9",
+      "subject": "ARAXEntity1_6",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:9606",
+        "aspect": "activity"
+      },
+      "primary_sources": [
+        "infores:chembl"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F10",
+      "subject": "ARAXEntity1_2",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:9606",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR1F11",
+      "subject": "ARAXEntity1_5",
+      "relation": "affects",
+      "object": "ARAXGene1",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:9606",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F0",
+      "subject": "ARAXEntity2_0",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "DOWN",
+      "context": {
+        "aspect": "activity_or_abundance"
+      },
+      "primary_sources": [
+        "infores:text-mining-provider-targeted"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F1",
+      "subject": "ARAXEntity2_0",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "UP",
+      "context": {
+        "aspect": "activity_or_abundance"
+      },
+      "primary_sources": [
+        "infores:text-mining-provider-targeted"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F2",
+      "subject": "ARAXEntity2_1",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:10090",
+        "aspect": "degradation"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F3",
+      "subject": "ARAXEntity2_1",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:10090",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F4",
+      "subject": "ARAXEntity2_2",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:10090",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F5",
+      "subject": "ARAXEntity2_1",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:10116"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F6",
+      "subject": "ARAXEntity2_3",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:10116",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F7",
+      "subject": "ARAXEntity2_1",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:10116",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F8",
+      "subject": "ARAXEntity2_4",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:10116",
+        "aspect": "phosphorylation"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F9",
+      "subject": "ARAXEntity2_2",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:7955",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F10",
+      "subject": "ARAXEntity2_2",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "UP",
+      "context": {
+        "species": "NCBITaxon:7955",
+        "aspect": "methylation"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    },
+    {
+      "id": "AR2F11",
+      "subject": "ARAXEntity2_5",
+      "relation": "affects",
+      "object": "ARAXGene2",
+      "sign": "DOWN",
+      "context": {
+        "species": "NCBITaxon:8364",
+        "aspect": "expression"
+      },
+      "primary_sources": [
+        "infores:ctd"
+      ],
+      "aggregators": [
+        "infores:dogpark-tier0",
+        "infores:retriever",
+        "infores:arax"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "synthetic-join-0",
+      "suite": "synthetic",
+      "family": "join",
+      "params": {
+        "root": "W00C"
+      },
+      "record_ids": [
+        "W00F0",
+        "W00F1",
+        "W00F2",
+        "W00F3",
+        "W00F4"
+      ],
+      "core_ids": [
+        "W00F0",
+        "W00F1",
+        "W00F2",
+        "W00F3"
+      ],
+      "question": "Does candidate W00C meet the stored joint gene/pathway and phenotype/pathway constraint?",
+      "motif_id": "motif-join",
+      "answer": "SUPPORTED",
+      "proofs": [
+        [
+          "W00F0",
+          "W00F1",
+          "W00F2",
+          "W00F3"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-join-1",
+      "suite": "synthetic",
+      "family": "join",
+      "params": {
+        "root": "W01C"
+      },
+      "record_ids": [
+        "W01F0",
+        "W01F1",
+        "W01F2",
+        "W01F3",
+        "W01F4"
+      ],
+      "core_ids": [
+        "W01F0",
+        "W01F1",
+        "W01F2",
+        "W01F3"
+      ],
+      "question": "Does candidate W01C meet the stored joint gene/pathway and phenotype/pathway constraint?",
+      "motif_id": "motif-join",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-join-2",
+      "suite": "synthetic",
+      "family": "join",
+      "params": {
+        "root": "W02C"
+      },
+      "record_ids": [
+        "W02F0",
+        "W02F1",
+        "W02F2",
+        "W02F3",
+        "W02F4"
+      ],
+      "core_ids": [
+        "W02F0",
+        "W02F1",
+        "W02F2",
+        "W02F3"
+      ],
+      "question": "Does candidate W02C meet the stored joint gene/pathway and phenotype/pathway constraint?",
+      "motif_id": "motif-join",
+      "answer": "SUPPORTED",
+      "proofs": [
+        [
+          "W02F0",
+          "W02F1",
+          "W02F2",
+          "W02F3"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-join-3",
+      "suite": "synthetic",
+      "family": "join",
+      "params": {
+        "root": "W03C"
+      },
+      "record_ids": [
+        "W03F0",
+        "W03F1",
+        "W03F2",
+        "W03F3",
+        "W03F4"
+      ],
+      "core_ids": [
+        "W03F0",
+        "W03F1",
+        "W03F2",
+        "W03F3"
+      ],
+      "question": "Does candidate W03C meet the stored joint gene/pathway and phenotype/pathway constraint?",
+      "motif_id": "motif-join",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-join-4",
+      "suite": "synthetic",
+      "family": "join",
+      "params": {
+        "root": "W04C"
+      },
+      "record_ids": [
+        "W04F0",
+        "W04F1",
+        "W04F2",
+        "W04F3",
+        "W04F4"
+      ],
+      "core_ids": [
+        "W04F0",
+        "W04F1",
+        "W04F2",
+        "W04F3"
+      ],
+      "question": "Does candidate W04C meet the stored joint gene/pathway and phenotype/pathway constraint?",
+      "motif_id": "motif-join",
+      "answer": "SUPPORTED",
+      "proofs": [
+        [
+          "W04F0",
+          "W04F1",
+          "W04F2",
+          "W04F3"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-join-5",
+      "suite": "synthetic",
+      "family": "join",
+      "params": {
+        "root": "W05C"
+      },
+      "record_ids": [
+        "W05F0",
+        "W05F1",
+        "W05F2",
+        "W05F3",
+        "W05F4"
+      ],
+      "core_ids": [
+        "W05F0",
+        "W05F1",
+        "W05F2",
+        "W05F3"
+      ],
+      "question": "Does candidate W05C meet the stored joint gene/pathway and phenotype/pathway constraint?",
+      "motif_id": "motif-join",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-join-6",
+      "suite": "synthetic",
+      "family": "join",
+      "params": {
+        "root": "W06C"
+      },
+      "record_ids": [
+        "W06F0",
+        "W06F1",
+        "W06F2",
+        "W06F3",
+        "W06F4"
+      ],
+      "core_ids": [
+        "W06F0",
+        "W06F1",
+        "W06F2",
+        "W06F3"
+      ],
+      "question": "Does candidate W06C meet the stored joint gene/pathway and phenotype/pathway constraint?",
+      "motif_id": "motif-join",
+      "answer": "SUPPORTED",
+      "proofs": [
+        [
+          "W06F0",
+          "W06F1",
+          "W06F2",
+          "W06F3"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-join-7",
+      "suite": "synthetic",
+      "family": "join",
+      "params": {
+        "root": "W07C"
+      },
+      "record_ids": [
+        "W07F0",
+        "W07F1",
+        "W07F2",
+        "W07F3",
+        "W07F4"
+      ],
+      "core_ids": [
+        "W07F0",
+        "W07F1",
+        "W07F2",
+        "W07F3"
+      ],
+      "question": "Does candidate W07C meet the stored joint gene/pathway and phenotype/pathway constraint?",
+      "motif_id": "motif-join",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-context-0",
+      "suite": "synthetic",
+      "family": "context",
+      "params": {
+        "root": "W08C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "effect"
+      },
+      "record_ids": [
+        "W08F0",
+        "W08F1",
+        "W08F2",
+        "W08F3"
+      ],
+      "core_ids": [
+        "W08F0",
+        "W08F1",
+        "W08F2"
+      ],
+      "question": "What recorded directions apply to W08C effect records specifically in human lof context?",
+      "motif_id": "motif-context",
+      "answer": "UP",
+      "proofs": [
+        [
+          "W08F0"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-context-1",
+      "suite": "synthetic",
+      "family": "context",
+      "params": {
+        "root": "W09C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "effect"
+      },
+      "record_ids": [
+        "W09F0",
+        "W09F1",
+        "W09F2",
+        "W09F3"
+      ],
+      "core_ids": [
+        "W09F0",
+        "W09F1",
+        "W09F2"
+      ],
+      "question": "What recorded directions apply to W09C effect records specifically in human lof context?",
+      "motif_id": "motif-context",
+      "answer": "DOWN",
+      "proofs": [
+        [
+          "W09F0"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-context-2",
+      "suite": "synthetic",
+      "family": "context",
+      "params": {
+        "root": "W10C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "effect"
+      },
+      "record_ids": [
+        "W10F0",
+        "W10F1",
+        "W10F2",
+        "W10F3",
+        "W10F4"
+      ],
+      "core_ids": [
+        "W10F0",
+        "W10F1",
+        "W10F2",
+        "W10F3"
+      ],
+      "question": "What recorded directions apply to W10C effect records specifically in human lof context?",
+      "motif_id": "motif-context",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "W10F0",
+          "W10F1"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-context-3",
+      "suite": "synthetic",
+      "family": "context",
+      "params": {
+        "root": "W11C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "effect"
+      },
+      "record_ids": [
+        "W11F0",
+        "W11F1",
+        "W11F2"
+      ],
+      "core_ids": [
+        "W11F0",
+        "W11F1"
+      ],
+      "question": "What recorded directions apply to W11C effect records specifically in human lof context?",
+      "motif_id": "motif-context",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-context-4",
+      "suite": "synthetic",
+      "family": "context",
+      "params": {
+        "root": "W12C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "effect"
+      },
+      "record_ids": [
+        "W12F0",
+        "W12F1",
+        "W12F2",
+        "W12F3"
+      ],
+      "core_ids": [
+        "W12F0",
+        "W12F1",
+        "W12F2"
+      ],
+      "question": "What recorded directions apply to W12C effect records specifically in human lof context?",
+      "motif_id": "motif-context",
+      "answer": "UP",
+      "proofs": [
+        [
+          "W12F0"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-context-5",
+      "suite": "synthetic",
+      "family": "context",
+      "params": {
+        "root": "W13C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "effect"
+      },
+      "record_ids": [
+        "W13F0",
+        "W13F1",
+        "W13F2",
+        "W13F3"
+      ],
+      "core_ids": [
+        "W13F0",
+        "W13F1",
+        "W13F2"
+      ],
+      "question": "What recorded directions apply to W13C effect records specifically in human lof context?",
+      "motif_id": "motif-context",
+      "answer": "DOWN",
+      "proofs": [
+        [
+          "W13F0"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-context-6",
+      "suite": "synthetic",
+      "family": "context",
+      "params": {
+        "root": "W14C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "effect"
+      },
+      "record_ids": [
+        "W14F0",
+        "W14F1",
+        "W14F2",
+        "W14F3",
+        "W14F4"
+      ],
+      "core_ids": [
+        "W14F0",
+        "W14F1",
+        "W14F2",
+        "W14F3"
+      ],
+      "question": "What recorded directions apply to W14C effect records specifically in human lof context?",
+      "motif_id": "motif-context",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "W14F0",
+          "W14F1"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-context-7",
+      "suite": "synthetic",
+      "family": "context",
+      "params": {
+        "root": "W15C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "effect"
+      },
+      "record_ids": [
+        "W15F0",
+        "W15F1",
+        "W15F2"
+      ],
+      "core_ids": [
+        "W15F0",
+        "W15F1"
+      ],
+      "question": "What recorded directions apply to W15C effect records specifically in human lof context?",
+      "motif_id": "motif-context",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-sign-0",
+      "suite": "synthetic",
+      "family": "sign",
+      "params": {
+        "root": "W16C",
+        "target": "W16T",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        }
+      },
+      "record_ids": [
+        "W16F0",
+        "W16F1",
+        "W16F2",
+        "W16F3",
+        "W16F4"
+      ],
+      "core_ids": [
+        "W16F0",
+        "W16F1",
+        "W16F2",
+        "W16F3"
+      ],
+      "question": "Under the stored formal sign rule, what direction follows from W16C to W16T in human lof context?",
+      "motif_id": "motif-sign",
+      "answer": "UP",
+      "proofs": [
+        [
+          "W16F0",
+          "W16F1",
+          "W16F2"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-sign-1",
+      "suite": "synthetic",
+      "family": "sign",
+      "params": {
+        "root": "W17C",
+        "target": "W17T",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        }
+      },
+      "record_ids": [
+        "W17F0",
+        "W17F1",
+        "W17F2",
+        "W17F3",
+        "W17F4"
+      ],
+      "core_ids": [
+        "W17F0",
+        "W17F1",
+        "W17F2",
+        "W17F3"
+      ],
+      "question": "Under the stored formal sign rule, what direction follows from W17C to W17T in human lof context?",
+      "motif_id": "motif-sign",
+      "answer": "DOWN",
+      "proofs": [
+        [
+          "W17F0",
+          "W17F1",
+          "W17F2"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-sign-2",
+      "suite": "synthetic",
+      "family": "sign",
+      "params": {
+        "root": "W18C",
+        "target": "W18T",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        }
+      },
+      "record_ids": [
+        "W18F0",
+        "W18F1",
+        "W18F2",
+        "W18F3",
+        "W18F4",
+        "W18F5"
+      ],
+      "core_ids": [
+        "W18F0",
+        "W18F1",
+        "W18F2",
+        "W18F3",
+        "W18F4"
+      ],
+      "question": "Under the stored formal sign rule, what direction follows from W18C to W18T in human lof context?",
+      "motif_id": "motif-sign",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "W18F0",
+          "W18F1",
+          "W18F2",
+          "W18F3"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-sign-3",
+      "suite": "synthetic",
+      "family": "sign",
+      "params": {
+        "root": "W19C",
+        "target": "W19T",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        }
+      },
+      "record_ids": [
+        "W19F0",
+        "W19F1",
+        "W19F2",
+        "W19F3"
+      ],
+      "core_ids": [
+        "W19F0",
+        "W19F1",
+        "W19F2"
+      ],
+      "question": "Under the stored formal sign rule, what direction follows from W19C to W19T in human lof context?",
+      "motif_id": "motif-sign",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-sign-4",
+      "suite": "synthetic",
+      "family": "sign",
+      "params": {
+        "root": "W20C",
+        "target": "W20T",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        }
+      },
+      "record_ids": [
+        "W20F0",
+        "W20F1",
+        "W20F2",
+        "W20F3",
+        "W20F4"
+      ],
+      "core_ids": [
+        "W20F0",
+        "W20F1",
+        "W20F2",
+        "W20F3"
+      ],
+      "question": "Under the stored formal sign rule, what direction follows from W20C to W20T in human lof context?",
+      "motif_id": "motif-sign",
+      "answer": "UP",
+      "proofs": [
+        [
+          "W20F0",
+          "W20F1",
+          "W20F2"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-sign-5",
+      "suite": "synthetic",
+      "family": "sign",
+      "params": {
+        "root": "W21C",
+        "target": "W21T",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        }
+      },
+      "record_ids": [
+        "W21F0",
+        "W21F1",
+        "W21F2",
+        "W21F3",
+        "W21F4"
+      ],
+      "core_ids": [
+        "W21F0",
+        "W21F1",
+        "W21F2",
+        "W21F3"
+      ],
+      "question": "Under the stored formal sign rule, what direction follows from W21C to W21T in human lof context?",
+      "motif_id": "motif-sign",
+      "answer": "DOWN",
+      "proofs": [
+        [
+          "W21F0",
+          "W21F1",
+          "W21F2"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-sign-6",
+      "suite": "synthetic",
+      "family": "sign",
+      "params": {
+        "root": "W22C",
+        "target": "W22T",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        }
+      },
+      "record_ids": [
+        "W22F0",
+        "W22F1",
+        "W22F2",
+        "W22F3",
+        "W22F4",
+        "W22F5"
+      ],
+      "core_ids": [
+        "W22F0",
+        "W22F1",
+        "W22F2",
+        "W22F3",
+        "W22F4"
+      ],
+      "question": "Under the stored formal sign rule, what direction follows from W22C to W22T in human lof context?",
+      "motif_id": "motif-sign",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "W22F0",
+          "W22F1",
+          "W22F2",
+          "W22F3"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-sign-7",
+      "suite": "synthetic",
+      "family": "sign",
+      "params": {
+        "root": "W23C",
+        "target": "W23T",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        }
+      },
+      "record_ids": [
+        "W23F0",
+        "W23F1",
+        "W23F2",
+        "W23F3"
+      ],
+      "core_ids": [
+        "W23F0",
+        "W23F1",
+        "W23F2"
+      ],
+      "question": "Under the stored formal sign rule, what direction follows from W23C to W23T in human lof context?",
+      "motif_id": "motif-sign",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-provenance-0",
+      "suite": "synthetic",
+      "family": "provenance",
+      "params": {
+        "root": "W24C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W24F0",
+        "W24F1",
+        "W24F2",
+        "W24F3"
+      ],
+      "core_ids": [
+        "W24F0",
+        "W24F1",
+        "W24F2"
+      ],
+      "question": "Assess the claim for W24C in human lof context using the stored distinct-primary-source threshold.",
+      "motif_id": "motif-provenance",
+      "answer": "SUPPORTED",
+      "proofs": [
+        [
+          "W24F0",
+          "W24F1"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-provenance-1",
+      "suite": "synthetic",
+      "family": "provenance",
+      "params": {
+        "root": "W25C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W25F0",
+        "W25F1",
+        "W25F2",
+        "W25F3"
+      ],
+      "core_ids": [
+        "W25F0",
+        "W25F1",
+        "W25F2"
+      ],
+      "question": "Assess the claim for W25C in human lof context using the stored distinct-primary-source threshold.",
+      "motif_id": "motif-provenance",
+      "answer": "REFUTED",
+      "proofs": [
+        [
+          "W25F0",
+          "W25F1"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-provenance-2",
+      "suite": "synthetic",
+      "family": "provenance",
+      "params": {
+        "root": "W26C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W26F0",
+        "W26F1",
+        "W26F2",
+        "W26F3",
+        "W26F4",
+        "W26F5"
+      ],
+      "core_ids": [
+        "W26F0",
+        "W26F1",
+        "W26F2",
+        "W26F3",
+        "W26F4"
+      ],
+      "question": "Assess the claim for W26C in human lof context using the stored distinct-primary-source threshold.",
+      "motif_id": "motif-provenance",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "W26F0",
+          "W26F1",
+          "W26F2",
+          "W26F3"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-provenance-3",
+      "suite": "synthetic",
+      "family": "provenance",
+      "params": {
+        "root": "W27C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W27F0",
+        "W27F1",
+        "W27F2",
+        "W27F3",
+        "W27F4"
+      ],
+      "core_ids": [
+        "W27F0",
+        "W27F1",
+        "W27F2",
+        "W27F3"
+      ],
+      "question": "Assess the claim for W27C in human lof context using the stored distinct-primary-source threshold.",
+      "motif_id": "motif-provenance",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-provenance-4",
+      "suite": "synthetic",
+      "family": "provenance",
+      "params": {
+        "root": "W28C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W28F0",
+        "W28F1",
+        "W28F2",
+        "W28F3"
+      ],
+      "core_ids": [
+        "W28F0",
+        "W28F1",
+        "W28F2"
+      ],
+      "question": "Assess the claim for W28C in human lof context using the stored distinct-primary-source threshold.",
+      "motif_id": "motif-provenance",
+      "answer": "SUPPORTED",
+      "proofs": [
+        [
+          "W28F0",
+          "W28F1"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-provenance-5",
+      "suite": "synthetic",
+      "family": "provenance",
+      "params": {
+        "root": "W29C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W29F0",
+        "W29F1",
+        "W29F2",
+        "W29F3"
+      ],
+      "core_ids": [
+        "W29F0",
+        "W29F1",
+        "W29F2"
+      ],
+      "question": "Assess the claim for W29C in human lof context using the stored distinct-primary-source threshold.",
+      "motif_id": "motif-provenance",
+      "answer": "REFUTED",
+      "proofs": [
+        [
+          "W29F0",
+          "W29F1"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-provenance-6",
+      "suite": "synthetic",
+      "family": "provenance",
+      "params": {
+        "root": "W30C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W30F0",
+        "W30F1",
+        "W30F2",
+        "W30F3",
+        "W30F4",
+        "W30F5"
+      ],
+      "core_ids": [
+        "W30F0",
+        "W30F1",
+        "W30F2",
+        "W30F3",
+        "W30F4"
+      ],
+      "question": "Assess the claim for W30C in human lof context using the stored distinct-primary-source threshold.",
+      "motif_id": "motif-provenance",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "W30F0",
+          "W30F1",
+          "W30F2",
+          "W30F3"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-provenance-7",
+      "suite": "synthetic",
+      "family": "provenance",
+      "params": {
+        "root": "W31C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W31F0",
+        "W31F1",
+        "W31F2",
+        "W31F3",
+        "W31F4"
+      ],
+      "core_ids": [
+        "W31F0",
+        "W31F1",
+        "W31F2",
+        "W31F3"
+      ],
+      "question": "Assess the claim for W31C in human lof context using the stored distinct-primary-source threshold.",
+      "motif_id": "motif-provenance",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-conflict-0",
+      "suite": "synthetic",
+      "family": "conflict",
+      "params": {
+        "root": "W32C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W32F0",
+        "W32F1",
+        "W32F2",
+        "W32F3"
+      ],
+      "core_ids": [
+        "W32F0",
+        "W32F1",
+        "W32F2"
+      ],
+      "question": "Assess the claim for W32C in human lof context using the stored explicit support/refutation rule.",
+      "motif_id": "motif-conflict",
+      "answer": "SUPPORTED",
+      "proofs": [
+        [
+          "W32F0"
+        ],
+        [
+          "W32F1"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-conflict-1",
+      "suite": "synthetic",
+      "family": "conflict",
+      "params": {
+        "root": "W33C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W33F0",
+        "W33F1",
+        "W33F2",
+        "W33F3"
+      ],
+      "core_ids": [
+        "W33F0",
+        "W33F1",
+        "W33F2"
+      ],
+      "question": "Assess the claim for W33C in human lof context using the stored explicit support/refutation rule.",
+      "motif_id": "motif-conflict",
+      "answer": "REFUTED",
+      "proofs": [
+        [
+          "W33F0"
+        ],
+        [
+          "W33F1"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-conflict-2",
+      "suite": "synthetic",
+      "family": "conflict",
+      "params": {
+        "root": "W34C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W34F0",
+        "W34F1",
+        "W34F2",
+        "W34F3",
+        "W34F4",
+        "W34F5"
+      ],
+      "core_ids": [
+        "W34F0",
+        "W34F1",
+        "W34F2",
+        "W34F3",
+        "W34F4"
+      ],
+      "question": "Assess the claim for W34C in human lof context using the stored explicit support/refutation rule.",
+      "motif_id": "motif-conflict",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "W34F0",
+          "W34F2"
+        ],
+        [
+          "W34F0",
+          "W34F3"
+        ],
+        [
+          "W34F1",
+          "W34F2"
+        ],
+        [
+          "W34F1",
+          "W34F3"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-conflict-3",
+      "suite": "synthetic",
+      "family": "conflict",
+      "params": {
+        "root": "W35C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W35F0",
+        "W35F1"
+      ],
+      "core_ids": [
+        "W35F0"
+      ],
+      "question": "Assess the claim for W35C in human lof context using the stored explicit support/refutation rule.",
+      "motif_id": "motif-conflict",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-conflict-4",
+      "suite": "synthetic",
+      "family": "conflict",
+      "params": {
+        "root": "W36C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W36F0",
+        "W36F1",
+        "W36F2",
+        "W36F3"
+      ],
+      "core_ids": [
+        "W36F0",
+        "W36F1",
+        "W36F2"
+      ],
+      "question": "Assess the claim for W36C in human lof context using the stored explicit support/refutation rule.",
+      "motif_id": "motif-conflict",
+      "answer": "SUPPORTED",
+      "proofs": [
+        [
+          "W36F0"
+        ],
+        [
+          "W36F1"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-conflict-5",
+      "suite": "synthetic",
+      "family": "conflict",
+      "params": {
+        "root": "W37C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W37F0",
+        "W37F1",
+        "W37F2",
+        "W37F3"
+      ],
+      "core_ids": [
+        "W37F0",
+        "W37F1",
+        "W37F2"
+      ],
+      "question": "Assess the claim for W37C in human lof context using the stored explicit support/refutation rule.",
+      "motif_id": "motif-conflict",
+      "answer": "REFUTED",
+      "proofs": [
+        [
+          "W37F0"
+        ],
+        [
+          "W37F1"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-conflict-6",
+      "suite": "synthetic",
+      "family": "conflict",
+      "params": {
+        "root": "W38C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W38F0",
+        "W38F1",
+        "W38F2",
+        "W38F3",
+        "W38F4",
+        "W38F5"
+      ],
+      "core_ids": [
+        "W38F0",
+        "W38F1",
+        "W38F2",
+        "W38F3",
+        "W38F4"
+      ],
+      "question": "Assess the claim for W38C in human lof context using the stored explicit support/refutation rule.",
+      "motif_id": "motif-conflict",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "W38F0",
+          "W38F2"
+        ],
+        [
+          "W38F0",
+          "W38F3"
+        ],
+        [
+          "W38F1",
+          "W38F2"
+        ],
+        [
+          "W38F1",
+          "W38F3"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-conflict-7",
+      "suite": "synthetic",
+      "family": "conflict",
+      "params": {
+        "root": "W39C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W39F0",
+        "W39F1"
+      ],
+      "core_ids": [
+        "W39F0"
+      ],
+      "question": "Assess the claim for W39C in human lof context using the stored explicit support/refutation rule.",
+      "motif_id": "motif-conflict",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-abduction-0",
+      "suite": "synthetic",
+      "family": "abduction",
+      "params": {
+        "root": "W40C",
+        "options": {
+          "A": {
+            "id": "W40OPTION",
+            "subject": "W40H",
+            "relation": "phenotype_pathway",
+            "object": "W40P",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          },
+          "B": {
+            "id": "W40OPTIONB",
+            "subject": "W40H",
+            "relation": "phenotype_pathway",
+            "object": "W40Q",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          }
+        }
+      },
+      "record_ids": [
+        "W40F0",
+        "W40F1",
+        "W40F2",
+        "W40F3"
+      ],
+      "core_ids": [
+        "W40F0",
+        "W40F1",
+        "W40F2"
+      ],
+      "question": "Which hypothetical additional edge completes the stored join for W40C? A: W40H phenotype_pathway W40P; B: W40H phenotype_pathway W40Q. These options are unproven, not existing evidence.",
+      "motif_id": "motif-abduction",
+      "answer": "A",
+      "proofs": [
+        [
+          "W40F0",
+          "W40F1",
+          "W40F2"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-abduction-1",
+      "suite": "synthetic",
+      "family": "abduction",
+      "params": {
+        "root": "W41C",
+        "options": {
+          "A": {
+            "id": "W41OPTIONB",
+            "subject": "W41H",
+            "relation": "phenotype_pathway",
+            "object": "W41Q",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          },
+          "B": {
+            "id": "W41OPTION",
+            "subject": "W41H",
+            "relation": "phenotype_pathway",
+            "object": "W41P",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          }
+        }
+      },
+      "record_ids": [
+        "W41F0",
+        "W41F1",
+        "W41F2",
+        "W41F3"
+      ],
+      "core_ids": [
+        "W41F0",
+        "W41F1",
+        "W41F2"
+      ],
+      "question": "Which hypothetical additional edge completes the stored join for W41C? A: W41H phenotype_pathway W41Q; B: W41H phenotype_pathway W41P. These options are unproven, not existing evidence.",
+      "motif_id": "motif-abduction",
+      "answer": "B",
+      "proofs": [
+        [
+          "W41F0",
+          "W41F1",
+          "W41F2"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-abduction-2",
+      "suite": "synthetic",
+      "family": "abduction",
+      "params": {
+        "root": "W42C",
+        "options": {
+          "A": {
+            "id": "W42OPTION",
+            "subject": "W42H",
+            "relation": "phenotype_pathway",
+            "object": "W42Z",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          },
+          "B": {
+            "id": "W42OPTIONB",
+            "subject": "W42H",
+            "relation": "phenotype_pathway",
+            "object": "W42Q",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          }
+        }
+      },
+      "record_ids": [
+        "W42F0",
+        "W42F1",
+        "W42F2",
+        "W42F3"
+      ],
+      "core_ids": [
+        "W42F0",
+        "W42F1",
+        "W42F2"
+      ],
+      "question": "Which hypothetical additional edge completes the stored join for W42C? A: W42H phenotype_pathway W42Z; B: W42H phenotype_pathway W42Q. These options are unproven, not existing evidence.",
+      "motif_id": "motif-abduction",
+      "answer": "NONE",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-abduction-3",
+      "suite": "synthetic",
+      "family": "abduction",
+      "params": {
+        "root": "W43C",
+        "options": {
+          "A": {
+            "id": "W43OPTION",
+            "subject": "W43H",
+            "relation": "phenotype_pathway",
+            "object": "W43P",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          },
+          "B": {
+            "id": "W43OPTIONB",
+            "subject": "W43H",
+            "relation": "phenotype_pathway",
+            "object": "W43P",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          }
+        }
+      },
+      "record_ids": [
+        "W43F0",
+        "W43F1",
+        "W43F2",
+        "W43F3"
+      ],
+      "core_ids": [
+        "W43F0",
+        "W43F1",
+        "W43F2"
+      ],
+      "question": "Which hypothetical additional edge completes the stored join for W43C? A: W43H phenotype_pathway W43P; B: W43H phenotype_pathway W43P. These options are unproven, not existing evidence.",
+      "motif_id": "motif-abduction",
+      "answer": "MULTIPLE",
+      "proofs": [
+        [
+          "W43F0",
+          "W43F1",
+          "W43F2"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-abduction-4",
+      "suite": "synthetic",
+      "family": "abduction",
+      "params": {
+        "root": "W44C",
+        "options": {
+          "A": {
+            "id": "W44OPTION",
+            "subject": "W44H",
+            "relation": "phenotype_pathway",
+            "object": "W44P",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          },
+          "B": {
+            "id": "W44OPTIONB",
+            "subject": "W44H",
+            "relation": "phenotype_pathway",
+            "object": "W44Q",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          }
+        }
+      },
+      "record_ids": [
+        "W44F0",
+        "W44F1",
+        "W44F2",
+        "W44F3"
+      ],
+      "core_ids": [
+        "W44F0",
+        "W44F1",
+        "W44F2"
+      ],
+      "question": "Which hypothetical additional edge completes the stored join for W44C? A: W44H phenotype_pathway W44P; B: W44H phenotype_pathway W44Q. These options are unproven, not existing evidence.",
+      "motif_id": "motif-abduction",
+      "answer": "A",
+      "proofs": [
+        [
+          "W44F0",
+          "W44F1",
+          "W44F2"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-abduction-5",
+      "suite": "synthetic",
+      "family": "abduction",
+      "params": {
+        "root": "W45C",
+        "options": {
+          "A": {
+            "id": "W45OPTIONB",
+            "subject": "W45H",
+            "relation": "phenotype_pathway",
+            "object": "W45Q",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          },
+          "B": {
+            "id": "W45OPTION",
+            "subject": "W45H",
+            "relation": "phenotype_pathway",
+            "object": "W45P",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          }
+        }
+      },
+      "record_ids": [
+        "W45F0",
+        "W45F1",
+        "W45F2",
+        "W45F3"
+      ],
+      "core_ids": [
+        "W45F0",
+        "W45F1",
+        "W45F2"
+      ],
+      "question": "Which hypothetical additional edge completes the stored join for W45C? A: W45H phenotype_pathway W45Q; B: W45H phenotype_pathway W45P. These options are unproven, not existing evidence.",
+      "motif_id": "motif-abduction",
+      "answer": "B",
+      "proofs": [
+        [
+          "W45F0",
+          "W45F1",
+          "W45F2"
+        ]
+      ]
+    },
+    {
+      "id": "synthetic-abduction-6",
+      "suite": "synthetic",
+      "family": "abduction",
+      "params": {
+        "root": "W46C",
+        "options": {
+          "A": {
+            "id": "W46OPTION",
+            "subject": "W46H",
+            "relation": "phenotype_pathway",
+            "object": "W46Z",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          },
+          "B": {
+            "id": "W46OPTIONB",
+            "subject": "W46H",
+            "relation": "phenotype_pathway",
+            "object": "W46Q",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          }
+        }
+      },
+      "record_ids": [
+        "W46F0",
+        "W46F1",
+        "W46F2",
+        "W46F3"
+      ],
+      "core_ids": [
+        "W46F0",
+        "W46F1",
+        "W46F2"
+      ],
+      "question": "Which hypothetical additional edge completes the stored join for W46C? A: W46H phenotype_pathway W46Z; B: W46H phenotype_pathway W46Q. These options are unproven, not existing evidence.",
+      "motif_id": "motif-abduction",
+      "answer": "NONE",
+      "proofs": []
+    },
+    {
+      "id": "synthetic-abduction-7",
+      "suite": "synthetic",
+      "family": "abduction",
+      "params": {
+        "root": "W47C",
+        "options": {
+          "A": {
+            "id": "W47OPTION",
+            "subject": "W47H",
+            "relation": "phenotype_pathway",
+            "object": "W47P",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          },
+          "B": {
+            "id": "W47OPTIONB",
+            "subject": "W47H",
+            "relation": "phenotype_pathway",
+            "object": "W47P",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          }
+        }
+      },
+      "record_ids": [
+        "W47F0",
+        "W47F1",
+        "W47F2",
+        "W47F3"
+      ],
+      "core_ids": [
+        "W47F0",
+        "W47F1",
+        "W47F2"
+      ],
+      "question": "Which hypothetical additional edge completes the stored join for W47C? A: W47H phenotype_pathway W47P; B: W47H phenotype_pathway W47P. These options are unproven, not existing evidence.",
+      "motif_id": "motif-abduction",
+      "answer": "MULTIPLE",
+      "proofs": [
+        [
+          "W47F0",
+          "W47F1",
+          "W47F2"
+        ]
+      ]
+    },
+    {
+      "id": "arax-0-0",
+      "suite": "arax",
+      "family": "context",
+      "params": {
+        "root": "ARAXGene0",
+        "focus": "object",
+        "context": {
+          "species": "NCBITaxon:10090",
+          "aspect": "expression"
+        }
+      },
+      "record_ids": [
+        "AR0F0",
+        "AR0F1",
+        "AR0F2",
+        "AR0F3",
+        "AR0F4",
+        "AR0F5",
+        "AR0F6",
+        "AR0F7",
+        "AR0F8",
+        "AR0F9",
+        "AR0F10",
+        "AR0F11"
+      ],
+      "core_ids": [
+        "AR0F0",
+        "AR0F1",
+        "AR0F2",
+        "AR0F3",
+        "AR0F4",
+        "AR0F5",
+        "AR0F6",
+        "AR0F7",
+        "AR0F8",
+        "AR0F9",
+        "AR0F10",
+        "AR0F11"
+      ],
+      "question": "Summarize recorded incoming directions affecting ARAXGene0, restricted to species=NCBITaxon:10090, aspect=expression.",
+      "motif_id": "motif-context",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "AR0F1",
+          "AR0F2"
+        ]
+      ]
+    },
+    {
+      "id": "arax-0-1",
+      "suite": "arax",
+      "family": "context",
+      "params": {
+        "root": "ARAXGene0",
+        "focus": "object",
+        "context": {
+          "species": "NCBITaxon:9606",
+          "aspect": "expression"
+        }
+      },
+      "record_ids": [
+        "AR0F0",
+        "AR0F1",
+        "AR0F2",
+        "AR0F3",
+        "AR0F4",
+        "AR0F5",
+        "AR0F6",
+        "AR0F7",
+        "AR0F8",
+        "AR0F9",
+        "AR0F10",
+        "AR0F11"
+      ],
+      "core_ids": [
+        "AR0F0",
+        "AR0F1",
+        "AR0F2",
+        "AR0F3",
+        "AR0F4",
+        "AR0F5",
+        "AR0F6",
+        "AR0F7",
+        "AR0F8",
+        "AR0F9",
+        "AR0F10",
+        "AR0F11"
+      ],
+      "question": "Summarize recorded incoming directions affecting ARAXGene0, restricted to species=NCBITaxon:9606, aspect=expression.",
+      "motif_id": "motif-context",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "AR0F10",
+          "AR0F9"
+        ]
+      ]
+    },
+    {
+      "id": "arax-0-2",
+      "suite": "arax",
+      "family": "provenance",
+      "params": {
+        "root": "ARAXGene0",
+        "focus": "object",
+        "context": {
+          "species": "NCBITaxon:10090",
+          "aspect": "expression"
+        },
+        "subject": "ARAXEntity0_1",
+        "relation": "affects"
+      },
+      "record_ids": [
+        "AR0F0",
+        "AR0F1",
+        "AR0F2",
+        "AR0F3",
+        "AR0F4",
+        "AR0F5",
+        "AR0F6",
+        "AR0F7",
+        "AR0F8",
+        "AR0F9",
+        "AR0F10",
+        "AR0F11"
+      ],
+      "core_ids": [
+        "AR0F0",
+        "AR0F1",
+        "AR0F2",
+        "AR0F3",
+        "AR0F4",
+        "AR0F5",
+        "AR0F6",
+        "AR0F7",
+        "AR0F8",
+        "AR0F9",
+        "AR0F10",
+        "AR0F11"
+      ],
+      "question": "Assess retained direction evidence for ARAXEntity0_1 affects ARAXGene0, restricted to species=NCBITaxon:10090, aspect=expression, under the stored provenance rule. UP supports and DOWN refutes this stipulated annotation claim.",
+      "motif_id": "motif-provenance",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "arax-0-3",
+      "suite": "arax",
+      "family": "conflict",
+      "params": {
+        "root": "ARAXGene0",
+        "focus": "object",
+        "context": {
+          "species": "NCBITaxon:10090",
+          "aspect": "expression"
+        },
+        "subject": "ARAXEntity0_1",
+        "relation": "affects"
+      },
+      "record_ids": [
+        "AR0F0",
+        "AR0F1",
+        "AR0F2",
+        "AR0F3",
+        "AR0F4",
+        "AR0F5",
+        "AR0F6",
+        "AR0F7",
+        "AR0F8",
+        "AR0F9",
+        "AR0F10",
+        "AR0F11"
+      ],
+      "core_ids": [
+        "AR0F0",
+        "AR0F1",
+        "AR0F2",
+        "AR0F3",
+        "AR0F4",
+        "AR0F5",
+        "AR0F6",
+        "AR0F7",
+        "AR0F8",
+        "AR0F9",
+        "AR0F10",
+        "AR0F11"
+      ],
+      "question": "Assess retained direction evidence for ARAXEntity0_1 affects ARAXGene0, restricted to species=NCBITaxon:10090, aspect=expression, under the stored conflict rule. UP supports and DOWN refutes this stipulated annotation claim.",
+      "motif_id": "motif-conflict",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "AR0F1",
+          "AR0F2"
+        ]
+      ]
+    },
+    {
+      "id": "arax-1-0",
+      "suite": "arax",
+      "family": "context",
+      "params": {
+        "root": "ARAXGene1",
+        "focus": "object",
+        "context": {
+          "aspect": "activity_or_abundance"
+        }
+      },
+      "record_ids": [
+        "AR1F0",
+        "AR1F1",
+        "AR1F2",
+        "AR1F3",
+        "AR1F4",
+        "AR1F5",
+        "AR1F6",
+        "AR1F7",
+        "AR1F8",
+        "AR1F9",
+        "AR1F10",
+        "AR1F11"
+      ],
+      "core_ids": [
+        "AR1F0",
+        "AR1F1",
+        "AR1F2",
+        "AR1F3",
+        "AR1F4",
+        "AR1F5",
+        "AR1F6",
+        "AR1F7",
+        "AR1F8",
+        "AR1F9",
+        "AR1F10",
+        "AR1F11"
+      ],
+      "question": "Summarize recorded incoming directions affecting ARAXGene1, restricted to aspect=activity_or_abundance.",
+      "motif_id": "motif-context",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "AR1F0",
+          "AR1F1"
+        ]
+      ]
+    },
+    {
+      "id": "arax-1-1",
+      "suite": "arax",
+      "family": "context",
+      "params": {
+        "root": "ARAXGene1",
+        "focus": "object",
+        "context": {
+          "aspect": "activity_or_abundance",
+          "species": "NCBITaxon:9606"
+        }
+      },
+      "record_ids": [
+        "AR1F0",
+        "AR1F1",
+        "AR1F2",
+        "AR1F3",
+        "AR1F4",
+        "AR1F5",
+        "AR1F6",
+        "AR1F7",
+        "AR1F8",
+        "AR1F9",
+        "AR1F10",
+        "AR1F11"
+      ],
+      "core_ids": [
+        "AR1F0",
+        "AR1F1",
+        "AR1F2",
+        "AR1F3",
+        "AR1F4",
+        "AR1F5",
+        "AR1F6",
+        "AR1F7",
+        "AR1F8",
+        "AR1F9",
+        "AR1F10",
+        "AR1F11"
+      ],
+      "question": "Summarize recorded incoming directions affecting ARAXGene1, restricted to aspect=activity_or_abundance, species=NCBITaxon:9606.",
+      "motif_id": "motif-context",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "arax-1-2",
+      "suite": "arax",
+      "family": "provenance",
+      "params": {
+        "root": "ARAXGene1",
+        "focus": "object",
+        "context": {
+          "aspect": "activity_or_abundance"
+        },
+        "subject": "ARAXEntity1_0",
+        "relation": "affects"
+      },
+      "record_ids": [
+        "AR1F0",
+        "AR1F1",
+        "AR1F2",
+        "AR1F3",
+        "AR1F4",
+        "AR1F5",
+        "AR1F6",
+        "AR1F7",
+        "AR1F8",
+        "AR1F9",
+        "AR1F10",
+        "AR1F11"
+      ],
+      "core_ids": [
+        "AR1F0",
+        "AR1F1",
+        "AR1F2",
+        "AR1F3",
+        "AR1F4",
+        "AR1F5",
+        "AR1F6",
+        "AR1F7",
+        "AR1F8",
+        "AR1F9",
+        "AR1F10",
+        "AR1F11"
+      ],
+      "question": "Assess retained direction evidence for ARAXEntity1_0 affects ARAXGene1, restricted to aspect=activity_or_abundance, under the stored provenance rule. UP supports and DOWN refutes this stipulated annotation claim.",
+      "motif_id": "motif-provenance",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "arax-1-3",
+      "suite": "arax",
+      "family": "conflict",
+      "params": {
+        "root": "ARAXGene1",
+        "focus": "object",
+        "context": {
+          "aspect": "activity_or_abundance"
+        },
+        "subject": "ARAXEntity1_0",
+        "relation": "affects"
+      },
+      "record_ids": [
+        "AR1F0",
+        "AR1F1",
+        "AR1F2",
+        "AR1F3",
+        "AR1F4",
+        "AR1F5",
+        "AR1F6",
+        "AR1F7",
+        "AR1F8",
+        "AR1F9",
+        "AR1F10",
+        "AR1F11"
+      ],
+      "core_ids": [
+        "AR1F0",
+        "AR1F1",
+        "AR1F2",
+        "AR1F3",
+        "AR1F4",
+        "AR1F5",
+        "AR1F6",
+        "AR1F7",
+        "AR1F8",
+        "AR1F9",
+        "AR1F10",
+        "AR1F11"
+      ],
+      "question": "Assess retained direction evidence for ARAXEntity1_0 affects ARAXGene1, restricted to aspect=activity_or_abundance, under the stored conflict rule. UP supports and DOWN refutes this stipulated annotation claim.",
+      "motif_id": "motif-conflict",
+      "answer": "REFUTED",
+      "proofs": [
+        [
+          "AR1F0"
+        ]
+      ]
+    },
+    {
+      "id": "arax-2-0",
+      "suite": "arax",
+      "family": "context",
+      "params": {
+        "root": "ARAXGene2",
+        "focus": "object",
+        "context": {
+          "aspect": "activity_or_abundance"
+        }
+      },
+      "record_ids": [
+        "AR2F0",
+        "AR2F1",
+        "AR2F2",
+        "AR2F3",
+        "AR2F4",
+        "AR2F5",
+        "AR2F6",
+        "AR2F7",
+        "AR2F8",
+        "AR2F9",
+        "AR2F10",
+        "AR2F11"
+      ],
+      "core_ids": [
+        "AR2F0",
+        "AR2F1",
+        "AR2F2",
+        "AR2F3",
+        "AR2F4",
+        "AR2F5",
+        "AR2F6",
+        "AR2F7",
+        "AR2F8",
+        "AR2F9",
+        "AR2F10",
+        "AR2F11"
+      ],
+      "question": "Summarize recorded incoming directions affecting ARAXGene2, restricted to aspect=activity_or_abundance.",
+      "motif_id": "motif-context",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "AR2F0",
+          "AR2F1"
+        ]
+      ]
+    },
+    {
+      "id": "arax-2-1",
+      "suite": "arax",
+      "family": "context",
+      "params": {
+        "root": "ARAXGene2",
+        "focus": "object",
+        "context": {
+          "aspect": "activity_or_abundance",
+          "species": "NCBITaxon:9606"
+        }
+      },
+      "record_ids": [
+        "AR2F0",
+        "AR2F1",
+        "AR2F2",
+        "AR2F3",
+        "AR2F4",
+        "AR2F5",
+        "AR2F6",
+        "AR2F7",
+        "AR2F8",
+        "AR2F9",
+        "AR2F10",
+        "AR2F11"
+      ],
+      "core_ids": [
+        "AR2F0",
+        "AR2F1",
+        "AR2F2",
+        "AR2F3",
+        "AR2F4",
+        "AR2F5",
+        "AR2F6",
+        "AR2F7",
+        "AR2F8",
+        "AR2F9",
+        "AR2F10",
+        "AR2F11"
+      ],
+      "question": "Summarize recorded incoming directions affecting ARAXGene2, restricted to aspect=activity_or_abundance, species=NCBITaxon:9606.",
+      "motif_id": "motif-context",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "arax-2-2",
+      "suite": "arax",
+      "family": "provenance",
+      "params": {
+        "root": "ARAXGene2",
+        "focus": "object",
+        "context": {
+          "aspect": "activity_or_abundance"
+        },
+        "subject": "ARAXEntity2_0",
+        "relation": "affects"
+      },
+      "record_ids": [
+        "AR2F0",
+        "AR2F1",
+        "AR2F2",
+        "AR2F3",
+        "AR2F4",
+        "AR2F5",
+        "AR2F6",
+        "AR2F7",
+        "AR2F8",
+        "AR2F9",
+        "AR2F10",
+        "AR2F11"
+      ],
+      "core_ids": [
+        "AR2F0",
+        "AR2F1",
+        "AR2F2",
+        "AR2F3",
+        "AR2F4",
+        "AR2F5",
+        "AR2F6",
+        "AR2F7",
+        "AR2F8",
+        "AR2F9",
+        "AR2F10",
+        "AR2F11"
+      ],
+      "question": "Assess retained direction evidence for ARAXEntity2_0 affects ARAXGene2, restricted to aspect=activity_or_abundance, under the stored provenance rule. UP supports and DOWN refutes this stipulated annotation claim.",
+      "motif_id": "motif-provenance",
+      "answer": "UNKNOWN",
+      "proofs": []
+    },
+    {
+      "id": "arax-2-3",
+      "suite": "arax",
+      "family": "conflict",
+      "params": {
+        "root": "ARAXGene2",
+        "focus": "object",
+        "context": {
+          "aspect": "activity_or_abundance"
+        },
+        "subject": "ARAXEntity2_0",
+        "relation": "affects"
+      },
+      "record_ids": [
+        "AR2F0",
+        "AR2F1",
+        "AR2F2",
+        "AR2F3",
+        "AR2F4",
+        "AR2F5",
+        "AR2F6",
+        "AR2F7",
+        "AR2F8",
+        "AR2F9",
+        "AR2F10",
+        "AR2F11"
+      ],
+      "core_ids": [
+        "AR2F0",
+        "AR2F1",
+        "AR2F2",
+        "AR2F3",
+        "AR2F4",
+        "AR2F5",
+        "AR2F6",
+        "AR2F7",
+        "AR2F8",
+        "AR2F9",
+        "AR2F10",
+        "AR2F11"
+      ],
+      "question": "Assess retained direction evidence for ARAXEntity2_0 affects ARAXGene2, restricted to aspect=activity_or_abundance, under the stored conflict rule. UP supports and DOWN refutes this stipulated annotation claim.",
+      "motif_id": "motif-conflict",
+      "answer": "BOTH",
+      "proofs": [
+        [
+          "AR2F0",
+          "AR2F1"
+        ]
+      ]
+    }
+  ],
+  "dev_cases": [
+    {
+      "id": "dev-join-20",
+      "suite": "dev",
+      "family": "join",
+      "params": {
+        "root": "W48C"
+      },
+      "record_ids": [
+        "W48F0",
+        "W48F1",
+        "W48F2",
+        "W48F3",
+        "W48F4"
+      ],
+      "core_ids": [
+        "W48F0",
+        "W48F1",
+        "W48F2",
+        "W48F3"
+      ],
+      "question": "Does candidate W48C meet the stored joint gene/pathway and phenotype/pathway constraint?",
+      "motif_id": "motif-join",
+      "answer": "SUPPORTED",
+      "proofs": [
+        [
+          "W48F0",
+          "W48F1",
+          "W48F2",
+          "W48F3"
+        ]
+      ]
+    },
+    {
+      "id": "dev-context-20",
+      "suite": "dev",
+      "family": "context",
+      "params": {
+        "root": "W49C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "effect"
+      },
+      "record_ids": [
+        "W49F0",
+        "W49F1",
+        "W49F2",
+        "W49F3"
+      ],
+      "core_ids": [
+        "W49F0",
+        "W49F1",
+        "W49F2"
+      ],
+      "question": "What recorded directions apply to W49C effect records specifically in human lof context?",
+      "motif_id": "motif-context",
+      "answer": "UP",
+      "proofs": [
+        [
+          "W49F0"
+        ]
+      ]
+    },
+    {
+      "id": "dev-sign-20",
+      "suite": "dev",
+      "family": "sign",
+      "params": {
+        "root": "W50C",
+        "target": "W50T",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        }
+      },
+      "record_ids": [
+        "W50F0",
+        "W50F1",
+        "W50F2",
+        "W50F3",
+        "W50F4"
+      ],
+      "core_ids": [
+        "W50F0",
+        "W50F1",
+        "W50F2",
+        "W50F3"
+      ],
+      "question": "Under the stored formal sign rule, what direction follows from W50C to W50T in human lof context?",
+      "motif_id": "motif-sign",
+      "answer": "UP",
+      "proofs": [
+        [
+          "W50F0",
+          "W50F1",
+          "W50F2"
+        ]
+      ]
+    },
+    {
+      "id": "dev-provenance-20",
+      "suite": "dev",
+      "family": "provenance",
+      "params": {
+        "root": "W51C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W51F0",
+        "W51F1",
+        "W51F2",
+        "W51F3"
+      ],
+      "core_ids": [
+        "W51F0",
+        "W51F1",
+        "W51F2"
+      ],
+      "question": "Assess the claim for W51C in human lof context using the stored distinct-primary-source threshold.",
+      "motif_id": "motif-provenance",
+      "answer": "SUPPORTED",
+      "proofs": [
+        [
+          "W51F0",
+          "W51F1"
+        ]
+      ]
+    },
+    {
+      "id": "dev-conflict-20",
+      "suite": "dev",
+      "family": "conflict",
+      "params": {
+        "root": "W52C",
+        "context": {
+          "species": "human",
+          "variant": "lof"
+        },
+        "relation": "claim"
+      },
+      "record_ids": [
+        "W52F0",
+        "W52F1",
+        "W52F2",
+        "W52F3"
+      ],
+      "core_ids": [
+        "W52F0",
+        "W52F1",
+        "W52F2"
+      ],
+      "question": "Assess the claim for W52C in human lof context using the stored explicit support/refutation rule.",
+      "motif_id": "motif-conflict",
+      "answer": "SUPPORTED",
+      "proofs": [
+        [
+          "W52F0"
+        ],
+        [
+          "W52F1"
+        ]
+      ]
+    },
+    {
+      "id": "dev-abduction-20",
+      "suite": "dev",
+      "family": "abduction",
+      "params": {
+        "root": "W53C",
+        "options": {
+          "A": {
+            "id": "W53OPTION",
+            "subject": "W53H",
+            "relation": "phenotype_pathway",
+            "object": "W53P",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          },
+          "B": {
+            "id": "W53OPTIONB",
+            "subject": "W53H",
+            "relation": "phenotype_pathway",
+            "object": "W53Q",
+            "context": {},
+            "primary_sources": [
+              "HYPOTHETICAL"
+            ]
+          }
+        }
+      },
+      "record_ids": [
+        "W53F0",
+        "W53F1",
+        "W53F2",
+        "W53F3"
+      ],
+      "core_ids": [
+        "W53F0",
+        "W53F1",
+        "W53F2"
+      ],
+      "question": "Which hypothetical additional edge completes the stored join for W53C? A: W53H phenotype_pathway W53P; B: W53H phenotype_pathway W53Q. These options are unproven, not existing evidence.",
+      "motif_id": "motif-abduction",
+      "answer": "A",
+      "proofs": [
+        [
+          "W53F0",
+          "W53F1",
+          "W53F2"
+        ]
+      ]
+    }
+  ],
+  "interventions": [
+    {
+      "case": {
+        "id": "synthetic-join-0-intervention",
+        "suite": "synthetic",
+        "family": "join",
+        "params": {
+          "root": "W00C"
+        },
+        "record_ids": [
+          "W00F0",
+          "W00F1",
+          "W00F2",
+          "W00F3",
+          "W00F4"
+        ],
+        "core_ids": [
+          "W00F0",
+          "W00F1",
+          "W00F2",
+          "W00F3"
+        ],
+        "question": "Does candidate W00C meet the stored joint gene/pathway and phenotype/pathway constraint?",
+        "motif_id": "motif-join",
+        "answer": "UNKNOWN",
+        "proofs": [],
+        "parent_id": "synthetic-join-0"
+      },
+      "replacement_records": [
+        {
+          "id": "W00F0",
+          "subject": "W00C",
+          "relation": "candidate_gene",
+          "object": "W00G",
+          "context": {},
+          "primary_sources": [
+            "S0"
+          ]
+        },
+        {
+          "id": "W00F1",
+          "subject": "W00G",
+          "relation": "gene_pathway",
+          "object": "ChangedPathway",
+          "context": {},
+          "primary_sources": [
+            "S0"
+          ]
+        },
+        {
+          "id": "W00F2",
+          "subject": "W00C",
+          "relation": "candidate_phenotype",
+          "object": "W00H",
+          "context": {},
+          "primary_sources": [
+            "S0"
+          ]
+        },
+        {
+          "id": "W00F3",
+          "subject": "W00H",
+          "relation": "phenotype_pathway",
+          "object": "W00P",
+          "context": {},
+          "primary_sources": [
+            "S0"
+          ]
+        },
+        {
+          "id": "W00F4",
+          "subject": "W00DECOY",
+          "relation": "claim",
+          "object": "W00OTHER",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S9"
+          ],
+          "sign": "POS"
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "synthetic-context-0-intervention",
+        "suite": "synthetic",
+        "family": "context",
+        "params": {
+          "root": "W08C",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "relation": "effect"
+        },
+        "record_ids": [
+          "W08F0",
+          "W08F1",
+          "W08F2",
+          "W08F3"
+        ],
+        "core_ids": [
+          "W08F0",
+          "W08F1",
+          "W08F2"
+        ],
+        "question": "What recorded directions apply to W08C effect records specifically in human lof context?",
+        "motif_id": "motif-context",
+        "answer": "DOWN",
+        "proofs": [
+          [
+            "W08F0"
+          ]
+        ],
+        "parent_id": "synthetic-context-0"
+      },
+      "replacement_records": [
+        {
+          "id": "W08F0",
+          "subject": "W08C",
+          "relation": "effect",
+          "object": "W08T",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S0"
+          ],
+          "sign": "DOWN"
+        },
+        {
+          "id": "W08F1",
+          "subject": "W08C",
+          "relation": "effect",
+          "object": "W08T",
+          "context": {
+            "species": "mouse",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S0"
+          ],
+          "sign": "DOWN"
+        },
+        {
+          "id": "W08F2",
+          "subject": "W08C",
+          "relation": "effect",
+          "object": "W08T",
+          "context": {
+            "species": "human",
+            "variant": "gof"
+          },
+          "primary_sources": [
+            "S0"
+          ],
+          "sign": "UP"
+        },
+        {
+          "id": "W08F3",
+          "subject": "W08DECOY",
+          "relation": "claim",
+          "object": "W08OTHER",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S9"
+          ],
+          "sign": "POS"
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "synthetic-sign-0-intervention",
+        "suite": "synthetic",
+        "family": "sign",
+        "params": {
+          "root": "W16C",
+          "target": "W16T",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          }
+        },
+        "record_ids": [
+          "W16F0",
+          "W16F1",
+          "W16F2",
+          "W16F3",
+          "W16F4"
+        ],
+        "core_ids": [
+          "W16F0",
+          "W16F1",
+          "W16F2",
+          "W16F3"
+        ],
+        "question": "Under the stored formal sign rule, what direction follows from W16C to W16T in human lof context?",
+        "motif_id": "motif-sign",
+        "answer": "DOWN",
+        "proofs": [
+          [
+            "W16F0",
+            "W16F1",
+            "W16F2"
+          ]
+        ],
+        "parent_id": "synthetic-sign-0"
+      },
+      "replacement_records": [
+        {
+          "id": "W16F0",
+          "subject": "W16C",
+          "relation": "regulates",
+          "object": "W16G",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S0"
+          ],
+          "sign": "UP"
+        },
+        {
+          "id": "W16F1",
+          "subject": "W16G",
+          "relation": "regulates",
+          "object": "W16P",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S0"
+          ],
+          "sign": "DOWN"
+        },
+        {
+          "id": "W16F2",
+          "subject": "W16P",
+          "relation": "regulates",
+          "object": "W16T",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S0"
+          ],
+          "sign": "UP"
+        },
+        {
+          "id": "W16F3",
+          "subject": "W16C",
+          "relation": "regulates",
+          "object": "W16T",
+          "context": {
+            "species": "mouse",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S0"
+          ],
+          "sign": "UP"
+        },
+        {
+          "id": "W16F4",
+          "subject": "W16DECOY",
+          "relation": "claim",
+          "object": "W16OTHER",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S9"
+          ],
+          "sign": "POS"
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "synthetic-provenance-0-intervention",
+        "suite": "synthetic",
+        "family": "provenance",
+        "params": {
+          "root": "W24C",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "relation": "claim"
+        },
+        "record_ids": [
+          "W24F0",
+          "W24F1",
+          "W24F2",
+          "W24F3"
+        ],
+        "core_ids": [
+          "W24F0",
+          "W24F1",
+          "W24F2"
+        ],
+        "question": "Assess the claim for W24C in human lof context using the stored distinct-primary-source threshold.",
+        "motif_id": "motif-provenance",
+        "answer": "UNKNOWN",
+        "proofs": [],
+        "parent_id": "synthetic-provenance-0"
+      },
+      "replacement_records": [
+        {
+          "id": "W24F0",
+          "subject": "W24C",
+          "relation": "claim",
+          "object": "W24T",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S1"
+          ],
+          "sign": "POS"
+        },
+        {
+          "id": "W24F1",
+          "subject": "W24C",
+          "relation": "claim",
+          "object": "W24T",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S1"
+          ],
+          "sign": "POS"
+        },
+        {
+          "id": "W24F2",
+          "subject": "W24C",
+          "relation": "claim",
+          "object": "W24T",
+          "context": {
+            "species": "mouse",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S3"
+          ],
+          "sign": "NEG"
+        },
+        {
+          "id": "W24F3",
+          "subject": "W24DECOY",
+          "relation": "claim",
+          "object": "W24OTHER",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S1"
+          ],
+          "sign": "POS"
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "synthetic-conflict-0-intervention",
+        "suite": "synthetic",
+        "family": "conflict",
+        "params": {
+          "root": "W32C",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "relation": "claim"
+        },
+        "record_ids": [
+          "W32F0",
+          "W32F1",
+          "W32F2",
+          "W32F3"
+        ],
+        "core_ids": [
+          "W32F0",
+          "W32F1",
+          "W32F2"
+        ],
+        "question": "Assess the claim for W32C in human lof context using the stored explicit support/refutation rule.",
+        "motif_id": "motif-conflict",
+        "answer": "BOTH",
+        "proofs": [
+          [
+            "W32F0",
+            "W32F1"
+          ]
+        ],
+        "parent_id": "synthetic-conflict-0"
+      },
+      "replacement_records": [
+        {
+          "id": "W32F0",
+          "subject": "W32C",
+          "relation": "claim",
+          "object": "W32T",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S1"
+          ],
+          "sign": "DOWN"
+        },
+        {
+          "id": "W32F1",
+          "subject": "W32C",
+          "relation": "claim",
+          "object": "W32T",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S2"
+          ],
+          "sign": "POS"
+        },
+        {
+          "id": "W32F2",
+          "subject": "W32C",
+          "relation": "claim",
+          "object": "W32T",
+          "context": {
+            "species": "mouse",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S3"
+          ],
+          "sign": "NEG"
+        },
+        {
+          "id": "W32F3",
+          "subject": "W32DECOY",
+          "relation": "claim",
+          "object": "W32OTHER",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S9"
+          ],
+          "sign": "POS"
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "synthetic-abduction-0-intervention",
+        "suite": "synthetic",
+        "family": "abduction",
+        "params": {
+          "root": "W40C",
+          "options": {
+            "A": {
+              "id": "W40OPTION",
+              "subject": "W40H",
+              "relation": "phenotype_pathway",
+              "object": "W40P",
+              "context": {},
+              "primary_sources": [
+                "HYPOTHETICAL"
+              ]
+            },
+            "B": {
+              "id": "W40OPTIONB",
+              "subject": "W40H",
+              "relation": "phenotype_pathway",
+              "object": "W40Q",
+              "context": {},
+              "primary_sources": [
+                "HYPOTHETICAL"
+              ]
+            }
+          }
+        },
+        "record_ids": [
+          "W40F0",
+          "W40F1",
+          "W40F2",
+          "W40F3"
+        ],
+        "core_ids": [
+          "W40F0",
+          "W40F1",
+          "W40F2"
+        ],
+        "question": "Which hypothetical additional edge completes the stored join for W40C? A: W40H phenotype_pathway W40P; B: W40H phenotype_pathway W40Q. These options are unproven, not existing evidence.",
+        "motif_id": "motif-abduction",
+        "answer": "NONE",
+        "proofs": [],
+        "parent_id": "synthetic-abduction-0"
+      },
+      "replacement_records": [
+        {
+          "id": "W40F0",
+          "subject": "W40C",
+          "relation": "candidate_gene",
+          "object": "W40G",
+          "context": {},
+          "primary_sources": [
+            "S0"
+          ]
+        },
+        {
+          "id": "W40F1",
+          "subject": "W40G",
+          "relation": "gene_pathway",
+          "object": "ChangedPathway",
+          "context": {},
+          "primary_sources": [
+            "S0"
+          ]
+        },
+        {
+          "id": "W40F2",
+          "subject": "W40C",
+          "relation": "candidate_phenotype",
+          "object": "W40H",
+          "context": {},
+          "primary_sources": [
+            "S0"
+          ]
+        },
+        {
+          "id": "W40F3",
+          "subject": "W40DECOY",
+          "relation": "claim",
+          "object": "W40OTHER",
+          "context": {
+            "species": "human",
+            "variant": "lof"
+          },
+          "primary_sources": [
+            "S9"
+          ],
+          "sign": "POS"
+        }
+      ]
+    }
+  ],
+  "arax_receipts": [
+    {
+      "record_id": "AR0F0",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "096fe3b5c4e8070abf21dc026235419b471d4ab8ae54469e794eda80ec639499",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR0F1",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "592b35e67d00932d2bd05728ccce32df3cbb964e7b921a4a791258ac060b0424",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR0F2",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "9f6595047879d05344fd64ab3863aa9a15de60cdb83e180e4f73494243ab8900",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR0F3",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "60623c310a96f37506ce61b13a78cc88e0c00a107d1c8f6b3d5350ac559cb1bb",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR0F4",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "1745274fb88dd4102e7b95768706d98c8c0f58b3828bf116975a62b13421553e",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR0F5",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "594e30b6c64ed28a7832e01951c869941277b0ffd7f0555d6ac58696e7f04544",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR0F6",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "68693900d121fba3cfdecc19c958ba7b3d6ca8c31b6611a7e88b1d5ec4ceb02f",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR0F7",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "1aa8937ff674b1b836514a5167ae5c5281c39153ab365512f9f057e2f913aa5d",
+      "original_predicate": "biolink:directly_physically_interacts_with",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR0F8",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "47374bf84b897dbc9c439dcb2e2ef3e5d398d43060e4e943792a19b24a2f44cc",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR0F9",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "754f2fc87bcb6c7f6b7a9eceb5607a5b061e3240ab82eddecb5c2b192c689582",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR0F10",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "ce2b1391bd143cf52df4e09f754ab03562b9aafd282cd2e51ab5ad4b1e639a8a",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR0F11",
+      "disease": "fabry-disease.snapshot",
+      "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+      "original_edge_sha256": "082ec09b2edf553045248d0afc80f50965095797ef823a3e999ccf84f0b09013",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F0",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "ae9f05e327eff38ce0fc2503aa467de3e83df3c9948c7be259dc55cd723de3da",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F1",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "85972ac3becfe316fe782301b76653c85fcd7258afd6e542eb813715f296578b",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F2",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "58aa26b0e7ba86ace84c1373debbadf30fa70c06567c1f45f38786da1bbd6f95",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F3",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "fab6fcb893eebe08db8c87662f2d8053dc39611e6bc812a5498f619fe46eed81",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F4",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "c47ac0780df9f9e48b3c5f780ec028689a4251a90518f1aef3c486f861cd9b98",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F5",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "6b09edaba7e1409e4eda89bd3ee7c7a8022e8218e62c339843cc262d3618971c",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F6",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "e2b1b748ca3f651e321370baa5de66e8109049e1a6a824a4a232643365a1a556",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F7",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "bce5d4f04689a87e0105183fed35e187b3e9cb2ecece18ad3eb692bb099dc497",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F8",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "51db4d96dbd01cab2d91ed743712d2e4dcbdce6b1cd74bcaf28693b02e6f5ae9",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F9",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "76f9d2222c49b27826402315c2cb343dba3ccaf0c7a9067f2abace9459bfe9ac",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F10",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "e8c9f8d8963964ff71f71a9ce813fe140a72491cf8e7eca0e77800a50bc52878",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR1F11",
+      "disease": "gaucher-disease.snapshot",
+      "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+      "original_edge_sha256": "a25fd59cc2a321557b5e9f0e1ed8061e816b50d0b1f45e69e0c63b81d05bc120",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F0",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "f443633820ab43fbe18f4e86773ceba863a6fdf6806d09aa1cb7694b42d64d3d",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F1",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "e7e69354080ee4d8da6023764ed5d09f02a8f4394b9f361cbe2ca0351c501667",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F2",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "0a61a5af83d83373066ebecf425d0af649800c599bcbc0e249dd386da982c42f",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F3",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "137f20943faf160ec9942228f5f45b342aaa3d12cda21028edfac54b7bf9b2b9",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F4",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "448fab9ca8730886f27fbca352d176063084020fc7b944a4af3a25c0a3474ec9",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F5",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "5352b717b40b245a221a15f67fdbb6ebd261de349cd34304413bfc198d4b9aec",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F6",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "c88ffbb867c9fe789fa1d84ab9b0ae6ee0cc4d2cb7f817697db1ed56582f157e",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F7",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "f6da310f6170692f72774c091b1968e8f5e4c1588bbddbe3c6942119a5a6613a",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F8",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "b8bcfd97c4a9510a5e033a908d26e5732dbc54223c8cf860db451a013bcec97e",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F9",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "7f81be02c1483dc32ee9948f8bffed269aa6391eb6ce04a7766ff7c03b08cf54",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F10",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "af75a13febaa2e46d65e6a795f76a1950d17f84329b256324c0050b9ec7a435d",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    },
+    {
+      "record_id": "AR2F11",
+      "disease": "rett-syndrome.snapshot",
+      "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+      "original_edge_sha256": "164347509c317eb8e7cda8b7e3c129de4167c5519a7361a0aaeeeadd88968ca2",
+      "original_predicate": "biolink:affects",
+      "qualified_predicate": "biolink:causes",
+      "warning": "Recorded direction of a qualified aspect, not proof of biological causation or treatment benefit"
+    }
+  ],
+  "protocol": {
+    "memory_fitting": "24 atomic tuple values plus six generic rule texts; no composed answers, entity-specific proofs, or held-out cases fitted",
+    "rule_routing": "Explicit public motif subject and scope; oracle rule addressing is shared across conditions, not a learned semantic router",
+    "model": "Pinned native LongCat 4-bit; same delta-fitting recipe, at most 25 steps",
+    "graph_budget": {
+      "rounds": 4,
+      "lookups": 6,
+      "per_round": 2,
+      "records_per_lookup": 16
+    },
+    "rag": "SQLite FTS5 BM25 top12 over the global record corpus; rules supplied as text",
+    "synthetic": "Stipulated relational and sign algebra, not biological causal laws",
+    "arax": "Blinded retained metadata audit; no signed-path causal inference on real ARAX edges"
+  }
+}

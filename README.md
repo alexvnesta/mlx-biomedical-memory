@@ -13,6 +13,15 @@ The current experiment uses **native pretrained LongCat-Flash-Lite conditional
 memory**, with a quantization-aware MLX adaptation for fitting new atomic edits.
 See the **[controlled KG/RAG/memory comparison](docs/COMPARISON.md)** for answer
 quality, fixed-length latency, corrections, rollback and scaling limits.
+The **[richer relationship protocol](docs/RELATIONAL-PROTOCOL.md)** adds explicit
+relation/context addresses, branching joins, context selection, signed paths,
+source deduplication, conflict and missing-edge hypotheses. It separates
+gold-evidence controls from agents that choose their own graph lookups.
+Its **[measured results and comparison tables](docs/RELATIONAL-RESULTS.md)** retain
+all primary outcomes, development attempts and post-hoc diagnostics. The scoped
+bank is an engineered addition to the native model, rather than native addressing.
+See [the practical rationale and decision criteria](docs/RATIONALE.md) for what
+would justify this approach beyond an ordinary graph, RAG or a rule library.
 The earlier [released-checkpoint replay](docs/LONGCAT-RESULTS.md) is retained
 separately. This is a 4-bit adaptation of EngramEdit, with fixed expression
 templates and local frequency calibration; it is not an exact paper replication.
@@ -23,6 +32,9 @@ templates and local frequency calibration; it is not an exact paper replication.
   cached exact-key residual replay, and base / edited-memory / text-edit controls.
 - Fresh atomic target-vector fitting with a frozen backbone, joint regularized
   n-gram allocation, sequential corrections and independent snapshot rollback.
+- An engineered scoped residual bank, atomic address-interference diagnostics,
+  generic rule fitting, new synthetic worlds and qualifier-preserving ARAX audits.
+  Answer labels and retrieved proof support are checked separately.
 - Same-corpus graph traversal, SQLite FTS5 BM25, pinned BGE dense and hybrid RAG,
   gold-support, cached-prefix and shuffled-memory controls. Atomic recall,
   paraphrases, unseen compositions, absent entities and unrelated queries.
@@ -85,6 +97,17 @@ uv run --extra longcat python scripts/diagnose_comparison_memory.py
 uv run --extra longcat python scripts/audit_abstention.py
 OPENBLAS_NUM_THREADS=1 uv run python scripts/benchmark_lookup_scaling.py
 uv run python scripts/report_comparison.py
+
+# Richer relations, using the released frozen corpus and a new scoped checkpoint.
+uv run --extra longcat python scripts/prepare_relational.py --replay --cache-encoder
+uv run --extra longcat python scripts/fit_relational_memory.py
+uv run --extra longcat python scripts/run_relational.py --dev-only --output runs/relational-dev-v3
+uv run --extra longcat python scripts/run_relational.py
+uv run --extra longcat python scripts/diagnose_scoped_transfer.py
+uv run --extra longcat python scripts/diagnose_value_boundary.py
+uv run python scripts/audit_relational_arax.py --replay
+uv run python scripts/report_relational.py
+uv run python scripts/verify_artifacts.py
 
 # Original Qwen graph-composition experiment, retained for reproduction.
 uv sync --extra dev

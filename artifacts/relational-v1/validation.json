@@ -1,0 +1,32 @@
+{
+  "verified_utc": "2026-10-18T21:28:49.465909+00:00",
+  "command": ".venv/bin/python -m pytest -q",
+  "exit_code": 0,
+  "passed": 31,
+  "seconds": 1.91,
+  "python": "3.13.7",
+  "system": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "chip": "Apple M5 Max",
+  "unified_memory_bytes": 68719476736,
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.31.3",
+    "numpy": "2.5.4",
+    "torch": "2.9.1",
+    "transformers": "5.20.1",
+    "huggingface-hub": "2.2.0",
+    "pytest": "8.4.2"
+  },
+  "test_sources": {
+    "tests/test_arax.py": "2dbe38d9ec4824e04970741cbfea851f8bb2a81b01010ba462ccb4642b7589e5",
+    "tests/test_benchmark.py": "36afdb55f38557473ba9b6a3b49e382dac568a63acb6197358397a4969109fef",
+    "tests/test_biomedical.py": "b04d8abf8070676a99788ed925afcfffea07fda4896bba249c4ee5ec01a45019",
+    "tests/test_longcat.py": "24033f328aa9c8c4f26e8c43c887cf2d2166e2ac3298290f5df83937f7c2d1ea",
+    "tests/test_longcat_editor.py": "df8290f812c22b8d6b4548727fe87a0a982a9df86f3bf26513f273be7b6c9a82",
+    "tests/test_longcat_keys.py": "e8aaf385604ac2534d55a03a486a41d89aeebffd6e8f4be75e6a48ad907bc6ad",
+    "tests/test_memory.py": "0521be5b72161c2968f8b59a87e3ab92f301b11b4b6498b482c7aa8985368f07",
+    "tests/test_relational.py": "e62b794bc9cfc92092f23ea30175f20c9c077d219725983aa10e8aff85bf528e",
+    "tests/test_retrieval.py": "150a73a1192a3e5441217206f44a6171c271ae84b818859bcf31c972f1991ed3",
+    "tests/test_scoped_memory.py": "4391d19d6665b465334b3ecc45cb7e6b9630c422b7a9a5e716b13ef5b1f92559"
+  }
+}

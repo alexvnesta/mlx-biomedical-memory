@@ -1,0 +1,14 @@
+{
+  "model": "mlx-community/LongCat-Flash-Lite-4bit",
+  "revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "started_utc": "2026-10-18T20:53:17.084135+00:00",
+  "dataset_sha256": "bc1fd8a8838788ff3fbc95680802094fd833c83f7c693a4f0001c6c3a6d71d49",
+  "source_sha256": "28a7453b9563393b510005a1fac1d0e9b874053ea5943988fc750ebaef84f182",
+  "steps": 25,
+  "lr": 0.5,
+  "contexts": [
+    "{}",
+    "Reference lookup:\n{}"
+  ],
+  "supervision": "Atomic tuple values and six rule definitions only; no composed answers or test proofs"
+}

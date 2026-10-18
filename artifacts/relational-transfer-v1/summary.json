@@ -1,0 +1,11 @@
+{
+  "completed": true,
+  "post_hoc": true,
+  "rows": 180,
+  "frozen_constants": {
+    "before": "62071913e0871f22b4cf3956cf5a3b1e4c6b45ae091ad8da8df4ee7202c8b34a",
+    "after": "62071913e0871f22b4cf3956cf5a3b1e4c6b45ae091ad8da8df4ee7202c8b34a",
+    "unchanged": true
+  },
+  "peak_metal_gb": 38.750612796
+}
