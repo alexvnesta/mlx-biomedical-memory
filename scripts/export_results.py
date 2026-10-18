@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import shutil
+from statistics import mean
 
 destination = Path("artifacts")
 destination.mkdir(exist_ok=True)
@@ -97,6 +98,37 @@ lines += [
     "",
     "See [protocol](PROTOCOL.md) for what the experiment does and does not establish.",
 ]
+fresh = [r for r in rows if r["run"].startswith("zero-init-seed")]
+if fresh:
+    lines += [
+        "",
+        "## Fresh-seed summary",
+        "",
+        f"The three fixed-recipe zero-initialization runs have mean held-out composition "
+        f"accuracy {100 * mean(r['composition']['memory'] for r in fresh):.1f}% with latent memory, "
+        f"versus {100 * mean(r['composition']['text_facts'] for r in fresh):.1f}% with supplied text facts. "
+        "This does not demonstrate a reasoning advantage. Each synthetic run has only 16 held-out components.",
+        "",
+        "Prompt lengths are recorded separately in [token accounting](../artifacts/token-accounting.json). "
+        "Fewer prompt tokens alone are not an efficiency benefit when answer accuracy is lower. "
+        "No latency or amortized-training-cost advantage has been established.",
+    ]
+for r in [row for row in rows if row["arax"]]:
+    lines += [
+        "",
+        "## ARAX-derived snapshot task",
+        "",
+        f"The `{r['run']}` run has {r['test_n']} weighted test rows, "
+        f"{r['unique_questions']} unique supplied edge-pair questions, and "
+        f"{r['test_components']} held-out Rett-syndrome path components. "
+        f"Latent-memory membership composition is {100 * r['composition']['memory']:.1f}%, "
+        f"versus {100 * r['composition']['text_facts']:.1f}% with exact text facts. "
+        f"Atomic recall with memory is {100 * r['memory_atomic_recall']:.1f}%.",
+        "",
+        "This is a conjunction of recorded/unobserved predicate-level edge memberships, "
+        "not sign inference, hidden-path discovery, a treatment prediction, or validation of a new biomedical relationship. "
+        "Weak atomic recall limits conclusions about a better memory interface.",
+    ]
 Path("docs/RESULTS.md").write_text("\n".join(lines) + "\n")
 hashes = {
     str(p): hashlib.sha256(p.read_bytes()).hexdigest()

@@ -103,8 +103,11 @@ dataset hashes, and exact dependency lock files make changes auditable.
 - High atomic recall is necessary but insufficient for composition.
 - Correct memories should outperform disabled and shuffled controls on held-out
   questions; paraphrases should retain the effect.
-- Evidence of improvement over LLM+KG requires beating the supplied-text baseline,
-  not merely beating the unaugmented model.
+- A reasoning-accuracy advantage over LLM+KG requires beating the supplied-text
+  baseline, not merely beating the unaugmented model. If that comparator reaches
+  100% on a simple task, the task cannot establish higher accuracy. Matching its
+  accuracy with lower measured inference cost could be a separate contribution,
+  but would require fair timing/token accounting and amortized memory-fitting cost.
 - Repeat across seeds and larger disjoint graphs. Use component-level uncertainty
   estimates; related paths and duplicate positive rows are not independent samples.
 - Add LoRA with matched data/parameter budgets, generated-answer baselines,

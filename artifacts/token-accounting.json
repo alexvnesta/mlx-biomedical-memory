@@ -1,0 +1,112 @@
+{
+  "model": "Qwen/Qwen3-4B-MLX-bf16",
+  "revision": "94e68620a4b9db944b2f5b3c3633fbdf621d871b",
+  "scope": "deterministic prompt lengths only; not throughput, correctness, or amortized efficiency",
+  "runs": [
+    {
+      "run": "arax-seed17",
+      "test_prompt_tokens": {
+        "memory_or_base": {
+          "mean": 146.16666666666666,
+          "min": 146,
+          "max": 148
+        },
+        "text_facts": {
+          "mean": 204.66666666666666,
+          "min": 203,
+          "max": 211
+        }
+      }
+    },
+    {
+      "run": "replication-seed23",
+      "test_prompt_tokens": {
+        "memory_or_base": {
+          "mean": 130.625,
+          "min": 128,
+          "max": 133
+        },
+        "text_facts": {
+          "mean": 169.25,
+          "min": 164,
+          "max": 174
+        }
+      }
+    },
+    {
+      "run": "replication-seed42",
+      "test_prompt_tokens": {
+        "memory_or_base": {
+          "mean": 131.375,
+          "min": 128,
+          "max": 134
+        },
+        "text_facts": {
+          "mean": 170.75,
+          "min": 164,
+          "max": 176
+        }
+      }
+    },
+    {
+      "run": "replication-seed71",
+      "test_prompt_tokens": {
+        "memory_or_base": {
+          "mean": 130.75,
+          "min": 128,
+          "max": 133
+        },
+        "text_facts": {
+          "mean": 169.5,
+          "min": 164,
+          "max": 174
+        }
+      }
+    },
+    {
+      "run": "zero-init-seed101",
+      "test_prompt_tokens": {
+        "memory_or_base": {
+          "mean": 130.875,
+          "min": 128,
+          "max": 136
+        },
+        "text_facts": {
+          "mean": 169.75,
+          "min": 164,
+          "max": 180
+        }
+      }
+    },
+    {
+      "run": "zero-init-seed202",
+      "test_prompt_tokens": {
+        "memory_or_base": {
+          "mean": 130.8125,
+          "min": 127,
+          "max": 134
+        },
+        "text_facts": {
+          "mean": 169.625,
+          "min": 162,
+          "max": 176
+        }
+      }
+    },
+    {
+      "run": "zero-init-seed303",
+      "test_prompt_tokens": {
+        "memory_or_base": {
+          "mean": 131.5625,
+          "min": 129,
+          "max": 135
+        },
+        "text_facts": {
+          "mean": 171.125,
+          "min": 166,
+          "max": 178
+        }
+      }
+    }
+  ]
+}

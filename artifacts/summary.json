@@ -1,5 +1,29 @@
 [
   {
+    "run": "arax-seed17",
+    "seed": 17,
+    "dimension": 1,
+    "steps": 480,
+    "arax": true,
+    "initialization": "zero",
+    "composition": {
+      "base": 0.5,
+      "text_facts": 1.0,
+      "memory": 0.5,
+      "shuffled_memory": 0.5277777777777778
+    },
+    "memory_atomic_recall": 0.6153846153846154,
+    "paraphrase": 0.5,
+    "test_n": 72,
+    "test_components": 12,
+    "unique_questions": 46,
+    "backbone_unchanged": true,
+    "runtime": {
+      "seconds": 216.22966504096985,
+      "peak_memory_bytes": 10281449772
+    }
+  },
+  {
     "run": "pilot-bottleneck-seed17",
     "seed": 17,
     "dimension": 1,
@@ -141,6 +165,78 @@
     "runtime": {
       "seconds": 13.962632894515991,
       "peak_memory_bytes": 8464948178
+    }
+  },
+  {
+    "run": "zero-init-seed101",
+    "seed": 101,
+    "dimension": 1,
+    "steps": 480,
+    "arax": false,
+    "initialization": "zero",
+    "composition": {
+      "base": 0.5,
+      "text_facts": 0.75,
+      "memory": 0.5,
+      "shuffled_memory": 0.5625
+    },
+    "memory_atomic_recall": 0.5,
+    "paraphrase": 0.6875,
+    "test_n": 16,
+    "test_components": 16,
+    "unique_questions": 16,
+    "backbone_unchanged": true,
+    "runtime": {
+      "seconds": 147.4651439189911,
+      "peak_memory_bytes": 10028637308
+    }
+  },
+  {
+    "run": "zero-init-seed202",
+    "seed": 202,
+    "dimension": 1,
+    "steps": 480,
+    "arax": false,
+    "initialization": "zero",
+    "composition": {
+      "base": 0.5,
+      "text_facts": 0.75,
+      "memory": 0.4375,
+      "shuffled_memory": 0.3125
+    },
+    "memory_atomic_recall": 0.75,
+    "paraphrase": 0.5,
+    "test_n": 16,
+    "test_components": 16,
+    "unique_questions": 16,
+    "backbone_unchanged": true,
+    "runtime": {
+      "seconds": 156.67846298217773,
+      "peak_memory_bytes": 10024049884
+    }
+  },
+  {
+    "run": "zero-init-seed303",
+    "seed": 303,
+    "dimension": 1,
+    "steps": 480,
+    "arax": false,
+    "initialization": "zero",
+    "composition": {
+      "base": 0.5,
+      "text_facts": 0.75,
+      "memory": 0.5,
+      "shuffled_memory": 0.4375
+    },
+    "memory_atomic_recall": 0.5,
+    "paraphrase": 0.5,
+    "test_n": 16,
+    "test_components": 16,
+    "unique_questions": 16,
+    "backbone_unchanged": true,
+    "runtime": {
+      "seconds": 160.32687187194824,
+      "peak_memory_bytes": 10057883292
     }
   }
 ]

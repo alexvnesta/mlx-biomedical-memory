@@ -1,0 +1,4593 @@
+{
+  "seed": 17,
+  "labels": [
+    "recorded",
+    "unobserved"
+  ],
+  "sha256": "cc8a401748edfdd920e53a5113b51b91035d961c77637cd11a954e7c608fa515",
+  "audit": {
+    "heldout_composed_answers_in_training": 0,
+    "heldout_atomic_premises_available": true,
+    "training_components_disjoint_from_heldout_composition": true,
+    "scope": "new combinations of supplied directed edge memberships in a bounded ARAX snapshot",
+    "not_established": [
+      "hidden-path discovery",
+      "relation causality",
+      "drug efficacy",
+      "novel repurposing"
+    ],
+    "heldout_disease": "Rett syndrome",
+    "blinded_entity_identifiers": true,
+    "negative_labels": "not observed in union of retained bound edges; not biological negatives"
+  },
+  "counts": {
+    "all": 295,
+    "train": 151,
+    "valid": 72,
+    "test": 72
+  },
+  "examples": [
+    {
+      "id": "atomic-arax-0",
+      "component": 0,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00007 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-1",
+      "component": 0,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-2",
+      "component": 0,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00063 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-3",
+      "component": 0,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00017 | biolink:associated_with | Entity_00047"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-4",
+      "component": 1,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00059 | biolink:directly_physically_interacts_with | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-5",
+      "component": 1,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00018 | biolink:directly_physically_interacts_with | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-6",
+      "component": 1,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-7",
+      "component": 2,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00012 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-8",
+      "component": 2,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00078 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-9",
+      "component": 3,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00022 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-10",
+      "component": 3,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00006 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-11",
+      "component": 4,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-12",
+      "component": 4,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00020 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-13",
+      "component": 5,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00055 | biolink:directly_physically_interacts_with | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-14",
+      "component": 5,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00050 | biolink:directly_physically_interacts_with | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-15",
+      "component": 6,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00073 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-16",
+      "component": 6,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00018 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-17",
+      "component": 7,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00044 | biolink:directly_physically_interacts_with | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-18",
+      "component": 7,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00000 | biolink:directly_physically_interacts_with | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-19",
+      "component": 8,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00064 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-20",
+      "component": 8,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00033 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-21",
+      "component": 9,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00041 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-22",
+      "component": 9,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00013 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-23",
+      "component": 10,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00010 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-24",
+      "component": 10,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00061 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-25",
+      "component": 11,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00001 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-26",
+      "component": 11,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00004 | biolink:affects | Entity_00017"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-27",
+      "component": 12,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00025 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-28",
+      "component": 12,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-29",
+      "component": 12,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00068 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-30",
+      "component": 12,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-31",
+      "component": 13,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00057 | biolink:directly_physically_interacts_with | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-32",
+      "component": 13,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00012 | biolink:directly_physically_interacts_with | Entity_00014"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-33",
+      "component": 14,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00041 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-34",
+      "component": 14,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00032 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-35",
+      "component": 14,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00011"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-36",
+      "component": 15,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-37",
+      "component": 15,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00024 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-38",
+      "component": 16,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00012 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-39",
+      "component": 16,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00075 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-40",
+      "component": 17,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00037 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-41",
+      "component": 17,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00019 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-42",
+      "component": 18,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00033 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-43",
+      "component": 18,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00076 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-44",
+      "component": 19,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00003 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-45",
+      "component": 19,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00044 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-46",
+      "component": 20,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00070 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-47",
+      "component": 21,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00005 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-48",
+      "component": 21,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00010 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-49",
+      "component": 22,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00001 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-50",
+      "component": 22,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00052 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-51",
+      "component": 23,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00016 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-52",
+      "component": 23,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00023 | biolink:affects | Entity_00014"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-53",
+      "component": 24,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00064 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-54",
+      "component": 24,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-55",
+      "component": 24,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00075 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-56",
+      "component": 24,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00051 | biolink:related_to | Entity_00047"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-57",
+      "component": 25,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00040 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-58",
+      "component": 25,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00049 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-59",
+      "component": 26,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-60",
+      "component": 26,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00069 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-61",
+      "component": 26,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-62",
+      "component": 27,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00051 | biolink:interacts_with | Entity_00054"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-63",
+      "component": 27,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00051 | biolink:interacts_with | Entity_00034"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-64",
+      "component": 28,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00019 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-65",
+      "component": 28,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00037 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-66",
+      "component": 29,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00004 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-67",
+      "component": 30,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00052 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-68",
+      "component": 30,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00071 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-69",
+      "component": 31,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00032 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-70",
+      "component": 31,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00057 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-71",
+      "component": 32,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00042 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-72",
+      "component": 32,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00016 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-73",
+      "component": 33,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00030 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-74",
+      "component": 33,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00006 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-75",
+      "component": 34,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00005 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-76",
+      "component": 34,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00000 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-77",
+      "component": 35,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00062 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "atomic-arax-78",
+      "component": 35,
+      "kind": "atomic",
+      "keys": [
+        "Entity_00036 | biolink:affects | Entity_00051"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-0-0",
+      "component": 0,
+      "kind": "compose",
+      "keys": [
+        "Entity_00007 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-0-1",
+      "component": 0,
+      "kind": "compose",
+      "keys": [
+        "Entity_00007 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-0-2",
+      "component": 0,
+      "kind": "compose",
+      "keys": [
+        "Entity_00007 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-0-3",
+      "component": 0,
+      "kind": "compose",
+      "keys": [
+        "Entity_00007 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00047"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-0-4",
+      "component": 0,
+      "kind": "compose",
+      "keys": [
+        "Entity_00063 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-0-5",
+      "component": 0,
+      "kind": "compose",
+      "keys": [
+        "Entity_00063 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-1-0",
+      "component": 1,
+      "kind": "compose",
+      "keys": [
+        "Entity_00059 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-1-1",
+      "component": 1,
+      "kind": "compose",
+      "keys": [
+        "Entity_00059 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-1-2",
+      "component": 1,
+      "kind": "compose",
+      "keys": [
+        "Entity_00059 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-1-3",
+      "component": 1,
+      "kind": "compose",
+      "keys": [
+        "Entity_00059 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-1-4",
+      "component": 1,
+      "kind": "compose",
+      "keys": [
+        "Entity_00018 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-1-5",
+      "component": 1,
+      "kind": "compose",
+      "keys": [
+        "Entity_00018 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-2-0",
+      "component": 2,
+      "kind": "compose",
+      "keys": [
+        "Entity_00012 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-2-1",
+      "component": 2,
+      "kind": "compose",
+      "keys": [
+        "Entity_00012 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-2-2",
+      "component": 2,
+      "kind": "compose",
+      "keys": [
+        "Entity_00012 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-2-3",
+      "component": 2,
+      "kind": "compose",
+      "keys": [
+        "Entity_00012 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-2-4",
+      "component": 2,
+      "kind": "compose",
+      "keys": [
+        "Entity_00078 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-2-5",
+      "component": 2,
+      "kind": "compose",
+      "keys": [
+        "Entity_00078 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-3-0",
+      "component": 3,
+      "kind": "compose",
+      "keys": [
+        "Entity_00022 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-3-1",
+      "component": 3,
+      "kind": "compose",
+      "keys": [
+        "Entity_00022 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-3-2",
+      "component": 3,
+      "kind": "compose",
+      "keys": [
+        "Entity_00022 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-3-3",
+      "component": 3,
+      "kind": "compose",
+      "keys": [
+        "Entity_00022 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-3-4",
+      "component": 3,
+      "kind": "compose",
+      "keys": [
+        "Entity_00006 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-3-5",
+      "component": 3,
+      "kind": "compose",
+      "keys": [
+        "Entity_00006 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-4-0",
+      "component": 4,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-4-1",
+      "component": 4,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-4-2",
+      "component": 4,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-4-3",
+      "component": 4,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-4-4",
+      "component": 4,
+      "kind": "compose",
+      "keys": [
+        "Entity_00020 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-4-5",
+      "component": 4,
+      "kind": "compose",
+      "keys": [
+        "Entity_00020 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-5-0",
+      "component": 5,
+      "kind": "compose",
+      "keys": [
+        "Entity_00055 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-5-1",
+      "component": 5,
+      "kind": "compose",
+      "keys": [
+        "Entity_00055 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-5-2",
+      "component": 5,
+      "kind": "compose",
+      "keys": [
+        "Entity_00055 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-5-3",
+      "component": 5,
+      "kind": "compose",
+      "keys": [
+        "Entity_00055 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00047"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-5-4",
+      "component": 5,
+      "kind": "compose",
+      "keys": [
+        "Entity_00050 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-5-5",
+      "component": 5,
+      "kind": "compose",
+      "keys": [
+        "Entity_00050 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-6-0",
+      "component": 6,
+      "kind": "compose",
+      "keys": [
+        "Entity_00073 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-6-1",
+      "component": 6,
+      "kind": "compose",
+      "keys": [
+        "Entity_00073 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-6-2",
+      "component": 6,
+      "kind": "compose",
+      "keys": [
+        "Entity_00073 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-6-3",
+      "component": 6,
+      "kind": "compose",
+      "keys": [
+        "Entity_00073 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-6-4",
+      "component": 6,
+      "kind": "compose",
+      "keys": [
+        "Entity_00018 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-6-5",
+      "component": 6,
+      "kind": "compose",
+      "keys": [
+        "Entity_00018 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-7-0",
+      "component": 7,
+      "kind": "compose",
+      "keys": [
+        "Entity_00044 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-7-1",
+      "component": 7,
+      "kind": "compose",
+      "keys": [
+        "Entity_00044 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-7-2",
+      "component": 7,
+      "kind": "compose",
+      "keys": [
+        "Entity_00044 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-7-3",
+      "component": 7,
+      "kind": "compose",
+      "keys": [
+        "Entity_00044 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00047"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-7-4",
+      "component": 7,
+      "kind": "compose",
+      "keys": [
+        "Entity_00000 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-7-5",
+      "component": 7,
+      "kind": "compose",
+      "keys": [
+        "Entity_00000 | biolink:directly_physically_interacts_with | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-8-0",
+      "component": 8,
+      "kind": "compose",
+      "keys": [
+        "Entity_00064 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-8-1",
+      "component": 8,
+      "kind": "compose",
+      "keys": [
+        "Entity_00064 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-8-2",
+      "component": 8,
+      "kind": "compose",
+      "keys": [
+        "Entity_00064 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-8-3",
+      "component": 8,
+      "kind": "compose",
+      "keys": [
+        "Entity_00064 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-8-4",
+      "component": 8,
+      "kind": "compose",
+      "keys": [
+        "Entity_00033 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-8-5",
+      "component": 8,
+      "kind": "compose",
+      "keys": [
+        "Entity_00033 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-9-0",
+      "component": 9,
+      "kind": "compose",
+      "keys": [
+        "Entity_00041 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-9-1",
+      "component": 9,
+      "kind": "compose",
+      "keys": [
+        "Entity_00041 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-9-2",
+      "component": 9,
+      "kind": "compose",
+      "keys": [
+        "Entity_00041 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-9-3",
+      "component": 9,
+      "kind": "compose",
+      "keys": [
+        "Entity_00041 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00047"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-9-4",
+      "component": 9,
+      "kind": "compose",
+      "keys": [
+        "Entity_00013 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-9-5",
+      "component": 9,
+      "kind": "compose",
+      "keys": [
+        "Entity_00013 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-10-0",
+      "component": 10,
+      "kind": "compose",
+      "keys": [
+        "Entity_00010 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-10-1",
+      "component": 10,
+      "kind": "compose",
+      "keys": [
+        "Entity_00010 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-10-2",
+      "component": 10,
+      "kind": "compose",
+      "keys": [
+        "Entity_00010 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-10-3",
+      "component": 10,
+      "kind": "compose",
+      "keys": [
+        "Entity_00010 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-10-4",
+      "component": 10,
+      "kind": "compose",
+      "keys": [
+        "Entity_00061 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-10-5",
+      "component": 10,
+      "kind": "compose",
+      "keys": [
+        "Entity_00061 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-11-0",
+      "component": 11,
+      "kind": "compose",
+      "keys": [
+        "Entity_00001 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-11-1",
+      "component": 11,
+      "kind": "compose",
+      "keys": [
+        "Entity_00001 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-11-2",
+      "component": 11,
+      "kind": "compose",
+      "keys": [
+        "Entity_00001 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-11-3",
+      "component": 11,
+      "kind": "compose",
+      "keys": [
+        "Entity_00001 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00047"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-11-4",
+      "component": 11,
+      "kind": "compose",
+      "keys": [
+        "Entity_00004 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-11-5",
+      "component": 11,
+      "kind": "compose",
+      "keys": [
+        "Entity_00004 | biolink:affects | Entity_00017",
+        "Entity_00017 | biolink:associated_with | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "train",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-12-0",
+      "component": 12,
+      "kind": "compose",
+      "keys": [
+        "Entity_00025 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-12-1",
+      "component": 12,
+      "kind": "compose",
+      "keys": [
+        "Entity_00025 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-12-2",
+      "component": 12,
+      "kind": "compose",
+      "keys": [
+        "Entity_00025 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-12-3",
+      "component": 12,
+      "kind": "compose",
+      "keys": [
+        "Entity_00025 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-12-4",
+      "component": 12,
+      "kind": "compose",
+      "keys": [
+        "Entity_00068 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-12-5",
+      "component": 12,
+      "kind": "compose",
+      "keys": [
+        "Entity_00068 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-13-0",
+      "component": 13,
+      "kind": "compose",
+      "keys": [
+        "Entity_00057 | biolink:directly_physically_interacts_with | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-13-1",
+      "component": 13,
+      "kind": "compose",
+      "keys": [
+        "Entity_00057 | biolink:directly_physically_interacts_with | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-13-2",
+      "component": 13,
+      "kind": "compose",
+      "keys": [
+        "Entity_00057 | biolink:directly_physically_interacts_with | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-13-3",
+      "component": 13,
+      "kind": "compose",
+      "keys": [
+        "Entity_00057 | biolink:directly_physically_interacts_with | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-13-4",
+      "component": 13,
+      "kind": "compose",
+      "keys": [
+        "Entity_00012 | biolink:directly_physically_interacts_with | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-13-5",
+      "component": 13,
+      "kind": "compose",
+      "keys": [
+        "Entity_00012 | biolink:directly_physically_interacts_with | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-14-0",
+      "component": 14,
+      "kind": "compose",
+      "keys": [
+        "Entity_00041 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-14-1",
+      "component": 14,
+      "kind": "compose",
+      "keys": [
+        "Entity_00041 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-14-2",
+      "component": 14,
+      "kind": "compose",
+      "keys": [
+        "Entity_00041 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-14-3",
+      "component": 14,
+      "kind": "compose",
+      "keys": [
+        "Entity_00041 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00011"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-14-4",
+      "component": 14,
+      "kind": "compose",
+      "keys": [
+        "Entity_00032 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-14-5",
+      "component": 14,
+      "kind": "compose",
+      "keys": [
+        "Entity_00032 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-15-0",
+      "component": 15,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-15-1",
+      "component": 15,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-15-2",
+      "component": 15,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-15-3",
+      "component": 15,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00011"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-15-4",
+      "component": 15,
+      "kind": "compose",
+      "keys": [
+        "Entity_00024 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-15-5",
+      "component": 15,
+      "kind": "compose",
+      "keys": [
+        "Entity_00024 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-16-0",
+      "component": 16,
+      "kind": "compose",
+      "keys": [
+        "Entity_00012 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-16-1",
+      "component": 16,
+      "kind": "compose",
+      "keys": [
+        "Entity_00012 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-16-2",
+      "component": 16,
+      "kind": "compose",
+      "keys": [
+        "Entity_00012 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-16-3",
+      "component": 16,
+      "kind": "compose",
+      "keys": [
+        "Entity_00012 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-16-4",
+      "component": 16,
+      "kind": "compose",
+      "keys": [
+        "Entity_00075 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-16-5",
+      "component": 16,
+      "kind": "compose",
+      "keys": [
+        "Entity_00075 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-17-0",
+      "component": 17,
+      "kind": "compose",
+      "keys": [
+        "Entity_00037 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-17-1",
+      "component": 17,
+      "kind": "compose",
+      "keys": [
+        "Entity_00037 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-17-2",
+      "component": 17,
+      "kind": "compose",
+      "keys": [
+        "Entity_00037 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-17-3",
+      "component": 17,
+      "kind": "compose",
+      "keys": [
+        "Entity_00037 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00011"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-17-4",
+      "component": 17,
+      "kind": "compose",
+      "keys": [
+        "Entity_00019 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-17-5",
+      "component": 17,
+      "kind": "compose",
+      "keys": [
+        "Entity_00019 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-18-0",
+      "component": 18,
+      "kind": "compose",
+      "keys": [
+        "Entity_00033 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-18-1",
+      "component": 18,
+      "kind": "compose",
+      "keys": [
+        "Entity_00033 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-18-2",
+      "component": 18,
+      "kind": "compose",
+      "keys": [
+        "Entity_00033 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-18-3",
+      "component": 18,
+      "kind": "compose",
+      "keys": [
+        "Entity_00033 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00011"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-18-4",
+      "component": 18,
+      "kind": "compose",
+      "keys": [
+        "Entity_00076 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-18-5",
+      "component": 18,
+      "kind": "compose",
+      "keys": [
+        "Entity_00076 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-19-0",
+      "component": 19,
+      "kind": "compose",
+      "keys": [
+        "Entity_00003 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-19-1",
+      "component": 19,
+      "kind": "compose",
+      "keys": [
+        "Entity_00003 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-19-2",
+      "component": 19,
+      "kind": "compose",
+      "keys": [
+        "Entity_00003 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-19-3",
+      "component": 19,
+      "kind": "compose",
+      "keys": [
+        "Entity_00003 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-19-4",
+      "component": 19,
+      "kind": "compose",
+      "keys": [
+        "Entity_00044 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-19-5",
+      "component": 19,
+      "kind": "compose",
+      "keys": [
+        "Entity_00044 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-20-0",
+      "component": 20,
+      "kind": "compose",
+      "keys": [
+        "Entity_00070 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-20-1",
+      "component": 20,
+      "kind": "compose",
+      "keys": [
+        "Entity_00070 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-20-2",
+      "component": 20,
+      "kind": "compose",
+      "keys": [
+        "Entity_00070 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-20-3",
+      "component": 20,
+      "kind": "compose",
+      "keys": [
+        "Entity_00070 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-20-4",
+      "component": 20,
+      "kind": "compose",
+      "keys": [
+        "Entity_00068 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-20-5",
+      "component": 20,
+      "kind": "compose",
+      "keys": [
+        "Entity_00068 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-21-0",
+      "component": 21,
+      "kind": "compose",
+      "keys": [
+        "Entity_00005 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-21-1",
+      "component": 21,
+      "kind": "compose",
+      "keys": [
+        "Entity_00005 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-21-2",
+      "component": 21,
+      "kind": "compose",
+      "keys": [
+        "Entity_00005 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-21-3",
+      "component": 21,
+      "kind": "compose",
+      "keys": [
+        "Entity_00005 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-21-4",
+      "component": 21,
+      "kind": "compose",
+      "keys": [
+        "Entity_00010 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-21-5",
+      "component": 21,
+      "kind": "compose",
+      "keys": [
+        "Entity_00010 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-22-0",
+      "component": 22,
+      "kind": "compose",
+      "keys": [
+        "Entity_00001 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-22-1",
+      "component": 22,
+      "kind": "compose",
+      "keys": [
+        "Entity_00001 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-22-2",
+      "component": 22,
+      "kind": "compose",
+      "keys": [
+        "Entity_00001 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-22-3",
+      "component": 22,
+      "kind": "compose",
+      "keys": [
+        "Entity_00001 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-22-4",
+      "component": 22,
+      "kind": "compose",
+      "keys": [
+        "Entity_00052 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-22-5",
+      "component": 22,
+      "kind": "compose",
+      "keys": [
+        "Entity_00052 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-23-0",
+      "component": 23,
+      "kind": "compose",
+      "keys": [
+        "Entity_00016 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-23-1",
+      "component": 23,
+      "kind": "compose",
+      "keys": [
+        "Entity_00016 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-23-2",
+      "component": 23,
+      "kind": "compose",
+      "keys": [
+        "Entity_00016 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-23-3",
+      "component": 23,
+      "kind": "compose",
+      "keys": [
+        "Entity_00016 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-23-4",
+      "component": 23,
+      "kind": "compose",
+      "keys": [
+        "Entity_00023 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-23-5",
+      "component": 23,
+      "kind": "compose",
+      "keys": [
+        "Entity_00023 | biolink:affects | Entity_00014",
+        "Entity_00014 | biolink:in_clinical_trials_for | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "valid",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-24-0",
+      "component": 24,
+      "kind": "compose",
+      "keys": [
+        "Entity_00064 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-24-1",
+      "component": 24,
+      "kind": "compose",
+      "keys": [
+        "Entity_00064 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-24-2",
+      "component": 24,
+      "kind": "compose",
+      "keys": [
+        "Entity_00064 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-24-3",
+      "component": 24,
+      "kind": "compose",
+      "keys": [
+        "Entity_00064 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00047"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-24-4",
+      "component": 24,
+      "kind": "compose",
+      "keys": [
+        "Entity_00075 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-24-5",
+      "component": 24,
+      "kind": "compose",
+      "keys": [
+        "Entity_00075 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-25-0",
+      "component": 25,
+      "kind": "compose",
+      "keys": [
+        "Entity_00040 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-25-1",
+      "component": 25,
+      "kind": "compose",
+      "keys": [
+        "Entity_00040 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-25-2",
+      "component": 25,
+      "kind": "compose",
+      "keys": [
+        "Entity_00040 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-25-3",
+      "component": 25,
+      "kind": "compose",
+      "keys": [
+        "Entity_00040 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00047"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-25-4",
+      "component": 25,
+      "kind": "compose",
+      "keys": [
+        "Entity_00049 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-25-5",
+      "component": 25,
+      "kind": "compose",
+      "keys": [
+        "Entity_00049 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-26-0",
+      "component": 26,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-26-1",
+      "component": 26,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-26-2",
+      "component": 26,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-26-3",
+      "component": 26,
+      "kind": "compose",
+      "keys": [
+        "Entity_00028 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-26-4",
+      "component": 26,
+      "kind": "compose",
+      "keys": [
+        "Entity_00069 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-26-5",
+      "component": 26,
+      "kind": "compose",
+      "keys": [
+        "Entity_00069 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-27-0",
+      "component": 27,
+      "kind": "compose",
+      "keys": [
+        "Entity_00051 | biolink:interacts_with | Entity_00054",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-27-1",
+      "component": 27,
+      "kind": "compose",
+      "keys": [
+        "Entity_00051 | biolink:interacts_with | Entity_00054",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-27-2",
+      "component": 27,
+      "kind": "compose",
+      "keys": [
+        "Entity_00051 | biolink:interacts_with | Entity_00054",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-27-3",
+      "component": 27,
+      "kind": "compose",
+      "keys": [
+        "Entity_00051 | biolink:interacts_with | Entity_00054",
+        "Entity_00051 | biolink:related_to | Entity_00047"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-27-4",
+      "component": 27,
+      "kind": "compose",
+      "keys": [
+        "Entity_00051 | biolink:interacts_with | Entity_00034",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-27-5",
+      "component": 27,
+      "kind": "compose",
+      "keys": [
+        "Entity_00051 | biolink:interacts_with | Entity_00034",
+        "Entity_00051 | biolink:related_to | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-28-0",
+      "component": 28,
+      "kind": "compose",
+      "keys": [
+        "Entity_00019 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-28-1",
+      "component": 28,
+      "kind": "compose",
+      "keys": [
+        "Entity_00019 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-28-2",
+      "component": 28,
+      "kind": "compose",
+      "keys": [
+        "Entity_00019 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-28-3",
+      "component": 28,
+      "kind": "compose",
+      "keys": [
+        "Entity_00019 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00047"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-28-4",
+      "component": 28,
+      "kind": "compose",
+      "keys": [
+        "Entity_00037 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-28-5",
+      "component": 28,
+      "kind": "compose",
+      "keys": [
+        "Entity_00037 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-29-0",
+      "component": 29,
+      "kind": "compose",
+      "keys": [
+        "Entity_00004 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-29-1",
+      "component": 29,
+      "kind": "compose",
+      "keys": [
+        "Entity_00004 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-29-2",
+      "component": 29,
+      "kind": "compose",
+      "keys": [
+        "Entity_00004 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-29-3",
+      "component": 29,
+      "kind": "compose",
+      "keys": [
+        "Entity_00004 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-29-4",
+      "component": 29,
+      "kind": "compose",
+      "keys": [
+        "Entity_00069 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-29-5",
+      "component": 29,
+      "kind": "compose",
+      "keys": [
+        "Entity_00069 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-30-0",
+      "component": 30,
+      "kind": "compose",
+      "keys": [
+        "Entity_00052 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-30-1",
+      "component": 30,
+      "kind": "compose",
+      "keys": [
+        "Entity_00052 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-30-2",
+      "component": 30,
+      "kind": "compose",
+      "keys": [
+        "Entity_00052 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-30-3",
+      "component": 30,
+      "kind": "compose",
+      "keys": [
+        "Entity_00052 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-30-4",
+      "component": 30,
+      "kind": "compose",
+      "keys": [
+        "Entity_00071 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-30-5",
+      "component": 30,
+      "kind": "compose",
+      "keys": [
+        "Entity_00071 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-31-0",
+      "component": 31,
+      "kind": "compose",
+      "keys": [
+        "Entity_00032 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-31-1",
+      "component": 31,
+      "kind": "compose",
+      "keys": [
+        "Entity_00032 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-31-2",
+      "component": 31,
+      "kind": "compose",
+      "keys": [
+        "Entity_00032 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-31-3",
+      "component": 31,
+      "kind": "compose",
+      "keys": [
+        "Entity_00032 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-31-4",
+      "component": 31,
+      "kind": "compose",
+      "keys": [
+        "Entity_00057 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-31-5",
+      "component": 31,
+      "kind": "compose",
+      "keys": [
+        "Entity_00057 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-32-0",
+      "component": 32,
+      "kind": "compose",
+      "keys": [
+        "Entity_00042 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-32-1",
+      "component": 32,
+      "kind": "compose",
+      "keys": [
+        "Entity_00042 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-32-2",
+      "component": 32,
+      "kind": "compose",
+      "keys": [
+        "Entity_00042 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-32-3",
+      "component": 32,
+      "kind": "compose",
+      "keys": [
+        "Entity_00042 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-32-4",
+      "component": 32,
+      "kind": "compose",
+      "keys": [
+        "Entity_00016 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-32-5",
+      "component": 32,
+      "kind": "compose",
+      "keys": [
+        "Entity_00016 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-33-0",
+      "component": 33,
+      "kind": "compose",
+      "keys": [
+        "Entity_00030 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-33-1",
+      "component": 33,
+      "kind": "compose",
+      "keys": [
+        "Entity_00030 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-33-2",
+      "component": 33,
+      "kind": "compose",
+      "keys": [
+        "Entity_00030 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-33-3",
+      "component": 33,
+      "kind": "compose",
+      "keys": [
+        "Entity_00030 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-33-4",
+      "component": 33,
+      "kind": "compose",
+      "keys": [
+        "Entity_00006 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-33-5",
+      "component": 33,
+      "kind": "compose",
+      "keys": [
+        "Entity_00006 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-34-0",
+      "component": 34,
+      "kind": "compose",
+      "keys": [
+        "Entity_00005 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-34-1",
+      "component": 34,
+      "kind": "compose",
+      "keys": [
+        "Entity_00005 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-34-2",
+      "component": 34,
+      "kind": "compose",
+      "keys": [
+        "Entity_00005 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-34-3",
+      "component": 34,
+      "kind": "compose",
+      "keys": [
+        "Entity_00005 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-34-4",
+      "component": 34,
+      "kind": "compose",
+      "keys": [
+        "Entity_00000 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-34-5",
+      "component": 34,
+      "kind": "compose",
+      "keys": [
+        "Entity_00000 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00056"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-35-0",
+      "component": 35,
+      "kind": "compose",
+      "keys": [
+        "Entity_00062 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-35-1",
+      "component": 35,
+      "kind": "compose",
+      "keys": [
+        "Entity_00062 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-35-2",
+      "component": 35,
+      "kind": "compose",
+      "keys": [
+        "Entity_00062 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "recorded",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-35-3",
+      "component": 35,
+      "kind": "compose",
+      "keys": [
+        "Entity_00062 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00047"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-35-4",
+      "component": 35,
+      "kind": "compose",
+      "keys": [
+        "Entity_00036 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00011"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    },
+    {
+      "id": "compose-arax-35-5",
+      "component": 35,
+      "kind": "compose",
+      "keys": [
+        "Entity_00036 | biolink:affects | Entity_00051",
+        "Entity_00051 | biolink:related_to | Entity_00047"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "unobserved",
+      "split": "test",
+      "task": "membership"
+    }
+  ]
+}

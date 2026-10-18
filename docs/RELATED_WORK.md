@@ -14,7 +14,8 @@ small, auditable combination on Apple silicon and tests a narrower question.
 | [XMemTransfer](https://arxiv.org/abs/2608.17050) | Frozen external-memory transfer through adapted target readers | Only one backbone is studied here; memory portability is not evaluated |
 
 An architectural result here would require reliable held-out composition beyond
-both disabled/shuffled memory and an identical model supplied with text facts.
+disabled/shuffled memory, followed by an accuracy or fairly measured efficiency
+advantage over an identical model supplied with text facts.
 A biomedical result would require substantially more: context-sensitive relation
 semantics, reliable evidence attribution, broad disease holdouts, and external
 adjudication. A positive Boolean snapshot-membership result alone would not meet
