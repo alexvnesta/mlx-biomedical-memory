@@ -9,8 +9,19 @@ Fabry disease, Gaucher disease, and Rett syndrome.
 is not a treatment recommendation, and a composed graph answer is not a new
 biological discovery.** See [measured results](docs/RESULTS.md).
 
+The current experiment uses **native pretrained LongCat-Flash-Lite conditional
+memory**. The MLX runner replays
+the EngramEdit authors' released editing checkpoint on bounded MQuAKE cases.
+See [LongCat setup and protocol](docs/LONGCAT.md) and
+[measured replay results](docs/LONGCAT-RESULTS.md). This is a 4-bit
+adaptation; learning new ARAX edits with the paper's optimizer is not implemented.
+
 ## What is implemented
 
+- Native LongCat-Flash-Lite 4-bit on MLX, pinned model and edited-state revisions,
+  cached exact-key residual replay, and base / edited-memory / text-edit controls.
+- Generated MQuAKE answers with standard and CoT prompts, upstream answer matching,
+  source snapshots and checksums, PyTorch residual parity, and tokenizer parity.
 - Qwen3-4B BF16 on MLX, with its exact Hugging Face revision pinned.
 - A separately trained, deterministic phrase-addressed latent memory, projected
   into the middle of the frozen decoder through a learned scalar gate.
@@ -23,14 +34,14 @@ biological discovery.** See [measured results](docs/RESULTS.md).
 - ARAX identity resolution, raw HTTP receipts, bound-edge normalization, original
   directions/predicates/qualifiers, primary versus aggregator sources, and warnings.
 
-This is **Engram-inspired engineering**, not a reproduction of DeepSeek Engram or
-an MLX port of EngramEdit. Keys are explicit canonical atomic edge phrases, with
+The original Qwen interface is **Engram-inspired engineering**, not a reproduction
+of DeepSeek Engram or EngramEdit. Its keys are explicit canonical atomic edge phrases, with
 open-addressed hash slots. The lookup code does not traverse a graph, combine
 edge labels, or compute the answer. The supplied path identifies which independent
 atomic memories to activate. Generic token-suffix lookup and hidden-path search
 are not implemented.
 
-## Architecture
+## Original Qwen architecture
 
 ```mermaid
 flowchart LR
@@ -53,6 +64,13 @@ Tested on an M5 Max MacBook Pro with 64 GB unified memory. Python 3.13 is used i
 an isolated environment. Models are cached locally and are not checked into Git.
 
 ```bash
+# Current native-memory experiment: about 38.6 GB of base weights.
+uv sync --extra dev --extra longcat
+uv run --extra longcat python scripts/prepare_longcat.py --download-model
+uv run python scripts/run_longcat.py --cases 30 --questions-per-case 3 \
+  --output runs/longcat-mquake-30
+
+# Original Qwen graph-composition experiment, retained for reproduction.
 uv sync --extra dev
 uv run pytest -q
 
@@ -113,10 +131,14 @@ Gaucher disease, and train composed questions on Fabry disease. Individual
 premises from all three diseases are intentionally available to memory. This tests
 composition of stored facts, not generalization to facts never supplied.
 
-The text-fact control supplies the relevant facts directly and is a strong,
+In the original Qwen experiment, the text-fact control supplies the relevant facts directly and is a strong,
 oracle-retrieval LLM+KG comparator. All conditions use the same frozen model and
 closed-set A/B scoring. This is not yet a comparison of unrestricted generated
 scientific explanations. [Protocol and limitations](docs/PROTOCOL.md).
+
+The LongCat branch instead generates answers to counterfactual MQuAKE questions,
+using the authors' published edits and standard/CoT demonstrations. Its text-edit
+control and scoring are described separately in the [LongCat protocol](docs/LONGCAT.md).
 
 ## Data and reproducibility
 

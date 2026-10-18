@@ -1,0 +1,58 @@
+{
+  "conditions": {
+    "standard": {
+      "base": {
+        "n": 6,
+        "updated_answer_accuracy": 0.0,
+        "original_answer_accuracy": 0.8333333333333334,
+        "median_wall_seconds": 0.4837012295029126
+      },
+      "released_memory": {
+        "n": 6,
+        "updated_answer_accuracy": 0.16666666666666666,
+        "original_answer_accuracy": 0.16666666666666666,
+        "median_wall_seconds": 0.5309761669996078
+      },
+      "text_edits": {
+        "n": 6,
+        "updated_answer_accuracy": 1.0,
+        "original_answer_accuracy": 0.0,
+        "median_wall_seconds": 0.1975161875016056
+      }
+    },
+    "cot": {
+      "base": {
+        "n": 6,
+        "updated_answer_accuracy": 0.0,
+        "original_answer_accuracy": 0.8333333333333334,
+        "median_wall_seconds": 0.5018313965010748
+      },
+      "released_memory": {
+        "n": 6,
+        "updated_answer_accuracy": 0.16666666666666666,
+        "original_answer_accuracy": 0.16666666666666666,
+        "median_wall_seconds": 0.6529298750028829
+      },
+      "text_edits": {
+        "n": 6,
+        "updated_answer_accuracy": 1.0,
+        "original_answer_accuracy": 0.0,
+        "median_wall_seconds": 0.5613173539968557
+      }
+    }
+  },
+  "peak_metal_gb": 39.30255225,
+  "verification": {
+    "disabled_wrapper_exact": true,
+    "load_seconds": 6.915788375001284,
+    "active_memory_gb": 38.75536836,
+    "cached_edited_key_top1_equal": true,
+    "cached_edited_key_max_logit_difference": 0.875,
+    "edit_keys": {
+      "2": 3375,
+      "3": 4937,
+      "4": 6225
+    }
+  },
+  "interpretation": "Exploratory quantized checkpoint replay; not biomedical reasoning or a full paper reproduction."
+}

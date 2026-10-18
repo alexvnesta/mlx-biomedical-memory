@@ -1,0 +1,23 @@
+{
+  "disabled_wrapper_exact": true,
+  "load_seconds": 7.544230790997972,
+  "active_memory_gb": 38.75536836,
+  "cached_edited_key_top1_equal": true,
+  "cached_edited_key_max_logit_difference": 0.875,
+  "cached_native_key_max_logit_difference": 0.25,
+  "embedding_cache_checks": {
+    "native": {
+      "full_chunked_exact": true,
+      "dtype": "mlx.core.bfloat16"
+    },
+    "edited": {
+      "full_chunked_exact": true,
+      "dtype": "mlx.core.bfloat16"
+    }
+  },
+  "edit_keys": {
+    "2": 3375,
+    "3": 4937,
+    "4": 6225
+  }
+}

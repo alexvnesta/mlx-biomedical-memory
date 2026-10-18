@@ -7,6 +7,7 @@ dependencies = ["mlx==0.32.4", "mlx-lm==0.31.3", "truststore==0.10.5"]
 
 [project.optional-dependencies]
 dev = ["pytest==8.4.2"]
+longcat = ["torch==2.9.1"]
 
 [project.scripts]
 engram-poc = "engram_poc.cli:main"

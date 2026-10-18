@@ -1,0 +1,94 @@
+{
+  "model_id": "mlx-community/LongCat-Flash-Lite-4bit",
+  "revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "license": "mit",
+  "base_model": "meituan-longcat/LongCat-Flash-Lite",
+  "weight_files": [
+    {
+      "rfilename": "model-00001-of-00008.safetensors",
+      "size": 4643097317,
+      "lfs": {
+        "sha256": "712e891edf8cdb7ce4fdae86a2fb62b5da3bbb9b25914e3a2cf1379941874ef5",
+        "size": 4643097317,
+        "pointerSize": 135
+      },
+      "verified_sha256": "712e891edf8cdb7ce4fdae86a2fb62b5da3bbb9b25914e3a2cf1379941874ef5"
+    },
+    {
+      "rfilename": "model-00002-of-00008.safetensors",
+      "size": 4416607121,
+      "lfs": {
+        "sha256": "d7ca2240289eb3285d1e79759d2be511fdf7829b6712fa8795f8e411cfde7d62",
+        "size": 4416607121,
+        "pointerSize": 135
+      },
+      "verified_sha256": "d7ca2240289eb3285d1e79759d2be511fdf7829b6712fa8795f8e411cfde7d62"
+    },
+    {
+      "rfilename": "model-00003-of-00008.safetensors",
+      "size": 4416609707,
+      "lfs": {
+        "sha256": "583d349b2c08dad77e9e9b20edf853948d3cad33ef2e6e7a5fb036c18c8913f7",
+        "size": 4416609707,
+        "pointerSize": 135
+      },
+      "verified_sha256": "583d349b2c08dad77e9e9b20edf853948d3cad33ef2e6e7a5fb036c18c8913f7"
+    },
+    {
+      "rfilename": "model-00004-of-00008.safetensors",
+      "size": 5327895389,
+      "lfs": {
+        "sha256": "72d24e8271a1ed4d1fd12cd153174e9f68f0261755f2bdc334ba1cbd82536109",
+        "size": 5327895389,
+        "pointerSize": 135
+      },
+      "verified_sha256": "72d24e8271a1ed4d1fd12cd153174e9f68f0261755f2bdc334ba1cbd82536109"
+    },
+    {
+      "rfilename": "model-00005-of-00008.safetensors",
+      "size": 5364815506,
+      "lfs": {
+        "sha256": "b3c14cd0aba0e1edffeafadd547ccf29fc0a07d09e2140c80c31e2ff8aa1d705",
+        "size": 5364815506,
+        "pointerSize": 135
+      },
+      "verified_sha256": "b3c14cd0aba0e1edffeafadd547ccf29fc0a07d09e2140c80c31e2ff8aa1d705"
+    },
+    {
+      "rfilename": "model-00006-of-00008.safetensors",
+      "size": 5362036433,
+      "lfs": {
+        "sha256": "ccf365e928c643b1c5cd0c5c67d3b7d0ebd4200d1e9b75e220e5c1b0ecbc2d05",
+        "size": 5362036433,
+        "pointerSize": 135
+      },
+      "verified_sha256": "ccf365e928c643b1c5cd0c5c67d3b7d0ebd4200d1e9b75e220e5c1b0ecbc2d05"
+    },
+    {
+      "rfilename": "model-00007-of-00008.safetensors",
+      "size": 5341306407,
+      "lfs": {
+        "sha256": "e743cb169a58afe6a44dda1dad6e8678b561ef8ed637f8fba61b3b51612fdc0a",
+        "size": 5341306407,
+        "pointerSize": 135
+      },
+      "verified_sha256": "e743cb169a58afe6a44dda1dad6e8678b561ef8ed637f8fba61b3b51612fdc0a"
+    },
+    {
+      "rfilename": "model-00008-of-00008.safetensors",
+      "size": 3702753648,
+      "lfs": {
+        "sha256": "e78319eab47ad7d5e59ed0adf2aec8fdca53a7515e34bd31f20b8bbb86337a2b",
+        "size": 3702753648,
+        "pointerSize": 135
+      },
+      "verified_sha256": "e78319eab47ad7d5e59ed0adf2aec8fdca53a7515e34bd31f20b8bbb86337a2b"
+    }
+  ],
+  "mlx": "0.32.4",
+  "mlx_lm": "0.31.3",
+  "authors_code_commit": "fb4089be4eec2575847d7e71342ff545ccb70508",
+  "note": "Download metadata; measured execution results are recorded separately.",
+  "all_weight_shards_verified": true,
+  "weight_hash_seconds": 14.473809832998086
+}

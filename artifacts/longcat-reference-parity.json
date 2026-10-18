@@ -1,0 +1,12 @@
+{
+  "upstream_commit": "fb4089be4eec2575847d7e71342ff545ccb70508",
+  "upstream_source_sha256": "fd8ffcde6aa6c72d445b7c09421a97f1471d253d41c0ee45857902774ae3cd4a",
+  "dtype": "bfloat16",
+  "sequence_tokens": 49,
+  "hidden_size": 3072,
+  "full_exact": true,
+  "cached_exact": true,
+  "mlx_chunked_equals_full": true,
+  "max_absolute_error": 0.0,
+  "scope": "Residual replay only; synthetic identical base outputs with actual published vectors. Does not establish BF16/4-bit backbone equivalence."
+}

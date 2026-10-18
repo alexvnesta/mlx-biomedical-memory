@@ -1,0 +1,37 @@
+{
+  "format": "engramedit-mlx-v1",
+  "model_id": "mlx-community/LongCat-Flash-Lite-4bit",
+  "model_revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "state_id": "ModalityDance/EngramEdit-LongCat-Flash-Lite-MQuAKE-3K",
+  "state_revision": "6222d320052e349af9cf76417ebd329da8b5350b",
+  "source_state_sha256": "fe13efbb45b18d540bbcc610f01033119e79c931aadb2a4d30f81cd10297e6c6",
+  "upstream_commit": "fb4089be4eec2575847d7e71342ff545ccb70508",
+  "mquake_commit": "fb43dadc2d8cd19d08ce81c63d957b59deb3f3cd",
+  "source_model_name": "meituan-longcat/LongCat-Flash-Lite",
+  "prepared_utc": "2026-10-18T19:25:20.015597+00:00",
+  "downloads": [
+    {
+      "filename": "MQuAKE-CF-3k-v2.json",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/MQuAKE/fb43dadc2d8cd19d08ce81c63d957b59deb3f3cd/datasets/MQuAKE-CF-3k-v2.json",
+      "sha256": "f82091cbb668cef8f2537f79f1768af1840184450b347ff8c344336090ddc71e"
+    },
+    {
+      "filename": "multihop-prompts.txt",
+      "url": "https://raw.githubusercontent.com/ModalityDance/EngramEdit/fb4089be4eec2575847d7e71342ff545ccb70508/dsets/mquake_prompts/multihop-prompts.txt",
+      "sha256": "7552bd739459c0d8c72c6c660daade35cf612a0fb875be92270db50ae55a907f"
+    },
+    {
+      "filename": "multihop-cot-prompts.txt",
+      "url": "https://raw.githubusercontent.com/ModalityDance/EngramEdit/fb4089be4eec2575847d7e71342ff545ccb70508/dsets/mquake_prompts/multihop-cot-prompts.txt",
+      "sha256": "2476d9e7d01b09c8417d0cfe49d1bc522e76dd93283c0f5674378ba1d3c90e58"
+    }
+  ],
+  "updates_sha256": "fc3d99c4ef01a70a2873647ad665d2010d5f9d837e73f8649b5839fa10a15dd3",
+  "key_counts": {
+    "2": 3375,
+    "3": 4937,
+    "4": 6225
+  },
+  "processed_request_count": 6117,
+  "skipped_request_count": 4
+}

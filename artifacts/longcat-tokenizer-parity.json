@@ -1,0 +1,21 @@
+{
+  "official_revision": "b62b68827ead0b7fef3ba98b57f18484acaaec06",
+  "official_tokenizer_sha256": "fd227140f6dfb2478bd710d2cf7223913761259a283a1f1bc35c8d9bddba8f1f",
+  "mlx_revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "mlx_tokenizer_sha256": "83d4a5c08ee3b0fa7ba608fcfcfe5b997439f3da98268254dabc5bf44d17c28d",
+  "vocab_exact": true,
+  "texts_compared": 27363,
+  "tokenization_mismatches": 0,
+  "official_postprocessor": {
+    "type": "ByteLevel",
+    "add_prefix_space": true,
+    "trim_offsets": false,
+    "use_regex": true
+  },
+  "mlx_postprocessor": {
+    "type": "ByteLevel",
+    "add_prefix_space": true,
+    "trim_offsets": false,
+    "use_regex": true
+  }
+}

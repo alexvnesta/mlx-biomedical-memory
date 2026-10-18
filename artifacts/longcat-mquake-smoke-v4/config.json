@@ -1,0 +1,42 @@
+{
+  "model": "mlx-community/LongCat-Flash-Lite-4bit",
+  "model_revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "quantization_bits": 4,
+  "state": "ModalityDance/EngramEdit-LongCat-Flash-Lite-MQuAKE-3K",
+  "state_revision": "6222d320052e349af9cf76417ebd329da8b5350b",
+  "prepared_manifest_sha256": "f64dd62ea56c4876dc3c86ca0a18bb3fb59439f5edab1f01478da2e8ab7ed46a",
+  "source_sha256": "1b97b6c9636cb2c879973989cd374c18a86809ca1f4669dc9c4604cdf581417e",
+  "case_ids": [
+    2639,
+    247,
+    2120,
+    824,
+    2013,
+    712
+  ],
+  "selection": "First cases after random.Random(0).shuffle; selected before generation",
+  "questions_per_case": 1,
+  "styles": [
+    "standard",
+    "cot"
+  ],
+  "max_tokens": {
+    "standard": 32,
+    "cot": 128
+  },
+  "temperature": 0,
+  "mlx": "0.32.4",
+  "mlx_lm": "0.31.3",
+  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "started_utc": "2026-10-18T19:27:39.544430+00:00",
+  "memory_limit_gb": 48,
+  "limitations": [
+    "4-bit base versus paper BF16",
+    "small selected subset",
+    "serial rather than batched generation",
+    "counterfactual edits are stipulated answers, not current-world facts",
+    "text_edits supplies revised facts, not a retrieval system",
+    "only one paraphrase per case by default",
+    "no locality or general-capability evaluation"
+  ]
+}
