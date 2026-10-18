@@ -4,6 +4,7 @@ This is an engineered Engram-inspired variant: deterministic phrase addresses,
 learned vectors, projection and scalar gate. It is not a reproduction of DeepSeek
 Engram. Addressing performs independent atomic lookups, never multi-hop traversal.
 """
+
 from __future__ import annotations
 import hashlib
 import numpy as np
@@ -20,7 +21,9 @@ class PhraseIndex:
         self.collisions_resolved = 0
         owners = {}
         for key in sorted(set(keys)):
-            row = 1 + int.from_bytes(hashlib.blake2b(key.encode(), digest_size=8).digest(), "little") % (slots - 1)
+            row = 1 + int.from_bytes(
+                hashlib.blake2b(key.encode(), digest_size=8).digest(), "little"
+            ) % (slots - 1)
             if len(owners) >= slots - 1:
                 raise ValueError("memory table is full")
             # Open addressing avoids silently sharing an atomic fact's row.
@@ -41,30 +44,44 @@ class PhraseIndex:
         for phrase, row, _ in self.entries:
             size = len(phrase)
             for end in range(size, len(token_ids) + 1):
-                if token_ids[end-size:end] == phrase:
-                    rows[end-1] = row
+                if token_ids[end - size : end] == phrase:
+                    rows[end - 1] = row
         return rows
 
 
 class ConditionalMemory(nn.Module):
-    def __init__(self, slots, dimension, hidden_size):
+    def __init__(self, slots, dimension, hidden_size, initialization="zero"):
         super().__init__()
         self.table = nn.Embedding(slots, dimension)
+        if initialization == "zero":
+            # Blank memory starts neutral; each atomic row learns a value without
+            # first having to undo a random, high-magnitude pseudo-fact.
+            self.table.weight = mx.zeros_like(self.table.weight)
+        elif initialization != "random":
+            raise ValueError("memory initialization must be zero or random")
         self.projection = nn.Linear(dimension, hidden_size, bias=False)
         # Small, nonzero initialization permits table gradients on the first step.
         self.gate = mx.array(-2.0)
 
     def __call__(self, rows):
-        return mx.sigmoid(self.gate) * self.projection(self.table(rows)) * (rows != 0)[..., None]
+        return (
+            mx.sigmoid(self.gate)
+            * self.projection(self.table(rows))
+            * (rows != 0)[..., None]
+        )
 
 
 class MemoryModel(nn.Module):
-    def __init__(self, backbone, slots=8192, dimension=64, layer=None):
+    def __init__(
+        self, backbone, slots=8192, dimension=64, layer=None, initialization="zero"
+    ):
         super().__init__()
         self.backbone = backbone
         self.backbone.freeze()
         self.layer = layer if layer is not None else len(backbone.model.layers) // 2
-        self.memory = ConditionalMemory(slots, dimension, backbone.args.hidden_size)
+        self.memory = ConditionalMemory(
+            slots, dimension, backbone.args.hidden_size, initialization
+        )
         self.enabled = True
 
     def __call__(self, tokens, rows):

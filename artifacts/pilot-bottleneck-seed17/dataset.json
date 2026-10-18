@@ -1,0 +1,2139 @@
+{
+  "seed": 17,
+  "labels": [
+    "positive",
+    "negative"
+  ],
+  "sha256": "bd2cdfa3ca5e194b5a3e92443d0701e10f1ceaeb0313c94bbf41fcdbaf3e1862",
+  "audit": {
+    "heldout_composed_answers_in_training": 0,
+    "heldout_atomic_premises_available": true,
+    "training_components_disjoint_from_heldout_composition": true,
+    "scope": "new compositions of memorized edges; supplied paths; stipulated sign algebra",
+    "not_established": [
+      "hidden-path discovery",
+      "biological causality",
+      "drug efficacy"
+    ]
+  },
+  "counts": {
+    "all": 144,
+    "train": 120,
+    "valid": 8,
+    "test": 16
+  },
+  "examples": [
+    {
+      "id": "atomic-0-0",
+      "component": 0,
+      "kind": "atomic",
+      "keys": [
+        "Compound_E3G6T -> Gene_3XLDY"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-0-1",
+      "component": 0,
+      "kind": "atomic",
+      "keys": [
+        "Gene_3XLDY -> Process_CPS5W"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-0",
+      "component": 0,
+      "kind": "compose",
+      "keys": [
+        "Compound_E3G6T -> Gene_3XLDY",
+        "Gene_3XLDY -> Process_CPS5W"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-1-0",
+      "component": 1,
+      "kind": "atomic",
+      "keys": [
+        "Compound_VXPSL -> Gene_PU6ZB"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-1-1",
+      "component": 1,
+      "kind": "atomic",
+      "keys": [
+        "Gene_PU6ZB -> Process_RUAND"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-1",
+      "component": 1,
+      "kind": "compose",
+      "keys": [
+        "Compound_VXPSL -> Gene_PU6ZB",
+        "Gene_PU6ZB -> Process_RUAND"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-2-0",
+      "component": 2,
+      "kind": "atomic",
+      "keys": [
+        "Compound_GH8BC -> Gene_JZ4T6"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-2-1",
+      "component": 2,
+      "kind": "atomic",
+      "keys": [
+        "Gene_JZ4T6 -> Process_JKMFD"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-2",
+      "component": 2,
+      "kind": "compose",
+      "keys": [
+        "Compound_GH8BC -> Gene_JZ4T6",
+        "Gene_JZ4T6 -> Process_JKMFD"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-3-0",
+      "component": 3,
+      "kind": "atomic",
+      "keys": [
+        "Compound_U3LB9 -> Gene_AZRBG"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-3-1",
+      "component": 3,
+      "kind": "atomic",
+      "keys": [
+        "Gene_AZRBG -> Process_JZYRV"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-3",
+      "component": 3,
+      "kind": "compose",
+      "keys": [
+        "Compound_U3LB9 -> Gene_AZRBG",
+        "Gene_AZRBG -> Process_JZYRV"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-4-0",
+      "component": 4,
+      "kind": "atomic",
+      "keys": [
+        "Compound_SER89 -> Gene_4F98X"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-4-1",
+      "component": 4,
+      "kind": "atomic",
+      "keys": [
+        "Gene_4F98X -> Process_7B9K6"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-4",
+      "component": 4,
+      "kind": "compose",
+      "keys": [
+        "Compound_SER89 -> Gene_4F98X",
+        "Gene_4F98X -> Process_7B9K6"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-5-0",
+      "component": 5,
+      "kind": "atomic",
+      "keys": [
+        "Compound_LLFPY -> Gene_KJ9RT"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-5-1",
+      "component": 5,
+      "kind": "atomic",
+      "keys": [
+        "Gene_KJ9RT -> Process_T9H8U"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-5",
+      "component": 5,
+      "kind": "compose",
+      "keys": [
+        "Compound_LLFPY -> Gene_KJ9RT",
+        "Gene_KJ9RT -> Process_T9H8U"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-6-0",
+      "component": 6,
+      "kind": "atomic",
+      "keys": [
+        "Compound_3B6U4 -> Gene_HPWCQ"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-6-1",
+      "component": 6,
+      "kind": "atomic",
+      "keys": [
+        "Gene_HPWCQ -> Process_GR49V"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-6",
+      "component": 6,
+      "kind": "compose",
+      "keys": [
+        "Compound_3B6U4 -> Gene_HPWCQ",
+        "Gene_HPWCQ -> Process_GR49V"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-7-0",
+      "component": 7,
+      "kind": "atomic",
+      "keys": [
+        "Compound_8USB4 -> Gene_8F8HL"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-7-1",
+      "component": 7,
+      "kind": "atomic",
+      "keys": [
+        "Gene_8F8HL -> Process_F9GPQ"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-7",
+      "component": 7,
+      "kind": "compose",
+      "keys": [
+        "Compound_8USB4 -> Gene_8F8HL",
+        "Gene_8F8HL -> Process_F9GPQ"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-8-0",
+      "component": 8,
+      "kind": "atomic",
+      "keys": [
+        "Compound_CDA86 -> Gene_TFQ5E"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-8-1",
+      "component": 8,
+      "kind": "atomic",
+      "keys": [
+        "Gene_TFQ5E -> Process_TQKFA"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-8",
+      "component": 8,
+      "kind": "compose",
+      "keys": [
+        "Compound_CDA86 -> Gene_TFQ5E",
+        "Gene_TFQ5E -> Process_TQKFA"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-9-0",
+      "component": 9,
+      "kind": "atomic",
+      "keys": [
+        "Compound_6LLBD -> Gene_XADYK"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-9-1",
+      "component": 9,
+      "kind": "atomic",
+      "keys": [
+        "Gene_XADYK -> Process_G2249"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-9",
+      "component": 9,
+      "kind": "compose",
+      "keys": [
+        "Compound_6LLBD -> Gene_XADYK",
+        "Gene_XADYK -> Process_G2249"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-10-0",
+      "component": 10,
+      "kind": "atomic",
+      "keys": [
+        "Compound_Q475A -> Gene_ND8ZB"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-10-1",
+      "component": 10,
+      "kind": "atomic",
+      "keys": [
+        "Gene_ND8ZB -> Process_9JM8U"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-10",
+      "component": 10,
+      "kind": "compose",
+      "keys": [
+        "Compound_Q475A -> Gene_ND8ZB",
+        "Gene_ND8ZB -> Process_9JM8U"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-11-0",
+      "component": 11,
+      "kind": "atomic",
+      "keys": [
+        "Compound_9P7S9 -> Gene_CZ3W5"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-11-1",
+      "component": 11,
+      "kind": "atomic",
+      "keys": [
+        "Gene_CZ3W5 -> Process_LDE47"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-11",
+      "component": 11,
+      "kind": "compose",
+      "keys": [
+        "Compound_9P7S9 -> Gene_CZ3W5",
+        "Gene_CZ3W5 -> Process_LDE47"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-12-0",
+      "component": 12,
+      "kind": "atomic",
+      "keys": [
+        "Compound_4QJCP -> Gene_XRES9"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-12-1",
+      "component": 12,
+      "kind": "atomic",
+      "keys": [
+        "Gene_XRES9 -> Process_U3CQ6"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-12",
+      "component": 12,
+      "kind": "compose",
+      "keys": [
+        "Compound_4QJCP -> Gene_XRES9",
+        "Gene_XRES9 -> Process_U3CQ6"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-13-0",
+      "component": 13,
+      "kind": "atomic",
+      "keys": [
+        "Compound_2V6XE -> Gene_U7R5K"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-13-1",
+      "component": 13,
+      "kind": "atomic",
+      "keys": [
+        "Gene_U7R5K -> Process_7CH6E"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-13",
+      "component": 13,
+      "kind": "compose",
+      "keys": [
+        "Compound_2V6XE -> Gene_U7R5K",
+        "Gene_U7R5K -> Process_7CH6E"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-14-0",
+      "component": 14,
+      "kind": "atomic",
+      "keys": [
+        "Compound_HTTQS -> Gene_E8RSM"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-14-1",
+      "component": 14,
+      "kind": "atomic",
+      "keys": [
+        "Gene_E8RSM -> Process_WLCCS"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-14",
+      "component": 14,
+      "kind": "compose",
+      "keys": [
+        "Compound_HTTQS -> Gene_E8RSM",
+        "Gene_E8RSM -> Process_WLCCS"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-15-0",
+      "component": 15,
+      "kind": "atomic",
+      "keys": [
+        "Compound_HCKK7 -> Gene_QEEJN"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-15-1",
+      "component": 15,
+      "kind": "atomic",
+      "keys": [
+        "Gene_QEEJN -> Process_LUWP8"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-15",
+      "component": 15,
+      "kind": "compose",
+      "keys": [
+        "Compound_HCKK7 -> Gene_QEEJN",
+        "Gene_QEEJN -> Process_LUWP8"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-16-0",
+      "component": 16,
+      "kind": "atomic",
+      "keys": [
+        "Compound_29W6J -> Gene_GTMZN"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-16-1",
+      "component": 16,
+      "kind": "atomic",
+      "keys": [
+        "Gene_GTMZN -> Process_8K9W6"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-16",
+      "component": 16,
+      "kind": "compose",
+      "keys": [
+        "Compound_29W6J -> Gene_GTMZN",
+        "Gene_GTMZN -> Process_8K9W6"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-17-0",
+      "component": 17,
+      "kind": "atomic",
+      "keys": [
+        "Compound_A5UMW -> Gene_NVYQ2"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-17-1",
+      "component": 17,
+      "kind": "atomic",
+      "keys": [
+        "Gene_NVYQ2 -> Process_FPG5Z"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-17",
+      "component": 17,
+      "kind": "compose",
+      "keys": [
+        "Compound_A5UMW -> Gene_NVYQ2",
+        "Gene_NVYQ2 -> Process_FPG5Z"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-18-0",
+      "component": 18,
+      "kind": "atomic",
+      "keys": [
+        "Compound_YG24C -> Gene_XMSEU"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-18-1",
+      "component": 18,
+      "kind": "atomic",
+      "keys": [
+        "Gene_XMSEU -> Process_Z4CHP"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-18",
+      "component": 18,
+      "kind": "compose",
+      "keys": [
+        "Compound_YG24C -> Gene_XMSEU",
+        "Gene_XMSEU -> Process_Z4CHP"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-19-0",
+      "component": 19,
+      "kind": "atomic",
+      "keys": [
+        "Compound_NXNL5 -> Gene_3LNGF"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-19-1",
+      "component": 19,
+      "kind": "atomic",
+      "keys": [
+        "Gene_3LNGF -> Process_AD5WD"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-19",
+      "component": 19,
+      "kind": "compose",
+      "keys": [
+        "Compound_NXNL5 -> Gene_3LNGF",
+        "Gene_3LNGF -> Process_AD5WD"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-20-0",
+      "component": 20,
+      "kind": "atomic",
+      "keys": [
+        "Compound_9RJEF -> Gene_E5KB6"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-20-1",
+      "component": 20,
+      "kind": "atomic",
+      "keys": [
+        "Gene_E5KB6 -> Process_5WTWS"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-20",
+      "component": 20,
+      "kind": "compose",
+      "keys": [
+        "Compound_9RJEF -> Gene_E5KB6",
+        "Gene_E5KB6 -> Process_5WTWS"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-21-0",
+      "component": 21,
+      "kind": "atomic",
+      "keys": [
+        "Compound_3BWYK -> Gene_VCBKM"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-21-1",
+      "component": 21,
+      "kind": "atomic",
+      "keys": [
+        "Gene_VCBKM -> Process_RGSBM"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-21",
+      "component": 21,
+      "kind": "compose",
+      "keys": [
+        "Compound_3BWYK -> Gene_VCBKM",
+        "Gene_VCBKM -> Process_RGSBM"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-22-0",
+      "component": 22,
+      "kind": "atomic",
+      "keys": [
+        "Compound_Q39MH -> Gene_V3M35"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-22-1",
+      "component": 22,
+      "kind": "atomic",
+      "keys": [
+        "Gene_V3M35 -> Process_DTCY8"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-22",
+      "component": 22,
+      "kind": "compose",
+      "keys": [
+        "Compound_Q39MH -> Gene_V3M35",
+        "Gene_V3M35 -> Process_DTCY8"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-23-0",
+      "component": 23,
+      "kind": "atomic",
+      "keys": [
+        "Compound_XQWTQ -> Gene_X4AU2"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-23-1",
+      "component": 23,
+      "kind": "atomic",
+      "keys": [
+        "Gene_X4AU2 -> Process_EH3KV"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "compose-23",
+      "component": 23,
+      "kind": "compose",
+      "keys": [
+        "Compound_XQWTQ -> Gene_X4AU2",
+        "Gene_X4AU2 -> Process_EH3KV"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "train",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-24-0",
+      "component": 24,
+      "kind": "atomic",
+      "keys": [
+        "Compound_DL2Z7 -> Gene_BRTQV"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-24-1",
+      "component": 24,
+      "kind": "atomic",
+      "keys": [
+        "Gene_BRTQV -> Process_D54E8"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "compose-24",
+      "component": 24,
+      "kind": "compose",
+      "keys": [
+        "Compound_DL2Z7 -> Gene_BRTQV",
+        "Gene_BRTQV -> Process_D54E8"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-25-0",
+      "component": 25,
+      "kind": "atomic",
+      "keys": [
+        "Compound_XX548 -> Gene_X5Z3D"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-25-1",
+      "component": 25,
+      "kind": "atomic",
+      "keys": [
+        "Gene_X5Z3D -> Process_23RP3"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "compose-25",
+      "component": 25,
+      "kind": "compose",
+      "keys": [
+        "Compound_XX548 -> Gene_X5Z3D",
+        "Gene_X5Z3D -> Process_23RP3"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-26-0",
+      "component": 26,
+      "kind": "atomic",
+      "keys": [
+        "Compound_XUUZV -> Gene_2HLHL"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-26-1",
+      "component": 26,
+      "kind": "atomic",
+      "keys": [
+        "Gene_2HLHL -> Process_L7V42"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "compose-26",
+      "component": 26,
+      "kind": "compose",
+      "keys": [
+        "Compound_XUUZV -> Gene_2HLHL",
+        "Gene_2HLHL -> Process_L7V42"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-27-0",
+      "component": 27,
+      "kind": "atomic",
+      "keys": [
+        "Compound_QQMPB -> Gene_8HJ65"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-27-1",
+      "component": 27,
+      "kind": "atomic",
+      "keys": [
+        "Gene_8HJ65 -> Process_MPYTS"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "compose-27",
+      "component": 27,
+      "kind": "compose",
+      "keys": [
+        "Compound_QQMPB -> Gene_8HJ65",
+        "Gene_8HJ65 -> Process_MPYTS"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-28-0",
+      "component": 28,
+      "kind": "atomic",
+      "keys": [
+        "Compound_2AT2Y -> Gene_L369M"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-28-1",
+      "component": 28,
+      "kind": "atomic",
+      "keys": [
+        "Gene_L369M -> Process_VLHJQ"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "compose-28",
+      "component": 28,
+      "kind": "compose",
+      "keys": [
+        "Compound_2AT2Y -> Gene_L369M",
+        "Gene_L369M -> Process_VLHJQ"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-29-0",
+      "component": 29,
+      "kind": "atomic",
+      "keys": [
+        "Compound_QE6QE -> Gene_QU6FN"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-29-1",
+      "component": 29,
+      "kind": "atomic",
+      "keys": [
+        "Gene_QU6FN -> Process_YDGEA"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "compose-29",
+      "component": 29,
+      "kind": "compose",
+      "keys": [
+        "Compound_QE6QE -> Gene_QU6FN",
+        "Gene_QU6FN -> Process_YDGEA"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-30-0",
+      "component": 30,
+      "kind": "atomic",
+      "keys": [
+        "Compound_8QEHP -> Gene_MY6RF"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-30-1",
+      "component": 30,
+      "kind": "atomic",
+      "keys": [
+        "Gene_MY6RF -> Process_HHDSU"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "compose-30",
+      "component": 30,
+      "kind": "compose",
+      "keys": [
+        "Compound_8QEHP -> Gene_MY6RF",
+        "Gene_MY6RF -> Process_HHDSU"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-31-0",
+      "component": 31,
+      "kind": "atomic",
+      "keys": [
+        "Compound_LJNQ6 -> Gene_Z8GDM"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-31-1",
+      "component": 31,
+      "kind": "atomic",
+      "keys": [
+        "Gene_Z8GDM -> Process_YG2HS"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "compose-31",
+      "component": 31,
+      "kind": "compose",
+      "keys": [
+        "Compound_LJNQ6 -> Gene_Z8GDM",
+        "Gene_Z8GDM -> Process_YG2HS"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "valid",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-32-0",
+      "component": 32,
+      "kind": "atomic",
+      "keys": [
+        "Compound_ACF23 -> Gene_WEK34"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-32-1",
+      "component": 32,
+      "kind": "atomic",
+      "keys": [
+        "Gene_WEK34 -> Process_FZL9R"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-32",
+      "component": 32,
+      "kind": "compose",
+      "keys": [
+        "Compound_ACF23 -> Gene_WEK34",
+        "Gene_WEK34 -> Process_FZL9R"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-33-0",
+      "component": 33,
+      "kind": "atomic",
+      "keys": [
+        "Compound_U8KZ9 -> Gene_PFV77"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-33-1",
+      "component": 33,
+      "kind": "atomic",
+      "keys": [
+        "Gene_PFV77 -> Process_QKB2S"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-33",
+      "component": 33,
+      "kind": "compose",
+      "keys": [
+        "Compound_U8KZ9 -> Gene_PFV77",
+        "Gene_PFV77 -> Process_QKB2S"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-34-0",
+      "component": 34,
+      "kind": "atomic",
+      "keys": [
+        "Compound_L8LA8 -> Gene_3CUS7"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-34-1",
+      "component": 34,
+      "kind": "atomic",
+      "keys": [
+        "Gene_3CUS7 -> Process_C2F5R"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-34",
+      "component": 34,
+      "kind": "compose",
+      "keys": [
+        "Compound_L8LA8 -> Gene_3CUS7",
+        "Gene_3CUS7 -> Process_C2F5R"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-35-0",
+      "component": 35,
+      "kind": "atomic",
+      "keys": [
+        "Compound_744RG -> Gene_H7AHT"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-35-1",
+      "component": 35,
+      "kind": "atomic",
+      "keys": [
+        "Gene_H7AHT -> Process_42WPH"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-35",
+      "component": 35,
+      "kind": "compose",
+      "keys": [
+        "Compound_744RG -> Gene_H7AHT",
+        "Gene_H7AHT -> Process_42WPH"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-36-0",
+      "component": 36,
+      "kind": "atomic",
+      "keys": [
+        "Compound_JKFQX -> Gene_8JCZR"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-36-1",
+      "component": 36,
+      "kind": "atomic",
+      "keys": [
+        "Gene_8JCZR -> Process_7NXSF"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-36",
+      "component": 36,
+      "kind": "compose",
+      "keys": [
+        "Compound_JKFQX -> Gene_8JCZR",
+        "Gene_8JCZR -> Process_7NXSF"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-37-0",
+      "component": 37,
+      "kind": "atomic",
+      "keys": [
+        "Compound_9LGZR -> Gene_D3W7S"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-37-1",
+      "component": 37,
+      "kind": "atomic",
+      "keys": [
+        "Gene_D3W7S -> Process_YYBAC"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-37",
+      "component": 37,
+      "kind": "compose",
+      "keys": [
+        "Compound_9LGZR -> Gene_D3W7S",
+        "Gene_D3W7S -> Process_YYBAC"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-38-0",
+      "component": 38,
+      "kind": "atomic",
+      "keys": [
+        "Compound_PBWZ5 -> Gene_VH86W"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-38-1",
+      "component": 38,
+      "kind": "atomic",
+      "keys": [
+        "Gene_VH86W -> Process_J7K74"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-38",
+      "component": 38,
+      "kind": "compose",
+      "keys": [
+        "Compound_PBWZ5 -> Gene_VH86W",
+        "Gene_VH86W -> Process_J7K74"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-39-0",
+      "component": 39,
+      "kind": "atomic",
+      "keys": [
+        "Compound_A83AU -> Gene_H4XB4"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-39-1",
+      "component": 39,
+      "kind": "atomic",
+      "keys": [
+        "Gene_H4XB4 -> Process_3VVBK"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-39",
+      "component": 39,
+      "kind": "compose",
+      "keys": [
+        "Compound_A83AU -> Gene_H4XB4",
+        "Gene_H4XB4 -> Process_3VVBK"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-40-0",
+      "component": 40,
+      "kind": "atomic",
+      "keys": [
+        "Compound_3JZSM -> Gene_D2ZXZ"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-40-1",
+      "component": 40,
+      "kind": "atomic",
+      "keys": [
+        "Gene_D2ZXZ -> Process_U97SN"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-40",
+      "component": 40,
+      "kind": "compose",
+      "keys": [
+        "Compound_3JZSM -> Gene_D2ZXZ",
+        "Gene_D2ZXZ -> Process_U97SN"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-41-0",
+      "component": 41,
+      "kind": "atomic",
+      "keys": [
+        "Compound_UVKU7 -> Gene_QV5DF"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-41-1",
+      "component": 41,
+      "kind": "atomic",
+      "keys": [
+        "Gene_QV5DF -> Process_BGHSK"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-41",
+      "component": 41,
+      "kind": "compose",
+      "keys": [
+        "Compound_UVKU7 -> Gene_QV5DF",
+        "Gene_QV5DF -> Process_BGHSK"
+      ],
+      "signs": [
+        -1,
+        -1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-42-0",
+      "component": 42,
+      "kind": "atomic",
+      "keys": [
+        "Compound_8CPTU -> Gene_YFWLN"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-42-1",
+      "component": 42,
+      "kind": "atomic",
+      "keys": [
+        "Gene_YFWLN -> Process_SSQV3"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-42",
+      "component": 42,
+      "kind": "compose",
+      "keys": [
+        "Compound_8CPTU -> Gene_YFWLN",
+        "Gene_YFWLN -> Process_SSQV3"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-43-0",
+      "component": 43,
+      "kind": "atomic",
+      "keys": [
+        "Compound_DJV3F -> Gene_6UGY9"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-43-1",
+      "component": 43,
+      "kind": "atomic",
+      "keys": [
+        "Gene_6UGY9 -> Process_44XG8"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-43",
+      "component": 43,
+      "kind": "compose",
+      "keys": [
+        "Compound_DJV3F -> Gene_6UGY9",
+        "Gene_6UGY9 -> Process_44XG8"
+      ],
+      "signs": [
+        1,
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-44-0",
+      "component": 44,
+      "kind": "atomic",
+      "keys": [
+        "Compound_M8X7K -> Gene_CW6WP"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-44-1",
+      "component": 44,
+      "kind": "atomic",
+      "keys": [
+        "Gene_CW6WP -> Process_P8U6Y"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-44",
+      "component": 44,
+      "kind": "compose",
+      "keys": [
+        "Compound_M8X7K -> Gene_CW6WP",
+        "Gene_CW6WP -> Process_P8U6Y"
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-45-0",
+      "component": 45,
+      "kind": "atomic",
+      "keys": [
+        "Compound_HK899 -> Gene_FVWLJ"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-45-1",
+      "component": 45,
+      "kind": "atomic",
+      "keys": [
+        "Gene_FVWLJ -> Process_AL2X5"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-45",
+      "component": 45,
+      "kind": "compose",
+      "keys": [
+        "Compound_HK899 -> Gene_FVWLJ",
+        "Gene_FVWLJ -> Process_AL2X5"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-46-0",
+      "component": 46,
+      "kind": "atomic",
+      "keys": [
+        "Compound_KMSJ6 -> Gene_GVUPH"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-46-1",
+      "component": 46,
+      "kind": "atomic",
+      "keys": [
+        "Gene_GVUPH -> Process_L3RBF"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-46",
+      "component": 46,
+      "kind": "compose",
+      "keys": [
+        "Compound_KMSJ6 -> Gene_GVUPH",
+        "Gene_GVUPH -> Process_L3RBF"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-47-0",
+      "component": 47,
+      "kind": "atomic",
+      "keys": [
+        "Compound_8GD5P -> Gene_YXBES"
+      ],
+      "signs": [
+        1
+      ],
+      "label": "positive",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "atomic-47-1",
+      "component": 47,
+      "kind": "atomic",
+      "keys": [
+        "Gene_YXBES -> Process_MAG5P"
+      ],
+      "signs": [
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    },
+    {
+      "id": "compose-47",
+      "component": 47,
+      "kind": "compose",
+      "keys": [
+        "Compound_8GD5P -> Gene_YXBES",
+        "Gene_YXBES -> Process_MAG5P"
+      ],
+      "signs": [
+        1,
+        -1
+      ],
+      "label": "negative",
+      "split": "test",
+      "task": "sign"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{"step": 1, "kind": "atomic", "loss": 4.696667671203613, "elapsed_seconds": 8.794123649597168}
+{"step": 2, "kind": "compose", "loss": 0.003382320748642087, "elapsed_seconds": 8.92596983909607}
+{"step": 3, "kind": "atomic", "loss": 5.006715297698975, "elapsed_seconds": 8.994398832321167}
+{"step": 4, "kind": "compose", "loss": 5.9401350021362305, "elapsed_seconds": 9.069657802581787}

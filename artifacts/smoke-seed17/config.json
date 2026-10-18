@@ -1,0 +1,21 @@
+{
+  "command": "experiment",
+  "model": "Qwen/Qwen3-4B-MLX-bf16",
+  "output": "runs/smoke-seed17",
+  "seed": 17,
+  "steps": 4,
+  "eval_every": 4,
+  "learning_rate": 0.003,
+  "slots": 8192,
+  "dimension": 64,
+  "layer": null,
+  "train_components": 4,
+  "valid_components": 4,
+  "test_components": 4,
+  "model_revision": "94e68620a4b9db944b2f5b3c3633fbdf621d871b",
+  "started_utc": "2026-10-18T18:33:06.770316+00:00",
+  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "mlx": "0.32.4",
+  "mlx_lm": "0.31.3",
+  "protocol": "v0.1: supplied-path sign composition; atomic premises fitted for every split"
+}

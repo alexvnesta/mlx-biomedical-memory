@@ -1,0 +1,2979 @@
+{
+  "initial": {
+    "base": {
+      "n": 16,
+      "accuracy": 0.5,
+      "predictions": [
+        {
+          "id": "compose-32",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            3.535624637152068e-05,
+            0.9999645948410034
+          ]
+        },
+        {
+          "id": "compose-33",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.00012339463864918798,
+            0.9998766183853149
+          ]
+        },
+        {
+          "id": "compose-34",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.00020342697098385543,
+            0.9997965693473816
+          ]
+        },
+        {
+          "id": "compose-35",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.003172683995217085,
+            0.9968273043632507
+          ]
+        },
+        {
+          "id": "compose-36",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.785096734849503e-06,
+            0.999995231628418
+          ]
+        },
+        {
+          "id": "compose-37",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            6.144177405076334e-06,
+            0.9999938011169434
+          ]
+        },
+        {
+          "id": "compose-38",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.3007139386900235e-05,
+            0.999987006187439
+          ]
+        },
+        {
+          "id": "compose-39",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.5612846457079286e-06,
+            0.9999974966049194
+          ]
+        },
+        {
+          "id": "compose-40",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.00020342697098385543,
+            0.9997965693473816
+          ]
+        },
+        {
+          "id": "compose-41",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            9.610244887880981e-05,
+            0.9999039173126221
+          ]
+        },
+        {
+          "id": "compose-42",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.535624637152068e-05,
+            0.9999645948410034
+          ]
+        },
+        {
+          "id": "compose-43",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.00012339463864918798,
+            0.9998766183853149
+          ]
+        },
+        {
+          "id": "compose-44",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            5.043478381594468e-07,
+            0.9999995231628418
+          ]
+        },
+        {
+          "id": "compose-45",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            7.484624075004831e-05,
+            0.9999251365661621
+          ]
+        },
+        {
+          "id": "compose-46",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            5.422218237072229e-06,
+            0.9999946355819702
+          ]
+        },
+        {
+          "id": "compose-47",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.8925153199234046e-05,
+            0.9999810457229614
+          ]
+        }
+      ]
+    },
+    "text_facts": {
+      "n": 16,
+      "accuracy": 0.75,
+      "predictions": [
+        {
+          "id": "compose-32",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.9400766543563606e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-33",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            2.681002257221357e-14
+          ]
+        },
+        {
+          "id": "compose-34",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.691900647360356e-10,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-35",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.7751385351114664e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-36",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.2897366294682975e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-37",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.2777895808976396e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-38",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.2256082433659277e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-39",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            5.0087829662950195e-14
+          ]
+        },
+        {
+          "id": "compose-40",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            3.4424801334184685e-14
+          ]
+        },
+        {
+          "id": "compose-41",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            3.900838460297977e-14
+          ]
+        },
+        {
+          "id": "compose-42",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.0206867429317654e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-43",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            5.492783658467282e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-44",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.917173364507363e-10,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-45",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.2098663546566968e-06,
+            0.9999988079071045
+          ]
+        },
+        {
+          "id": "compose-46",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.0206867429317654e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-47",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.1724406995549117e-10,
+            1.0
+          ]
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "base": {
+      "n": 16,
+      "accuracy": 0.5,
+      "predictions": [
+        {
+          "id": "compose-32",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            3.535624637152068e-05,
+            0.9999645948410034
+          ]
+        },
+        {
+          "id": "compose-33",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.00012339463864918798,
+            0.9998766183853149
+          ]
+        },
+        {
+          "id": "compose-34",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.00020342697098385543,
+            0.9997965693473816
+          ]
+        },
+        {
+          "id": "compose-35",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.003172683995217085,
+            0.9968273043632507
+          ]
+        },
+        {
+          "id": "compose-36",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.785096734849503e-06,
+            0.999995231628418
+          ]
+        },
+        {
+          "id": "compose-37",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            6.144177405076334e-06,
+            0.9999938011169434
+          ]
+        },
+        {
+          "id": "compose-38",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.3007139386900235e-05,
+            0.999987006187439
+          ]
+        },
+        {
+          "id": "compose-39",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.5612846457079286e-06,
+            0.9999974966049194
+          ]
+        },
+        {
+          "id": "compose-40",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.00020342697098385543,
+            0.9997965693473816
+          ]
+        },
+        {
+          "id": "compose-41",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            9.610244887880981e-05,
+            0.9999039173126221
+          ]
+        },
+        {
+          "id": "compose-42",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.535624637152068e-05,
+            0.9999645948410034
+          ]
+        },
+        {
+          "id": "compose-43",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.00012339463864918798,
+            0.9998766183853149
+          ]
+        },
+        {
+          "id": "compose-44",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            5.043478381594468e-07,
+            0.9999995231628418
+          ]
+        },
+        {
+          "id": "compose-45",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            7.484624075004831e-05,
+            0.9999251365661621
+          ]
+        },
+        {
+          "id": "compose-46",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            5.422218237072229e-06,
+            0.9999946355819702
+          ]
+        },
+        {
+          "id": "compose-47",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.8925153199234046e-05,
+            0.9999810457229614
+          ]
+        }
+      ]
+    },
+    "text_facts": {
+      "n": 16,
+      "accuracy": 0.75,
+      "predictions": [
+        {
+          "id": "compose-32",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.9400766543563606e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-33",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            2.681002257221357e-14
+          ]
+        },
+        {
+          "id": "compose-34",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.691900647360356e-10,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-35",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.7751385351114664e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-36",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.2897366294682975e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-37",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.2777895808976396e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-38",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.2256082433659277e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-39",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            5.0087829662950195e-14
+          ]
+        },
+        {
+          "id": "compose-40",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            3.4424801334184685e-14
+          ]
+        },
+        {
+          "id": "compose-41",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            3.900838460297977e-14
+          ]
+        },
+        {
+          "id": "compose-42",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.0206867429317654e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-43",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            5.492783658467282e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-44",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.917173364507363e-10,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-45",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.2098663546566968e-06,
+            0.9999988079071045
+          ]
+        },
+        {
+          "id": "compose-46",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.0206867429317654e-11,
+            1.0
+          ]
+        },
+        {
+          "id": "compose-47",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.1724406995549117e-10,
+            1.0
+          ]
+        }
+      ]
+    },
+    "memory": {
+      "n": 16,
+      "accuracy": 0.4375,
+      "predictions": [
+        {
+          "id": "compose-32",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.430025051580742e-05,
+            0.9999756813049316
+          ]
+        },
+        {
+          "id": "compose-33",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            9.610244887880981e-05,
+            0.9999039173126221
+          ]
+        },
+        {
+          "id": "compose-34",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.0015011823270469904,
+            0.998498797416687
+          ]
+        },
+        {
+          "id": "compose-35",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "positive",
+          "correct": false,
+          "probabilities": [
+            0.9947799444198608,
+            0.0052201272919774055
+          ]
+        },
+        {
+          "id": "compose-36",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.222832558298251e-06,
+            0.9999958276748657
+          ]
+        },
+        {
+          "id": "compose-37",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.8925153199234046e-05,
+            0.9999810457229614
+          ]
+        },
+        {
+          "id": "compose-38",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            0.9959298968315125,
+            0.004070138558745384
+          ]
+        },
+        {
+          "id": "compose-39",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            3.2887476208998123e-06,
+            0.9999966621398926
+          ]
+        },
+        {
+          "id": "compose-40",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.0011695101857185364,
+            0.9988304972648621
+          ]
+        },
+        {
+          "id": "compose-41",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            9.610244887880981e-05,
+            0.9999039173126221
+          ]
+        },
+        {
+          "id": "compose-42",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.539786823443137e-05,
+            0.9999545812606812
+          ]
+        },
+        {
+          "id": "compose-43",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            0.9859364032745361,
+            0.014063626527786255
+          ]
+        },
+        {
+          "id": "compose-44",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.553498805151321e-06,
+            0.9999984502792358
+          ]
+        },
+        {
+          "id": "compose-45",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "positive",
+          "correct": false,
+          "probabilities": [
+            0.9997965693473816,
+            0.00020342697098385543
+          ]
+        },
+        {
+          "id": "compose-46",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "positive",
+          "correct": false,
+          "probabilities": [
+            1.0,
+            7.582567351782643e-10
+          ]
+        },
+        {
+          "id": "compose-47",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.7535703338799067e-05,
+            0.9999724626541138
+          ]
+        }
+      ]
+    },
+    "shuffled_memory": {
+      "n": 16,
+      "accuracy": 0.625,
+      "predictions": [
+        {
+          "id": "compose-32",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            3.535624637152068e-05,
+            0.9999645948410034
+          ]
+        },
+        {
+          "id": "compose-33",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.0009110511164180934,
+            0.9990890026092529
+          ]
+        },
+        {
+          "id": "compose-34",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.00015843620349187404,
+            0.999841570854187
+          ]
+        },
+        {
+          "id": "compose-35",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.003172683995217085,
+            0.9968273043632507
+          ]
+        },
+        {
+          "id": "compose-36",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            0.7772998809814453,
+            0.22270014882087708
+          ]
+        },
+        {
+          "id": "compose-37",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            8.939696272136644e-06,
+            0.9999910593032837
+          ]
+        },
+        {
+          "id": "compose-38",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.4738983736606315e-05,
+            0.9999852180480957
+          ]
+        },
+        {
+          "id": "compose-39",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            2.3355946066061506e-09
+          ]
+        },
+        {
+          "id": "compose-40",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            2.8453358780211602e-08
+          ]
+        },
+        {
+          "id": "compose-41",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.00012339463864918798,
+            0.9998766183853149
+          ]
+        },
+        {
+          "id": "compose-42",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.1444955564220436e-05,
+            0.9999785423278809
+          ]
+        },
+        {
+          "id": "compose-43",
+          "kind": "compose",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            0.9999988079071045,
+            1.2098663546566968e-06
+          ]
+        },
+        {
+          "id": "compose-44",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            8.939696272136644e-06,
+            0.9999910593032837
+          ]
+        },
+        {
+          "id": "compose-45",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "positive",
+          "correct": false,
+          "probabilities": [
+            1.0,
+            2.2159495571827392e-08
+          ]
+        },
+        {
+          "id": "compose-46",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "positive",
+          "correct": false,
+          "probabilities": [
+            0.9990890026092529,
+            0.0009110511164180934
+          ]
+        },
+        {
+          "id": "compose-47",
+          "kind": "compose",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.1444955564220436e-05,
+            0.9999785423278809
+          ]
+        }
+      ]
+    }
+  },
+  "atomic_recall": {
+    "base": {
+      "n": 32,
+      "accuracy": 0.5,
+      "predictions": [
+        {
+          "id": "atomic-32-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            8.939696272136644e-06,
+            0.9999910593032837
+          ]
+        },
+        {
+          "id": "atomic-32-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.535624637152068e-05,
+            0.9999645948410034
+          ]
+        },
+        {
+          "id": "atomic-33-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.222832558298251e-06,
+            0.9999958276748657
+          ]
+        },
+        {
+          "id": "atomic-33-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            3.535624637152068e-05,
+            0.9999645948410034
+          ]
+        },
+        {
+          "id": "atomic-34-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.222832558298251e-06,
+            0.9999958276748657
+          ]
+        },
+        {
+          "id": "atomic-34-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.14787699203589e-05,
+            0.9999885559082031
+          ]
+        },
+        {
+          "id": "atomic-35-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.3007139386900235e-05,
+            0.999987006187439
+          ]
+        },
+        {
+          "id": "atomic-35-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.539786823443137e-05,
+            0.9999545812606812
+          ]
+        },
+        {
+          "id": "atomic-36-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.1444955564220436e-05,
+            0.9999785423278809
+          ]
+        },
+        {
+          "id": "atomic-36-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.539786823443137e-05,
+            0.9999545812606812
+          ]
+        },
+        {
+          "id": "atomic-37-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            7.889268090366386e-06,
+            0.9999921321868896
+          ]
+        },
+        {
+          "id": "atomic-37-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.00012339463864918798,
+            0.9998766183853149
+          ]
+        },
+        {
+          "id": "atomic-38-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.2098663546566968e-06,
+            0.9999988079071045
+          ]
+        },
+        {
+          "id": "atomic-38-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.2887476208998123e-06,
+            0.9999966621398926
+          ]
+        },
+        {
+          "id": "atomic-39-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.5612846457079286e-06,
+            0.9999974966049194
+          ]
+        },
+        {
+          "id": "atomic-39-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            8.939696272136644e-06,
+            0.9999910593032837
+          ]
+        },
+        {
+          "id": "atomic-40-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.222832558298251e-06,
+            0.9999958276748657
+          ]
+        },
+        {
+          "id": "atomic-40-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.785096734849503e-06,
+            0.999995231628418
+          ]
+        },
+        {
+          "id": "atomic-41-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.6701427739462815e-05,
+            0.9999833106994629
+          ]
+        },
+        {
+          "id": "atomic-41-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.222832558298251e-06,
+            0.9999958276748657
+          ]
+        },
+        {
+          "id": "atomic-42-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            5.8291272580390796e-05,
+            0.9999417066574097
+          ]
+        },
+        {
+          "id": "atomic-42-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.1444955564220436e-05,
+            0.9999785423278809
+          ]
+        },
+        {
+          "id": "atomic-43-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.9023126444371883e-06,
+            0.9999971389770508
+          ]
+        },
+        {
+          "id": "atomic-43-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            6.144177405076334e-06,
+            0.9999938011169434
+          ]
+        },
+        {
+          "id": "atomic-44-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.785096734849503e-06,
+            0.999995231628418
+          ]
+        },
+        {
+          "id": "atomic-44-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.7535703338799067e-05,
+            0.9999724626541138
+          ]
+        },
+        {
+          "id": "atomic-45-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.4738983736606315e-05,
+            0.9999852180480957
+          ]
+        },
+        {
+          "id": "atomic-45-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.785096734849503e-06,
+            0.999995231628418
+          ]
+        },
+        {
+          "id": "atomic-46-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.3007139386900235e-05,
+            0.999987006187439
+          ]
+        },
+        {
+          "id": "atomic-46-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            5.8291272580390796e-05,
+            0.9999417066574097
+          ]
+        },
+        {
+          "id": "atomic-47-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.222832558298251e-06,
+            0.9999958276748657
+          ]
+        },
+        {
+          "id": "atomic-47-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.0129998372576665e-05,
+            0.9999898672103882
+          ]
+        }
+      ]
+    },
+    "text_facts": {
+      "n": 32,
+      "accuracy": 1.0,
+      "predictions": [
+        {
+          "id": "atomic-32-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.2661327527098993e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-32-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.7010111230036113e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-33-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.1176099142548666e-14
+          ]
+        },
+        {
+          "id": "atomic-33-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.2664170859449757e-14
+          ]
+        },
+        {
+          "id": "atomic-34-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.2661327527098993e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-34-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.4350377982273732e-14
+          ]
+        },
+        {
+          "id": "atomic-35-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.2664170859449757e-14
+          ]
+        },
+        {
+          "id": "atomic-35-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.8823539150076016e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-36-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.2661327527098993e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-36-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.7010111230036113e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-37-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            5.384943792957619e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-37-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.1176099142548666e-14
+          ]
+        },
+        {
+          "id": "atomic-38-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.193792394521084e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-38-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.7010111230036113e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-39-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.6261097964031038e-14
+          ]
+        },
+        {
+          "id": "atomic-39-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.6261097964031038e-14
+          ]
+        },
+        {
+          "id": "atomic-40-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.1176099142548666e-14
+          ]
+        },
+        {
+          "id": "atomic-40-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.4350377982273732e-14
+          ]
+        },
+        {
+          "id": "atomic-41-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.1176099142548666e-14
+          ]
+        },
+        {
+          "id": "atomic-41-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.1176099142548666e-14
+          ]
+        },
+        {
+          "id": "atomic-42-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.6261097964031038e-14
+          ]
+        },
+        {
+          "id": "atomic-42-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.752199068286389e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-43-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.7010111230036113e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-43-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.7010111230036113e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-44-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.193792394521084e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-44-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.4350377982273732e-14
+          ]
+        },
+        {
+          "id": "atomic-45-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            5.384943792957619e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-45-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.4350377982273732e-14
+          ]
+        },
+        {
+          "id": "atomic-46-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            1.4350377982273732e-14
+          ]
+        },
+        {
+          "id": "atomic-46-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.7010111230036113e-13,
+            1.0
+          ]
+        },
+        {
+          "id": "atomic-47-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            1.0,
+            7.681206473826585e-15
+          ]
+        },
+        {
+          "id": "atomic-47-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.8823539150076016e-13,
+            1.0
+          ]
+        }
+      ]
+    },
+    "memory": {
+      "n": 32,
+      "accuracy": 0.5,
+      "predictions": [
+        {
+          "id": "atomic-32-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            7.889268090366386e-06,
+            0.9999921321868896
+          ]
+        },
+        {
+          "id": "atomic-32-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.535624637152068e-05,
+            0.9999645948410034
+          ]
+        },
+        {
+          "id": "atomic-33-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            7.889268090366386e-06,
+            0.9999921321868896
+          ]
+        },
+        {
+          "id": "atomic-33-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            5.8291272580390796e-05,
+            0.9999417066574097
+          ]
+        },
+        {
+          "id": "atomic-34-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.539786823443137e-05,
+            0.9999545812606812
+          ]
+        },
+        {
+          "id": "atomic-34-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.6701427739462815e-05,
+            0.9999833106994629
+          ]
+        },
+        {
+          "id": "atomic-35-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.1444955564220436e-05,
+            0.9999785423278809
+          ]
+        },
+        {
+          "id": "atomic-35-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.07585818320512772,
+            0.9241418242454529
+          ]
+        },
+        {
+          "id": "atomic-36-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.1444955564220436e-05,
+            0.9999785423278809
+          ]
+        },
+        {
+          "id": "atomic-36-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.539786823443137e-05,
+            0.9999545812606812
+          ]
+        },
+        {
+          "id": "atomic-37-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            8.939696272136644e-06,
+            0.9999910593032837
+          ]
+        },
+        {
+          "id": "atomic-37-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.0002611903182696551,
+            0.9997387528419495
+          ]
+        },
+        {
+          "id": "atomic-38-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.3709570794162573e-06,
+            0.9999985694885254
+          ]
+        },
+        {
+          "id": "atomic-38-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.00015843620349187404,
+            0.999841570854187
+          ]
+        },
+        {
+          "id": "atomic-39-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.9023126444371883e-06,
+            0.9999971389770508
+          ]
+        },
+        {
+          "id": "atomic-39-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.0129998372576665e-05,
+            0.9999898672103882
+          ]
+        },
+        {
+          "id": "atomic-40-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.1444955564220436e-05,
+            0.9999785423278809
+          ]
+        },
+        {
+          "id": "atomic-40-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.4738983736606315e-05,
+            0.9999852180480957
+          ]
+        },
+        {
+          "id": "atomic-41-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.4738983736606315e-05,
+            0.9999852180480957
+          ]
+        },
+        {
+          "id": "atomic-41-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            3.726640443346696e-06,
+            0.9999963045120239
+          ]
+        },
+        {
+          "id": "atomic-42-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.00012339463864918798,
+            0.9998766183853149
+          ]
+        },
+        {
+          "id": "atomic-42-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.3007139386900235e-05,
+            0.999987006187439
+          ]
+        },
+        {
+          "id": "atomic-43-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.002472624182701111,
+            0.9975274205207825
+          ]
+        },
+        {
+          "id": "atomic-43-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            9.610244887880981e-05,
+            0.9999039173126221
+          ]
+        },
+        {
+          "id": "atomic-44-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.785096734849503e-06,
+            0.999995231628418
+          ]
+        },
+        {
+          "id": "atomic-44-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            9.610244887880981e-05,
+            0.9999039173126221
+          ]
+        },
+        {
+          "id": "atomic-45-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.047425881028175354,
+            0.9525741338729858
+          ]
+        },
+        {
+          "id": "atomic-45-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            6.144177405076334e-06,
+            0.9999938011169434
+          ]
+        },
+        {
+          "id": "atomic-46-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            0.9626730680465698,
+            0.037326887249946594
+          ]
+        },
+        {
+          "id": "atomic-46-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "positive",
+          "correct": false,
+          "probabilities": [
+            1.0,
+            9.237455245170167e-09
+          ]
+        },
+        {
+          "id": "atomic-47-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            8.939696272136644e-06,
+            0.9999910593032837
+          ]
+        },
+        {
+          "id": "atomic-47-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.0129998372576665e-05,
+            0.9999898672103882
+          ]
+        }
+      ]
+    },
+    "shuffled_memory": {
+      "n": 32,
+      "accuracy": 0.5625,
+      "predictions": [
+        {
+          "id": "atomic-32-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            7.889268090366386e-06,
+            0.9999921321868896
+          ]
+        },
+        {
+          "id": "atomic-32-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.535624637152068e-05,
+            0.9999645948410034
+          ]
+        },
+        {
+          "id": "atomic-33-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.785096734849503e-06,
+            0.999995231628418
+          ]
+        },
+        {
+          "id": "atomic-33-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.8925153199234046e-05,
+            0.9999810457229614
+          ]
+        },
+        {
+          "id": "atomic-34-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            4.222832558298251e-06,
+            0.9999958276748657
+          ]
+        },
+        {
+          "id": "atomic-34-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.8925153199234046e-05,
+            0.9999810457229614
+          ]
+        },
+        {
+          "id": "atomic-35-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.1444955564220436e-05,
+            0.9999785423278809
+          ]
+        },
+        {
+          "id": "atomic-35-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            7.484624075004831e-05,
+            0.9999251365661621
+          ]
+        },
+        {
+          "id": "atomic-36-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.1444955564220436e-05,
+            0.9999785423278809
+          ]
+        },
+        {
+          "id": "atomic-36-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.18242552876472473,
+            0.8175744414329529
+          ]
+        },
+        {
+          "id": "atomic-37-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            2.7535703338799067e-05,
+            0.9999724626541138
+          ]
+        },
+        {
+          "id": "atomic-37-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            9.610244887880981e-05,
+            0.9999039173126221
+          ]
+        },
+        {
+          "id": "atomic-38-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.553498805151321e-06,
+            0.9999984502792358
+          ]
+        },
+        {
+          "id": "atomic-38-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.2887476208998123e-06,
+            0.9999966621398926
+          ]
+        },
+        {
+          "id": "atomic-39-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.9947310647694394e-06,
+            0.9999979734420776
+          ]
+        },
+        {
+          "id": "atomic-39-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            0.9999998807907104,
+            1.444980597398171e-07
+          ]
+        },
+        {
+          "id": "atomic-40-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.222832558298251e-06,
+            0.9999958276748657
+          ]
+        },
+        {
+          "id": "atomic-40-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            0.9999971389770508,
+            2.9023126444371883e-06
+          ]
+        },
+        {
+          "id": "atomic-41-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            1.6701427739462815e-05,
+            0.9999833106994629
+          ]
+        },
+        {
+          "id": "atomic-41-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            2.9023126444371883e-06,
+            0.9999971389770508
+          ]
+        },
+        {
+          "id": "atomic-42-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            4.539786823443137e-05,
+            0.9999545812606812
+          ]
+        },
+        {
+          "id": "atomic-42-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.3007139386900235e-05,
+            0.999987006187439
+          ]
+        },
+        {
+          "id": "atomic-43-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            3.2887476208998123e-06,
+            0.9999966621398926
+          ]
+        },
+        {
+          "id": "atomic-43-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.02931222878396511,
+            0.970687747001648
+          ]
+        },
+        {
+          "id": "atomic-44-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            5.422218237072229e-06,
+            0.9999946355819702
+          ]
+        },
+        {
+          "id": "atomic-44-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            0.0005527787725441158,
+            0.9994471669197083
+          ]
+        },
+        {
+          "id": "atomic-45-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "positive",
+          "correct": false,
+          "probabilities": [
+            0.998498797416687,
+            0.0015011823270469904
+          ]
+        },
+        {
+          "id": "atomic-45-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            7.889268090366386e-06,
+            0.9999921321868896
+          ]
+        },
+        {
+          "id": "atomic-46-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "positive",
+          "correct": true,
+          "probabilities": [
+            0.9999039173126221,
+            9.610244887880981e-05
+          ]
+        },
+        {
+          "id": "atomic-46-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            0.004070138558745384,
+            0.9959298968315125
+          ]
+        },
+        {
+          "id": "atomic-47-0",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "positive",
+          "prediction": "negative",
+          "correct": false,
+          "probabilities": [
+            6.144177405076334e-06,
+            0.9999938011169434
+          ]
+        },
+        {
+          "id": "atomic-47-1",
+          "kind": "atomic",
+          "split": "test",
+          "expected": "negative",
+          "prediction": "negative",
+          "correct": true,
+          "probabilities": [
+            1.0129998372576665e-05,
+            0.9999898672103882
+          ]
+        }
+      ]
+    }
+  },
+  "protocol_audit": {
+    "heldout_composed_answers_in_training": 0,
+    "heldout_atomic_premises_available": true,
+    "training_components_disjoint_from_heldout_composition": true,
+    "scope": "new compositions of memorized edges; supplied paths; stipulated sign algebra",
+    "not_established": [
+      "hidden-path discovery",
+      "biological causality",
+      "drug efficacy"
+    ]
+  },
+  "trainable_parameters": 10753,
+  "test_unique_questions": 16,
+  "test_components": 16,
+  "scoring": "argmax over original LM logits for single-token A/B labels; not free-form generation",
+  "paraphrase_memory": {
+    "n": 16,
+    "accuracy": 0.375,
+    "predictions": [
+      {
+        "id": "compose-32",
+        "kind": "compose",
+        "split": "test",
+        "expected": "positive",
+        "prediction": "negative",
+        "correct": false,
+        "probabilities": [
+          0.0009110511164180934,
+          0.9990890026092529
+        ]
+      },
+      {
+        "id": "compose-33",
+        "kind": "compose",
+        "split": "test",
+        "expected": "positive",
+        "prediction": "negative",
+        "correct": false,
+        "probabilities": [
+          0.3208213150501251,
+          0.6791787147521973
+        ]
+      },
+      {
+        "id": "compose-34",
+        "kind": "compose",
+        "split": "test",
+        "expected": "negative",
+        "prediction": "positive",
+        "correct": false,
+        "probabilities": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "id": "compose-35",
+        "kind": "compose",
+        "split": "test",
+        "expected": "negative",
+        "prediction": "positive",
+        "correct": false,
+        "probabilities": [
+          0.9626730680465698,
+          0.037326887249946594
+        ]
+      },
+      {
+        "id": "compose-36",
+        "kind": "compose",
+        "split": "test",
+        "expected": "positive",
+        "prediction": "negative",
+        "correct": false,
+        "probabilities": [
+          0.07585818320512772,
+          0.9241418242454529
+        ]
+      },
+      {
+        "id": "compose-37",
+        "kind": "compose",
+        "split": "test",
+        "expected": "negative",
+        "prediction": "negative",
+        "correct": true,
+        "probabilities": [
+          0.18242552876472473,
+          0.8175744414329529
+        ]
+      },
+      {
+        "id": "compose-38",
+        "kind": "compose",
+        "split": "test",
+        "expected": "positive",
+        "prediction": "positive",
+        "correct": true,
+        "probabilities": [
+          0.9997965693473816,
+          0.00020342697098385543
+        ]
+      },
+      {
+        "id": "compose-39",
+        "kind": "compose",
+        "split": "test",
+        "expected": "positive",
+        "prediction": "negative",
+        "correct": false,
+        "probabilities": [
+          0.01098694559186697,
+          0.9890130758285522
+        ]
+      },
+      {
+        "id": "compose-40",
+        "kind": "compose",
+        "split": "test",
+        "expected": "positive",
+        "prediction": "negative",
+        "correct": false,
+        "probabilities": [
+          0.022977374494075775,
+          0.977022647857666
+        ]
+      },
+      {
+        "id": "compose-41",
+        "kind": "compose",
+        "split": "test",
+        "expected": "positive",
+        "prediction": "negative",
+        "correct": false,
+        "probabilities": [
+          0.001926734927110374,
+          0.9980732202529907
+        ]
+      },
+      {
+        "id": "compose-42",
+        "kind": "compose",
+        "split": "test",
+        "expected": "negative",
+        "prediction": "negative",
+        "correct": true,
+        "probabilities": [
+          0.11920292675495148,
+          0.8807970285415649
+        ]
+      },
+      {
+        "id": "compose-43",
+        "kind": "compose",
+        "split": "test",
+        "expected": "positive",
+        "prediction": "positive",
+        "correct": true,
+        "probabilities": [
+          0.9999545812606812,
+          4.539786823443137e-05
+        ]
+      },
+      {
+        "id": "compose-44",
+        "kind": "compose",
+        "split": "test",
+        "expected": "negative",
+        "prediction": "negative",
+        "correct": true,
+        "probabilities": [
+          0.004070138558745384,
+          0.9959298968315125
+        ]
+      },
+      {
+        "id": "compose-45",
+        "kind": "compose",
+        "split": "test",
+        "expected": "negative",
+        "prediction": "positive",
+        "correct": false,
+        "probabilities": [
+          0.9999833106994629,
+          1.6701427739462815e-05
+        ]
+      },
+      {
+        "id": "compose-46",
+        "kind": "compose",
+        "split": "test",
+        "expected": "negative",
+        "prediction": "positive",
+        "correct": false,
+        "probabilities": [
+          1.0,
+          4.5990586339250683e-10
+        ]
+      },
+      {
+        "id": "compose-47",
+        "kind": "compose",
+        "split": "test",
+        "expected": "negative",
+        "prediction": "negative",
+        "correct": true,
+        "probabilities": [
+          0.037326887249946594,
+          0.9626730680465698
+        ]
+      }
+    ]
+  },
+  "backbone": {
+    "before_sha256": "dd838032651e958096f3d4df6fd855c73d77bf307a99e577f37fba59adf58c09",
+    "after_sha256": "dd838032651e958096f3d4df6fd855c73d77bf307a99e577f37fba59adf58c09",
+    "unchanged": true
+  },
+  "runtime": {
+    "seconds": 141.60817313194275,
+    "peak_memory_bytes": 10032810204
+  },
+  "interpretation": "Pilot evidence only. Correct closed-set sign composition on supplied synthetic paths is not hidden-path discovery, novel biological knowledge, or clinical validation. A frozen backbone does not guarantee unchanged model behavior when its memory is enabled."
+}

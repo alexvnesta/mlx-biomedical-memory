@@ -1,0 +1,5 @@
+{
+  "step": 240,
+  "validation_accuracy": 0.625,
+  "selection_uses_test": false
+}

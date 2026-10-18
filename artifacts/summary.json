@@ -1,0 +1,146 @@
+[
+  {
+    "run": "pilot-bottleneck-seed17",
+    "seed": 17,
+    "dimension": 1,
+    "steps": 480,
+    "arax": false,
+    "initialization": "random",
+    "composition": {
+      "base": 0.5,
+      "text_facts": 0.75,
+      "memory": 0.75,
+      "shuffled_memory": 0.5
+    },
+    "memory_atomic_recall": 0.625,
+    "paraphrase": 0.5,
+    "test_n": 16,
+    "test_components": null,
+    "unique_questions": null,
+    "backbone_unchanged": true,
+    "runtime": {
+      "seconds": 181.9005937576294,
+      "peak_memory_bytes": 9740203150
+    }
+  },
+  {
+    "run": "pilot-mcq-v2-seed17",
+    "seed": 17,
+    "dimension": 64,
+    "steps": 240,
+    "arax": false,
+    "initialization": "random",
+    "composition": {
+      "base": 0.5,
+      "text_facts": 0.75,
+      "memory": 0.5,
+      "shuffled_memory": 0.375
+    },
+    "memory_atomic_recall": 0.75,
+    "paraphrase": 0.375,
+    "test_n": 16,
+    "test_components": null,
+    "unique_questions": null,
+    "backbone_unchanged": true,
+    "runtime": {
+      "seconds": 75.96527314186096,
+      "peak_memory_bytes": 9748507678
+    }
+  },
+  {
+    "run": "replication-seed23",
+    "seed": 23,
+    "dimension": 1,
+    "steps": 480,
+    "arax": false,
+    "initialization": "random",
+    "composition": {
+      "base": 0.5,
+      "text_facts": 0.75,
+      "memory": 0.625,
+      "shuffled_memory": 0.4375
+    },
+    "memory_atomic_recall": 0.5,
+    "paraphrase": 0.375,
+    "test_n": 16,
+    "test_components": 16,
+    "unique_questions": 16,
+    "backbone_unchanged": true,
+    "runtime": {
+      "seconds": 143.22216510772705,
+      "peak_memory_bytes": 10013219820
+    }
+  },
+  {
+    "run": "replication-seed42",
+    "seed": 42,
+    "dimension": 1,
+    "steps": 480,
+    "arax": false,
+    "initialization": "random",
+    "composition": {
+      "base": 0.5,
+      "text_facts": 0.75,
+      "memory": 0.5,
+      "shuffled_memory": 0.5625
+    },
+    "memory_atomic_recall": 0.5625,
+    "paraphrase": 0.4375,
+    "test_n": 16,
+    "test_components": 16,
+    "unique_questions": 16,
+    "backbone_unchanged": true,
+    "runtime": {
+      "seconds": 168.29225397109985,
+      "peak_memory_bytes": 10041613916
+    }
+  },
+  {
+    "run": "replication-seed71",
+    "seed": 71,
+    "dimension": 1,
+    "steps": 480,
+    "arax": false,
+    "initialization": "random",
+    "composition": {
+      "base": 0.5,
+      "text_facts": 0.75,
+      "memory": 0.4375,
+      "shuffled_memory": 0.625
+    },
+    "memory_atomic_recall": 0.5,
+    "paraphrase": 0.375,
+    "test_n": 16,
+    "test_components": 16,
+    "unique_questions": 16,
+    "backbone_unchanged": true,
+    "runtime": {
+      "seconds": 141.60817313194275,
+      "peak_memory_bytes": 10032810204
+    }
+  },
+  {
+    "run": "smoke-seed17",
+    "seed": 17,
+    "dimension": 64,
+    "steps": 4,
+    "arax": false,
+    "initialization": "random",
+    "composition": {
+      "base": 0.5,
+      "text_facts": 0.5,
+      "memory": 0.5,
+      "shuffled_memory": 0.5
+    },
+    "memory_atomic_recall": 0.5,
+    "paraphrase": 0.5,
+    "test_n": 4,
+    "test_components": null,
+    "unique_questions": null,
+    "backbone_unchanged": true,
+    "runtime": {
+      "seconds": 13.962632894515991,
+      "peak_memory_bytes": 8464948178
+    }
+  }
+]
