@@ -1,0 +1,1 @@
+Selected MQuAKE-CF-3k-v2 cases and derived counterfactual questions come from Princeton NLP/MQuAKE at commit fb43dadc2d8cd19d08ce81c63d957b59deb3f3cd, copyright 2023 Princeton Natural Language Processing, under the MIT license reproduced here. https://github.com/princeton-nlp/MQuAKE

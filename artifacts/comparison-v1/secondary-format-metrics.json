@@ -1,0 +1,62 @@
+{
+  "base": {
+    "n": 36,
+    "correct": 0,
+    "accuracy": 0.0,
+    "median_seconds": 0.8859220209997147
+  },
+  "shuffled": {
+    "n": 36,
+    "correct": 0,
+    "accuracy": 0.0,
+    "median_seconds": 1.4936018750086077
+  },
+  "memory": {
+    "n": 36,
+    "correct": 1,
+    "accuracy": 0.027777777777777776,
+    "median_seconds": 1.3143338334994041
+  },
+  "memory_cached": {
+    "n": 36,
+    "correct": 2,
+    "accuracy": 0.05555555555555555,
+    "median_seconds": 1.0545578749952256
+  },
+  "bm25": {
+    "n": 36,
+    "correct": 19,
+    "accuracy": 0.5277777777777778,
+    "median_seconds": 0.7528336664909148
+  },
+  "dense": {
+    "n": 36,
+    "correct": 10,
+    "accuracy": 0.2777777777777778,
+    "median_seconds": 1.0330855830034125
+  },
+  "hybrid": {
+    "n": 36,
+    "correct": 10,
+    "accuracy": 0.2777777777777778,
+    "median_seconds": 1.083576687000459
+  },
+  "kg": {
+    "n": 36,
+    "correct": 36,
+    "accuracy": 1.0,
+    "median_seconds": 0.7389964999965741
+  },
+  "kg_cached": {
+    "n": 36,
+    "correct": 36,
+    "accuracy": 1.0,
+    "median_seconds": 0.8288711040004273
+  },
+  "oracle": {
+    "n": 36,
+    "correct": 36,
+    "accuracy": 1.0,
+    "median_seconds": 0.7450503744985326
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "rows": 5,
+  "reason": "The intended complete-label prefix metric must accept punctuation such as a comma after the label, while rejecting longer labels such as Quartzoid for Quartz.",
+  "raw_predictions_retained": true,
+  "strict_and_primary_scores_unchanged": true
+}

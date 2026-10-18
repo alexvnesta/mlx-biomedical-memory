@@ -1,0 +1,9 @@
+{
+  "rows": 6,
+  "fields": [
+    "needed_ids",
+    "support_coverage"
+  ],
+  "raw_answers_and_scores_unchanged": true,
+  "reason": "Sequential composition support IDs originally retained the initial gene fact. Corrected from the stipulated phase target. Raw predictions are retained."
+}

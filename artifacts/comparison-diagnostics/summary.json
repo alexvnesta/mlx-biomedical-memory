@@ -1,0 +1,37 @@
+{
+  "completed": true,
+  "rows": 98,
+  "relation_fit_seconds": 123.04710691700166,
+  "allocation": {
+    "target_rows": 40,
+    "keys": 6,
+    "condition_number": 716.3603515625,
+    "calibration_documents": 4,
+    "allocation_mse": 0.03814772889018059
+  },
+  "shared_subject_keys": [
+    {
+      "subject": "Entity Mira Tovak",
+      "first_fact": "stress-0-gene",
+      "second_fact": "stress-0-disease",
+      "first_keys": 3,
+      "second_keys": 3,
+      "shared_keys": 3
+    },
+    {
+      "subject": "Entity Sova Trevik",
+      "first_fact": "stress-1-gene",
+      "second_fact": "stress-1-disease",
+      "first_keys": 3,
+      "second_keys": 3,
+      "shared_keys": 3
+    }
+  ],
+  "peak_metal_gb": 39.025147198,
+  "exact_relation_kg_answers": {
+    "stress-0-gene": "Gene Neral Vosk",
+    "stress-0-disease": "Disease Cedar",
+    "stress-1-gene": "Gene Pavor Kelmic",
+    "stress-1-disease": "Disease Quartz"
+  }
+}

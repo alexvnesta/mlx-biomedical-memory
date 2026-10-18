@@ -1,0 +1,1 @@
+GradientSafeRouter in engram_poc/longcat_editor.py adapts the LongCat inference router from MLX-LM 0.31.3, copyright 2023 Apple Inc., under the MIT license reproduced here. It adds stop_gradient to discrete expert indices and preserves the native forward computation. Source: https://github.com/ml-explore/mlx-lm

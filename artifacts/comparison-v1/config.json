@@ -1,0 +1,46 @@
+{
+  "model": "mlx-community/LongCat-Flash-Lite-4bit",
+  "model_revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "dataset_sha256": "baff6d7e02e578fbfc15339fed15554cf71d49ed8ce95dfd20a26ac837500757",
+  "source_sha256": "168d4bb1a4cd594e8bf851a820a7c2a89a3bd69913c9482c07324077a3d4b255",
+  "steps": 25,
+  "methods": [
+    "base",
+    "oracle",
+    "kg",
+    "kg_cached",
+    "bm25",
+    "dense",
+    "hybrid",
+    "memory",
+    "memory_cached",
+    "shuffled"
+  ],
+  "seed": 91,
+  "started_utc": "2026-10-18T19:59:19.552873+00:00",
+  "mlx": "0.32.4",
+  "mlx_lm": "0.31.3",
+  "protocol": {
+    "steps": 25,
+    "lr": 0.5,
+    "contexts": [
+      "{}",
+      "This reference states: {}"
+    ],
+    "expressions": "canonical plus three fixed prefix variants plus supplied atomic question",
+    "fitting": "atomic targets only; no composed targets or test queries in optimization",
+    "arax_scope": "anonymized functional selected-neighbor projection of retained records; not biological causality",
+    "mquake_scope": "fictional counterfactual facts, not current-world truth",
+    "precision": "4-bit frozen native LongCat; newly fitted BF16 additive residuals"
+  },
+  "max_generated_tokens": {
+    "standard": 32,
+    "cot": 128
+  },
+  "caveats": [
+    "Local calibration instead of Wikipedia frequency cache",
+    "Fixed hand-constructed atomic expressions instead of model-generated expressions",
+    "Tiny exploratory selected-case comparison; not clinical validation",
+    "KG gets normalized entity and hop budget; no learned query planner evaluated"
+  ]
+}

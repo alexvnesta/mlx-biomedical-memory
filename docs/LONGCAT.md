@@ -63,8 +63,9 @@ uv run python scripts/run_longcat.py --cases 30 --questions-per-case 3 \
   --output runs/longcat-mquake-30
 ```
 
-PyTorch is needed only to convert the upstream checkpoint in a separate process.
-The inference process uses MLX. Model loading uses the built-in MLX architecture;
+For this replay, PyTorch converts the upstream checkpoint in a separate process.
+The LongCat inference process uses MLX. The newer comparison also uses a small
+PyTorch BGE encoder on CPU for actual retrieval. Model loading uses the built-in MLX architecture;
 it does not execute the model repository's remote Python files.
 The serialized fast tokenizer is loaded directly: generic `AutoTokenizer` would
 otherwise try to resolve LongCat's custom PyTorch configuration, which is not
@@ -104,18 +105,19 @@ not medical correctness or current-world truth. The text condition supplies edit
 facts, not every premise needed in a multi-hop answer, and is not actual retrieval.
 Condition order and tiny sample size make timing exploratory.
 
-## Limits and next gate
+## Scope of this replay and the subsequent comparison
 
-This implements **released-checkpoint inference**, not the EngramEdit optimization
-algorithm. Computing new targets, obtaining expression/frequency resources,
-solving regularized joint updates, and measuring update locality remain separate
-work. Published MQuAKE edits must never be presented as a biomedical knowledge
-cartridge. A biomedical experiment must start from the unedited LongCat base and
-learn separately versioned edits from reviewed, relation-specific evidence.
+This replay implements **released-checkpoint inference**. The subsequent
+[controlled comparison](COMPARISON.md) implements fresh target optimization and
+joint allocation in `engram_poc/longcat_editor.py`, starting from the native base.
+It uses fixed atomic expressions and local frequency calibration, rather than
+claiming the paper's generated expression/context and Wikipedia setup.
+Published MQuAKE edits are not a biomedical knowledge cartridge.
 
-Before reporting an advantage, extend to all questions, enough independent cases,
-locality/general-capability tests, matched KG/RAG controls, and memory/update costs.
-The earlier Qwen results are retained unchanged and are not pooled with this task.
+The comparison measures bounded locality, matched KG/RAG controls and update
+costs. Its small case count and selected-neighbor task still cannot establish
+clinical utility or quality at biomedical scale. The earlier Qwen results are
+retained unchanged and are not pooled with either LongCat task.
 
 References: [EngramEdit paper](https://arxiv.org/abs/2610.10533),
 [authors' code](https://github.com/ModalityDance/EngramEdit),

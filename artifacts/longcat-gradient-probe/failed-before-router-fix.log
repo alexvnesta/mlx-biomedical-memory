@@ -1,0 +1,8 @@
+Loading model
+Traceback (most recent call last):
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/probe_longcat_gradient.py", line 26, in <module>
+    result=fit_target(model,memory,tokenizer,request,steps=3,log=record)
+  File "/Users/alex/Documents/ChatGPT/Engrams/engram_poc/longcat_editor.py", line 170, in fit_target
+    value, derivative = mx.value_and_grad(rewriting_loss)(delta, ids, position, offset)
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: [gather_axis] Cannot calculate VJP with respect to indices. Use stop_gradient on indices to stop gradients from being computed.

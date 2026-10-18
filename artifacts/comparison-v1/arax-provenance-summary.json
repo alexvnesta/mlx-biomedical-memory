@@ -1,0 +1,456 @@
+{
+  "arax-fabry-disease-gene": {
+    "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+    "source_edge_sha256": "396e405845a69beeb7119ce88884506c05567c652823a9af1123803759c0c272",
+    "predicate": "biolink:associated_with",
+    "qualifiers": [
+      {
+        "qualifier_type_id": "biolink:subject_form_or_variant_qualifier",
+        "qualifier_value": "genetic_variant_form"
+      },
+      {
+        "qualifier_type_id": "biolink:disease_context_qualifier",
+        "qualifier_value": "OMIM:301500"
+      },
+      {
+        "qualifier_type_id": "biolink:qualified_predicate",
+        "qualifier_value": "biolink:causes"
+      }
+    ],
+    "sources": [
+      {
+        "resource_id": "infores:dogpark-tier0",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:hpo-annotations"
+        ]
+      },
+      {
+        "resource_id": "infores:hpo-annotations",
+        "resource_role": "primary_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": []
+      },
+      {
+        "resource_id": "infores:retriever",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:dogpark-tier0"
+        ]
+      },
+      {
+        "resource_id": "infores:arax",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:retriever"
+        ]
+      }
+    ],
+    "source_direction": "gene_to_disease",
+    "benchmark_relation": "selected_disease",
+    "warning": "Projection of a retained record, not a causal or treatment assertion; original identifiers remain local"
+  },
+  "arax-fabry-disease-chemical-0": {
+    "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+    "source_edge_sha256": "c9a4065dda0e926818d1301fe3058c768e6d320e4421a98322ee93a67fa5e07e",
+    "predicate": "biolink:affects",
+    "qualifiers": [
+      {
+        "qualifier_type_id": "biolink:species_context_qualifier",
+        "qualifier_value": "NCBITaxon:9606"
+      }
+    ],
+    "sources": [
+      {
+        "resource_id": "infores:dogpark-tier0",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:chembl"
+        ]
+      },
+      {
+        "resource_id": "infores:chembl",
+        "resource_role": "primary_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": []
+      },
+      {
+        "resource_id": "infores:retriever",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:dogpark-tier0"
+        ]
+      },
+      {
+        "resource_id": "infores:arax",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:retriever"
+        ]
+      }
+    ],
+    "source_direction": "chemical_to_gene",
+    "benchmark_relation": "selected_gene",
+    "warning": "Projection of a retained record, not a causal or treatment assertion; original identifiers remain local"
+  },
+  "arax-fabry-disease-chemical-1": {
+    "snapshot_sha256": "4cefdef67090219d1075a2576d2bff377c64df8629844f4e60da29738b9ab656",
+    "source_edge_sha256": "35fc65232bcd74e9910d83cc0754f9fa0397ecc8499ca5a6f7035cd21e9d64ba",
+    "predicate": "biolink:directly_physically_interacts_with",
+    "qualifiers": [],
+    "sources": [
+      {
+        "resource_id": "infores:dogpark-tier0",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:bindingdb"
+        ]
+      },
+      {
+        "resource_id": "infores:bindingdb",
+        "resource_role": "primary_knowledge_source",
+        "source_record_urls": [
+          "http://www.bindingdb.org/rwd/jsp/dbsearch/PrimarySearch_ki.jsp?energyterm=kJ/mole&tag=r21&monomerid=50241865&enzyme=Alpha-galactosidase+A&column=ki&startPg=0&Increment=50&submit=Search"
+        ],
+        "upstream_resource_ids": [
+          "infores:chembl"
+        ]
+      },
+      {
+        "resource_id": "infores:chembl",
+        "resource_role": "supporting_data_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": []
+      },
+      {
+        "resource_id": "infores:retriever",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:dogpark-tier0"
+        ]
+      },
+      {
+        "resource_id": "infores:arax",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:retriever"
+        ]
+      }
+    ],
+    "source_direction": "chemical_to_gene",
+    "benchmark_relation": "selected_gene",
+    "warning": "Projection of a retained record, not a causal or treatment assertion; original identifiers remain local"
+  },
+  "arax-gaucher-disease-gene": {
+    "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+    "source_edge_sha256": "b10e71a30b312bd8b96055fafc5b576f4ed17e28b2f38b55c6da2b03db59b9df",
+    "predicate": "biolink:in_clinical_trials_for",
+    "qualifiers": null,
+    "sources": [
+      {
+        "resource_id": "infores:dogpark-tier0",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:obie"
+        ]
+      },
+      {
+        "resource_id": "infores:obie",
+        "resource_role": "primary_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": []
+      },
+      {
+        "resource_id": "infores:retriever",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:dogpark-tier0"
+        ]
+      },
+      {
+        "resource_id": "infores:arax",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:retriever"
+        ]
+      }
+    ],
+    "source_direction": "gene_to_disease",
+    "benchmark_relation": "selected_disease",
+    "warning": "Projection of a retained record, not a causal or treatment assertion; original identifiers remain local"
+  },
+  "arax-gaucher-disease-chemical-0": {
+    "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+    "source_edge_sha256": "51db4d96dbd01cab2d91ed743712d2e4dcbdce6b1cd74bcaf28693b02e6f5ae9",
+    "predicate": "biolink:affects",
+    "qualifiers": [
+      {
+        "qualifier_type_id": "biolink:species_context_qualifier",
+        "qualifier_value": "NCBITaxon:9606"
+      },
+      {
+        "qualifier_type_id": "biolink:qualified_predicate",
+        "qualifier_value": "biolink:causes"
+      },
+      {
+        "qualifier_type_id": "biolink:object_aspect_qualifier",
+        "qualifier_value": "activity"
+      },
+      {
+        "qualifier_type_id": "biolink:object_direction_qualifier",
+        "qualifier_value": "decreased"
+      }
+    ],
+    "sources": [
+      {
+        "resource_id": "infores:dogpark-tier0",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:ctd"
+        ]
+      },
+      {
+        "resource_id": "infores:ctd",
+        "resource_role": "primary_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": []
+      },
+      {
+        "resource_id": "infores:retriever",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:dogpark-tier0"
+        ]
+      },
+      {
+        "resource_id": "infores:arax",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:retriever"
+        ]
+      }
+    ],
+    "source_direction": "chemical_to_gene",
+    "benchmark_relation": "selected_gene",
+    "warning": "Projection of a retained record, not a causal or treatment assertion; original identifiers remain local"
+  },
+  "arax-gaucher-disease-chemical-1": {
+    "snapshot_sha256": "8f663a252b752af5dace7fea51e9b119a067969897a0188e8c264c12c644f0e7",
+    "source_edge_sha256": "f3c833b4d764325a313f3c5a1c0d08f44844d058fda60d2ea7d334c1d6a57177",
+    "predicate": "biolink:directly_physically_interacts_with",
+    "qualifiers": [],
+    "sources": [
+      {
+        "resource_id": "infores:dogpark-tier0",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:bindingdb"
+        ]
+      },
+      {
+        "resource_id": "infores:bindingdb",
+        "resource_role": "primary_knowledge_source",
+        "source_record_urls": [
+          "http://www.bindingdb.org/rwd/jsp/dbsearch/PrimarySearch_ki.jsp?energyterm=kJ/mole&tag=r21&monomerid=18358&enzyme=Lysosomal+acid+glucosylceramidase&column=ki&startPg=0&Increment=50&submit=Search"
+        ],
+        "upstream_resource_ids": [
+          "infores:chembl"
+        ]
+      },
+      {
+        "resource_id": "infores:chembl",
+        "resource_role": "supporting_data_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": []
+      },
+      {
+        "resource_id": "infores:retriever",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:dogpark-tier0"
+        ]
+      },
+      {
+        "resource_id": "infores:arax",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:retriever"
+        ]
+      }
+    ],
+    "source_direction": "chemical_to_gene",
+    "benchmark_relation": "selected_gene",
+    "warning": "Projection of a retained record, not a causal or treatment assertion; original identifiers remain local"
+  },
+  "arax-rett-syndrome-gene": {
+    "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+    "source_edge_sha256": "513d0ea4fb8e2f64031926eb0936b63a301bf48a0dc77e61e7964da6cdb80c5f",
+    "predicate": "biolink:related_to",
+    "qualifiers": [],
+    "sources": [
+      {
+        "resource_id": "infores:dogpark-tier0",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:semmeddb"
+        ]
+      },
+      {
+        "resource_id": "infores:semmeddb",
+        "resource_role": "primary_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": []
+      },
+      {
+        "resource_id": "infores:retriever",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:dogpark-tier0"
+        ]
+      },
+      {
+        "resource_id": "infores:arax",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:retriever"
+        ]
+      }
+    ],
+    "source_direction": "gene_to_disease",
+    "benchmark_relation": "selected_disease",
+    "warning": "Projection of a retained record, not a causal or treatment assertion; original identifiers remain local"
+  },
+  "arax-rett-syndrome-chemical-0": {
+    "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+    "source_edge_sha256": "4ae4ac0801219509799258a58e2576fc841a3197e530e61a11026fdf3ece83df",
+    "predicate": "biolink:affects",
+    "qualifiers": [
+      {
+        "qualifier_type_id": "biolink:species_context_qualifier",
+        "qualifier_value": "NCBITaxon:10116"
+      },
+      {
+        "qualifier_type_id": "biolink:qualified_predicate",
+        "qualifier_value": "biolink:causes"
+      },
+      {
+        "qualifier_type_id": "biolink:object_aspect_qualifier",
+        "qualifier_value": "splicing"
+      }
+    ],
+    "sources": [
+      {
+        "resource_id": "infores:dogpark-tier0",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:ctd"
+        ]
+      },
+      {
+        "resource_id": "infores:ctd",
+        "resource_role": "primary_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": []
+      },
+      {
+        "resource_id": "infores:retriever",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:dogpark-tier0"
+        ]
+      },
+      {
+        "resource_id": "infores:arax",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:retriever"
+        ]
+      }
+    ],
+    "source_direction": "chemical_to_gene",
+    "benchmark_relation": "selected_gene",
+    "warning": "Projection of a retained record, not a causal or treatment assertion; original identifiers remain local"
+  },
+  "arax-rett-syndrome-chemical-1": {
+    "snapshot_sha256": "6c179496bf5e91a3a7721c1d6d2e85ece790550325c49f0c878ebfa3826c7965",
+    "source_edge_sha256": "0a61a5af83d83373066ebecf425d0af649800c599bcbc0e249dd386da982c42f",
+    "predicate": "biolink:affects",
+    "qualifiers": [
+      {
+        "qualifier_type_id": "biolink:species_context_qualifier",
+        "qualifier_value": "NCBITaxon:10090"
+      },
+      {
+        "qualifier_type_id": "biolink:qualified_predicate",
+        "qualifier_value": "biolink:causes"
+      },
+      {
+        "qualifier_type_id": "biolink:object_aspect_qualifier",
+        "qualifier_value": "degradation"
+      },
+      {
+        "qualifier_type_id": "biolink:object_direction_qualifier",
+        "qualifier_value": "increased"
+      }
+    ],
+    "sources": [
+      {
+        "resource_id": "infores:dogpark-tier0",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:ctd"
+        ]
+      },
+      {
+        "resource_id": "infores:ctd",
+        "resource_role": "primary_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": []
+      },
+      {
+        "resource_id": "infores:retriever",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:dogpark-tier0"
+        ]
+      },
+      {
+        "resource_id": "infores:arax",
+        "resource_role": "aggregator_knowledge_source",
+        "source_record_urls": null,
+        "upstream_resource_ids": [
+          "infores:retriever"
+        ]
+      }
+    ],
+    "source_direction": "chemical_to_gene",
+    "benchmark_relation": "selected_gene",
+    "warning": "Projection of a retained record, not a causal or treatment assertion; original identifiers remain local"
+  }
+}

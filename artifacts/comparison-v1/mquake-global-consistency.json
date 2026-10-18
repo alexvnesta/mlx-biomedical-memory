@@ -1,0 +1,8 @@
+{
+  "cases": 3000,
+  "requests": 6121,
+  "unique_subject_relations": 2764,
+  "contradictory_subject_relations": 0,
+  "requests_in_conflicting_groups": 0,
+  "examples": []
+}

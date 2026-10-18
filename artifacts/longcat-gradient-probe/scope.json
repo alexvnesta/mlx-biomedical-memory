@@ -1,0 +1,6 @@
+{
+  "scope": "Engineering feasibility preflight, not a held-out benchmark",
+  "initial_failure": "MLX gather_axis integer expert selection did not have an input VJP",
+  "fix": "Stop differentiation through discrete expert IDs; retain selected score gradients",
+  "source_snapshot_not_recorded": true
+}

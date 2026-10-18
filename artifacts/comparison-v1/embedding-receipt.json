@@ -1,0 +1,15 @@
+{
+  "model": "BAAI/bge-small-en-v1.5",
+  "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "pooling": "CLS then L2 normalization",
+  "device": "CPU",
+  "dimension": 384,
+  "documents": 147,
+  "queries": 97,
+  "corpus_sha256": "baff6d7e02e578fbfc15339fed15554cf71d49ed8ce95dfd20a26ac837500757",
+  "embeddings_sha256": "d8828033a59e66d7b30e38fc9de2a1b3657b041f5a4880ea3bdf686191a29e4f",
+  "document_embedding_seconds": 0.18045970799721545,
+  "query_embedding_seconds": 0.17360079099307768,
+  "query_seconds_per_item": 0.0017896988762172957,
+  "caveat": "Query encoding is batched precomputation; online comparisons add this measured amortized CPU cost. It is not a single-query latency measurement."
+}

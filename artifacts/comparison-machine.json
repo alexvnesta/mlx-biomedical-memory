@@ -1,0 +1,21 @@
+{
+  "captured_utc": "2026-10-18T20:18:35.990629+00:00",
+  "cpu": "Apple M5 Max",
+  "unified_memory_bytes": 68719476736,
+  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "python": "3.13.7",
+  "dependencies": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.31.3",
+    "numpy": "2.5.4",
+    "torch": "2.9.1",
+    "transformers": "5.20.1",
+    "huggingface-hub": "2.2.0"
+  },
+  "swap_observation_during_quality_run": "vm.swapusage: total = 12288.00M  used = 10943.75M  free = 1344.25M  (encrypted)",
+  "gpu": {
+    "sppci_model": "Apple M5 Max",
+    "sppci_cores": "40",
+    "spdisplays_mtlgpufamilysupport": "spdisplays_metal4"
+  }
+}

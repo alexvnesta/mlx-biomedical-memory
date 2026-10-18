@@ -12,7 +12,13 @@ commit, and MQuAKE data from Princeton NLP at
 edited vectors and LongCat weights are downloaded under their separate upstream
 model licenses and are not committed to this repository.
 
-The MLX port preserves exact token-key additive residuals, EOS boundaries,
-cross-chunk suffix history, and upstream answer extraction. It does not port the
-editor's target optimization, frequency regularization, or joint solver. Replaying
-an existing edited checkpoint is distinct from learning new edits.
+The replay port preserves exact token-key additive residuals, EOS boundaries,
+cross-chunk suffix history, and upstream answer extraction. Replaying an existing
+edited checkpoint is distinct from learning new edits.
+
+`engram_poc/longcat_editor.py` additionally adapts the target optimization and
+joint regularized update allocation to a frozen 4-bit MLX backbone. It uses
+explicit fixed expression templates, two contexts and local corpus frequency
+calibration instead of the paper's full generated/Wikipedia resources. It is an
+adaptation, not an exact paper replication. GradientSafeRouter separately adapts
+MLX-LM code; attribution and license are in `third_party/mlx-lm`.

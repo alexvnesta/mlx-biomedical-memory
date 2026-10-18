@@ -1,0 +1,75 @@
+{
+  "model": "mlx-community/LongCat-Flash-Lite-4bit",
+  "revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "steps": 25,
+  "contexts": [
+    "{}",
+    "This reference states: {}"
+  ],
+  "stress_facts": [
+    {
+      "id": "stress-0-gene",
+      "subject": "Entity Mira Tovak",
+      "relation": "gene",
+      "target": "Gene Neral Vosk",
+      "prompt": "In the reference, {} has recorded gene label",
+      "question": "Which gene label does Entity Mira Tovak have in the reference?",
+      "expressions": [
+        "In the reference, {} has recorded gene label",
+        "According to the record, In the reference, {} has recorded gene label",
+        "In this reference, In the reference, {} has recorded gene label",
+        "The stored fact states that In the reference, {} has recorded gene label",
+        "Which gene label does {} have in the reference? Answer:"
+      ]
+    },
+    {
+      "id": "stress-0-disease",
+      "subject": "Entity Mira Tovak",
+      "relation": "disease",
+      "target": "Disease Cedar",
+      "prompt": "In the reference, {} has recorded disease label",
+      "question": "Which disease label does Entity Mira Tovak have in the reference?",
+      "expressions": [
+        "In the reference, {} has recorded disease label",
+        "According to the record, In the reference, {} has recorded disease label",
+        "In this reference, In the reference, {} has recorded disease label",
+        "The stored fact states that In the reference, {} has recorded disease label",
+        "Which disease label does {} have in the reference? Answer:"
+      ]
+    },
+    {
+      "id": "stress-1-gene",
+      "subject": "Entity Sova Trevik",
+      "relation": "gene",
+      "target": "Gene Pavor Kelmic",
+      "prompt": "In the reference, {} has recorded gene label",
+      "question": "Which gene label does Entity Sova Trevik have in the reference?",
+      "expressions": [
+        "In the reference, {} has recorded gene label",
+        "According to the record, In the reference, {} has recorded gene label",
+        "In this reference, In the reference, {} has recorded gene label",
+        "The stored fact states that In the reference, {} has recorded gene label",
+        "Which gene label does {} have in the reference? Answer:"
+      ]
+    },
+    {
+      "id": "stress-1-disease",
+      "subject": "Entity Sova Trevik",
+      "relation": "disease",
+      "target": "Disease Quartz",
+      "prompt": "In the reference, {} has recorded disease label",
+      "question": "Which disease label does Entity Sova Trevik have in the reference?",
+      "expressions": [
+        "In the reference, {} has recorded disease label",
+        "According to the record, In the reference, {} has recorded disease label",
+        "In this reference, In the reference, {} has recorded disease label",
+        "The stored fact states that In the reference, {} has recorded disease label",
+        "Which disease label does {} have in the reference? Answer:"
+      ]
+    }
+  ],
+  "primary_recipe_unchanged": true,
+  "status": "Exploratory diagnostics added after early primary outputs; not a preregistered independent benchmark",
+  "canonical_scoring": "Target prefix AND strict first-line label reported separately; no rescoring of primary outputs",
+  "source_sha256": "3ab0c888f4f94d4725d1454723482835ea0a3ae825f603c621e879aa92d069a3"
+}

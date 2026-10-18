@@ -1,0 +1,37 @@
+{
+  "completed_cells": 1633,
+  "unique_cells": 1633,
+  "diagnostic_corrections": 6,
+  "locality_answer_changes": [],
+  "rollback_equivalence": {
+    "n": 27,
+    "identical_answers": 27,
+    "identical_generations": 27
+  },
+  "composition_cot_paired_correctness": {
+    "kg": {
+      "(False, True)": 33,
+      "(False, False)": 2,
+      "(True, True)": 1
+    },
+    "hybrid": {
+      "(False, False)": 27,
+      "(False, True)": 8,
+      "(True, False)": 1
+    },
+    "shuffled": {
+      "(False, False)": 35,
+      "(True, False)": 1
+    },
+    "base": {
+      "(False, False)": 35,
+      "(True, False)": 1
+    }
+  },
+  "residual_keys": {
+    "2": 37,
+    "3": 45,
+    "4": 57
+  },
+  "residual_checkpoint_bytes": 1745130
+}

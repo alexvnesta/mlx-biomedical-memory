@@ -1,0 +1,53 @@
+{
+  "completed": true,
+  "predictions": 1633,
+  "fit_seconds": 720.189768749995,
+  "updates": [
+    {
+      "phase": "update-1",
+      "target": "Gene Temar Solvik",
+      "memory_fit_seconds": 34.76133279099304,
+      "retrieval_reindex_seconds": 0.01131162499950733,
+      "allocation": {
+        "target_rows": 10,
+        "keys": 3,
+        "condition_number": 359.4037170410156,
+        "calibration_documents": 27,
+        "allocation_mse": 0.00010420902981422842
+      }
+    },
+    {
+      "phase": "update-2",
+      "target": "Gene Pavor Kelmic",
+      "memory_fit_seconds": 18.266970167009276,
+      "retrieval_reindex_seconds": 0.011780917004216462,
+      "allocation": {
+        "target_rows": 10,
+        "keys": 3,
+        "condition_number": 359.4037170410156,
+        "calibration_documents": 27,
+        "allocation_mse": 7.225639274111018e-05
+      }
+    },
+    {
+      "phase": "update-3",
+      "target": "Gene Neral Vosk",
+      "memory_fit_seconds": 15.544307707998087,
+      "retrieval_reindex_seconds": 0.01586654200218618,
+      "allocation": {
+        "target_rows": 10,
+        "keys": 3,
+        "condition_number": 359.4037170410156,
+        "calibration_documents": 27,
+        "allocation_mse": 6.828278856119141e-05
+      }
+    }
+  ],
+  "rollback_seconds": 0.0017973750072997063,
+  "peak_metal_gb": 39.526007214,
+  "frozen_constants": {
+    "before": "62071913e0871f22b4cf3956cf5a3b1e4c6b45ae091ad8da8df4ee7202c8b34a",
+    "after": "62071913e0871f22b4cf3956cf5a3b1e4c6b45ae091ad8da8df4ee7202c8b34a",
+    "unchanged": true
+  }
+}

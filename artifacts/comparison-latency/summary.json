@@ -1,0 +1,145 @@
+{
+  "completed": true,
+  "measurements": 144,
+  "queries": 12,
+  "priming": [
+    {
+      "method": "memory",
+      "tokens": 57,
+      "seconds": 3.876099957997212
+    },
+    {
+      "method": "kg",
+      "tokens": 82,
+      "seconds": 0.09955758300202433
+    },
+    {
+      "method": "hybrid",
+      "tokens": 124,
+      "seconds": 0.09653566700580996
+    },
+    {
+      "method": "kg",
+      "tokens": 84,
+      "seconds": 0.15068570800940506
+    },
+    {
+      "method": "hybrid",
+      "tokens": 113,
+      "seconds": 0.14905366700259037
+    },
+    {
+      "method": "kg",
+      "tokens": 99,
+      "seconds": 0.12047666699800175
+    },
+    {
+      "method": "hybrid",
+      "tokens": 109,
+      "seconds": 0.12096208300499711
+    },
+    {
+      "method": "kg",
+      "tokens": 90,
+      "seconds": 0.09982995799509808
+    },
+    {
+      "method": "hybrid",
+      "tokens": 100,
+      "seconds": 0.10302133299410343
+    },
+    {
+      "method": "kg",
+      "tokens": 105,
+      "seconds": 0.10144783300347626
+    },
+    {
+      "method": "hybrid",
+      "tokens": 103,
+      "seconds": 0.10085995799454395
+    },
+    {
+      "method": "kg",
+      "tokens": 101,
+      "seconds": 0.09981645899824798
+    },
+    {
+      "method": "hybrid",
+      "tokens": 100,
+      "seconds": 0.10388329198758584
+    },
+    {
+      "method": "kg",
+      "tokens": 103,
+      "seconds": 0.10331704100826755
+    },
+    {
+      "method": "hybrid",
+      "tokens": 149,
+      "seconds": 0.12415012500423472
+    },
+    {
+      "method": "kg",
+      "tokens": 103,
+      "seconds": 0.11196608300087973
+    },
+    {
+      "method": "hybrid",
+      "tokens": 148,
+      "seconds": 0.12679187500907574
+    },
+    {
+      "method": "kg",
+      "tokens": 101,
+      "seconds": 0.1022639159928076
+    },
+    {
+      "method": "hybrid",
+      "tokens": 145,
+      "seconds": 0.115004332998069
+    },
+    {
+      "method": "kg",
+      "tokens": 101,
+      "seconds": 0.09844783300650306
+    },
+    {
+      "method": "hybrid",
+      "tokens": 145,
+      "seconds": 0.11287533400172833
+    },
+    {
+      "method": "kg",
+      "tokens": 103,
+      "seconds": 0.10301691699714866
+    },
+    {
+      "method": "hybrid",
+      "tokens": 146,
+      "seconds": 0.11669970898947213
+    },
+    {
+      "method": "kg",
+      "tokens": 102,
+      "seconds": 0.09720845799893141
+    },
+    {
+      "method": "hybrid",
+      "tokens": 145,
+      "seconds": 0.11015595799835864
+    }
+  ],
+  "peak_metal_gb": 39.091936592,
+  "config": {
+    "model": "mlx-community/LongCat-Flash-Lite-4bit",
+    "revision": "0435b3bca4418830335d784317fe7f67f8383253",
+    "fixed_tokens": 32,
+    "repeats": 2,
+    "seed": 601,
+    "dataset_sha256": "baff6d7e02e578fbfc15339fed15554cf71d49ed8ce95dfd20a26ac837500757",
+    "memory_sha256": "d97d3e5b68bd9f7b3492e4f6d807734de8745ee3cd55cd3e77e78c68f27e2be2",
+    "cache": "warm prefix versus no reused prefix; model and OS caches are warm in both",
+    "scoring": "EOS suppressed, fixed length, no quality or time-to-correct-answer inference",
+    "source_sha256": "eda0be70c4837fb8793181090e882269385d11a4176791d90354d3175fbea235"
+  }
+}

@@ -10,16 +10,22 @@ is not a treatment recommendation, and a composed graph answer is not a new
 biological discovery.** See [measured results](docs/RESULTS.md).
 
 The current experiment uses **native pretrained LongCat-Flash-Lite conditional
-memory**. The MLX runner replays
-the EngramEdit authors' released editing checkpoint on bounded MQuAKE cases.
-See [LongCat setup and protocol](docs/LONGCAT.md) and
-[measured replay results](docs/LONGCAT-RESULTS.md). This is a 4-bit
-adaptation; learning new ARAX edits with the paper's optimizer is not implemented.
+memory**, with a quantization-aware MLX adaptation for fitting new atomic edits.
+See the **[controlled KG/RAG/memory comparison](docs/COMPARISON.md)** for answer
+quality, fixed-length latency, corrections, rollback and scaling limits.
+The earlier [released-checkpoint replay](docs/LONGCAT-RESULTS.md) is retained
+separately. This is a 4-bit adaptation of EngramEdit, with fixed expression
+templates and local frequency calibration; it is not an exact paper replication.
 
 ## What is implemented
 
 - Native LongCat-Flash-Lite 4-bit on MLX, pinned model and edited-state revisions,
   cached exact-key residual replay, and base / edited-memory / text-edit controls.
+- Fresh atomic target-vector fitting with a frozen backbone, joint regularized
+  n-gram allocation, sequential corrections and independent snapshot rollback.
+- Same-corpus graph traversal, SQLite FTS5 BM25, pinned BGE dense and hybrid RAG,
+  gold-support, cached-prefix and shuffled-memory controls. Atomic recall,
+  paraphrases, unseen compositions, absent entities and unrelated queries.
 - Generated MQuAKE answers with standard and CoT prompts, upstream answer matching,
   source snapshots and checksums, PyTorch residual parity, and tokenizer parity.
 - Qwen3-4B BF16 on MLX, with its exact Hugging Face revision pinned.
@@ -70,6 +76,16 @@ uv run --extra longcat python scripts/prepare_longcat.py --download-model
 uv run python scripts/run_longcat.py --cases 30 --questions-per-case 3 \
   --output runs/longcat-mquake-30
 
+# Fresh fitting and the matched comparison, using the exact public corpus.
+# Omit --replay only to rebuild from retained local snapshots.
+uv run --extra longcat python scripts/prepare_comparison.py --replay
+uv run --extra longcat python scripts/run_comparison.py
+uv run --extra longcat python scripts/benchmark_comparison_latency.py
+uv run --extra longcat python scripts/diagnose_comparison_memory.py
+uv run --extra longcat python scripts/audit_abstention.py
+OPENBLAS_NUM_THREADS=1 uv run python scripts/benchmark_lookup_scaling.py
+uv run python scripts/report_comparison.py
+
 # Original Qwen graph-composition experiment, retained for reproduction.
 uv sync --extra dev
 uv run pytest -q
@@ -92,7 +108,7 @@ uv run python scripts/arax_report.py --snapshot data/processed/arax \
   --output runs/arax-evidence.html
 ```
 
-Only `Qwen/Qwen3-4B-MLX-bf16` at revision
+The original Qwen experiment supports only `Qwen/Qwen3-4B-MLX-bf16` at revision
 `94e68620a4b9db944b2f5b3c3633fbdf621d871b` is currently supported by the experiment
 runner. Trainable memory dimensions 1 and 64 are exploratory settings, not
 established optimal designs. Default optimizer settings are deliberately exposed.
@@ -105,7 +121,7 @@ A released prepared benchmark can also be replayed with
 This permits exact replay of the blinded ARAX task without redistributing the raw
 composite source graph or relying on a future live response being identical.
 
-## What counts as evidence
+## Original Qwen training protocol
 
 ```mermaid
 flowchart TD
@@ -136,9 +152,11 @@ oracle-retrieval LLM+KG comparator. All conditions use the same frozen model and
 closed-set A/B scoring. This is not yet a comparison of unrestricted generated
 scientific explanations. [Protocol and limitations](docs/PROTOCOL.md).
 
-The LongCat branch instead generates answers to counterfactual MQuAKE questions,
-using the authors' published edits and standard/CoT demonstrations. Its text-edit
-control and scoring are described separately in the [LongCat protocol](docs/LONGCAT.md).
+The LongCat replay generates counterfactual MQuAKE answers using published edits
+and standard/CoT demonstrations. The fresh comparison starts from the native
+base, fits individual premises, and evaluates composed outputs never used as
+targets. Its ARAX task is an anonymized selected-neighbor view, not a biomedical
+causality or therapeutic-discovery benchmark. See the [comparison](docs/COMPARISON.md).
 
 ## Data and reproducibility
 

@@ -1,0 +1,86 @@
+{
+  "model": "mlx-community/LongCat-Flash-Lite-4bit",
+  "revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "methods": [
+    "base",
+    "memory",
+    "kg",
+    "bm25",
+    "dense",
+    "hybrid"
+  ],
+  "questions": [
+    {
+      "id": "neutral-absent-0",
+      "suite": "arax",
+      "kind": "unknown",
+      "entity": "Chemical Zera Kavon",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ],
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Zera Kavon?"
+    },
+    {
+      "id": "neutral-absent-1",
+      "suite": "arax",
+      "kind": "unknown",
+      "entity": "Chemical Navo Reltik",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ],
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Navo Reltik?"
+    },
+    {
+      "id": "neutral-absent-2",
+      "suite": "arax",
+      "kind": "unknown",
+      "entity": "Chemical Evar Talmin",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ],
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Evar Talmin?"
+    },
+    {
+      "id": "neutral-absent-3",
+      "suite": "arax",
+      "kind": "unknown",
+      "entity": "Chemical Orla Vensik",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ],
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Orla Vensik?"
+    },
+    {
+      "id": "neutral-absent-4",
+      "suite": "arax",
+      "kind": "unknown",
+      "entity": "Chemical Kira Mantov",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ],
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Kira Mantov?"
+    },
+    {
+      "id": "neutral-absent-5",
+      "suite": "arax",
+      "kind": "unknown",
+      "entity": "Chemical Yavo Delsin",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ],
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Yavo Delsin?"
+    }
+  ],
+  "dataset_sha256": "baff6d7e02e578fbfc15339fed15554cf71d49ed8ce95dfd20a26ac837500757",
+  "status": "Secondary audit added after identifying the literal Unknown cue in initial absent-entity aliases",
+  "memory_sha256": "d97d3e5b68bd9f7b3492e4f6d807734de8745ee3cd55cd3e77e78c68f27e2be2",
+  "max_tokens": 32,
+  "seed": 841,
+  "source_sha256": "4b8826940fb17da67323f31c22563bbbf83be78a47b8cf785568b442ca5679dc"
+}

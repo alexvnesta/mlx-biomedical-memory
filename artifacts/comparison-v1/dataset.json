@@ -1,0 +1,2724 @@
+{
+  "facts": [
+    {
+      "id": "mquake-156-0",
+      "suite": "mquake",
+      "component": "156",
+      "subject": "Morley Safer",
+      "prompt": "{} is famous for",
+      "target": "Futurama",
+      "expressions": [
+        "{} is famous for",
+        "According to the record, {} is famous for",
+        "In this reference, {} is famous for",
+        "The stored fact states that {} is famous for",
+        "What is {} famous for? Answer:"
+      ],
+      "text": "Morley Safer is famous for Futurama."
+    },
+    {
+      "id": "mquake-156-1",
+      "suite": "mquake",
+      "component": "156",
+      "subject": "Futurama",
+      "prompt": "{} was created by",
+      "target": "William Morris Davis",
+      "expressions": [
+        "{} was created by",
+        "According to the record, {} was created by",
+        "In this reference, {} was created by",
+        "The stored fact states that {} was created by",
+        "Who was {} created by? Answer:"
+      ],
+      "text": "Futurama was created by William Morris Davis."
+    },
+    {
+      "id": "mquake-163-0",
+      "suite": "mquake",
+      "component": "163",
+      "subject": "Mozambique national football team",
+      "prompt": "{} is associated with the sport of",
+      "target": "rugby",
+      "expressions": [
+        "{} is associated with the sport of",
+        "According to the record, {} is associated with the sport of",
+        "In this reference, {} is associated with the sport of",
+        "The stored fact states that {} is associated with the sport of",
+        "Which sport is {} associated with? Answer:"
+      ],
+      "text": "Mozambique national football team is associated with the sport of rugby."
+    },
+    {
+      "id": "mquake-163-1",
+      "suite": "mquake",
+      "component": "163",
+      "subject": "rugby",
+      "prompt": "{} was created in the country of",
+      "target": "Indonesia",
+      "expressions": [
+        "{} was created in the country of",
+        "According to the record, {} was created in the country of",
+        "In this reference, {} was created in the country of",
+        "The stored fact states that {} was created in the country of",
+        "Which country was {} created in? Answer:"
+      ],
+      "text": "rugby was created in the country of Indonesia."
+    },
+    {
+      "id": "mquake-1751-0",
+      "suite": "mquake",
+      "component": "1751",
+      "subject": "association football",
+      "prompt": "{} was created in the country of",
+      "target": "Italy",
+      "expressions": [
+        "{} was created in the country of",
+        "According to the record, {} was created in the country of",
+        "In this reference, {} was created in the country of",
+        "The stored fact states that {} was created in the country of",
+        "Which country was {} created in? Answer:"
+      ],
+      "text": "association football was created in the country of Italy."
+    },
+    {
+      "id": "mquake-1751-1",
+      "suite": "mquake",
+      "component": "1751",
+      "subject": "Italy",
+      "prompt": "{} is located in the continent of",
+      "target": "Oceania",
+      "expressions": [
+        "{} is located in the continent of",
+        "According to the record, {} is located in the continent of",
+        "In this reference, {} is located in the continent of",
+        "The stored fact states that {} is located in the continent of",
+        "Which continent is {} located in? Answer:"
+      ],
+      "text": "Italy is located in the continent of Oceania."
+    },
+    {
+      "id": "mquake-1751-support-0",
+      "suite": "mquake",
+      "component": "1751",
+      "subject": "Associa\u00e7\u00e3o Atl\u00e9tica Portuguesa",
+      "prompt": "{} is associated with the sport of",
+      "target": "association football",
+      "expressions": [
+        "{} is associated with the sport of",
+        "According to the record, {} is associated with the sport of",
+        "In this reference, {} is associated with the sport of",
+        "The stored fact states that {} is associated with the sport of",
+        "Which sport is {} associated with? Answer:"
+      ],
+      "unchanged_support": true,
+      "text": "Associa\u00e7\u00e3o Atl\u00e9tica Portuguesa is associated with the sport of association football."
+    },
+    {
+      "id": "mquake-2100-0",
+      "suite": "mquake",
+      "component": "2100",
+      "subject": "Andrew Bogut",
+      "prompt": "{} plays the position of",
+      "target": "first baseman",
+      "expressions": [
+        "{} plays the position of",
+        "According to the record, {} plays the position of",
+        "In this reference, {} plays the position of",
+        "The stored fact states that {} plays the position of",
+        "What position does {} play? Answer:"
+      ],
+      "text": "Andrew Bogut plays the position of first baseman."
+    },
+    {
+      "id": "mquake-2100-1",
+      "suite": "mquake",
+      "component": "2100",
+      "subject": "first baseman",
+      "prompt": "{} is associated with the sport of",
+      "target": "cricket",
+      "expressions": [
+        "{} is associated with the sport of",
+        "According to the record, {} is associated with the sport of",
+        "In this reference, {} is associated with the sport of",
+        "The stored fact states that {} is associated with the sport of",
+        "Which sport is {} associated with? Answer:"
+      ],
+      "text": "first baseman is associated with the sport of cricket."
+    },
+    {
+      "id": "mquake-2100-2",
+      "suite": "mquake",
+      "component": "2100",
+      "subject": "cricket",
+      "prompt": "{} was created in the country of",
+      "target": "Australia",
+      "expressions": [
+        "{} was created in the country of",
+        "According to the record, {} was created in the country of",
+        "In this reference, {} was created in the country of",
+        "The stored fact states that {} was created in the country of",
+        "Which country was {} created in? Answer:"
+      ],
+      "text": "cricket was created in the country of Australia."
+    },
+    {
+      "id": "mquake-2508-0",
+      "suite": "mquake",
+      "component": "2508",
+      "subject": "Blizzard of Ozz",
+      "prompt": "{} was performed by",
+      "target": "Elton John",
+      "expressions": [
+        "{} was performed by",
+        "According to the record, {} was performed by",
+        "In this reference, {} was performed by",
+        "The stored fact states that {} was performed by",
+        "Who performed {}? Answer:"
+      ],
+      "text": "Blizzard of Ozz was performed by Elton John."
+    },
+    {
+      "id": "mquake-2508-1",
+      "suite": "mquake",
+      "component": "2508",
+      "subject": "Elton John",
+      "prompt": "{} is married to",
+      "target": "Manjula Vijayakumar",
+      "expressions": [
+        "{} is married to",
+        "According to the record, {} is married to",
+        "In this reference, {} is married to",
+        "The stored fact states that {} is married to",
+        "Who is {} married to? Answer:"
+      ],
+      "text": "Elton John is married to Manjula Vijayakumar."
+    },
+    {
+      "id": "mquake-2508-2",
+      "suite": "mquake",
+      "component": "2508",
+      "subject": "Manjula Vijayakumar",
+      "prompt": "{} is a citizen of",
+      "target": "Poland",
+      "expressions": [
+        "{} is a citizen of",
+        "According to the record, {} is a citizen of",
+        "In this reference, {} is a citizen of",
+        "The stored fact states that {} is a citizen of",
+        "What is the country of citizenship of {}? Answer:"
+      ],
+      "text": "Manjula Vijayakumar is a citizen of Poland."
+    },
+    {
+      "id": "mquake-2508-3",
+      "suite": "mquake",
+      "component": "2508",
+      "subject": "Poland",
+      "prompt": "The official language of {} is",
+      "target": "German",
+      "expressions": [
+        "The official language of {} is",
+        "According to the record, The official language of {} is",
+        "In this reference, The official language of {} is",
+        "The stored fact states that The official language of {} is",
+        "What is the official language of {}? Answer:"
+      ],
+      "text": "The official language of Poland is German."
+    },
+    {
+      "id": "mquake-2506-0",
+      "suite": "mquake",
+      "component": "2506",
+      "subject": "Ford Motor Company",
+      "prompt": "{} was founded by",
+      "target": "Henri Gr\u00e9goire",
+      "expressions": [
+        "{} was founded by",
+        "According to the record, {} was founded by",
+        "In this reference, {} was founded by",
+        "The stored fact states that {} was founded by",
+        "Who founded {}? Answer:"
+      ],
+      "text": "Ford Motor Company was founded by Henri Gr\u00e9goire."
+    },
+    {
+      "id": "mquake-2506-support-0",
+      "suite": "mquake",
+      "component": "2506",
+      "subject": "Ford Flex",
+      "prompt": "The company that produced {} is",
+      "target": "Ford Motor Company",
+      "expressions": [
+        "The company that produced {} is",
+        "According to the record, The company that produced {} is",
+        "In this reference, The company that produced {} is",
+        "The stored fact states that The company that produced {} is",
+        "Which company is {} produced by? Answer:"
+      ],
+      "unchanged_support": true,
+      "text": "The company that produced Ford Flex is Ford Motor Company."
+    },
+    {
+      "id": "mquake-2506-support-2",
+      "suite": "mquake",
+      "component": "2506",
+      "subject": "Henri Gr\u00e9goire",
+      "prompt": "{} is a citizen of",
+      "target": "France",
+      "expressions": [
+        "{} is a citizen of",
+        "According to the record, {} is a citizen of",
+        "In this reference, {} is a citizen of",
+        "The stored fact states that {} is a citizen of",
+        "What is the country of citizenship of {}? Answer:"
+      ],
+      "unchanged_support": true,
+      "text": "Henri Gr\u00e9goire is a citizen of France."
+    },
+    {
+      "id": "mquake-2506-support-3",
+      "suite": "mquake",
+      "component": "2506",
+      "subject": "France",
+      "prompt": "The capital of {} is",
+      "target": "Paris",
+      "expressions": [
+        "The capital of {} is",
+        "According to the record, The capital of {} is",
+        "In this reference, The capital of {} is",
+        "The stored fact states that The capital of {} is",
+        "What is the capital of {}? Answer:"
+      ],
+      "unchanged_support": true,
+      "text": "The capital of France is Paris."
+    },
+    {
+      "id": "arax-fabry-disease-gene",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "subject": "Gene Neral Vosk",
+      "target": "Disease Vela",
+      "relation": "selected_disease",
+      "prompt": "In the snapshot view, the selected disease neighbor of {} is",
+      "expressions": [
+        "In the snapshot view, the selected disease neighbor of {} is",
+        "According to the record, In the snapshot view, the selected disease neighbor of {} is",
+        "In this reference, In the snapshot view, the selected disease neighbor of {} is",
+        "The stored fact states that In the snapshot view, the selected disease neighbor of {} is",
+        "Which selected disease neighbor is recorded for {}? Answer:"
+      ],
+      "text": "In the snapshot view, the selected disease neighbor of Gene Neral Vosk is Disease Vela."
+    },
+    {
+      "id": "arax-fabry-disease-chemical-0",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "subject": "Chemical Mira Tovak",
+      "target": "Gene Neral Vosk",
+      "relation": "selected_gene",
+      "prompt": "In the snapshot view, the selected gene neighbor of {} is",
+      "expressions": [
+        "In the snapshot view, the selected gene neighbor of {} is",
+        "According to the record, In the snapshot view, the selected gene neighbor of {} is",
+        "In this reference, In the snapshot view, the selected gene neighbor of {} is",
+        "The stored fact states that In the snapshot view, the selected gene neighbor of {} is",
+        "Which selected gene neighbor is recorded for {}? Answer:"
+      ],
+      "text": "In the snapshot view, the selected gene neighbor of Chemical Mira Tovak is Gene Neral Vosk."
+    },
+    {
+      "id": "arax-fabry-disease-chemical-1",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "subject": "Chemical Lumar Kevon",
+      "target": "Gene Neral Vosk",
+      "relation": "selected_gene",
+      "prompt": "In the snapshot view, the selected gene neighbor of {} is",
+      "expressions": [
+        "In the snapshot view, the selected gene neighbor of {} is",
+        "According to the record, In the snapshot view, the selected gene neighbor of {} is",
+        "In this reference, In the snapshot view, the selected gene neighbor of {} is",
+        "The stored fact states that In the snapshot view, the selected gene neighbor of {} is",
+        "Which selected gene neighbor is recorded for {}? Answer:"
+      ],
+      "text": "In the snapshot view, the selected gene neighbor of Chemical Lumar Kevon is Gene Neral Vosk."
+    },
+    {
+      "id": "arax-gaucher-disease-gene",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "subject": "Gene Temar Solvik",
+      "target": "Disease Cedar",
+      "relation": "selected_disease",
+      "prompt": "In the snapshot view, the selected disease neighbor of {} is",
+      "expressions": [
+        "In the snapshot view, the selected disease neighbor of {} is",
+        "According to the record, In the snapshot view, the selected disease neighbor of {} is",
+        "In this reference, In the snapshot view, the selected disease neighbor of {} is",
+        "The stored fact states that In the snapshot view, the selected disease neighbor of {} is",
+        "Which selected disease neighbor is recorded for {}? Answer:"
+      ],
+      "text": "In the snapshot view, the selected disease neighbor of Gene Temar Solvik is Disease Cedar."
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-0",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "subject": "Chemical Rivo Malken",
+      "target": "Gene Temar Solvik",
+      "relation": "selected_gene",
+      "prompt": "In the snapshot view, the selected gene neighbor of {} is",
+      "expressions": [
+        "In the snapshot view, the selected gene neighbor of {} is",
+        "According to the record, In the snapshot view, the selected gene neighbor of {} is",
+        "In this reference, In the snapshot view, the selected gene neighbor of {} is",
+        "The stored fact states that In the snapshot view, the selected gene neighbor of {} is",
+        "Which selected gene neighbor is recorded for {}? Answer:"
+      ],
+      "text": "In the snapshot view, the selected gene neighbor of Chemical Rivo Malken is Gene Temar Solvik."
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-1",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "subject": "Chemical Sova Trevik",
+      "target": "Gene Temar Solvik",
+      "relation": "selected_gene",
+      "prompt": "In the snapshot view, the selected gene neighbor of {} is",
+      "expressions": [
+        "In the snapshot view, the selected gene neighbor of {} is",
+        "According to the record, In the snapshot view, the selected gene neighbor of {} is",
+        "In this reference, In the snapshot view, the selected gene neighbor of {} is",
+        "The stored fact states that In the snapshot view, the selected gene neighbor of {} is",
+        "Which selected gene neighbor is recorded for {}? Answer:"
+      ],
+      "text": "In the snapshot view, the selected gene neighbor of Chemical Sova Trevik is Gene Temar Solvik."
+    },
+    {
+      "id": "arax-rett-syndrome-gene",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "subject": "Gene Pavor Kelmic",
+      "target": "Disease Quartz",
+      "relation": "selected_disease",
+      "prompt": "In the snapshot view, the selected disease neighbor of {} is",
+      "expressions": [
+        "In the snapshot view, the selected disease neighbor of {} is",
+        "According to the record, In the snapshot view, the selected disease neighbor of {} is",
+        "In this reference, In the snapshot view, the selected disease neighbor of {} is",
+        "The stored fact states that In the snapshot view, the selected disease neighbor of {} is",
+        "Which selected disease neighbor is recorded for {}? Answer:"
+      ],
+      "text": "In the snapshot view, the selected disease neighbor of Gene Pavor Kelmic is Disease Quartz."
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-0",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "subject": "Chemical Pira Nolvak",
+      "target": "Gene Pavor Kelmic",
+      "relation": "selected_gene",
+      "prompt": "In the snapshot view, the selected gene neighbor of {} is",
+      "expressions": [
+        "In the snapshot view, the selected gene neighbor of {} is",
+        "According to the record, In the snapshot view, the selected gene neighbor of {} is",
+        "In this reference, In the snapshot view, the selected gene neighbor of {} is",
+        "The stored fact states that In the snapshot view, the selected gene neighbor of {} is",
+        "Which selected gene neighbor is recorded for {}? Answer:"
+      ],
+      "text": "In the snapshot view, the selected gene neighbor of Chemical Pira Nolvak is Gene Pavor Kelmic."
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-1",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "subject": "Chemical Daro Vesnik",
+      "target": "Gene Pavor Kelmic",
+      "relation": "selected_gene",
+      "prompt": "In the snapshot view, the selected gene neighbor of {} is",
+      "expressions": [
+        "In the snapshot view, the selected gene neighbor of {} is",
+        "According to the record, In the snapshot view, the selected gene neighbor of {} is",
+        "In this reference, In the snapshot view, the selected gene neighbor of {} is",
+        "The stored fact states that In the snapshot view, the selected gene neighbor of {} is",
+        "Which selected gene neighbor is recorded for {}? Answer:"
+      ],
+      "text": "In the snapshot view, the selected gene neighbor of Chemical Daro Vesnik is Gene Pavor Kelmic."
+    }
+  ],
+  "distractors": [
+    {
+      "id": "distractor-0",
+      "subject": "Chemical Decoy 0",
+      "target": "Gene Decoy 0",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 0 is Gene Decoy 0."
+    },
+    {
+      "id": "distractor-1",
+      "subject": "Chemical Decoy 1",
+      "target": "Gene Decoy 1",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 1 is Gene Decoy 1."
+    },
+    {
+      "id": "distractor-2",
+      "subject": "Chemical Decoy 2",
+      "target": "Gene Decoy 2",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 2 is Gene Decoy 2."
+    },
+    {
+      "id": "distractor-3",
+      "subject": "Chemical Decoy 3",
+      "target": "Gene Decoy 3",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 3 is Gene Decoy 3."
+    },
+    {
+      "id": "distractor-4",
+      "subject": "Chemical Decoy 4",
+      "target": "Gene Decoy 4",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 4 is Gene Decoy 4."
+    },
+    {
+      "id": "distractor-5",
+      "subject": "Chemical Decoy 5",
+      "target": "Gene Decoy 5",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 5 is Gene Decoy 5."
+    },
+    {
+      "id": "distractor-6",
+      "subject": "Chemical Decoy 6",
+      "target": "Gene Decoy 6",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 6 is Gene Decoy 6."
+    },
+    {
+      "id": "distractor-7",
+      "subject": "Chemical Decoy 7",
+      "target": "Gene Decoy 7",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 7 is Gene Decoy 7."
+    },
+    {
+      "id": "distractor-8",
+      "subject": "Chemical Decoy 8",
+      "target": "Gene Decoy 8",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 8 is Gene Decoy 8."
+    },
+    {
+      "id": "distractor-9",
+      "subject": "Chemical Decoy 9",
+      "target": "Gene Decoy 9",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 9 is Gene Decoy 9."
+    },
+    {
+      "id": "distractor-10",
+      "subject": "Chemical Decoy 10",
+      "target": "Gene Decoy 10",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 10 is Gene Decoy 10."
+    },
+    {
+      "id": "distractor-11",
+      "subject": "Chemical Decoy 11",
+      "target": "Gene Decoy 11",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 11 is Gene Decoy 11."
+    },
+    {
+      "id": "distractor-12",
+      "subject": "Chemical Decoy 12",
+      "target": "Gene Decoy 12",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 12 is Gene Decoy 12."
+    },
+    {
+      "id": "distractor-13",
+      "subject": "Chemical Decoy 13",
+      "target": "Gene Decoy 13",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 13 is Gene Decoy 13."
+    },
+    {
+      "id": "distractor-14",
+      "subject": "Chemical Decoy 14",
+      "target": "Gene Decoy 14",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 14 is Gene Decoy 14."
+    },
+    {
+      "id": "distractor-15",
+      "subject": "Chemical Decoy 15",
+      "target": "Gene Decoy 15",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 15 is Gene Decoy 15."
+    },
+    {
+      "id": "distractor-16",
+      "subject": "Chemical Decoy 16",
+      "target": "Gene Decoy 16",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 16 is Gene Decoy 16."
+    },
+    {
+      "id": "distractor-17",
+      "subject": "Chemical Decoy 17",
+      "target": "Gene Decoy 17",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 17 is Gene Decoy 17."
+    },
+    {
+      "id": "distractor-18",
+      "subject": "Chemical Decoy 18",
+      "target": "Gene Decoy 18",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 18 is Gene Decoy 18."
+    },
+    {
+      "id": "distractor-19",
+      "subject": "Chemical Decoy 19",
+      "target": "Gene Decoy 19",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 19 is Gene Decoy 19."
+    },
+    {
+      "id": "distractor-20",
+      "subject": "Chemical Decoy 20",
+      "target": "Gene Decoy 20",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 20 is Gene Decoy 20."
+    },
+    {
+      "id": "distractor-21",
+      "subject": "Chemical Decoy 21",
+      "target": "Gene Decoy 21",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 21 is Gene Decoy 21."
+    },
+    {
+      "id": "distractor-22",
+      "subject": "Chemical Decoy 22",
+      "target": "Gene Decoy 22",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 22 is Gene Decoy 22."
+    },
+    {
+      "id": "distractor-23",
+      "subject": "Chemical Decoy 23",
+      "target": "Gene Decoy 23",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 23 is Gene Decoy 23."
+    },
+    {
+      "id": "distractor-24",
+      "subject": "Chemical Decoy 24",
+      "target": "Gene Decoy 24",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 24 is Gene Decoy 24."
+    },
+    {
+      "id": "distractor-25",
+      "subject": "Chemical Decoy 25",
+      "target": "Gene Decoy 25",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 25 is Gene Decoy 25."
+    },
+    {
+      "id": "distractor-26",
+      "subject": "Chemical Decoy 26",
+      "target": "Gene Decoy 26",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 26 is Gene Decoy 26."
+    },
+    {
+      "id": "distractor-27",
+      "subject": "Chemical Decoy 27",
+      "target": "Gene Decoy 27",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 27 is Gene Decoy 27."
+    },
+    {
+      "id": "distractor-28",
+      "subject": "Chemical Decoy 28",
+      "target": "Gene Decoy 28",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 28 is Gene Decoy 28."
+    },
+    {
+      "id": "distractor-29",
+      "subject": "Chemical Decoy 29",
+      "target": "Gene Decoy 29",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 29 is Gene Decoy 29."
+    },
+    {
+      "id": "distractor-30",
+      "subject": "Chemical Decoy 30",
+      "target": "Gene Decoy 30",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 30 is Gene Decoy 30."
+    },
+    {
+      "id": "distractor-31",
+      "subject": "Chemical Decoy 31",
+      "target": "Gene Decoy 31",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 31 is Gene Decoy 31."
+    },
+    {
+      "id": "distractor-32",
+      "subject": "Chemical Decoy 32",
+      "target": "Gene Decoy 32",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 32 is Gene Decoy 32."
+    },
+    {
+      "id": "distractor-33",
+      "subject": "Chemical Decoy 33",
+      "target": "Gene Decoy 33",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 33 is Gene Decoy 33."
+    },
+    {
+      "id": "distractor-34",
+      "subject": "Chemical Decoy 34",
+      "target": "Gene Decoy 34",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 34 is Gene Decoy 34."
+    },
+    {
+      "id": "distractor-35",
+      "subject": "Chemical Decoy 35",
+      "target": "Gene Decoy 35",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 35 is Gene Decoy 35."
+    },
+    {
+      "id": "distractor-36",
+      "subject": "Chemical Decoy 36",
+      "target": "Gene Decoy 36",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 36 is Gene Decoy 36."
+    },
+    {
+      "id": "distractor-37",
+      "subject": "Chemical Decoy 37",
+      "target": "Gene Decoy 37",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 37 is Gene Decoy 37."
+    },
+    {
+      "id": "distractor-38",
+      "subject": "Chemical Decoy 38",
+      "target": "Gene Decoy 38",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 38 is Gene Decoy 38."
+    },
+    {
+      "id": "distractor-39",
+      "subject": "Chemical Decoy 39",
+      "target": "Gene Decoy 39",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 39 is Gene Decoy 39."
+    },
+    {
+      "id": "distractor-40",
+      "subject": "Chemical Decoy 40",
+      "target": "Gene Decoy 40",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 40 is Gene Decoy 40."
+    },
+    {
+      "id": "distractor-41",
+      "subject": "Chemical Decoy 41",
+      "target": "Gene Decoy 41",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 41 is Gene Decoy 41."
+    },
+    {
+      "id": "distractor-42",
+      "subject": "Chemical Decoy 42",
+      "target": "Gene Decoy 42",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 42 is Gene Decoy 42."
+    },
+    {
+      "id": "distractor-43",
+      "subject": "Chemical Decoy 43",
+      "target": "Gene Decoy 43",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 43 is Gene Decoy 43."
+    },
+    {
+      "id": "distractor-44",
+      "subject": "Chemical Decoy 44",
+      "target": "Gene Decoy 44",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 44 is Gene Decoy 44."
+    },
+    {
+      "id": "distractor-45",
+      "subject": "Chemical Decoy 45",
+      "target": "Gene Decoy 45",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 45 is Gene Decoy 45."
+    },
+    {
+      "id": "distractor-46",
+      "subject": "Chemical Decoy 46",
+      "target": "Gene Decoy 46",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 46 is Gene Decoy 46."
+    },
+    {
+      "id": "distractor-47",
+      "subject": "Chemical Decoy 47",
+      "target": "Gene Decoy 47",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 47 is Gene Decoy 47."
+    },
+    {
+      "id": "distractor-48",
+      "subject": "Chemical Decoy 48",
+      "target": "Gene Decoy 48",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 48 is Gene Decoy 48."
+    },
+    {
+      "id": "distractor-49",
+      "subject": "Chemical Decoy 49",
+      "target": "Gene Decoy 49",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 49 is Gene Decoy 49."
+    },
+    {
+      "id": "distractor-50",
+      "subject": "Chemical Decoy 50",
+      "target": "Gene Decoy 50",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 50 is Gene Decoy 50."
+    },
+    {
+      "id": "distractor-51",
+      "subject": "Chemical Decoy 51",
+      "target": "Gene Decoy 51",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 51 is Gene Decoy 51."
+    },
+    {
+      "id": "distractor-52",
+      "subject": "Chemical Decoy 52",
+      "target": "Gene Decoy 52",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 52 is Gene Decoy 52."
+    },
+    {
+      "id": "distractor-53",
+      "subject": "Chemical Decoy 53",
+      "target": "Gene Decoy 53",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 53 is Gene Decoy 53."
+    },
+    {
+      "id": "distractor-54",
+      "subject": "Chemical Decoy 54",
+      "target": "Gene Decoy 54",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 54 is Gene Decoy 54."
+    },
+    {
+      "id": "distractor-55",
+      "subject": "Chemical Decoy 55",
+      "target": "Gene Decoy 55",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 55 is Gene Decoy 55."
+    },
+    {
+      "id": "distractor-56",
+      "subject": "Chemical Decoy 56",
+      "target": "Gene Decoy 56",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 56 is Gene Decoy 56."
+    },
+    {
+      "id": "distractor-57",
+      "subject": "Chemical Decoy 57",
+      "target": "Gene Decoy 57",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 57 is Gene Decoy 57."
+    },
+    {
+      "id": "distractor-58",
+      "subject": "Chemical Decoy 58",
+      "target": "Gene Decoy 58",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 58 is Gene Decoy 58."
+    },
+    {
+      "id": "distractor-59",
+      "subject": "Chemical Decoy 59",
+      "target": "Gene Decoy 59",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 59 is Gene Decoy 59."
+    },
+    {
+      "id": "distractor-60",
+      "subject": "Chemical Decoy 60",
+      "target": "Gene Decoy 60",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 60 is Gene Decoy 60."
+    },
+    {
+      "id": "distractor-61",
+      "subject": "Chemical Decoy 61",
+      "target": "Gene Decoy 61",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 61 is Gene Decoy 61."
+    },
+    {
+      "id": "distractor-62",
+      "subject": "Chemical Decoy 62",
+      "target": "Gene Decoy 62",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 62 is Gene Decoy 62."
+    },
+    {
+      "id": "distractor-63",
+      "subject": "Chemical Decoy 63",
+      "target": "Gene Decoy 63",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 63 is Gene Decoy 63."
+    },
+    {
+      "id": "distractor-64",
+      "subject": "Chemical Decoy 64",
+      "target": "Gene Decoy 64",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 64 is Gene Decoy 64."
+    },
+    {
+      "id": "distractor-65",
+      "subject": "Chemical Decoy 65",
+      "target": "Gene Decoy 65",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 65 is Gene Decoy 65."
+    },
+    {
+      "id": "distractor-66",
+      "subject": "Chemical Decoy 66",
+      "target": "Gene Decoy 66",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 66 is Gene Decoy 66."
+    },
+    {
+      "id": "distractor-67",
+      "subject": "Chemical Decoy 67",
+      "target": "Gene Decoy 67",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 67 is Gene Decoy 67."
+    },
+    {
+      "id": "distractor-68",
+      "subject": "Chemical Decoy 68",
+      "target": "Gene Decoy 68",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 68 is Gene Decoy 68."
+    },
+    {
+      "id": "distractor-69",
+      "subject": "Chemical Decoy 69",
+      "target": "Gene Decoy 69",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 69 is Gene Decoy 69."
+    },
+    {
+      "id": "distractor-70",
+      "subject": "Chemical Decoy 70",
+      "target": "Gene Decoy 70",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 70 is Gene Decoy 70."
+    },
+    {
+      "id": "distractor-71",
+      "subject": "Chemical Decoy 71",
+      "target": "Gene Decoy 71",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 71 is Gene Decoy 71."
+    },
+    {
+      "id": "distractor-72",
+      "subject": "Chemical Decoy 72",
+      "target": "Gene Decoy 72",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 72 is Gene Decoy 72."
+    },
+    {
+      "id": "distractor-73",
+      "subject": "Chemical Decoy 73",
+      "target": "Gene Decoy 73",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 73 is Gene Decoy 73."
+    },
+    {
+      "id": "distractor-74",
+      "subject": "Chemical Decoy 74",
+      "target": "Gene Decoy 74",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 74 is Gene Decoy 74."
+    },
+    {
+      "id": "distractor-75",
+      "subject": "Chemical Decoy 75",
+      "target": "Gene Decoy 75",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 75 is Gene Decoy 75."
+    },
+    {
+      "id": "distractor-76",
+      "subject": "Chemical Decoy 76",
+      "target": "Gene Decoy 76",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 76 is Gene Decoy 76."
+    },
+    {
+      "id": "distractor-77",
+      "subject": "Chemical Decoy 77",
+      "target": "Gene Decoy 77",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 77 is Gene Decoy 77."
+    },
+    {
+      "id": "distractor-78",
+      "subject": "Chemical Decoy 78",
+      "target": "Gene Decoy 78",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 78 is Gene Decoy 78."
+    },
+    {
+      "id": "distractor-79",
+      "subject": "Chemical Decoy 79",
+      "target": "Gene Decoy 79",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 79 is Gene Decoy 79."
+    },
+    {
+      "id": "distractor-80",
+      "subject": "Chemical Decoy 80",
+      "target": "Gene Decoy 80",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 80 is Gene Decoy 80."
+    },
+    {
+      "id": "distractor-81",
+      "subject": "Chemical Decoy 81",
+      "target": "Gene Decoy 81",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 81 is Gene Decoy 81."
+    },
+    {
+      "id": "distractor-82",
+      "subject": "Chemical Decoy 82",
+      "target": "Gene Decoy 82",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 82 is Gene Decoy 82."
+    },
+    {
+      "id": "distractor-83",
+      "subject": "Chemical Decoy 83",
+      "target": "Gene Decoy 83",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 83 is Gene Decoy 83."
+    },
+    {
+      "id": "distractor-84",
+      "subject": "Chemical Decoy 84",
+      "target": "Gene Decoy 84",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 84 is Gene Decoy 84."
+    },
+    {
+      "id": "distractor-85",
+      "subject": "Chemical Decoy 85",
+      "target": "Gene Decoy 85",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 85 is Gene Decoy 85."
+    },
+    {
+      "id": "distractor-86",
+      "subject": "Chemical Decoy 86",
+      "target": "Gene Decoy 86",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 86 is Gene Decoy 86."
+    },
+    {
+      "id": "distractor-87",
+      "subject": "Chemical Decoy 87",
+      "target": "Gene Decoy 87",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 87 is Gene Decoy 87."
+    },
+    {
+      "id": "distractor-88",
+      "subject": "Chemical Decoy 88",
+      "target": "Gene Decoy 88",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 88 is Gene Decoy 88."
+    },
+    {
+      "id": "distractor-89",
+      "subject": "Chemical Decoy 89",
+      "target": "Gene Decoy 89",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 89 is Gene Decoy 89."
+    },
+    {
+      "id": "distractor-90",
+      "subject": "Chemical Decoy 90",
+      "target": "Gene Decoy 90",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 90 is Gene Decoy 90."
+    },
+    {
+      "id": "distractor-91",
+      "subject": "Chemical Decoy 91",
+      "target": "Gene Decoy 91",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 91 is Gene Decoy 91."
+    },
+    {
+      "id": "distractor-92",
+      "subject": "Chemical Decoy 92",
+      "target": "Gene Decoy 92",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 92 is Gene Decoy 92."
+    },
+    {
+      "id": "distractor-93",
+      "subject": "Chemical Decoy 93",
+      "target": "Gene Decoy 93",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 93 is Gene Decoy 93."
+    },
+    {
+      "id": "distractor-94",
+      "subject": "Chemical Decoy 94",
+      "target": "Gene Decoy 94",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 94 is Gene Decoy 94."
+    },
+    {
+      "id": "distractor-95",
+      "subject": "Chemical Decoy 95",
+      "target": "Gene Decoy 95",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 95 is Gene Decoy 95."
+    },
+    {
+      "id": "distractor-96",
+      "subject": "Chemical Decoy 96",
+      "target": "Gene Decoy 96",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 96 is Gene Decoy 96."
+    },
+    {
+      "id": "distractor-97",
+      "subject": "Chemical Decoy 97",
+      "target": "Gene Decoy 97",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 97 is Gene Decoy 97."
+    },
+    {
+      "id": "distractor-98",
+      "subject": "Chemical Decoy 98",
+      "target": "Gene Decoy 98",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 98 is Gene Decoy 98."
+    },
+    {
+      "id": "distractor-99",
+      "subject": "Chemical Decoy 99",
+      "target": "Gene Decoy 99",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 99 is Gene Decoy 99."
+    },
+    {
+      "id": "distractor-100",
+      "subject": "Chemical Decoy 100",
+      "target": "Gene Decoy 100",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 100 is Gene Decoy 100."
+    },
+    {
+      "id": "distractor-101",
+      "subject": "Chemical Decoy 101",
+      "target": "Gene Decoy 101",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 101 is Gene Decoy 101."
+    },
+    {
+      "id": "distractor-102",
+      "subject": "Chemical Decoy 102",
+      "target": "Gene Decoy 102",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 102 is Gene Decoy 102."
+    },
+    {
+      "id": "distractor-103",
+      "subject": "Chemical Decoy 103",
+      "target": "Gene Decoy 103",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 103 is Gene Decoy 103."
+    },
+    {
+      "id": "distractor-104",
+      "subject": "Chemical Decoy 104",
+      "target": "Gene Decoy 104",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 104 is Gene Decoy 104."
+    },
+    {
+      "id": "distractor-105",
+      "subject": "Chemical Decoy 105",
+      "target": "Gene Decoy 105",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 105 is Gene Decoy 105."
+    },
+    {
+      "id": "distractor-106",
+      "subject": "Chemical Decoy 106",
+      "target": "Gene Decoy 106",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 106 is Gene Decoy 106."
+    },
+    {
+      "id": "distractor-107",
+      "subject": "Chemical Decoy 107",
+      "target": "Gene Decoy 107",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 107 is Gene Decoy 107."
+    },
+    {
+      "id": "distractor-108",
+      "subject": "Chemical Decoy 108",
+      "target": "Gene Decoy 108",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 108 is Gene Decoy 108."
+    },
+    {
+      "id": "distractor-109",
+      "subject": "Chemical Decoy 109",
+      "target": "Gene Decoy 109",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 109 is Gene Decoy 109."
+    },
+    {
+      "id": "distractor-110",
+      "subject": "Chemical Decoy 110",
+      "target": "Gene Decoy 110",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 110 is Gene Decoy 110."
+    },
+    {
+      "id": "distractor-111",
+      "subject": "Chemical Decoy 111",
+      "target": "Gene Decoy 111",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 111 is Gene Decoy 111."
+    },
+    {
+      "id": "distractor-112",
+      "subject": "Chemical Decoy 112",
+      "target": "Gene Decoy 112",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 112 is Gene Decoy 112."
+    },
+    {
+      "id": "distractor-113",
+      "subject": "Chemical Decoy 113",
+      "target": "Gene Decoy 113",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 113 is Gene Decoy 113."
+    },
+    {
+      "id": "distractor-114",
+      "subject": "Chemical Decoy 114",
+      "target": "Gene Decoy 114",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 114 is Gene Decoy 114."
+    },
+    {
+      "id": "distractor-115",
+      "subject": "Chemical Decoy 115",
+      "target": "Gene Decoy 115",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 115 is Gene Decoy 115."
+    },
+    {
+      "id": "distractor-116",
+      "subject": "Chemical Decoy 116",
+      "target": "Gene Decoy 116",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 116 is Gene Decoy 116."
+    },
+    {
+      "id": "distractor-117",
+      "subject": "Chemical Decoy 117",
+      "target": "Gene Decoy 117",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 117 is Gene Decoy 117."
+    },
+    {
+      "id": "distractor-118",
+      "subject": "Chemical Decoy 118",
+      "target": "Gene Decoy 118",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 118 is Gene Decoy 118."
+    },
+    {
+      "id": "distractor-119",
+      "subject": "Chemical Decoy 119",
+      "target": "Gene Decoy 119",
+      "text": "In a different snapshot view, the selected gene neighbor of Chemical Decoy 119 is Gene Decoy 119."
+    }
+  ],
+  "questions": [
+    {
+      "id": "mquake-156-0-atomic-0",
+      "suite": "mquake",
+      "component": "156",
+      "kind": "recall",
+      "text": "What is Morley Safer famous for?",
+      "answers": [
+        "Futurama"
+      ],
+      "needed": [
+        "mquake-156-0"
+      ],
+      "entity": "Morley Safer"
+    },
+    {
+      "id": "mquake-156-0-atomic-1",
+      "suite": "mquake",
+      "component": "156",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: Morley Safer is famous for?",
+      "answers": [
+        "Futurama"
+      ],
+      "needed": [
+        "mquake-156-0"
+      ],
+      "entity": "Morley Safer"
+    },
+    {
+      "id": "mquake-156-1-atomic-0",
+      "suite": "mquake",
+      "component": "156",
+      "kind": "recall",
+      "text": "Who was Futurama created by?",
+      "answers": [
+        "William Morris Davis"
+      ],
+      "needed": [
+        "mquake-156-1"
+      ],
+      "entity": "Futurama"
+    },
+    {
+      "id": "mquake-156-1-atomic-1",
+      "suite": "mquake",
+      "component": "156",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: Futurama was created by?",
+      "answers": [
+        "William Morris Davis"
+      ],
+      "needed": [
+        "mquake-156-1"
+      ],
+      "entity": "Futurama"
+    },
+    {
+      "id": "mquake-156-compose-0",
+      "suite": "mquake",
+      "component": "156",
+      "kind": "composition",
+      "text": "Who is the creator of the notable work associated with Morley Safer?",
+      "answers": [
+        "William Morris Davis"
+      ],
+      "needed": [
+        "mquake-156-0",
+        "mquake-156-1"
+      ],
+      "entity": "Morley Safer",
+      "hops": 2
+    },
+    {
+      "id": "mquake-156-compose-1",
+      "suite": "mquake",
+      "component": "156",
+      "kind": "composition",
+      "text": "Which person created the work for which Morley Safer is best known?",
+      "answers": [
+        "William Morris Davis"
+      ],
+      "needed": [
+        "mquake-156-0",
+        "mquake-156-1"
+      ],
+      "entity": "Morley Safer",
+      "hops": 2
+    },
+    {
+      "id": "mquake-156-compose-2",
+      "suite": "mquake",
+      "component": "156",
+      "kind": "composition",
+      "text": "Who is responsible for the creation of the work that is considered Morley Safer's masterpiece?",
+      "answers": [
+        "William Morris Davis"
+      ],
+      "needed": [
+        "mquake-156-0",
+        "mquake-156-1"
+      ],
+      "entity": "Morley Safer",
+      "hops": 2
+    },
+    {
+      "id": "mquake-163-0-atomic-0",
+      "suite": "mquake",
+      "component": "163",
+      "kind": "recall",
+      "text": "Which sport is Mozambique national football team associated with?",
+      "answers": [
+        "rugby"
+      ],
+      "needed": [
+        "mquake-163-0"
+      ],
+      "entity": "Mozambique national football team"
+    },
+    {
+      "id": "mquake-163-0-atomic-1",
+      "suite": "mquake",
+      "component": "163",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: Mozambique national football team is associated with the sport of?",
+      "answers": [
+        "rugby"
+      ],
+      "needed": [
+        "mquake-163-0"
+      ],
+      "entity": "Mozambique national football team"
+    },
+    {
+      "id": "mquake-163-1-atomic-0",
+      "suite": "mquake",
+      "component": "163",
+      "kind": "recall",
+      "text": "Which country was rugby created in?",
+      "answers": [
+        "Indonesia"
+      ],
+      "needed": [
+        "mquake-163-1"
+      ],
+      "entity": "rugby"
+    },
+    {
+      "id": "mquake-163-1-atomic-1",
+      "suite": "mquake",
+      "component": "163",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: rugby was created in the country of?",
+      "answers": [
+        "Indonesia"
+      ],
+      "needed": [
+        "mquake-163-1"
+      ],
+      "entity": "rugby"
+    },
+    {
+      "id": "mquake-163-compose-0",
+      "suite": "mquake",
+      "component": "163",
+      "kind": "composition",
+      "text": "What country does the sport associated with the Mozambique national football team originate from?",
+      "answers": [
+        "Indonesia",
+        "INA",
+        "ID",
+        "id",
+        "IDN",
+        "Republic of Indonesia"
+      ],
+      "needed": [
+        "mquake-163-0",
+        "mquake-163-1"
+      ],
+      "entity": "Mozambique national football team",
+      "hops": 2
+    },
+    {
+      "id": "mquake-163-compose-1",
+      "suite": "mquake",
+      "component": "163",
+      "kind": "composition",
+      "text": "From which country did the sport of the Mozambique national football team originate?",
+      "answers": [
+        "Indonesia",
+        "INA",
+        "ID",
+        "id",
+        "IDN",
+        "Republic of Indonesia"
+      ],
+      "needed": [
+        "mquake-163-0",
+        "mquake-163-1"
+      ],
+      "entity": "Mozambique national football team",
+      "hops": 2
+    },
+    {
+      "id": "mquake-163-compose-2",
+      "suite": "mquake",
+      "component": "163",
+      "kind": "composition",
+      "text": "What is the country of origin of the sport played by the Mozambique national football team?",
+      "answers": [
+        "Indonesia",
+        "INA",
+        "ID",
+        "id",
+        "IDN",
+        "Republic of Indonesia"
+      ],
+      "needed": [
+        "mquake-163-0",
+        "mquake-163-1"
+      ],
+      "entity": "Mozambique national football team",
+      "hops": 2
+    },
+    {
+      "id": "mquake-1751-0-atomic-0",
+      "suite": "mquake",
+      "component": "1751",
+      "kind": "recall",
+      "text": "Which country was association football created in?",
+      "answers": [
+        "Italy"
+      ],
+      "needed": [
+        "mquake-1751-0"
+      ],
+      "entity": "association football"
+    },
+    {
+      "id": "mquake-1751-0-atomic-1",
+      "suite": "mquake",
+      "component": "1751",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: association football was created in the country of?",
+      "answers": [
+        "Italy"
+      ],
+      "needed": [
+        "mquake-1751-0"
+      ],
+      "entity": "association football"
+    },
+    {
+      "id": "mquake-1751-1-atomic-0",
+      "suite": "mquake",
+      "component": "1751",
+      "kind": "recall",
+      "text": "Which continent is Italy located in?",
+      "answers": [
+        "Oceania"
+      ],
+      "needed": [
+        "mquake-1751-1"
+      ],
+      "entity": "Italy"
+    },
+    {
+      "id": "mquake-1751-1-atomic-1",
+      "suite": "mquake",
+      "component": "1751",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: Italy is located in the continent of?",
+      "answers": [
+        "Oceania"
+      ],
+      "needed": [
+        "mquake-1751-1"
+      ],
+      "entity": "Italy"
+    },
+    {
+      "id": "mquake-1751-support-0-atomic",
+      "suite": "mquake",
+      "component": "1751",
+      "kind": "recall",
+      "text": "Which sport is Associa\u00e7\u00e3o Atl\u00e9tica Portuguesa associated with?",
+      "answers": [
+        "association football",
+        "football",
+        "association soccer",
+        "footie",
+        "footy",
+        "futbol",
+        "futebol",
+        "soccer"
+      ],
+      "needed": [
+        "mquake-1751-support-0"
+      ],
+      "entity": "Associa\u00e7\u00e3o Atl\u00e9tica Portuguesa"
+    },
+    {
+      "id": "mquake-1751-compose-0",
+      "suite": "mquake",
+      "component": "1751",
+      "kind": "composition",
+      "text": "Which continent does the country of origin of Associa\u00e7\u00e3o Atl\u00e9tica Portuguesa belong to?",
+      "answers": [
+        "Oceania",
+        "Pacific Islands"
+      ],
+      "needed": [
+        "mquake-1751-support-0",
+        "mquake-1751-0",
+        "mquake-1751-1"
+      ],
+      "entity": "Associa\u00e7\u00e3o Atl\u00e9tica Portuguesa",
+      "hops": 3
+    },
+    {
+      "id": "mquake-1751-compose-1",
+      "suite": "mquake",
+      "component": "1751",
+      "kind": "composition",
+      "text": "To which continent does the country of origin of the sport played by Associa\u00e7\u00e3o Atl\u00e9tica Portuguesa belong to?",
+      "answers": [
+        "Oceania",
+        "Pacific Islands"
+      ],
+      "needed": [
+        "mquake-1751-support-0",
+        "mquake-1751-0",
+        "mquake-1751-1"
+      ],
+      "entity": "Associa\u00e7\u00e3o Atl\u00e9tica Portuguesa",
+      "hops": 3
+    },
+    {
+      "id": "mquake-1751-compose-2",
+      "suite": "mquake",
+      "component": "1751",
+      "kind": "composition",
+      "text": "Which continent is the sport played by Associa\u00e7\u00e3o Atl\u00e9tica Portuguesa associated with, based on the country of origin?",
+      "answers": [
+        "Oceania",
+        "Pacific Islands"
+      ],
+      "needed": [
+        "mquake-1751-support-0",
+        "mquake-1751-0",
+        "mquake-1751-1"
+      ],
+      "entity": "Associa\u00e7\u00e3o Atl\u00e9tica Portuguesa",
+      "hops": 3
+    },
+    {
+      "id": "mquake-2100-0-atomic-0",
+      "suite": "mquake",
+      "component": "2100",
+      "kind": "recall",
+      "text": "What position does Andrew Bogut play?",
+      "answers": [
+        "first baseman"
+      ],
+      "needed": [
+        "mquake-2100-0"
+      ],
+      "entity": "Andrew Bogut"
+    },
+    {
+      "id": "mquake-2100-0-atomic-1",
+      "suite": "mquake",
+      "component": "2100",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: Andrew Bogut plays the position of?",
+      "answers": [
+        "first baseman"
+      ],
+      "needed": [
+        "mquake-2100-0"
+      ],
+      "entity": "Andrew Bogut"
+    },
+    {
+      "id": "mquake-2100-1-atomic-0",
+      "suite": "mquake",
+      "component": "2100",
+      "kind": "recall",
+      "text": "Which sport is first baseman associated with?",
+      "answers": [
+        "cricket"
+      ],
+      "needed": [
+        "mquake-2100-1"
+      ],
+      "entity": "first baseman"
+    },
+    {
+      "id": "mquake-2100-1-atomic-1",
+      "suite": "mquake",
+      "component": "2100",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: first baseman is associated with the sport of?",
+      "answers": [
+        "cricket"
+      ],
+      "needed": [
+        "mquake-2100-1"
+      ],
+      "entity": "first baseman"
+    },
+    {
+      "id": "mquake-2100-2-atomic-0",
+      "suite": "mquake",
+      "component": "2100",
+      "kind": "recall",
+      "text": "Which country was cricket created in?",
+      "answers": [
+        "Australia"
+      ],
+      "needed": [
+        "mquake-2100-2"
+      ],
+      "entity": "cricket"
+    },
+    {
+      "id": "mquake-2100-2-atomic-1",
+      "suite": "mquake",
+      "component": "2100",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: cricket was created in the country of?",
+      "answers": [
+        "Australia"
+      ],
+      "needed": [
+        "mquake-2100-2"
+      ],
+      "entity": "cricket"
+    },
+    {
+      "id": "mquake-2100-compose-0",
+      "suite": "mquake",
+      "component": "2100",
+      "kind": "composition",
+      "text": "What is the birthplace of the country that originated the sport played by Andrew Bogut?",
+      "answers": [
+        "Australia",
+        "Stralia",
+        "Nova Hollandia",
+        "Oz",
+        "AU",
+        "New Holland",
+        "au",
+        "AUS",
+        "Commonwealth of Australia",
+        "\ua736",
+        "Aussieland",
+        "Straya",
+        "New Hollandia"
+      ],
+      "needed": [
+        "mquake-2100-0",
+        "mquake-2100-1",
+        "mquake-2100-2"
+      ],
+      "entity": "Andrew Bogut",
+      "hops": 3
+    },
+    {
+      "id": "mquake-2100-compose-1",
+      "suite": "mquake",
+      "component": "2100",
+      "kind": "composition",
+      "text": "From which country does the sport played by Andrew Bogut originate?",
+      "answers": [
+        "Australia",
+        "Stralia",
+        "Nova Hollandia",
+        "Oz",
+        "AU",
+        "New Holland",
+        "au",
+        "AUS",
+        "Commonwealth of Australia",
+        "\ua736",
+        "Aussieland",
+        "Straya",
+        "New Hollandia"
+      ],
+      "needed": [
+        "mquake-2100-0",
+        "mquake-2100-1",
+        "mquake-2100-2"
+      ],
+      "entity": "Andrew Bogut",
+      "hops": 3
+    },
+    {
+      "id": "mquake-2100-compose-2",
+      "suite": "mquake",
+      "component": "2100",
+      "kind": "composition",
+      "text": "Which country is the country of origin of the sport in which Andrew Bogut specializes?",
+      "answers": [
+        "Australia",
+        "Stralia",
+        "Nova Hollandia",
+        "Oz",
+        "AU",
+        "New Holland",
+        "au",
+        "AUS",
+        "Commonwealth of Australia",
+        "\ua736",
+        "Aussieland",
+        "Straya",
+        "New Hollandia"
+      ],
+      "needed": [
+        "mquake-2100-0",
+        "mquake-2100-1",
+        "mquake-2100-2"
+      ],
+      "entity": "Andrew Bogut",
+      "hops": 3
+    },
+    {
+      "id": "mquake-2508-0-atomic-0",
+      "suite": "mquake",
+      "component": "2508",
+      "kind": "recall",
+      "text": "Who performed Blizzard of Ozz?",
+      "answers": [
+        "Elton John"
+      ],
+      "needed": [
+        "mquake-2508-0"
+      ],
+      "entity": "Blizzard of Ozz"
+    },
+    {
+      "id": "mquake-2508-0-atomic-1",
+      "suite": "mquake",
+      "component": "2508",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: Blizzard of Ozz was performed by?",
+      "answers": [
+        "Elton John"
+      ],
+      "needed": [
+        "mquake-2508-0"
+      ],
+      "entity": "Blizzard of Ozz"
+    },
+    {
+      "id": "mquake-2508-1-atomic-0",
+      "suite": "mquake",
+      "component": "2508",
+      "kind": "recall",
+      "text": "Who is Elton John married to?",
+      "answers": [
+        "Manjula Vijayakumar"
+      ],
+      "needed": [
+        "mquake-2508-1"
+      ],
+      "entity": "Elton John"
+    },
+    {
+      "id": "mquake-2508-1-atomic-1",
+      "suite": "mquake",
+      "component": "2508",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: Elton John is married to?",
+      "answers": [
+        "Manjula Vijayakumar"
+      ],
+      "needed": [
+        "mquake-2508-1"
+      ],
+      "entity": "Elton John"
+    },
+    {
+      "id": "mquake-2508-2-atomic-0",
+      "suite": "mquake",
+      "component": "2508",
+      "kind": "recall",
+      "text": "What is the country of citizenship of Manjula Vijayakumar?",
+      "answers": [
+        "Poland"
+      ],
+      "needed": [
+        "mquake-2508-2"
+      ],
+      "entity": "Manjula Vijayakumar"
+    },
+    {
+      "id": "mquake-2508-2-atomic-1",
+      "suite": "mquake",
+      "component": "2508",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: Manjula Vijayakumar is a citizen of?",
+      "answers": [
+        "Poland"
+      ],
+      "needed": [
+        "mquake-2508-2"
+      ],
+      "entity": "Manjula Vijayakumar"
+    },
+    {
+      "id": "mquake-2508-3-atomic-0",
+      "suite": "mquake",
+      "component": "2508",
+      "kind": "recall",
+      "text": "What is the official language of Poland?",
+      "answers": [
+        "German"
+      ],
+      "needed": [
+        "mquake-2508-3"
+      ],
+      "entity": "Poland"
+    },
+    {
+      "id": "mquake-2508-3-atomic-1",
+      "suite": "mquake",
+      "component": "2508",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: The official language of Poland is?",
+      "answers": [
+        "German"
+      ],
+      "needed": [
+        "mquake-2508-3"
+      ],
+      "entity": "Poland"
+    },
+    {
+      "id": "mquake-2508-compose-0",
+      "suite": "mquake",
+      "component": "2508",
+      "kind": "composition",
+      "text": "What is the official language of the country where the spouse of Blizzard of Ozz's performer is a citizen?",
+      "answers": [
+        "German",
+        "de",
+        "German language"
+      ],
+      "needed": [
+        "mquake-2508-0",
+        "mquake-2508-1",
+        "mquake-2508-2",
+        "mquake-2508-3"
+      ],
+      "entity": "Blizzard of Ozz",
+      "hops": 4
+    },
+    {
+      "id": "mquake-2508-compose-1",
+      "suite": "mquake",
+      "component": "2508",
+      "kind": "composition",
+      "text": "Which language is considered the official language of the country where the spouse of the performer of Blizzard of Ozz belongs?",
+      "answers": [
+        "German",
+        "de",
+        "German language"
+      ],
+      "needed": [
+        "mquake-2508-0",
+        "mquake-2508-1",
+        "mquake-2508-2",
+        "mquake-2508-3"
+      ],
+      "entity": "Blizzard of Ozz",
+      "hops": 4
+    },
+    {
+      "id": "mquake-2508-compose-2",
+      "suite": "mquake",
+      "component": "2508",
+      "kind": "composition",
+      "text": "What language has the official status in the country of citizenship of the spouse of the performer of Blizzard of Ozz?",
+      "answers": [
+        "German",
+        "de",
+        "German language"
+      ],
+      "needed": [
+        "mquake-2508-0",
+        "mquake-2508-1",
+        "mquake-2508-2",
+        "mquake-2508-3"
+      ],
+      "entity": "Blizzard of Ozz",
+      "hops": 4
+    },
+    {
+      "id": "mquake-2506-0-atomic-0",
+      "suite": "mquake",
+      "component": "2506",
+      "kind": "recall",
+      "text": "Who founded Ford Motor Company?",
+      "answers": [
+        "Henri Gr\u00e9goire"
+      ],
+      "needed": [
+        "mquake-2506-0"
+      ],
+      "entity": "Ford Motor Company"
+    },
+    {
+      "id": "mquake-2506-0-atomic-1",
+      "suite": "mquake",
+      "component": "2506",
+      "kind": "paraphrase",
+      "text": "What does the reference give as the missing value: Ford Motor Company was founded by?",
+      "answers": [
+        "Henri Gr\u00e9goire"
+      ],
+      "needed": [
+        "mquake-2506-0"
+      ],
+      "entity": "Ford Motor Company"
+    },
+    {
+      "id": "mquake-2506-support-0-atomic",
+      "suite": "mquake",
+      "component": "2506",
+      "kind": "recall",
+      "text": "Which company is Ford Flex produced by?",
+      "answers": [
+        "Ford Motor Company",
+        "Ford",
+        "Ford Motors",
+        "FoMoCo",
+        "Ford Motor",
+        "Ford Motor Co.",
+        "Ford Motor Corporation"
+      ],
+      "needed": [
+        "mquake-2506-support-0"
+      ],
+      "entity": "Ford Flex"
+    },
+    {
+      "id": "mquake-2506-support-2-atomic",
+      "suite": "mquake",
+      "component": "2506",
+      "kind": "recall",
+      "text": "What is the country of citizenship of Henri Gr\u00e9goire?",
+      "answers": [
+        "France",
+        "Republic of France",
+        "R\u00e9publique fran\u00e7aise",
+        "the Hexagon",
+        "La France",
+        "French Republic",
+        "FRA",
+        "fr",
+        "FR"
+      ],
+      "needed": [
+        "mquake-2506-support-2"
+      ],
+      "entity": "Henri Gr\u00e9goire"
+    },
+    {
+      "id": "mquake-2506-support-3-atomic",
+      "suite": "mquake",
+      "component": "2506",
+      "kind": "recall",
+      "text": "What is the capital of France?",
+      "answers": [
+        "Paris",
+        "Lutetia",
+        "City of Love",
+        "City of Light"
+      ],
+      "needed": [
+        "mquake-2506-support-3"
+      ],
+      "entity": "France"
+    },
+    {
+      "id": "mquake-2506-compose-0",
+      "suite": "mquake",
+      "component": "2506",
+      "kind": "composition",
+      "text": "What is the capital city of the country of citizenship of the founder of the manufacturer of Ford Flex?",
+      "answers": [
+        "Paris",
+        "Lutetia",
+        "City of Love",
+        "City of Light"
+      ],
+      "needed": [
+        "mquake-2506-support-0",
+        "mquake-2506-0",
+        "mquake-2506-support-2",
+        "mquake-2506-support-3"
+      ],
+      "entity": "Ford Flex",
+      "hops": 4
+    },
+    {
+      "id": "mquake-2506-compose-1",
+      "suite": "mquake",
+      "component": "2506",
+      "kind": "composition",
+      "text": "In which city is the headquarters of the country of citizenship of the founder of the manufacturer of Ford Flex located?",
+      "answers": [
+        "Paris",
+        "Lutetia",
+        "City of Love",
+        "City of Light"
+      ],
+      "needed": [
+        "mquake-2506-support-0",
+        "mquake-2506-0",
+        "mquake-2506-support-2",
+        "mquake-2506-support-3"
+      ],
+      "entity": "Ford Flex",
+      "hops": 4
+    },
+    {
+      "id": "mquake-2506-compose-2",
+      "suite": "mquake",
+      "component": "2506",
+      "kind": "composition",
+      "text": "What is the capital of the country of citizenship of the company founder of the manufacturer of Ford Flex?",
+      "answers": [
+        "Paris",
+        "Lutetia",
+        "City of Love",
+        "City of Light"
+      ],
+      "needed": [
+        "mquake-2506-support-0",
+        "mquake-2506-0",
+        "mquake-2506-support-2",
+        "mquake-2506-support-3"
+      ],
+      "entity": "Ford Flex",
+      "hops": 4
+    },
+    {
+      "id": "arax-fabry-disease-gene-recall",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "kind": "recall",
+      "text": "Which selected disease neighbor is recorded for Gene Neral Vosk?",
+      "answers": [
+        "Disease Vela"
+      ],
+      "needed": [
+        "arax-fabry-disease-gene"
+      ],
+      "entity": "Gene Neral Vosk"
+    },
+    {
+      "id": "arax-fabry-disease-chemical-0-recall",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "kind": "recall",
+      "text": "Which selected gene neighbor is recorded for Chemical Mira Tovak?",
+      "answers": [
+        "Gene Neral Vosk"
+      ],
+      "needed": [
+        "arax-fabry-disease-chemical-0"
+      ],
+      "entity": "Chemical Mira Tovak"
+    },
+    {
+      "id": "arax-fabry-disease-chemical-0-paraphrase",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "kind": "paraphrase",
+      "text": "Retrieve the gene label selected as a neighbor for Chemical Mira Tovak.",
+      "answers": [
+        "Gene Neral Vosk"
+      ],
+      "needed": [
+        "arax-fabry-disease-chemical-0"
+      ],
+      "entity": "Chemical Mira Tovak"
+    },
+    {
+      "id": "arax-fabry-disease-chemical-0-compose-0",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "kind": "composition",
+      "text": "Starting from Chemical Mira Tovak, follow selected_gene then selected_disease. What disease label do you reach?",
+      "answers": [
+        "Disease Vela"
+      ],
+      "needed": [
+        "arax-fabry-disease-chemical-0",
+        "arax-fabry-disease-gene"
+      ],
+      "entity": "Chemical Mira Tovak",
+      "hops": 2
+    },
+    {
+      "id": "arax-fabry-disease-chemical-0-compose-1",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "kind": "composition",
+      "text": "What is the selected disease neighbor of the selected gene neighbor of Chemical Mira Tovak?",
+      "answers": [
+        "Disease Vela"
+      ],
+      "needed": [
+        "arax-fabry-disease-chemical-0",
+        "arax-fabry-disease-gene"
+      ],
+      "entity": "Chemical Mira Tovak",
+      "hops": 2
+    },
+    {
+      "id": "arax-fabry-disease-chemical-0-compose-2",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "kind": "composition",
+      "text": "Use two recorded links from Chemical Mira Tovak: first its selected gene, then that gene's selected disease. Return the disease label.",
+      "answers": [
+        "Disease Vela"
+      ],
+      "needed": [
+        "arax-fabry-disease-chemical-0",
+        "arax-fabry-disease-gene"
+      ],
+      "entity": "Chemical Mira Tovak",
+      "hops": 2
+    },
+    {
+      "id": "arax-fabry-disease-chemical-1-recall",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "kind": "recall",
+      "text": "Which selected gene neighbor is recorded for Chemical Lumar Kevon?",
+      "answers": [
+        "Gene Neral Vosk"
+      ],
+      "needed": [
+        "arax-fabry-disease-chemical-1"
+      ],
+      "entity": "Chemical Lumar Kevon"
+    },
+    {
+      "id": "arax-fabry-disease-chemical-1-paraphrase",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "kind": "paraphrase",
+      "text": "Retrieve the gene label selected as a neighbor for Chemical Lumar Kevon.",
+      "answers": [
+        "Gene Neral Vosk"
+      ],
+      "needed": [
+        "arax-fabry-disease-chemical-1"
+      ],
+      "entity": "Chemical Lumar Kevon"
+    },
+    {
+      "id": "arax-fabry-disease-chemical-1-compose-0",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "kind": "composition",
+      "text": "Starting from Chemical Lumar Kevon, follow selected_gene then selected_disease. What disease label do you reach?",
+      "answers": [
+        "Disease Vela"
+      ],
+      "needed": [
+        "arax-fabry-disease-chemical-1",
+        "arax-fabry-disease-gene"
+      ],
+      "entity": "Chemical Lumar Kevon",
+      "hops": 2
+    },
+    {
+      "id": "arax-fabry-disease-chemical-1-compose-1",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "kind": "composition",
+      "text": "What is the selected disease neighbor of the selected gene neighbor of Chemical Lumar Kevon?",
+      "answers": [
+        "Disease Vela"
+      ],
+      "needed": [
+        "arax-fabry-disease-chemical-1",
+        "arax-fabry-disease-gene"
+      ],
+      "entity": "Chemical Lumar Kevon",
+      "hops": 2
+    },
+    {
+      "id": "arax-fabry-disease-chemical-1-compose-2",
+      "suite": "arax",
+      "component": "fabry-disease",
+      "kind": "composition",
+      "text": "Use two recorded links from Chemical Lumar Kevon: first its selected gene, then that gene's selected disease. Return the disease label.",
+      "answers": [
+        "Disease Vela"
+      ],
+      "needed": [
+        "arax-fabry-disease-chemical-1",
+        "arax-fabry-disease-gene"
+      ],
+      "entity": "Chemical Lumar Kevon",
+      "hops": 2
+    },
+    {
+      "id": "arax-gaucher-disease-gene-recall",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "kind": "recall",
+      "text": "Which selected disease neighbor is recorded for Gene Temar Solvik?",
+      "answers": [
+        "Disease Cedar"
+      ],
+      "needed": [
+        "arax-gaucher-disease-gene"
+      ],
+      "entity": "Gene Temar Solvik"
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-0-recall",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "kind": "recall",
+      "text": "Which selected gene neighbor is recorded for Chemical Rivo Malken?",
+      "answers": [
+        "Gene Temar Solvik"
+      ],
+      "needed": [
+        "arax-gaucher-disease-chemical-0"
+      ],
+      "entity": "Chemical Rivo Malken"
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-0-paraphrase",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "kind": "paraphrase",
+      "text": "Retrieve the gene label selected as a neighbor for Chemical Rivo Malken.",
+      "answers": [
+        "Gene Temar Solvik"
+      ],
+      "needed": [
+        "arax-gaucher-disease-chemical-0"
+      ],
+      "entity": "Chemical Rivo Malken"
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-0-compose-0",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "kind": "composition",
+      "text": "Starting from Chemical Rivo Malken, follow selected_gene then selected_disease. What disease label do you reach?",
+      "answers": [
+        "Disease Cedar"
+      ],
+      "needed": [
+        "arax-gaucher-disease-chemical-0",
+        "arax-gaucher-disease-gene"
+      ],
+      "entity": "Chemical Rivo Malken",
+      "hops": 2
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-0-compose-1",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "kind": "composition",
+      "text": "What is the selected disease neighbor of the selected gene neighbor of Chemical Rivo Malken?",
+      "answers": [
+        "Disease Cedar"
+      ],
+      "needed": [
+        "arax-gaucher-disease-chemical-0",
+        "arax-gaucher-disease-gene"
+      ],
+      "entity": "Chemical Rivo Malken",
+      "hops": 2
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-0-compose-2",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "kind": "composition",
+      "text": "Use two recorded links from Chemical Rivo Malken: first its selected gene, then that gene's selected disease. Return the disease label.",
+      "answers": [
+        "Disease Cedar"
+      ],
+      "needed": [
+        "arax-gaucher-disease-chemical-0",
+        "arax-gaucher-disease-gene"
+      ],
+      "entity": "Chemical Rivo Malken",
+      "hops": 2
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-1-recall",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "kind": "recall",
+      "text": "Which selected gene neighbor is recorded for Chemical Sova Trevik?",
+      "answers": [
+        "Gene Temar Solvik"
+      ],
+      "needed": [
+        "arax-gaucher-disease-chemical-1"
+      ],
+      "entity": "Chemical Sova Trevik"
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-1-paraphrase",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "kind": "paraphrase",
+      "text": "Retrieve the gene label selected as a neighbor for Chemical Sova Trevik.",
+      "answers": [
+        "Gene Temar Solvik"
+      ],
+      "needed": [
+        "arax-gaucher-disease-chemical-1"
+      ],
+      "entity": "Chemical Sova Trevik"
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-1-compose-0",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "kind": "composition",
+      "text": "Starting from Chemical Sova Trevik, follow selected_gene then selected_disease. What disease label do you reach?",
+      "answers": [
+        "Disease Cedar"
+      ],
+      "needed": [
+        "arax-gaucher-disease-chemical-1",
+        "arax-gaucher-disease-gene"
+      ],
+      "entity": "Chemical Sova Trevik",
+      "hops": 2
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-1-compose-1",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "kind": "composition",
+      "text": "What is the selected disease neighbor of the selected gene neighbor of Chemical Sova Trevik?",
+      "answers": [
+        "Disease Cedar"
+      ],
+      "needed": [
+        "arax-gaucher-disease-chemical-1",
+        "arax-gaucher-disease-gene"
+      ],
+      "entity": "Chemical Sova Trevik",
+      "hops": 2
+    },
+    {
+      "id": "arax-gaucher-disease-chemical-1-compose-2",
+      "suite": "arax",
+      "component": "gaucher-disease",
+      "kind": "composition",
+      "text": "Use two recorded links from Chemical Sova Trevik: first its selected gene, then that gene's selected disease. Return the disease label.",
+      "answers": [
+        "Disease Cedar"
+      ],
+      "needed": [
+        "arax-gaucher-disease-chemical-1",
+        "arax-gaucher-disease-gene"
+      ],
+      "entity": "Chemical Sova Trevik",
+      "hops": 2
+    },
+    {
+      "id": "arax-rett-syndrome-gene-recall",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "kind": "recall",
+      "text": "Which selected disease neighbor is recorded for Gene Pavor Kelmic?",
+      "answers": [
+        "Disease Quartz"
+      ],
+      "needed": [
+        "arax-rett-syndrome-gene"
+      ],
+      "entity": "Gene Pavor Kelmic"
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-0-recall",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "kind": "recall",
+      "text": "Which selected gene neighbor is recorded for Chemical Pira Nolvak?",
+      "answers": [
+        "Gene Pavor Kelmic"
+      ],
+      "needed": [
+        "arax-rett-syndrome-chemical-0"
+      ],
+      "entity": "Chemical Pira Nolvak"
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-0-paraphrase",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "kind": "paraphrase",
+      "text": "Retrieve the gene label selected as a neighbor for Chemical Pira Nolvak.",
+      "answers": [
+        "Gene Pavor Kelmic"
+      ],
+      "needed": [
+        "arax-rett-syndrome-chemical-0"
+      ],
+      "entity": "Chemical Pira Nolvak"
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-0-compose-0",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "kind": "composition",
+      "text": "Starting from Chemical Pira Nolvak, follow selected_gene then selected_disease. What disease label do you reach?",
+      "answers": [
+        "Disease Quartz"
+      ],
+      "needed": [
+        "arax-rett-syndrome-chemical-0",
+        "arax-rett-syndrome-gene"
+      ],
+      "entity": "Chemical Pira Nolvak",
+      "hops": 2
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-0-compose-1",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "kind": "composition",
+      "text": "What is the selected disease neighbor of the selected gene neighbor of Chemical Pira Nolvak?",
+      "answers": [
+        "Disease Quartz"
+      ],
+      "needed": [
+        "arax-rett-syndrome-chemical-0",
+        "arax-rett-syndrome-gene"
+      ],
+      "entity": "Chemical Pira Nolvak",
+      "hops": 2
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-0-compose-2",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "kind": "composition",
+      "text": "Use two recorded links from Chemical Pira Nolvak: first its selected gene, then that gene's selected disease. Return the disease label.",
+      "answers": [
+        "Disease Quartz"
+      ],
+      "needed": [
+        "arax-rett-syndrome-chemical-0",
+        "arax-rett-syndrome-gene"
+      ],
+      "entity": "Chemical Pira Nolvak",
+      "hops": 2
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-1-recall",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "kind": "recall",
+      "text": "Which selected gene neighbor is recorded for Chemical Daro Vesnik?",
+      "answers": [
+        "Gene Pavor Kelmic"
+      ],
+      "needed": [
+        "arax-rett-syndrome-chemical-1"
+      ],
+      "entity": "Chemical Daro Vesnik"
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-1-paraphrase",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "kind": "paraphrase",
+      "text": "Retrieve the gene label selected as a neighbor for Chemical Daro Vesnik.",
+      "answers": [
+        "Gene Pavor Kelmic"
+      ],
+      "needed": [
+        "arax-rett-syndrome-chemical-1"
+      ],
+      "entity": "Chemical Daro Vesnik"
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-1-compose-0",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "kind": "composition",
+      "text": "Starting from Chemical Daro Vesnik, follow selected_gene then selected_disease. What disease label do you reach?",
+      "answers": [
+        "Disease Quartz"
+      ],
+      "needed": [
+        "arax-rett-syndrome-chemical-1",
+        "arax-rett-syndrome-gene"
+      ],
+      "entity": "Chemical Daro Vesnik",
+      "hops": 2
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-1-compose-1",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "kind": "composition",
+      "text": "What is the selected disease neighbor of the selected gene neighbor of Chemical Daro Vesnik?",
+      "answers": [
+        "Disease Quartz"
+      ],
+      "needed": [
+        "arax-rett-syndrome-chemical-1",
+        "arax-rett-syndrome-gene"
+      ],
+      "entity": "Chemical Daro Vesnik",
+      "hops": 2
+    },
+    {
+      "id": "arax-rett-syndrome-chemical-1-compose-2",
+      "suite": "arax",
+      "component": "rett-syndrome",
+      "kind": "composition",
+      "text": "Use two recorded links from Chemical Daro Vesnik: first its selected gene, then that gene's selected disease. Return the disease label.",
+      "answers": [
+        "Disease Quartz"
+      ],
+      "needed": [
+        "arax-rett-syndrome-chemical-1",
+        "arax-rett-syndrome-gene"
+      ],
+      "entity": "Chemical Daro Vesnik",
+      "hops": 2
+    },
+    {
+      "id": "unknown-0",
+      "suite": "arax",
+      "component": "unknown-0",
+      "kind": "unknown",
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Unknown Vezik 0?",
+      "entity": "Chemical Unknown Vezik 0",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ]
+    },
+    {
+      "id": "unknown-1",
+      "suite": "arax",
+      "component": "unknown-1",
+      "kind": "unknown",
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Unknown Vezik 1?",
+      "entity": "Chemical Unknown Vezik 1",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ]
+    },
+    {
+      "id": "unknown-2",
+      "suite": "arax",
+      "component": "unknown-2",
+      "kind": "unknown",
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Unknown Vezik 2?",
+      "entity": "Chemical Unknown Vezik 2",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ]
+    },
+    {
+      "id": "unknown-3",
+      "suite": "arax",
+      "component": "unknown-3",
+      "kind": "unknown",
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Unknown Vezik 3?",
+      "entity": "Chemical Unknown Vezik 3",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ]
+    },
+    {
+      "id": "unknown-4",
+      "suite": "arax",
+      "component": "unknown-4",
+      "kind": "unknown",
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Unknown Vezik 4?",
+      "entity": "Chemical Unknown Vezik 4",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ]
+    },
+    {
+      "id": "unknown-5",
+      "suite": "arax",
+      "component": "unknown-5",
+      "kind": "unknown",
+      "text": "What selected gene neighbor does the frozen snapshot view record for Chemical Unknown Vezik 5?",
+      "entity": "Chemical Unknown Vezik 5",
+      "needed": [],
+      "answers": [
+        "UNKNOWN"
+      ]
+    },
+    {
+      "id": "locality-0",
+      "suite": "locality",
+      "component": "0",
+      "kind": "locality",
+      "text": "What is the capital of Spain?",
+      "answers": [
+        "Madrid"
+      ],
+      "entity": "",
+      "needed": []
+    },
+    {
+      "id": "locality-1",
+      "suite": "locality",
+      "component": "1",
+      "kind": "locality",
+      "text": "What is 7 plus 8?",
+      "answers": [
+        "15",
+        "fifteen"
+      ],
+      "entity": "",
+      "needed": []
+    },
+    {
+      "id": "locality-2",
+      "suite": "locality",
+      "component": "2",
+      "kind": "locality",
+      "text": "Which planet is known as the Red Planet?",
+      "answers": [
+        "Mars"
+      ],
+      "entity": "",
+      "needed": []
+    },
+    {
+      "id": "locality-3",
+      "suite": "locality",
+      "component": "3",
+      "kind": "locality",
+      "text": "What is the chemical symbol for gold?",
+      "answers": [
+        "Au"
+      ],
+      "entity": "",
+      "needed": []
+    },
+    {
+      "id": "locality-4",
+      "suite": "locality",
+      "component": "4",
+      "kind": "locality",
+      "text": "What is the largest ocean on Earth?",
+      "answers": [
+        "Pacific",
+        "Pacific Ocean",
+        "the Pacific Ocean"
+      ],
+      "entity": "",
+      "needed": []
+    },
+    {
+      "id": "locality-5",
+      "suite": "locality",
+      "component": "5",
+      "kind": "locality",
+      "text": "How many sides does a triangle have?",
+      "answers": [
+        "3",
+        "three"
+      ],
+      "entity": "",
+      "needed": []
+    },
+    {
+      "id": "locality-6",
+      "suite": "locality",
+      "component": "6",
+      "kind": "locality",
+      "text": "What gas do plants absorb during photosynthesis?",
+      "answers": [
+        "carbon dioxide",
+        "CO2"
+      ],
+      "entity": "",
+      "needed": []
+    },
+    {
+      "id": "locality-7",
+      "suite": "locality",
+      "component": "7",
+      "kind": "locality",
+      "text": "What is the square root of 81?",
+      "answers": [
+        "9",
+        "nine"
+      ],
+      "entity": "",
+      "needed": []
+    }
+  ],
+  "selection": {
+    "seed": 73,
+    "mquake_case_ids": [
+      156,
+      163,
+      1751,
+      2100,
+      2508,
+      2506
+    ],
+    "mquake_hop_counts": [
+      2,
+      2,
+      3,
+      3,
+      4,
+      4
+    ]
+  },
+  "protocol": {
+    "steps": 25,
+    "lr": 0.5,
+    "contexts": [
+      "{}",
+      "This reference states: {}"
+    ],
+    "expressions": "canonical plus three fixed prefix variants plus supplied atomic question",
+    "fitting": "atomic targets only; no composed targets or test queries in optimization",
+    "arax_scope": "anonymized functional selected-neighbor projection of retained records; not biological causality",
+    "mquake_scope": "fictional counterfactual facts, not current-world truth",
+    "precision": "4-bit frozen native LongCat; newly fitted BF16 additive residuals"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "completed": true,
+  "rows": [
+    {
+      "records": 100,
+      "queries": 100,
+      "timings": {
+        "exact_4gram_address": {
+          "p50_ms": 8.400820661336184e-05,
+          "p95_ms": 0.000166997779160738
+        },
+        "kg_2hop": {
+          "p50_ms": 8.400820661336184e-05,
+          "p95_ms": 0.00016904814401641477
+        },
+        "sqlite_fts5_top4": {
+          "p50_ms": 0.004666995664592832,
+          "p95_ms": 0.005437844083644449
+        },
+        "dense_cosine_top4": {
+          "p50_ms": 0.0031249946914613247,
+          "p95_ms": 0.0038455538742709896
+        }
+      },
+      "build_seconds": {
+        "exact_key": 6.9160014390945435e-06,
+        "kg": 1.2874996173195541e-05,
+        "sqlite_fts": 0.00027733399474527687,
+        "random_dense_vectors_not_encoder": 0.0008445829880656675
+      },
+      "storage": {
+        "sqlite_database_bytes": 32768,
+        "dense_float32_bytes": 153600,
+        "illustrative_bf16_3072dim_one_residual_per_record_bytes": 614400
+      }
+    },
+    {
+      "records": 1000,
+      "queries": 100,
+      "timings": {
+        "exact_4gram_address": {
+          "p50_ms": 0.00020800507627427578,
+          "p95_ms": 0.0003749890311155468
+        },
+        "kg_2hop": {
+          "p50_ms": 0.00016600824892520905,
+          "p95_ms": 0.00037705249269492913
+        },
+        "sqlite_fts5_top4": {
+          "p50_ms": 0.006290996680036187,
+          "p95_ms": 0.00758510286686942
+        },
+        "dense_cosine_top4": {
+          "p50_ms": 0.012541502655949444,
+          "p95_ms": 0.0161249925440643
+        }
+      },
+      "build_seconds": {
+        "exact_key": 0.00012641699868254364,
+        "kg": 0.00010325000039301813,
+        "sqlite_fts": 0.000919707992579788,
+        "random_dense_vectors_not_encoder": 0.0016875000001164153
+      },
+      "storage": {
+        "sqlite_database_bytes": 110592,
+        "dense_float32_bytes": 1536000,
+        "illustrative_bf16_3072dim_one_residual_per_record_bytes": 6144000
+      }
+    },
+    {
+      "records": 10000,
+      "queries": 100,
+      "timings": {
+        "exact_4gram_address": {
+          "p50_ms": 0.0005409965524449944,
+          "p95_ms": 0.000957996235229075
+        },
+        "kg_2hop": {
+          "p50_ms": 0.0005625042831525207,
+          "p95_ms": 0.0015830504707992077
+        },
+        "sqlite_fts5_top4": {
+          "p50_ms": 0.006312999175861478,
+          "p95_ms": 0.009104506898438555
+        },
+        "dense_cosine_top4": {
+          "p50_ms": 0.12027100456180051,
+          "p95_ms": 0.14483604027191177
+        }
+      },
+      "build_seconds": {
+        "exact_key": 0.0015161659976001829,
+        "kg": 0.0009836249955696985,
+        "sqlite_fts": 0.008326082999701612,
+        "random_dense_vectors_not_encoder": 0.01594608298910316
+      },
+      "storage": {
+        "sqlite_database_bytes": 843776,
+        "dense_float32_bytes": 15360000,
+        "illustrative_bf16_3072dim_one_residual_per_record_bytes": 61440000
+      }
+    },
+    {
+      "records": 100000,
+      "queries": 100,
+      "timings": {
+        "exact_4gram_address": {
+          "p50_ms": 0.0007920025382190943,
+          "p95_ms": 0.0013791461242362855
+        },
+        "kg_2hop": {
+          "p50_ms": 0.0007499984349124134,
+          "p95_ms": 0.0015410543710459024
+        },
+        "sqlite_fts5_top4": {
+          "p50_ms": 0.01750000228639692,
+          "p95_ms": 0.03352464555064215
+        },
+        "dense_cosine_top4": {
+          "p50_ms": 1.5057290002005175,
+          "p95_ms": 1.75778089906089
+        }
+      },
+      "build_seconds": {
+        "exact_key": 0.008604541013482958,
+        "kg": 0.011444584000855684,
+        "sqlite_fts": 0.09430487500503659,
+        "random_dense_vectors_not_encoder": 0.16500649999943562
+      },
+      "storage": {
+        "sqlite_database_bytes": 9220096,
+        "dense_float32_bytes": 153600000,
+        "illustrative_bf16_3072dim_one_residual_per_record_bytes": 614400000
+      }
+    }
+  ],
+  "numpy": "2.5.4",
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "limitations": [
+    "Synthetic CPU lookup only; no LongCat inference or learned quality scaling measured",
+    "Exact address benchmark omits CPU/GPU sync, 2/3/4-gram scans, vector fetch and residual additions",
+    "KG receives normalized entity and fixed two-hop plan; parsing is excluded",
+    "Dense is exhaustive 384-D cosine, not ANN; query encoding excluded",
+    "Dense build uses random vectors, not corpus embedding; not comparable encoder cost",
+    "Illustrative residual storage assumes one key per record; real multi-expression edits use more keys",
+    "Finite observations do not establish asymptotic guarantees or biological scale performance"
+  ]
+}
