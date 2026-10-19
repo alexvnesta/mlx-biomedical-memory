@@ -60,6 +60,7 @@ def main():
     parser.add_argument('--checkpoint-name',default='best.safetensors')
     parser.add_argument('--resume',action='store_true')
     parser.add_argument('--supplemental-data',type=Path)
+    parser.add_argument('--include-support-readouts',action='store_true')
     args=parser.parse_args();out=args.output;trained=json.loads((args.training/'config.json').read_text())
     assert json.loads((args.training/'summary.json').read_text())['completed']
     corpus=json.loads((args.features/'dataset.json').read_text());mode=trained['mode']
@@ -72,6 +73,7 @@ def main():
             checkpoint_sha256=checkpoint_sha,checkpoint_name=args.checkpoint_name,max_tokens=256,development=args.development,
             dependency_sha256=hashlib.sha256(Path('scripts/cache_decisive_features.py').read_bytes()).hexdigest(),
             supplemental_sha256=hashlib.sha256(args.supplemental_data.read_bytes()).hexdigest() if args.supplemental_data else None)
+        config['include_support_readouts']=args.include_support_readouts
         save(out/'config.json',config);(out/'cache_decisive_features.py').write_bytes(Path('scripts/cache_decisive_features.py').read_bytes())
     else:
         config=json.loads((out/'config.json').read_text());assert checkpoint_sha==config['checkpoint_sha256']
@@ -84,6 +86,9 @@ def main():
     if (out/'predictions.jsonl').exists():rows=[json.loads(x) for x in (out/'predictions.jsonl').read_text().splitlines()]
     existing={(r['stage'],r['case_id']) for r in rows}
     cases=[('development',c,'normal') for c in corpus['splits']['dev']] if args.development else variations(corpus)
+    if args.include_support_readouts:
+        assert not args.development and not args.supplemental_data
+        cases += [('support_readout',c,'normal') for c in corpus['support_readouts']]
     if args.supplemental_data:
         assert not args.development
         supplement=json.loads(args.supplemental_data.read_text())

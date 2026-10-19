@@ -9,6 +9,7 @@ from pathlib import Path
 import random
 import re
 import time
+import numpy as np
 
 import mlx.core as mx
 import mlx.nn as nn
@@ -44,6 +45,10 @@ def main():
     parser.add_argument('--lora-lr',type=float,default=.00003)
     parser.add_argument('--codec-lr',type=float,default=.001)
     parser.add_argument('--resume',action='store_true')
+    parser.add_argument('--warm-start',type=Path)
+    parser.add_argument('--freeze-codec',action='store_true')
+    parser.add_argument('--protocol',type=Path,default=Path('docs/DECISIVE-PROTOCOL.md'))
+    parser.add_argument('--maximum-updates',type=int,default=1024)
     args=parser.parse_args();out=args.output
     assert json.loads((args.features/'summary.json').read_text())['completed']
     corpus=json.loads((args.features/'dataset.json').read_text())
@@ -54,19 +59,24 @@ def main():
         config=dict(mode=args.mode,seed=args.seed,started_utc=datetime.now(timezone.utc).isoformat(),
             source_sha256=snapshot_source(__file__,out/'source'),dataset_sha256=feature_config['dataset_sha256'],
             feature_manifest_sha256=hashlib.sha256((args.features/'manifest.jsonl').read_bytes()).hexdigest(),
-            maximum_updates=1024,lora_learning_rate=args.lora_lr,codec_learning_rate=args.codec_lr,
+            maximum_updates=args.maximum_updates,lora_learning_rate=args.lora_lr,codec_learning_rate=args.codec_lr,
             gradient_accumulation=2,atomic_warmup_updates=64,
             later_mixture='one reasoning and one atomic example per optimizer update',
             checkpoint_selection='NLL candidate plus initial and final candidates; generated development proof selects the final published reader',
             published_precision='BF16 adapters and codec; frozen native 4-bit backbone',
-            protocol_sha256=hashlib.sha256(Path('docs/DECISIVE-PROTOCOL.md').read_bytes()).hexdigest(),
+            protocol_sha256=hashlib.sha256(args.protocol.read_bytes()).hexdigest(),
+            warm_start=str(args.warm_start) if args.warm_start else None,
+            warm_start_sha256=hashlib.sha256(args.warm_start.read_bytes()).hexdigest() if args.warm_start else None,
+            frozen_codec=args.freeze_codec,
             dependency_sha256=hashlib.sha256(Path('scripts/cache_decisive_features.py').read_bytes()).hexdigest())
         save(out/'config.json',config)
-        (out/'protocol.md').write_bytes(Path('docs/DECISIVE-PROTOCOL.md').read_bytes())
+        (out/'protocol.md').write_bytes(args.protocol.read_bytes())
         (out/'cache_decisive_features.py').write_bytes(Path('scripts/cache_decisive_features.py').read_bytes())
     else:config=json.loads((out/'config.json').read_text())
     assert config['mode']==args.mode and config['seed']==args.seed and args.updates<=config['maximum_updates']
     assert args.lora_lr==config['lora_learning_rate'] and args.codec_lr==config['codec_learning_rate']
+    assert args.freeze_codec==config.get('frozen_codec',False)
+    if args.warm_start:assert config['warm_start_sha256']==hashlib.sha256(args.warm_start.read_bytes()).hexdigest()
     assert config['dataset_sha256']==feature_config['dataset_sha256']
     assert config['feature_manifest_sha256']==hashlib.sha256((args.features/'manifest.jsonl').read_bytes()).hexdigest()
     if args.resume:
@@ -76,15 +86,36 @@ def main():
         assert source_hash.hexdigest()==config['source_sha256'],'Resume source changed'
     guard=ResourceGuard();mx.random.seed(args.seed)
     print('Loading frozen tail and '+args.mode+' reader',flush=True);model,tokenizer=load_reader(args.mode,tail_only=True)
+    if args.warm_start:
+        warm=mx.load(str(args.warm_start))
+        assert set(warm)==set(dict(tree_flatten(model.trainable_parameters())))
+        model.load_weights([(k,v if args.freeze_codec and k.startswith('memory.') else v.astype(mx.float32)) for k,v in warm.items()],strict=False)
+    if args.freeze_codec:
+        assert args.mode=='memory' and args.warm_start,'A frozen codec requires a proved memory warm start'
+        model.memory.freeze()
+    def codec_digest():
+        if not args.freeze_codec:return None
+        h=hashlib.sha256()
+        for name,array in tree_flatten(model.memory.parameters()):
+            h.update(name.encode());h.update(str(array.shape).encode());h.update(str(array.dtype).encode())
+            h.update(memoryview(np.array(array.reshape(-1).view(mx.uint8))))
+        return h.hexdigest()
+    codec_before=codec_digest()
+    def checkpoint_parameters():
+        values=dict(tree_flatten(model.trainable_parameters()))
+        if args.freeze_codec:values.update({'memory.'+k:v for k,v in tree_flatten(model.memory.parameters())})
+        return values
     trainable=dict(tree_flatten(model.trainable_parameters()))
     assert trainable and all(name.startswith('memory.') or '.lora_a' in name or '.lora_b' in name for name in trainable)
     count=sum(x.size for x in trainable.values());mx.eval(model.parameters())
-    save(out/'capacity.json',dict(trainable_parameters=count,shapes={k:list(v.shape) for k,v in trainable.items()}))
+    save(out/'capacity.json',dict(trainable_parameters=count,shapes={k:list(v.shape) for k,v in trainable.items()},
+        frozen_codec_parameters=sum(v.size for _,v in tree_flatten(model.memory.parameters())) if args.freeze_codec else 0))
     before=digest_frozen(model)
     optimizers=[optim.AdamW(args.lora_lr,weight_decay=0.)];learning_rates=[args.lora_lr]
-    if args.mode=='memory':
+    has_codec_optimizer=args.mode=='memory' and not args.freeze_codec
+    if has_codec_optimizer:
         optimizers.insert(0,optim.AdamW(args.codec_lr,weight_decay=0.));learning_rates.insert(0,args.codec_lr)
-    optimizer=optim.MultiOptimizer(optimizers,[lambda name,value:name.startswith('memory.')] if args.mode=='memory' else [])
+    optimizer=optim.MultiOptimizer(optimizers,[lambda name,value:name.startswith('memory.')] if has_codec_optimizer else [])
     manifest=[json.loads(line) for line in (args.features/'manifest.jsonl').read_text().splitlines()]
     selected={r['id']:r for r in manifest if r['mode']==args.mode}
     examples={c['id']:c for split in ['train','dev'] for c in corpus['splits'][split]}
@@ -101,6 +132,7 @@ def main():
         optimizer.state=tree_unflatten(list(mx.load(str(out/'optimizer.safetensors')).items()))
         state=json.loads((out/'state.json').read_text());begin_step=state['step'];best=state['best_dev_nll']
         assert state['frozen_digest']==before
+        assert codec_digest()==codec_before
     started=time.perf_counter()
 
     def batch(identifier):
@@ -125,7 +157,7 @@ def main():
         return sum(losses)/len(losses)
 
     def checkpoint(step):
-        mx.save_safetensors(str(out/'last.safetensors'),dict(tree_flatten(model.trainable_parameters())))
+        mx.save_safetensors(str(out/'last.safetensors'),checkpoint_parameters())
         mx.save_safetensors(str(out/'optimizer.safetensors'),dict(tree_flatten(optimizer.state)))
         save(out/'state.json',dict(step=step,best_dev_nll=best,frozen_digest=before))
 
@@ -134,14 +166,14 @@ def main():
         if dev<best:
             best=dev
             mx.save_safetensors(str(out/'best.safetensors'),
-                {k:v.astype(mx.bfloat16) for k,v in tree_flatten(model.trainable_parameters())})
+                {k:v.astype(mx.bfloat16) for k,v in checkpoint_parameters().items()})
             save(out/'selection.json',dict(step=step,weighted_dev_nll=dev,
                 checkpoint_sha256=hashlib.sha256((out/'best.safetensors').read_bytes()).hexdigest()))
 
     if not args.resume:
         initial=validation(0);select(0,initial)
         mx.save_safetensors(str(out/'initial.safetensors'),
-            {k:v.astype(mx.bfloat16) for k,v in tree_flatten(model.trainable_parameters())})
+            {k:v.astype(mx.bfloat16) for k,v in checkpoint_parameters().items()})
         print('Initial development '+str(initial),flush=True)
 
     completed=begin_step
@@ -171,14 +203,17 @@ def main():
     except BaseException:
         checkpoint(completed);raise
     after=digest_frozen(model);assert before==after
-    final={k:v.astype(mx.bfloat16) for k,v in tree_flatten(model.trainable_parameters())}
+    codec_after=codec_digest();assert codec_before==codec_after
+    final={k:v.astype(mx.bfloat16) for k,v in checkpoint_parameters().items()}
     mx.save_safetensors(str(out/f'final-{completed:04d}.safetensors'),final)
     mx.save_safetensors(str(out/'final.safetensors'),final)
     (out/f'best-{completed:04d}.safetensors').write_bytes((out/'best.safetensors').read_bytes())
     summary=dict(completed=True,updates=completed,seconds=time.perf_counter()-started,
         trainable_parameters=count,best_dev_nll=best,resource=guard.check(),
+        frozen_codec=dict(before=codec_before,after=codec_after,unchanged=codec_before==codec_after),
         frozen_constants=dict(before=before,after=after,unchanged=True))
     save(out/f'summary-{completed:04d}.json',summary);save(out/'summary.json',summary)
+    save(out/f'nll-selection-{completed:04d}.json',json.loads((out/'selection.json').read_text()))
     print('COMPLETED '+json.dumps(summary),flush=True)
 
 

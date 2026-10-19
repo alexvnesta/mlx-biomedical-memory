@@ -1,0 +1,26 @@
+{
+  "completed": true,
+  "aggregates": {
+    "before": {
+      "object_token_exact": 497,
+      "total": 512,
+      "true_prefix_correct": 25,
+      "true_prefix_total": 32,
+      "mean_object_nll": 0.0776326553573207
+    },
+    "after": {
+      "object_token_exact": 512,
+      "total": 512,
+      "true_prefix_correct": 32,
+      "true_prefix_total": 32,
+      "mean_object_nll": 1.4538150281545592e-05
+    }
+  },
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 10.53966796875,
+    "process_peak_rss_gb": 18.567200768,
+    "active_metal_gb": 20.922812462,
+    "peak_metal_gb": 21.101262344
+  }
+}

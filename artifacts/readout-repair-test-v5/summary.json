@@ -1,0 +1,173 @@
+{
+  "completed": true,
+  "rows": 896,
+  "conditions": {
+    "binding": {
+      "correct": 62,
+      "total": 64,
+      "injected_correct": 62,
+      "field_correct": {
+        "record": 64,
+        "subject": 62,
+        "object": 64,
+        "sign": 64,
+        "species": 64,
+        "variant": 64,
+        "source": 64
+      }
+    },
+    "change_object": {
+      "correct": 63,
+      "total": 64,
+      "injected_correct": 63,
+      "field_correct": {
+        "record": 64,
+        "subject": 63,
+        "object": 64,
+        "sign": 64,
+        "species": 64,
+        "variant": 64,
+        "source": 64
+      }
+    },
+    "change_sign": {
+      "correct": 64,
+      "total": 64,
+      "injected_correct": 64,
+      "field_correct": {
+        "record": 64,
+        "subject": 64,
+        "object": 64,
+        "sign": 64,
+        "species": 64,
+        "variant": 64,
+        "source": 64
+      }
+    },
+    "change_source": {
+      "correct": 62,
+      "total": 64,
+      "injected_correct": 62,
+      "field_correct": {
+        "record": 64,
+        "subject": 64,
+        "object": 63,
+        "sign": 64,
+        "species": 64,
+        "variant": 64,
+        "source": 63
+      }
+    },
+    "change_species": {
+      "correct": 62,
+      "total": 64,
+      "injected_correct": 62,
+      "field_correct": {
+        "record": 64,
+        "subject": 63,
+        "object": 63,
+        "sign": 64,
+        "species": 64,
+        "variant": 64,
+        "source": 64
+      }
+    },
+    "change_subject": {
+      "correct": 62,
+      "total": 64,
+      "injected_correct": 62,
+      "field_correct": {
+        "record": 64,
+        "subject": 64,
+        "object": 62,
+        "sign": 64,
+        "species": 64,
+        "variant": 64,
+        "source": 64
+      }
+    },
+    "change_variant": {
+      "correct": 63,
+      "total": 64,
+      "injected_correct": 63,
+      "field_correct": {
+        "record": 64,
+        "subject": 64,
+        "object": 63,
+        "sign": 64,
+        "species": 64,
+        "variant": 64,
+        "source": 64
+      }
+    },
+    "masked": {
+      "correct": 0,
+      "total": 64,
+      "injected_correct": 0,
+      "field_correct": {
+        "record": 64,
+        "subject": 1,
+        "object": 5,
+        "sign": 25,
+        "species": 36,
+        "variant": 32,
+        "source": 14
+      }
+    },
+    "normal": {
+      "correct": 256,
+      "total": 256,
+      "injected_correct": 256,
+      "field_correct": {
+        "record": 256,
+        "subject": 256,
+        "object": 256,
+        "sign": 256,
+        "species": 256,
+        "variant": 256,
+        "source": 256
+      }
+    },
+    "order": {
+      "correct": 63,
+      "total": 64,
+      "injected_correct": 63,
+      "field_correct": {
+        "record": 64,
+        "subject": 64,
+        "object": 64,
+        "sign": 64,
+        "species": 64,
+        "variant": 64,
+        "source": 63
+      }
+    },
+    "wrong_bank": {
+      "correct": 0,
+      "total": 64,
+      "injected_correct": 61,
+      "field_correct": {
+        "record": 64,
+        "subject": 5,
+        "object": 2,
+        "sign": 32,
+        "species": 31,
+        "variant": 30,
+        "source": 13
+      }
+    }
+  },
+  "gate_passed": true,
+  "frozen_constants": {
+    "before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+    "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb"
+  },
+  "checkpoint_load_exact": true,
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 10.38341796875,
+    "process_peak_rss_gb": 21.24447744,
+    "active_metal_gb": 20.933174148,
+    "peak_metal_gb": 21.132977436
+  }
+}

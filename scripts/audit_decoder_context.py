@@ -24,7 +24,11 @@ def main():
     args=p.parse_args();out=args.output;out.mkdir(exist_ok=False)
     recipe=module_at(args.training/'source/train_readout_curriculum.py')
     checkpoints=dict(before=args.before,after=args.after)
+    (out/'dependencies').mkdir()
+    dependency=Path('scripts/evaluate_readout_repair.py')
+    (out/'dependencies'/dependency.name).write_bytes(dependency.read_bytes())
     save(out/'config.json',dict(source_sha256=snapshot_source(__file__,out/'source'),
+        dependencies={dependency.name:hashlib.sha256(dependency.read_bytes()).hexdigest()},
         checkpoints={k:dict(path=str(v),sha256=hashlib.sha256(v.read_bytes()).hexdigest()) for k,v in checkpoints.items()},
         semantics='Teacher-forced object token accuracy/NLL under interventions on the previously emitted subject; fixed memory; development only'))
     guard=ResourceGuard();model,tok=load_reader('memory');mx.eval(model.parameters());rows=[]

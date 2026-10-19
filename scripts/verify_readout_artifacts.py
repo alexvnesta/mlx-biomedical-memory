@@ -2,6 +2,8 @@
 import hashlib
 import json
 import re
+import math
+import struct
 from pathlib import Path
 import sys
 
@@ -41,6 +43,53 @@ def verify(root=Path('artifacts')):
             assert r['parsed']==decoded(r['generation'])
             assert r['correct']==(r['parsed']==r['expected'])
             if r['precision']=='bf16':assert r['parsed']==bycase[r['case_id']]['parsed']
+    for run in root.glob('readout-curriculum-*'):
+        if (run/'config.json').exists():
+            assert json.loads((run/'config.json').read_text())['source_sha256']==source_hash(run,'train_readout_curriculum.py')
+        for checkpoint in run.glob('*.safetensors'):
+            with checkpoint.open('rb') as f:
+                size=struct.unpack('<Q',f.read(8))[0];header=json.loads(f.read(size))
+            arrays={k:v for k,v in header.items() if k!='__metadata__'}
+            assert all(v['dtype']=='BF16' for v in arrays.values())
+            assert all(k.startswith('memory.') or '.lora_a' in k or '.lora_b' in k for k in arrays)
+            assert sum(math.prod(v['shape']) for v in arrays.values())==5719809
+        inventory=run/'checkpoint-inventory.json'
+        if inventory.exists():
+            for name,row in json.loads(inventory.read_text()).items():
+                if row['published']:assert sha(run/name)==row['sha256'] and (run/name).stat().st_size==row['bytes']
+    field=root/'readout-field-diagnosis-v4b'
+    if (field/'summary.json').exists():
+        config=json.loads((field/'config.json').read_text());summary=json.loads((field/'summary.json').read_text())
+        assert config['source_sha256']==source_hash(field,'diagnose_field_readout.py')
+        assert config['checkpoint_sha256']==sha(root/Path(config['training']).name/config['checkpoint_name'])
+        rows=[json.loads(x) for x in (field/'predictions.jsonl').read_text().splitlines()]
+        assert len(rows)==224
+        for row in rows:
+            truth=atomic_solution(row['case'])
+            if row['condition']!='full':truth={k:v for k,v in truth.items() if k in ['record',row['condition']]}
+            assert row['expected']==truth and row['parsed']==decoded(row['generation'])
+            assert row['correct']==(row['parsed']==truth)
+        assert summary['counts']=={c:sum(r['correct'] for r in rows if r['condition']==c) for c in summary['counts']}
+        assert summary['all_six_fields_correct']==sum(all(r['correct'] for r in rows if r['index']==i and r['condition']!='full') for i in range(32))
+    for run in root.glob('readout-context-audit-*'):
+        if not (run/'summary.json').exists():continue
+        cfg=json.loads((run/'config.json').read_text());summary=json.loads((run/'summary.json').read_text())
+        assert cfg['source_sha256']==source_hash(run,'audit_decoder_context.py')
+        for name,digest in cfg['dependencies'].items():assert sha(run/'dependencies'/name)==digest
+        for row in cfg['checkpoints'].values():assert sha(root/Path(row['path']).parent.name/Path(row['path']).name)==row['sha256']
+        rows=[json.loads(x) for x in (run/'predictions.jsonl').read_text().splitlines()]
+        assert len(rows)==1024
+        for row in rows:
+            truth=atomic_solution(make_case(41010000+row['index'],1,'dev'))
+            assert row['record']==truth and row['true_previous_subject']==(row['previous_subject']==truth['subject'])
+            assert row['object_token_exact']==(row['argmax_tokens']==row['teacher_object_tokens'])
+            assert math.isfinite(row['nll']) and row['nll']>=0
+        for phase,aggregate in summary['aggregates'].items():
+            subset=[r for r in rows if r['phase']==phase]
+            assert len(subset)==aggregate['total']==512
+            assert sum(r['object_token_exact'] for r in subset)==aggregate['object_token_exact']
+            assert sum(r['object_token_exact'] for r in subset if r['true_previous_subject'])==aggregate['true_prefix_correct']
+            assert abs(sum(r['nll'] for r in subset)/512-aggregate['mean_object_nll'])<1e-12
     evaluated=0;registrations=0
     for run in sorted(root.glob('readout-repair-test-*')):
         cfg=json.loads((run/'config.json').read_text())

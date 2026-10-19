@@ -1,0 +1,17 @@
+{
+  "source_sha256": "3b679b0e4d1cb3cac0a7085834b59f11f1a25e72531701e05044b22e12667b13",
+  "dependencies": {
+    "evaluate_readout_repair.py": "e4eeaddb0858d11a2ae74bccddf903550da2b2ef4dc0f8730165fb2f9e26dddf"
+  },
+  "checkpoints": {
+    "before": {
+      "path": "runs/readout-curriculum-v4/step-0512.safetensors",
+      "sha256": "ea752c601aad314f0a9b8b3caffd6c6a94446ddb79ae640d2858064edf61858e"
+    },
+    "after": {
+      "path": "runs/readout-curriculum-v5/selected.safetensors",
+      "sha256": "3d913d797cf7209590c88336a014ca44d6a6197fe422f2ecc92d01ef9f3bb3c1"
+    }
+  },
+  "semantics": "Teacher-forced object token accuracy/NLL under interventions on the previously emitted subject; fixed memory; development only"
+}

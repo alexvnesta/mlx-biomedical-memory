@@ -9,7 +9,22 @@ Fabry disease, Gaucher disease, and Rett syndrome.
 is not a treatment recommendation, and a composed graph answer is not a new
 biological discovery.** See [measured results](docs/RESULTS.md).
 
-The latest **[trained-memory versus text comparison](docs/DECISIVE-RESULTS.md)**
+The **[memory readout repair](docs/READOUT-REPAIR-RESULTS.md)** reconstructs
+256/256 complete records from fresh ten-record banks with subject–object pairs
+excluded from its training banks. Paired hidden-value edits score 376/384;
+masking memory scores 0/64. The original one-vector codec is unchanged. Fresh
+banks, isolated-field supervision, noisy past-value prefixes and generated
+accuracy gates replaced the failed training recipe. These results establish
+atomic access within the tested vocabulary, not reasoning or biomedical utility.
+
+![Verified readout comparison](artifacts/readout-comparison.png)
+
+The **[readout-gated composition experiment](docs/COMPOSITION-PROTOCOL.md)**
+freezes that codec, gives text the larger adapter and identical reasoning
+supervision, and holds out query endpoint pairs and longer paths. Its final
+reasoning test stays closed until both fitted readers retain reliable readout.
+
+The earlier **[trained-memory versus text comparison](docs/DECISIVE-RESULTS.md)**
 uses a query-independent seven-field codec, LoRA readers, two training seeds and
 fresh worlds with held-out longer paths. It reports actual generated proofs,
 atomic readout, evidence changes, record bindings, masking and fair text-prefix
@@ -17,7 +32,7 @@ reuse. [Reproduce it](docs/DECISIVE-REPRODUCTION.md), or inspect the
 [architecture and registered protocol](docs/DECISIVE-PROTOCOL.md). The learned
 codec is an engineered interface, not an EngramEdit replication.
 
-**Measured result:** the trained-memory diagnostic gets 0/192 exact record
+**Earlier recipe:** the trained-memory diagnostic gets 0/192 exact record
 readouts and 0/72 valid two-hop proofs, versus 192/192 and 32/72 for trained text.
 This recipe failed the memory-access prerequisite; it does not establish that
 reliably trained conditional memory cannot support reasoning.

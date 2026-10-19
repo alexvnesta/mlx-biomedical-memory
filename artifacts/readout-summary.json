@@ -1,0 +1,837 @@
+{
+  "config": {
+    "checkpoint_sha256": "3d913d797cf7209590c88336a014ca44d6a6197fe422f2ecc92d01ef9f3bb3c1",
+    "training": "runs/readout-curriculum-v5",
+    "checkpoint_name": "selected.safetensors",
+    "source_sha256": "77b41cb20d006f41430ca792e6947a43a875c7762b4ab23e47b20e6bbf10d490",
+    "dependencies": {
+      "evaluate_decisive_reader.py": "f5e164af597417b9974441d3b701decf55476ab5732a6b805379c8fed90b6638",
+      "cache_decisive_features.py": "52404f05449c9d8e699dfdd976274ab1ca9b9a63b397d66fd92e13fe9370e2de"
+    },
+    "selection_sha256": "0e9d5843798973d6639e622561e5dfbeea333434dcc03702ef286ca0692b234e",
+    "case_sha256": "d3bbff202dc138059014b5aa235007f861cb0acb5f68c8913624c0e49b07ac1c",
+    "test_seed_start": 52000000,
+    "base_test_count": 256,
+    "intervention_base_count": 64,
+    "gate": "normal exact >= 95%; causal controls reported separately",
+    "reasoning_evaluated": false
+  },
+  "summary": {
+    "completed": true,
+    "rows": 896,
+    "conditions": {
+      "binding": {
+        "correct": 62,
+        "total": 64,
+        "injected_correct": 62,
+        "field_correct": {
+          "record": 64,
+          "subject": 62,
+          "object": 64,
+          "sign": 64,
+          "species": 64,
+          "variant": 64,
+          "source": 64
+        }
+      },
+      "change_object": {
+        "correct": 63,
+        "total": 64,
+        "injected_correct": 63,
+        "field_correct": {
+          "record": 64,
+          "subject": 63,
+          "object": 64,
+          "sign": 64,
+          "species": 64,
+          "variant": 64,
+          "source": 64
+        }
+      },
+      "change_sign": {
+        "correct": 64,
+        "total": 64,
+        "injected_correct": 64,
+        "field_correct": {
+          "record": 64,
+          "subject": 64,
+          "object": 64,
+          "sign": 64,
+          "species": 64,
+          "variant": 64,
+          "source": 64
+        }
+      },
+      "change_source": {
+        "correct": 62,
+        "total": 64,
+        "injected_correct": 62,
+        "field_correct": {
+          "record": 64,
+          "subject": 64,
+          "object": 63,
+          "sign": 64,
+          "species": 64,
+          "variant": 64,
+          "source": 63
+        }
+      },
+      "change_species": {
+        "correct": 62,
+        "total": 64,
+        "injected_correct": 62,
+        "field_correct": {
+          "record": 64,
+          "subject": 63,
+          "object": 63,
+          "sign": 64,
+          "species": 64,
+          "variant": 64,
+          "source": 64
+        }
+      },
+      "change_subject": {
+        "correct": 62,
+        "total": 64,
+        "injected_correct": 62,
+        "field_correct": {
+          "record": 64,
+          "subject": 64,
+          "object": 62,
+          "sign": 64,
+          "species": 64,
+          "variant": 64,
+          "source": 64
+        }
+      },
+      "change_variant": {
+        "correct": 63,
+        "total": 64,
+        "injected_correct": 63,
+        "field_correct": {
+          "record": 64,
+          "subject": 64,
+          "object": 63,
+          "sign": 64,
+          "species": 64,
+          "variant": 64,
+          "source": 64
+        }
+      },
+      "masked": {
+        "correct": 0,
+        "total": 64,
+        "injected_correct": 0,
+        "field_correct": {
+          "record": 64,
+          "subject": 1,
+          "object": 5,
+          "sign": 25,
+          "species": 36,
+          "variant": 32,
+          "source": 14
+        }
+      },
+      "normal": {
+        "correct": 256,
+        "total": 256,
+        "injected_correct": 256,
+        "field_correct": {
+          "record": 256,
+          "subject": 256,
+          "object": 256,
+          "sign": 256,
+          "species": 256,
+          "variant": 256,
+          "source": 256
+        }
+      },
+      "order": {
+        "correct": 63,
+        "total": 64,
+        "injected_correct": 63,
+        "field_correct": {
+          "record": 64,
+          "subject": 64,
+          "object": 64,
+          "sign": 64,
+          "species": 64,
+          "variant": 64,
+          "source": 63
+        }
+      },
+      "wrong_bank": {
+        "correct": 0,
+        "total": 64,
+        "injected_correct": 61,
+        "field_correct": {
+          "record": 64,
+          "subject": 5,
+          "object": 2,
+          "sign": 32,
+          "species": 31,
+          "variant": 30,
+          "source": 13
+        }
+      }
+    },
+    "gate_passed": true,
+    "frozen_constants": {
+      "before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+      "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb"
+    },
+    "checkpoint_load_exact": true,
+    "resource": {
+      "pressure_level": 1,
+      "swap_used_gb": 10.38341796875,
+      "process_peak_rss_gb": 21.24447744,
+      "active_metal_gb": 20.933174148,
+      "peak_metal_gb": 21.132977436
+    }
+  },
+  "selection": {
+    "step": 2048,
+    "count": 10,
+    "correct": 32,
+    "total": 32
+  },
+  "validation": [
+    {
+      "run": "readout-curriculum-v2",
+      "step": 128,
+      "count": 1,
+      "correct": 1,
+      "total": 32,
+      "field_correct": {
+        "record": 32,
+        "subject": 19,
+        "object": 1,
+        "sign": 32,
+        "species": 32,
+        "variant": 29,
+        "source": 30
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 4.5902734375,
+        "process_peak_rss_gb": 14.553694208,
+        "active_metal_gb": 21.036250134,
+        "peak_metal_gb": 21.51850939
+      }
+    },
+    {
+      "run": "readout-curriculum-v2",
+      "step": 256,
+      "count": 1,
+      "correct": 8,
+      "total": 32,
+      "field_correct": {
+        "record": 32,
+        "subject": 27,
+        "object": 10,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 4.5902734375,
+        "process_peak_rss_gb": 14.553694208,
+        "active_metal_gb": 21.036247894,
+        "peak_metal_gb": 21.518648774
+      }
+    },
+    {
+      "run": "readout-curriculum-v2",
+      "step": 384,
+      "count": 1,
+      "correct": 26,
+      "total": 32,
+      "field_correct": {
+        "record": 32,
+        "subject": 30,
+        "object": 28,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 4.5902734375,
+        "process_peak_rss_gb": 14.553694208,
+        "active_metal_gb": 21.036269742,
+        "peak_metal_gb": 21.518648774
+      }
+    },
+    {
+      "run": "readout-curriculum-v2",
+      "step": 512,
+      "count": 1,
+      "correct": 28,
+      "total": 32,
+      "field_correct": {
+        "record": 32,
+        "subject": 32,
+        "object": 28,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 4.5902734375,
+        "process_peak_rss_gb": 14.553694208,
+        "active_metal_gb": 21.036299598,
+        "peak_metal_gb": 21.518648774
+      }
+    },
+    {
+      "run": "readout-curriculum-v2",
+      "step": 640,
+      "count": 1,
+      "correct": 22,
+      "total": 32,
+      "field_correct": {
+        "record": 32,
+        "subject": 32,
+        "object": 22,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 4.5902734375,
+        "process_peak_rss_gb": 14.553694208,
+        "active_metal_gb": 21.036295146,
+        "peak_metal_gb": 21.51970869
+      }
+    },
+    {
+      "run": "readout-curriculum-v2",
+      "step": 768,
+      "count": 1,
+      "correct": 23,
+      "total": 32,
+      "field_correct": {
+        "record": 32,
+        "subject": 32,
+        "object": 23,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 4.5902734375,
+        "process_peak_rss_gb": 14.553694208,
+        "active_metal_gb": 21.03629997,
+        "peak_metal_gb": 21.51970869
+      }
+    },
+    {
+      "run": "readout-curriculum-v4",
+      "step": 128,
+      "count": 1,
+      "correct": 7,
+      "total": 32,
+      "field_correct": {
+        "record": 32,
+        "subject": 21,
+        "object": 11,
+        "sign": 32,
+        "species": 31,
+        "variant": 32,
+        "source": 30
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 4.5824609375,
+        "process_peak_rss_gb": 16.422223872,
+        "active_metal_gb": 21.036428666,
+        "peak_metal_gb": 21.34449367
+      }
+    },
+    {
+      "run": "readout-curriculum-v4",
+      "step": 256,
+      "count": 1,
+      "correct": 7,
+      "total": 32,
+      "field_correct": {
+        "record": 30,
+        "subject": 25,
+        "object": 10,
+        "sign": 30,
+        "species": 29,
+        "variant": 29,
+        "source": 19
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 4.5824609375,
+        "process_peak_rss_gb": 16.422223872,
+        "active_metal_gb": 21.036459402,
+        "peak_metal_gb": 21.344545062
+      }
+    },
+    {
+      "run": "readout-curriculum-v4",
+      "step": 384,
+      "count": 1,
+      "correct": 18,
+      "total": 32,
+      "field_correct": {
+        "record": 32,
+        "subject": 32,
+        "object": 18,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 4.5824609375,
+        "process_peak_rss_gb": 16.422223872,
+        "active_metal_gb": 21.036281594,
+        "peak_metal_gb": 21.518640458
+      }
+    },
+    {
+      "run": "readout-curriculum-v4",
+      "step": 512,
+      "count": 1,
+      "correct": 18,
+      "total": 32,
+      "field_correct": {
+        "record": 32,
+        "subject": 31,
+        "object": 19,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 4.5824609375,
+        "process_peak_rss_gb": 16.422223872,
+        "active_metal_gb": 21.036331674,
+        "peak_metal_gb": 21.518648402
+      }
+    },
+    {
+      "run": "readout-curriculum-v4",
+      "step": 640,
+      "count": 1,
+      "correct": 21,
+      "total": 32,
+      "field_correct": {
+        "record": 32,
+        "subject": 32,
+        "object": 21,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 4.5824609375,
+        "process_peak_rss_gb": 16.422223872,
+        "active_metal_gb": 21.045536826,
+        "peak_metal_gb": 21.518710898
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 128,
+      "count": 1,
+      "correct": 21,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 25,
+        "object": 28,
+        "sign": 32,
+        "species": 32,
+        "variant": 31,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 12.145322265625,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036427004,
+        "peak_metal_gb": 21.518763324
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 256,
+      "count": 1,
+      "correct": 28,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 30,
+        "object": 30,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 12.082822265625,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036328476,
+        "peak_metal_gb": 21.518763324
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 384,
+      "count": 1,
+      "correct": 30,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 30,
+        "object": 32,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 11.848447265625,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.03641062,
+        "peak_metal_gb": 21.518763324
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 512,
+      "count": 1,
+      "correct": 29,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 30,
+        "object": 31,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 11.832822265625,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036427004,
+        "peak_metal_gb": 21.518763324
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 640,
+      "count": 1,
+      "correct": 31,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 32,
+        "object": 31,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 11.801572265625,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036295708,
+        "peak_metal_gb": 21.518763324
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 768,
+      "count": 4,
+      "correct": 0,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 6,
+        "object": 2,
+        "sign": 28,
+        "species": 23,
+        "variant": 12,
+        "source": 10
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 11.770322265625,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036343296,
+        "peak_metal_gb": 21.585181663
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 896,
+      "count": 4,
+      "correct": 0,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 11,
+        "object": 8,
+        "sign": 24,
+        "species": 16,
+        "variant": 18,
+        "source": 17
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 11.34826171875,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036434296,
+        "peak_metal_gb": 21.585323863
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 1024,
+      "count": 4,
+      "correct": 3,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 29,
+        "object": 19,
+        "sign": 27,
+        "species": 25,
+        "variant": 11,
+        "source": 17
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 11.071171875,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036247536,
+        "peak_metal_gb": 21.585323863
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 1152,
+      "count": 4,
+      "correct": 10,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 30,
+        "object": 23,
+        "sign": 32,
+        "species": 31,
+        "variant": 19,
+        "source": 24
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 11.071171875,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036364672,
+        "peak_metal_gb": 21.585323863
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 1280,
+      "count": 4,
+      "correct": 25,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 32,
+        "object": 25,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 11.047734375,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036380952,
+        "peak_metal_gb": 21.585323863
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 1408,
+      "count": 4,
+      "correct": 30,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 32,
+        "object": 31,
+        "sign": 32,
+        "species": 32,
+        "variant": 31,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 11.024296875,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036206064,
+        "peak_metal_gb": 21.585323863
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 1536,
+      "count": 4,
+      "correct": 31,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 32,
+        "object": 31,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 11.016484375,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036346752,
+        "peak_metal_gb": 21.585323863
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 1664,
+      "count": 10,
+      "correct": 25,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 28,
+        "object": 32,
+        "sign": 32,
+        "species": 32,
+        "variant": 28,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 10.85216796875,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036253464,
+        "peak_metal_gb": 21.715171762
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 1792,
+      "count": 10,
+      "correct": 29,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 31,
+        "object": 30,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 10.78966796875,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.03623496,
+        "peak_metal_gb": 21.715171762
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 1920,
+      "count": 10,
+      "correct": 30,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 30,
+        "object": 32,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 10.77404296875,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036204344,
+        "peak_metal_gb": 21.715171762
+      }
+    },
+    {
+      "run": "readout-curriculum-v5",
+      "step": 2048,
+      "count": 10,
+      "correct": 32,
+      "total": 32,
+      "interrupted": false,
+      "field_correct": {
+        "record": 32,
+        "subject": 32,
+        "object": 32,
+        "sign": 32,
+        "species": 32,
+        "variant": 32,
+        "source": 32
+      },
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 10.73498046875,
+        "process_peak_rss_gb": 21.206351872,
+        "active_metal_gb": 21.036255056,
+        "peak_metal_gb": 21.715171762
+      }
+    }
+  ]
+}

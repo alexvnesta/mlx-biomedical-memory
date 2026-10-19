@@ -51,6 +51,14 @@ def main():
         ('Memory masked',summary['conditions']['masked'],'Original values should become unavailable'),
         ('Wrong bank',summary['conditions']['wrong_bank'],'Original values should fail; follow replacement')]
     overviewrows=''.join(f'<tr><td>{name}</td><td>{v["correct"]}/{v["total"]}</td><td>{100*v["correct"]/v["total"]:.1f}%</td><td>{note}</td></tr>' for name,v,note in overview)
+    context_note=''
+    context=Path('runs')/('readout-context-audit-'+training.name.rsplit('-',1)[-1])
+    if (context/'summary.json').exists():
+        audit=json.loads((context/'summary.json').read_text())['aggregates']
+        context_note=(f"A development-only intervention kept memory fixed and varied the preceding subject over all 16 aliases. "
+            f"Teacher-forced object value tokens were exact in {audit['before']['object_token_exact']}/512 contexts before repair "
+            f"and {audit['after']['object_token_exact']}/512 after. All 15 earlier failures occurred when the preceding subject "
+            "equaled the true object. These scores exclude the closing JSON delimiter and are diagnostic, not free-generation test accuracy.")
     validations=[]
     for name in ['readout-curriculum-v2','readout-curriculum-v4',training.name]:
         path=Path('runs')/name/'validation.jsonl'
@@ -98,6 +106,8 @@ token counts, and retain the true memory and correct next-token labels. All
 training bank facts exclude the held-out pairs; noisy decoder contexts can
 contain other alias combinations. Evaluation is normal free generation.
 
+{context_note}
+
 The first scalar-loss implementation error and the short BF16 warm-start pilot
 are retained as failed attempts. No fresh test outputs were used to select the
 final checkpoint. All development outcomes, not just successful checkpoints,
@@ -143,11 +153,11 @@ features are recomputed; there is no test-label feature cache.
 <style>body{background:#f3f5f7;color:#182638;font:16px/1.55 system-ui;margin:0}main{max-width:1160px;margin:auto;padding:36px 24px}h1{font-size:38px;line-height:1.15;margin-bottom:12px}h2{margin-top:38px}p{max-width:950px}.tag{color:#1d674f;font-weight:700}section{background:white;padding:22px;border:1px solid #dce3eb;border-radius:12px;margin:22px 0}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #e5eaf0}th{background:#edf2f6;white-space:nowrap}td:nth-child(2),td:nth-child(3),td:nth-child(4){white-space:nowrap}pre{white-space:pre-wrap;word-break:break-word;background:#f0f3f7;padding:14px;border-radius:8px;font-size:12px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.box{background:#eaf3ee;border:1px solid #adcebb;padding:14px;border-radius:8px}select,button,input{font:inherit;padding:7px;margin:4px}small{color:#516174}a{color:#1761a5}@media(max-width:720px){.grid{display:block}main{padding:24px 12px}h1{font-size:30px}}</style></head><body><main>
 <div class="tag">__STATUS__ · LongCat + MLX · closed-vocabulary research prototype</div>
 <h1>Teach memory access before judging reasoning</h1><p>__LEAD__</p>
-<section><div class="flow"><div class="box">Seven hidden fields<br>fresh atomic record</div><b>→</b><div class="box">Original learned codec<br>one vector per record</div><b>→</b><div class="box">Adapted LongCat reader<br>no text conversion helper</div><b>→</b><div class="box">Generated record JSON<br>independent exact grading</div></div></section>
+<section><div class="flow"><div class="box">Seven record fields<br>six hidden values</div><b>→</b><div class="box">Original learned codec<br>one vector per record</div><b>→</b><div class="box">Adapted LongCat reader<br>no text conversion helper</div><b>→</b><div class="box">Generated record JSON<br>independent exact grading</div></div></section>
 <h2 id="results">Frozen readout results</h2><p>Every base test bank uses ten records. Subject–object pairs are absent from every training bank. The six field edits preserve exactly the same visible prompt. The record ID is visible; all six values are hidden.</p>
 <section class="scroll"><table><thead><tr><th>Check</th><th>Exact records</th><th>Accuracy</th><th>Interpretation</th></tr></thead><tbody>__OVERVIEW__</tbody></table><p><small>Fresh-bank 95% Wilson interval: __NORMAL_CI__. Edited values share 64 parent banks; their aggregate is a count, not an independent-sample confidence estimate.</small></p><details><summary>Per-field controls and confidence intervals</summary><table><thead><tr><th>Condition</th><th>Exact records</th><th>Accuracy</th><th>95% interval</th><th>What it checks</th></tr></thead><tbody>__TABLE__</tbody></table></details></section>
 <p>Wrong-bank outputs match the actually injected replacement record in <b>__INJECTED__/64</b> cases. A low original-target score for that ablation is expected if the reader follows memory.</p>
-<div class="grid"><section><h3>Normal readout by field</h3><table><thead><tr><th>Field</th><th>Correct</th></tr></thead><tbody>__FIELDS__</tbody></table></section><section><h3>What this establishes</h3><p>Atomic readout under these conditions. The original audit found exact cached/direct and incremental-prefix parity, exact checkpoint loading, and identical FP32/BF16 answers.</p><p>Field-only supervision prevents a field's target prefix from revealing the other hidden fields. Complete-record accuracy controls curriculum advancement.</p><p><b>Reasoning, biomedical utility, and superiority over text/RAG/KG remain unproven.</b></p></section></div>
+<div class="grid"><section><h3>Normal readout by field</h3><table><thead><tr><th>Field</th><th>Correct</th></tr></thead><tbody>__FIELDS__</tbody></table></section><section><h3>What this establishes</h3><p>Atomic readout under these conditions. The original audit found exact cached/direct and incremental-prefix parity, exact checkpoint loading, and identical FP32/BF16 answers.</p><p>Field-only supervision prevents a field's target prefix from revealing the other hidden fields. Complete-record accuracy controls curriculum advancement.</p><p>__CONTEXT__</p><p><b>Reasoning, biomedical utility, and superiority over text/RAG/KG remain unproven.</b></p></section></div>
 <h2>Inspect the generated evidence</h2><section><label>Condition <select id="condition"></select></label><label>Case <input type="number" id="index" value="1" min="1" style="width:80px"></label><button id="next">Next case</button><p id="case-name"></p><div class="grid"><div><h3>Expected record</h3><pre id="expected"></pre></div><div><h3>Raw model output</h3><pre id="generation"></pre></div></div><details><summary>Prompt and injected bank</summary><pre id="prompt"></pre><pre id="bank"></pre></details></section>
 <h2>Development history</h2><p>All checkpoints below were scored before fresh testing. The full-record-only attempt and its plateau are retained.</p><section class="scroll"><table><thead><tr><th>Run</th><th>Update</th><th>Bank size</th><th>Exact development</th></tr></thead><tbody>__EVOLUTION__</tbody></table></section>
 <p><small>Finite aliases N0–N15, not unseen biomedical vocabulary. One fitted repair reader; exact records within the tested distribution are not a guarantee of clinical reliability. Earlier failed-recipe results remain at <a href="decisive.html">the original comparison</a>.</small></p>
@@ -156,7 +166,7 @@ const data=JSON.parse(document.querySelector('#data').textContent),c=document.qu
 for(const name of [...new Set(data.rows.map(r=>r.condition))]){const o=document.createElement('option');o.value=name;o.textContent=name.replaceAll('_',' ');c.append(o)}
 function render(){const rows=data.rows.filter(r=>r.condition===c.value);index.max=rows.length;index.value=Math.max(1,Math.min(+index.value,rows.length));const row=rows[+index.value-1];document.querySelector('#case-name').textContent=row.case_id+' · '+(row.correct?'exact original target':'differs from original target')+' · '+index.value+'/'+rows.length;for(const [key,value] of Object.entries({expected:JSON.stringify(row.expected,null,2),generation:row.generation,prompt:row.prompt,bank:JSON.stringify(row.injected_records,null,2)}))document.querySelector('#'+key).textContent=value}
 c.onchange=()=>{index.value=1;render()};index.oninput=render;document.querySelector('#next').onclick=()=>{index.value=+index.value%(+index.max)+1;render()};render();</script></body></html>'''
-    for key,value in {'STATUS':status,'LEAD':lead,'TABLE':''.join(table),'OVERVIEW':overviewrows,'NORMAL_CI':interval(normal['correct'],normal['total']),'INJECTED':str(summary['conditions']['wrong_bank']['injected_correct']),
+    for key,value in {'STATUS':status,'LEAD':lead,'CONTEXT':context_note,'TABLE':''.join(table),'OVERVIEW':overviewrows,'NORMAL_CI':interval(normal['correct'],normal['total']),'INJECTED':str(summary['conditions']['wrong_bank']['injected_correct']),
         'FIELDS':fieldrows,'EVOLUTION':evolution,'DATA':payload}.items():page=page.replace('__'+key+'__',value if key in ['TABLE','OVERVIEW','FIELDS','EVOLUTION','DATA'] else html.escape(value))
     if not passed:page=page.replace('color:#1d674f','color:#9c4a0c')
     Path('runs/readout.html').write_text(page)

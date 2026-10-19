@@ -1,0 +1,28 @@
+{
+  "completed": true,
+  "features": 1760,
+  "seconds": 290.1755817920057,
+  "parity": [
+    {
+      "mode": "text",
+      "case_id": "composition-dev-0000",
+      "max_error": 0.0
+    },
+    {
+      "mode": "memory",
+      "case_id": "composition-dev-0000",
+      "max_error": 0.0
+    }
+  ],
+  "frozen_constants": {
+    "before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+    "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb"
+  },
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 9.610107421875,
+    "process_peak_rss_gb": 21.491335168,
+    "active_metal_gb": 20.932675332,
+    "peak_metal_gb": 21.671040608
+  }
+}
