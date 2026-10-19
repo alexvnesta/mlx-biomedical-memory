@@ -93,6 +93,8 @@ def verify(root=Path('artifacts')):
                 assert all(v[0]['dtype']=='BF16' for v in arrays.values())
                 assert sum(math.prod(v[0]['shape']) for v in arrays.values())==(5914624 if config['mode']=='text' else 5719809)
                 if config['frozen_codec']:assert tensors(checkpoint,'memory.')==warm_memory
+                elif config['mode']=='memory' and (checkpoint.name.startswith('final-') or checkpoint.name=='selected.safetensors'):
+                    assert tensors(checkpoint,'memory.')!=warm_memory,'Joint adaptation did not change the codec'
             continue
         assert summary['frozen_constants']['before']==done['frozen_constants']['before']
         training=root/re.match(r'(composition-(?:memory|text|joint)-240[12])',run.name).group(1)
