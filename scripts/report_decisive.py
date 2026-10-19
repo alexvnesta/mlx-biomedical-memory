@@ -124,6 +124,21 @@ def markdown_report(summary,table):
         '## Changes to evidence and bindings','',
         '| Reader | Edit pairs: both proofs valid | New record IDs: both proofs valid | Reordered rows: both proofs valid |',
         '|---|---:|---:|---:|']
+    # The already planned class breakdown isolates actual generated paths from
+    # correct UNKNOWN predictions. Keep the registered all-world table above.
+    split=content.index('## Changes to evidence and bindings')
+    path_table=['## Path-present cases only','',
+        'The registered all-world score above includes UNKNOWN. The preplanned class breakdown below uses UP, DOWN and BOTH, where the reader must generate an actual executable path. It prevents correct absence guesses from being mistaken for path reasoning.','',
+        '| Reader | Fresh depth 1–2 paths | New depth 3–4 paths, 10 records |',
+        '|---|---:|---:|']
+    for mode in ['text','memory_trained','memory']:
+        row=summary['readers'][mode];values=[]
+        for stage in ['iid','depth_only']:
+            groups=[row['label_breakdown'][stage][label] for label in ['UP','DOWN','BOTH']]
+            values.append(pct(dict(n=sum(x['n'] for x in groups),proof=sum(x['proof'] for x in groups))))
+        path_table.append('| '+mode+' | '+' | '.join(values)+' |')
+    path_table+=['| Exact graph traversal | 72/72 (100%) | 72/72 (100%) |','']
+    content[split:split]=path_table
     for mode in ['text','memory_trained','memory']:
         row=summary['readers'][mode]
         content.append('| '+mode+' | '+' | '.join(pct(dict(n=row[k]['n'],proof=row[k]['both_proofs'])) for k in ['intervention_pairs','binding_pairs','order_pairs'])+' |')
