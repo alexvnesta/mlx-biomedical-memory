@@ -3,6 +3,9 @@ import hashlib
 import json
 import re
 from pathlib import Path
+import sys
+
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 
 from engram_poc.decisive_data import atomic_solution
 from engram_poc.readout_data import make_case, pair_split
