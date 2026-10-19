@@ -122,7 +122,7 @@ def markdown_report(summary,table):
         'Each neural stratum has 96 worlds evaluated by two fixed fitted readers. Atomic exactness covers 96 readout questions per seed across the 10- and 12-record banks. UNKNOWN uses the correct absence label and citations to every record; UP, DOWN and BOTH require executable paths. The interactive report separates these classes. The exact graph solver defines the synthetic gold labels. Its 100% is a rule-execution oracle, not an independent production-KG or ARAX evaluation; it has no LLM verbalization.','',
         'The registered memory selection may retain an untrained checkpoint. It is shown separately and must not be described as successfully trained. The trained-memory diagnostic requires a positive training step and uses only already-scored development results for selection.','',
         '## Changes to evidence and bindings','',
-        '| Reader | Edit pairs: both proofs valid | New record IDs: both proofs valid | Reordered rows: both proofs valid |',
+        '| Reader | Edit pairs: both proofs valid | Permuted record IDs: both proofs valid | Reordered rows: both proofs valid |',
         '|---|---:|---:|---:|']
     # The already planned class breakdown isolates actual generated paths from
     # correct UNKNOWN predictions. Keep the registered all-world table above.
