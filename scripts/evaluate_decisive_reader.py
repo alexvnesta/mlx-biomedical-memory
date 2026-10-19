@@ -59,6 +59,7 @@ def main():
     parser.add_argument('--development',action='store_true')
     parser.add_argument('--checkpoint-name',default='best.safetensors')
     parser.add_argument('--resume',action='store_true')
+    parser.add_argument('--supplemental-data',type=Path)
     args=parser.parse_args();out=args.output;trained=json.loads((args.training/'config.json').read_text())
     assert json.loads((args.training/'summary.json').read_text())['completed']
     corpus=json.loads((args.features/'dataset.json').read_text());mode=trained['mode']
@@ -69,7 +70,8 @@ def main():
         config=dict(mode=mode,seed=trained['seed'],started_utc=datetime.now(timezone.utc).isoformat(),
             source_sha256=snapshot_source(__file__,out/'source'),dataset_sha256=trained['dataset_sha256'],
             checkpoint_sha256=checkpoint_sha,checkpoint_name=args.checkpoint_name,max_tokens=256,development=args.development,
-            dependency_sha256=hashlib.sha256(Path('scripts/cache_decisive_features.py').read_bytes()).hexdigest())
+            dependency_sha256=hashlib.sha256(Path('scripts/cache_decisive_features.py').read_bytes()).hexdigest(),
+            supplemental_sha256=hashlib.sha256(args.supplemental_data.read_bytes()).hexdigest() if args.supplemental_data else None)
         save(out/'config.json',config);(out/'cache_decisive_features.py').write_bytes(Path('scripts/cache_decisive_features.py').read_bytes())
     else:
         config=json.loads((out/'config.json').read_text());assert checkpoint_sha==config['checkpoint_sha256']
@@ -82,6 +84,11 @@ def main():
     if (out/'predictions.jsonl').exists():rows=[json.loads(x) for x in (out/'predictions.jsonl').read_text().splitlines()]
     existing={(r['stage'],r['case_id']) for r in rows}
     cases=[('development',c,'normal') for c in corpus['splits']['dev']] if args.development else variations(corpus)
+    if args.supplemental_data:
+        assert not args.development
+        supplement=json.loads(args.supplemental_data.read_text())
+        assert hashlib.sha256(args.supplemental_data.read_bytes()).hexdigest()==config['supplemental_sha256']
+        cases=[(supplement['stage'],c,'normal') for c in supplement['cases']]
     if mode=='text':cases=[item for item in cases if item[0]!='masked']
     for stage,case,condition in cases:
         if (stage,case['id']) in existing:continue
