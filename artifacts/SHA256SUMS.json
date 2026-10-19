@@ -2067,7 +2067,7 @@
   "artifacts/pilot-mcq-v2-seed17/results.json": "c378ef0612ec5c627438b4250e910b517e2e9dd3103cf6c4f9ff8f7ea287f6fa",
   "artifacts/pilot-mcq-v2-seed17/selection.json": "d5dac21def46eec1c9d73825b369f50fcdb7caa96fa54559d7b4442e42b9a0e3",
   "artifacts/pilot-mcq-v2-seed17/training.jsonl": "1fcbb93696a6de6ad48110257a11f7a89f2844ff36421a98b8b832685b49e564",
-  "artifacts/readout-comparison.png": "3e5aea6e919778de34e7d10ffc11d6469ae65ad5705fccceee4da220fc31740d",
+  "artifacts/readout-comparison.png": "c5c97a62a74be2709b1ded327b3432c7a15008b21fa2d4914e5ddb7433bab29c",
   "artifacts/readout-context-audit-v5/config.json": "94100e50ed839a18d33fbcb0c02b1092f46b5aca0abb9b063a390ebd2008e92f",
   "artifacts/readout-context-audit-v5/dependencies/evaluate_readout_repair.py": "e4eeaddb0858d11a2ae74bccddf903550da2b2ef4dc0f8730165fb2f9e26dddf",
   "artifacts/readout-context-audit-v5/execution.log": "c25e01fa7c81cfdefe4e6c16177e09b3462d6f46c10d37ac03e4d30306f30193",
