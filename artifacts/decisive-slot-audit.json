@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "slots": 10672,
+  "cases": 1032,
+  "all_exact": true,
+  "dataset_sha256": "54aaeb3f4a83d6ae3e3114f09b4ac56f20747f53da4384d02a2f25cdc95f3f91",
+  "depth_sha256": "ed6a9aca5af25068681e3738f8f86263af1afa27d1cadb91865afb8911ee31aa",
+  "source_sha256": "a3f96d10d5484081733edf7fb89368191e01c344970df5de2ba57c359bcb6704"
+}

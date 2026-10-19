@@ -1,0 +1,12 @@
+{
+  "mode": "text",
+  "seed": 1201,
+  "started_utc": "2026-10-19T02:22:22.886297+00:00",
+  "source_sha256": "a6f59795a8a5eabc07edfe2460c8616512cf53a2ed1d7065f7aab2b15aaef5ee",
+  "dataset_sha256": "54aaeb3f4a83d6ae3e3114f09b4ac56f20747f53da4384d02a2f25cdc95f3f91",
+  "checkpoint_sha256": "6b8bd93f46040fe0f978e8db4d77821732ba4dd978b2b34feb889dcd37decee7",
+  "checkpoint_name": "initial.safetensors",
+  "max_tokens": 256,
+  "development": true,
+  "dependency_sha256": "52404f05449c9d8e699dfdd976274ab1ca9b9a63b397d66fd92e13fe9370e2de"
+}

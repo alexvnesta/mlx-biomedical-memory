@@ -1,0 +1,6 @@
+{
+  "completed": false,
+  "stopped": true,
+  "rows": 32,
+  "reason": "Development-only pilot at LoRA learning rate 0.0003 produced catastrophic repetitive output; stopped before any held-out evaluation"
+}

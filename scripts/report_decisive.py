@@ -30,6 +30,7 @@ def aggregate(rows):
     atoms=[r for r in rows if r['stage'] in ['iid','structure'] and r['kind']=='atomic']
     result['label_breakdown']={stage:{label:dict(n=len(group),proof=sum(r['proof_valid'] for r in group),correct=sum(r['correct'] for r in group)) for label in ['UP','DOWN','BOTH','UNKNOWN'] if (group:=[r for r in rows if r['stage']==stage and r['kind']=='reason' and r['expected']['answer']==label])} for stage in ['iid','structure','depth_only']}
     result['depth_breakdown']={str(depth):dict(n=len(group),proof=sum(r['proof_valid'] for r in group),correct=sum(r['correct'] for r in group)) for depth in [1,2,3,4] if (group:=[r for r in rows if r['stage'] in ['iid','depth_only'] and r['kind']=='reason' and r['depth']==depth])}
+    result['depth_path_breakdown']={str(depth):dict(n=len(group),proof=sum(r['proof_valid'] for r in group)) for depth in [1,2,3,4] if (group:=[r for r in rows if r['stage'] in ['iid','depth_only'] and r['kind']=='reason' and r['depth']==depth and r['expected']['answer']!='UNKNOWN'])}
     result['atomic_fields']={k:dict(n=len(atoms),correct=sum((r['parsed'] or {}).get(k)==r['expected'][k] for r in atoms))
         for k in ['record','subject','object','sign','species','variant','source']}
     masked=[r for r in rows if r['stage']=='masked']
@@ -137,14 +138,17 @@ def markdown_report(summary,table):
             groups=[row['label_breakdown'][stage][label] for label in ['UP','DOWN','BOTH']]
             values.append(pct(dict(n=sum(x['n'] for x in groups),proof=sum(x['proof'] for x in groups))))
         path_table.append('| '+mode+' | '+' | '.join(values)+' |')
-    path_table+=['| Exact graph solver (oracle) | 72/72 (100%) | 72/72 (100%) |','']
+    path_table+=['| Exact graph solver (oracle) | 72/72 (100%) | 72/72 (100%) |','','### Actual paths by designed depth','','Depth 1 requires no multi-hop composition. Depths 2–4 do. UNKNOWN cases are excluded from this table.','','| Depth | Text + LoRA | Trained memory |','|---|---:|---:|']
+    for depth in ['1','2','3','4']:
+        path_table.append('| '+depth+' | '+pct(text['depth_path_breakdown'][depth])+' | '+pct(fitted['depth_path_breakdown'][depth])+' |')
+    path_table+=['']
     content[split:split]=path_table
     for mode in ['text','memory_trained','memory']:
         row=summary['readers'][mode]
         content.append('| '+mode+' | '+' | '.join(pct(dict(n=row[k]['n'],proof=row[k]['both_proofs'])) for k in ['intervention_pairs','binding_pairs','order_pairs'])+' |')
     mask=fitted['mask_comparison'];content+=['',f"On the same {mask['n']} worlds, trained-memory supported proofs change from {mask['normal_proofs']} with the codec to {mask['masked_proofs']} with it disabled.",'',
         '## Fixed-length timing','',
-        'Selected text and trained-memory readers from seed 1201, 32 generated tokens, EOS suppressed. Each condition has 24 requests. Warm requests reuse facts/instruction KV states and tokenize only the unprimed suffix. Setup costs include full prefix serialization, tokenization and prefill. Adapter changes and model loading are excluded. These are not timings to a correct answer.','',
+        'Selected text and trained-memory readers from seed 1201, 32 generated tokens, EOS suppressed. Each condition has 24 requests. Warm requests reuse facts/instruction KV states and tokenize only the unprimed suffix. Setup costs include full prefix serialization, tokenization and prefill. Adapter changes and model loading are excluded. These are not timings to a correct answer. The Mac remained shared with other open sessions; small timing differences should not be treated as isolated-host performance.','',
         '| Condition | Median wall time | Median first token | Prompt tokens evaluated |','|---|---:|---:|---:|']
     for name,row in summary['latency'].items():content.append(f"| {name} | {row['median_seconds']:.3f} s | {row['median_ttft']:.3f} s | {row['median_evaluated_tokens']} / {row['median_prompt_tokens']} |")
     content+=['',f"Exact in-process traversal of these small complete graphs takes a median {summary['graph_median_seconds']*1e6:.1f} microseconds per reasoning world, excluding network retrieval and LLM verbalization. A useful speed advantage requires comparable supported-answer quality.",'',

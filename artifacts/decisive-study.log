@@ -1,0 +1,34 @@
+RUN train_decisive_reader.py --mode text --seed 1201 --updates 512 --output runs/decisive-text-1201
+RUN evaluate_decisive_reader.py --training runs/decisive-text-1201 --development --checkpoint-name initial.safetensors --output runs/decisive-text-1201-dev-512-initial
+RUN evaluate_decisive_reader.py --training runs/decisive-text-1201 --development --checkpoint-name best-0512.safetensors --output runs/decisive-text-1201-dev-512-best-0512
+RUN evaluate_decisive_reader.py --training runs/decisive-text-1201 --development --checkpoint-name final-0512.safetensors --output runs/decisive-text-1201-dev-512-final-0512
+SELECTED runs/decisive-text-1201 {"checkpoint_name": "best-0512.safetensors", "checkpoint_sha256": "17460dcdd40378f4622f62f60c8177431c18cfd99008af3689474651219d2f72", "evaluation": "runs/decisive-text-1201-dev-512-best-0512", "reasoning_proofs": 21, "reasoning_correct": 29, "atomic_correct": 24, "reasoning_total": 48, "atomic_total": 24, "step": 448, "weighted_dev_nll": 0.04962649608945608}
+RUN train_decisive_reader.py --mode memory --seed 1201 --updates 512 --output runs/decisive-memory-1201
+RUN evaluate_decisive_reader.py --training runs/decisive-memory-1201 --development --checkpoint-name initial.safetensors --output runs/decisive-memory-1201-dev-512-initial
+RUN evaluate_decisive_reader.py --training runs/decisive-memory-1201 --development --checkpoint-name best-0512.safetensors --output runs/decisive-memory-1201-dev-512-best-0512
+RUN evaluate_decisive_reader.py --training runs/decisive-memory-1201 --development --checkpoint-name final-0512.safetensors --output runs/decisive-memory-1201-dev-512-final-0512
+SELECTED runs/decisive-memory-1201 {"checkpoint_name": "initial.safetensors", "checkpoint_sha256": "f60f2bc3313c682833dc0ff86c20f9d8dc063d18470e221699667d2202b6d33f", "evaluation": "runs/decisive-memory-1201-dev-512-initial", "reasoning_proofs": 12, "reasoning_correct": 12, "atomic_correct": 0, "reasoning_total": 48, "atomic_total": 24, "step": 0, "weighted_dev_nll": 1.3866424614874024}
+RUN train_decisive_reader.py --mode text --seed 1201 --updates 1024 --output runs/decisive-text-1201 --resume
+RUN evaluate_decisive_reader.py --training runs/decisive-text-1201 --development --checkpoint-name initial.safetensors --output runs/decisive-text-1201-dev-1024-initial
+RUN evaluate_decisive_reader.py --training runs/decisive-text-1201 --development --checkpoint-name best-1024.safetensors --output runs/decisive-text-1201-dev-1024-best-1024
+RUN evaluate_decisive_reader.py --training runs/decisive-text-1201 --development --checkpoint-name final-1024.safetensors --output runs/decisive-text-1201-dev-1024-final-1024
+SELECTED runs/decisive-text-1201 {"checkpoint_name": "final-1024.safetensors", "checkpoint_sha256": "4bac767acf8f2fc3368cad547464dbb576341a5bd3221c354cd72f127b7a9495", "evaluation": "runs/decisive-text-1201-dev-1024-final-1024", "reasoning_proofs": 24, "reasoning_correct": 27, "atomic_correct": 24, "reasoning_total": 48, "atomic_total": 24, "step": 1024, "weighted_dev_nll": 0.05425175027062363}
+RUN train_decisive_reader.py --mode memory --seed 1201 --updates 1024 --output runs/decisive-memory-1201 --resume
+RUN evaluate_decisive_reader.py --training runs/decisive-memory-1201 --development --checkpoint-name initial.safetensors --output runs/decisive-memory-1201-dev-1024-initial
+RUN evaluate_decisive_reader.py --training runs/decisive-memory-1201 --development --checkpoint-name best-1024.safetensors --output runs/decisive-memory-1201-dev-1024-best-1024
+RUN evaluate_decisive_reader.py --training runs/decisive-memory-1201 --development --checkpoint-name final-1024.safetensors --output runs/decisive-memory-1201-dev-1024-final-1024
+SELECTED runs/decisive-memory-1201 {"checkpoint_name": "initial.safetensors", "checkpoint_sha256": "f60f2bc3313c682833dc0ff86c20f9d8dc063d18470e221699667d2202b6d33f", "evaluation": "runs/decisive-memory-1201-dev-1024-initial", "reasoning_proofs": 12, "reasoning_correct": 12, "atomic_correct": 0, "reasoning_total": 48, "atomic_total": 24, "step": 0, "weighted_dev_nll": 1.3866424614874024}
+RUN train_decisive_reader.py --mode text --seed 1202 --updates 1024 --output runs/decisive-text-1202
+RUN evaluate_decisive_reader.py --training runs/decisive-text-1202 --development --checkpoint-name initial.safetensors --output runs/decisive-text-1202-dev-1024-initial
+RUN evaluate_decisive_reader.py --training runs/decisive-text-1202 --development --checkpoint-name best-1024.safetensors --output runs/decisive-text-1202-dev-1024-best-1024
+RUN evaluate_decisive_reader.py --training runs/decisive-text-1202 --development --checkpoint-name final-1024.safetensors --output runs/decisive-text-1202-dev-1024-final-1024
+SELECTED runs/decisive-text-1202 {"checkpoint_name": "final-1024.safetensors", "checkpoint_sha256": "80088ff576cc33ef783b8263bc5890174d0563099f9c56b85c81084cf03d7a15", "evaluation": "runs/decisive-text-1202-dev-1024-final-1024", "reasoning_proofs": 24, "reasoning_correct": 26, "atomic_correct": 24, "reasoning_total": 48, "atomic_total": 24, "step": 1024, "weighted_dev_nll": 0.03771987204063976}
+RUN train_decisive_reader.py --mode memory --seed 1202 --updates 1024 --output runs/decisive-memory-1202
+RUN evaluate_decisive_reader.py --training runs/decisive-memory-1202 --development --checkpoint-name initial.safetensors --output runs/decisive-memory-1202-dev-1024-initial
+RUN evaluate_decisive_reader.py --training runs/decisive-memory-1202 --development --checkpoint-name best-1024.safetensors --output runs/decisive-memory-1202-dev-1024-best-1024
+RUN evaluate_decisive_reader.py --training runs/decisive-memory-1202 --development --checkpoint-name final-1024.safetensors --output runs/decisive-memory-1202-dev-1024-final-1024
+SELECTED runs/decisive-memory-1202 {"checkpoint_name": "initial.safetensors", "checkpoint_sha256": "d4013ef84f27c7a56e3a6a29c64b3a47bd38622bbe89db5c725d5c8690fda46c", "evaluation": "runs/decisive-memory-1202-dev-1024-initial", "reasoning_proofs": 12, "reasoning_correct": 12, "atomic_correct": 0, "reasoning_total": 48, "atomic_total": 24, "step": 0, "weighted_dev_nll": 1.39052613488295}
+RUN evaluate_decisive_reader.py --training runs/decisive-text-1201 --checkpoint-name selected.safetensors --output runs/decisive-text-1201-test
+RUN evaluate_decisive_reader.py --training runs/decisive-memory-1201 --checkpoint-name selected.safetensors --output runs/decisive-memory-1201-test
+RUN evaluate_decisive_reader.py --training runs/decisive-text-1202 --checkpoint-name selected.safetensors --output runs/decisive-text-1202-test
+RUN evaluate_decisive_reader.py --training runs/decisive-memory-1202 --checkpoint-name selected.safetensors --output runs/decisive-memory-1202-test

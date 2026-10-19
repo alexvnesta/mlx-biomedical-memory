@@ -1,0 +1,18 @@
+{
+  "mode": "memory",
+  "seed": 9002,
+  "started_utc": "2026-10-19T02:11:14.790791+00:00",
+  "source_sha256": "1c08ebe3984c636246178a6be6f53527a1a03e2cf088e2c19031b741bc0979bd",
+  "dataset_sha256": "54aaeb3f4a83d6ae3e3114f09b4ac56f20747f53da4384d02a2f25cdc95f3f91",
+  "feature_manifest_sha256": "0f58466189b3fc95c407774d9e18f29e3e2919d3ebf3bd9bc479b404a2679945",
+  "maximum_updates": 1024,
+  "lora_learning_rate": 3e-05,
+  "codec_learning_rate": 0.001,
+  "gradient_accumulation": 2,
+  "atomic_warmup_updates": 64,
+  "later_mixture": "one reasoning and one atomic example per optimizer update",
+  "checkpoint_selection": "lowest weighted development teacher-forced target NLL",
+  "published_precision": "BF16 adapters and codec; frozen native 4-bit backbone",
+  "protocol_sha256": "5f3ea1c451bf12e03f4fca78df271be03bc963ad5f09c196387f87b4114e7cea",
+  "dependency_sha256": "52404f05449c9d8e699dfdd976274ab1ca9b9a63b397d66fd92e13fe9370e2de"
+}

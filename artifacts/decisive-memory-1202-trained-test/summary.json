@@ -1,0 +1,16 @@
+{
+  "completed": true,
+  "rows": 512,
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 4.9730859375,
+    "process_peak_rss_gb": 21.741928448,
+    "active_metal_gb": 20.921502042,
+    "peak_metal_gb": 21.384216106
+  },
+  "frozen_constants": {
+    "before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+    "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+    "unchanged": true
+  }
+}

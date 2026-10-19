@@ -1,0 +1,20 @@
+Loading full text reader
+Evaluated 16 {"pressure_level": 1, "swap_used_gb": 5.023681640625, "process_peak_rss_gb": 21.668036608, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.47792077}
+Evaluated 32 {"pressure_level": 1, "swap_used_gb": 5.023681640625, "process_peak_rss_gb": 21.673426944, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.47792077}
+Traceback (most recent call last):
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/evaluate_decisive_reader.py", line 111, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/evaluate_decisive_reader.py", line 90, in main
+    for response in stream_generate(model,tokenizer,encoded['ids'],sampler=sampler,max_tokens=256):
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/.venv/lib/python3.13/site-packages/mlx_lm/generate.py", line 716, in stream_generate
+    for n, (token, logprobs, from_draft) in enumerate(token_generator):
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/.venv/lib/python3.13/site-packages/mlx_lm/generate.py", line 706, in <genexpr>
+    (token, logprobs, False) for token, logprobs in token_generator
+                                                    ^^^^^^^^^^^^^^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/.venv/lib/python3.13/site-packages/mlx_lm/generate.py", line 460, in generate_step
+    mx.async_eval(next_y, next_logprobs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,297 @@
+{
+  "trainable_parameters": 5719809,
+  "shapes": {
+    "backbone.model.layers.10.self_attn.0.q_a_proj.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.10.self_attn.0.q_a_proj.lora_b": [
+      16,
+      1536
+    ],
+    "backbone.model.layers.10.self_attn.0.q_b_proj.lora_a": [
+      1536,
+      16
+    ],
+    "backbone.model.layers.10.self_attn.0.q_b_proj.lora_b": [
+      16,
+      6144
+    ],
+    "backbone.model.layers.10.self_attn.0.kv_a_proj_with_mqa.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.10.self_attn.0.kv_a_proj_with_mqa.lora_b": [
+      16,
+      576
+    ],
+    "backbone.model.layers.10.self_attn.0.o_proj.lora_a": [
+      4096,
+      16
+    ],
+    "backbone.model.layers.10.self_attn.0.o_proj.lora_b": [
+      16,
+      3072
+    ],
+    "backbone.model.layers.10.self_attn.1.q_a_proj.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.10.self_attn.1.q_a_proj.lora_b": [
+      16,
+      1536
+    ],
+    "backbone.model.layers.10.self_attn.1.q_b_proj.lora_a": [
+      1536,
+      16
+    ],
+    "backbone.model.layers.10.self_attn.1.q_b_proj.lora_b": [
+      16,
+      6144
+    ],
+    "backbone.model.layers.10.self_attn.1.kv_a_proj_with_mqa.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.10.self_attn.1.kv_a_proj_with_mqa.lora_b": [
+      16,
+      576
+    ],
+    "backbone.model.layers.10.self_attn.1.o_proj.lora_a": [
+      4096,
+      16
+    ],
+    "backbone.model.layers.10.self_attn.1.o_proj.lora_b": [
+      16,
+      3072
+    ],
+    "backbone.model.layers.11.self_attn.0.q_a_proj.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.11.self_attn.0.q_a_proj.lora_b": [
+      16,
+      1536
+    ],
+    "backbone.model.layers.11.self_attn.0.q_b_proj.lora_a": [
+      1536,
+      16
+    ],
+    "backbone.model.layers.11.self_attn.0.q_b_proj.lora_b": [
+      16,
+      6144
+    ],
+    "backbone.model.layers.11.self_attn.0.kv_a_proj_with_mqa.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.11.self_attn.0.kv_a_proj_with_mqa.lora_b": [
+      16,
+      576
+    ],
+    "backbone.model.layers.11.self_attn.0.o_proj.lora_a": [
+      4096,
+      16
+    ],
+    "backbone.model.layers.11.self_attn.0.o_proj.lora_b": [
+      16,
+      3072
+    ],
+    "backbone.model.layers.11.self_attn.1.q_a_proj.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.11.self_attn.1.q_a_proj.lora_b": [
+      16,
+      1536
+    ],
+    "backbone.model.layers.11.self_attn.1.q_b_proj.lora_a": [
+      1536,
+      16
+    ],
+    "backbone.model.layers.11.self_attn.1.q_b_proj.lora_b": [
+      16,
+      6144
+    ],
+    "backbone.model.layers.11.self_attn.1.kv_a_proj_with_mqa.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.11.self_attn.1.kv_a_proj_with_mqa.lora_b": [
+      16,
+      576
+    ],
+    "backbone.model.layers.11.self_attn.1.o_proj.lora_a": [
+      4096,
+      16
+    ],
+    "backbone.model.layers.11.self_attn.1.o_proj.lora_b": [
+      16,
+      3072
+    ],
+    "backbone.model.layers.12.self_attn.0.q_a_proj.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.12.self_attn.0.q_a_proj.lora_b": [
+      16,
+      1536
+    ],
+    "backbone.model.layers.12.self_attn.0.q_b_proj.lora_a": [
+      1536,
+      16
+    ],
+    "backbone.model.layers.12.self_attn.0.q_b_proj.lora_b": [
+      16,
+      6144
+    ],
+    "backbone.model.layers.12.self_attn.0.kv_a_proj_with_mqa.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.12.self_attn.0.kv_a_proj_with_mqa.lora_b": [
+      16,
+      576
+    ],
+    "backbone.model.layers.12.self_attn.0.o_proj.lora_a": [
+      4096,
+      16
+    ],
+    "backbone.model.layers.12.self_attn.0.o_proj.lora_b": [
+      16,
+      3072
+    ],
+    "backbone.model.layers.12.self_attn.1.q_a_proj.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.12.self_attn.1.q_a_proj.lora_b": [
+      16,
+      1536
+    ],
+    "backbone.model.layers.12.self_attn.1.q_b_proj.lora_a": [
+      1536,
+      16
+    ],
+    "backbone.model.layers.12.self_attn.1.q_b_proj.lora_b": [
+      16,
+      6144
+    ],
+    "backbone.model.layers.12.self_attn.1.kv_a_proj_with_mqa.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.12.self_attn.1.kv_a_proj_with_mqa.lora_b": [
+      16,
+      576
+    ],
+    "backbone.model.layers.12.self_attn.1.o_proj.lora_a": [
+      4096,
+      16
+    ],
+    "backbone.model.layers.12.self_attn.1.o_proj.lora_b": [
+      16,
+      3072
+    ],
+    "backbone.model.layers.13.self_attn.0.q_a_proj.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.13.self_attn.0.q_a_proj.lora_b": [
+      16,
+      1536
+    ],
+    "backbone.model.layers.13.self_attn.0.q_b_proj.lora_a": [
+      1536,
+      16
+    ],
+    "backbone.model.layers.13.self_attn.0.q_b_proj.lora_b": [
+      16,
+      6144
+    ],
+    "backbone.model.layers.13.self_attn.0.kv_a_proj_with_mqa.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.13.self_attn.0.kv_a_proj_with_mqa.lora_b": [
+      16,
+      576
+    ],
+    "backbone.model.layers.13.self_attn.0.o_proj.lora_a": [
+      4096,
+      16
+    ],
+    "backbone.model.layers.13.self_attn.0.o_proj.lora_b": [
+      16,
+      3072
+    ],
+    "backbone.model.layers.13.self_attn.1.q_a_proj.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.13.self_attn.1.q_a_proj.lora_b": [
+      16,
+      1536
+    ],
+    "backbone.model.layers.13.self_attn.1.q_b_proj.lora_a": [
+      1536,
+      16
+    ],
+    "backbone.model.layers.13.self_attn.1.q_b_proj.lora_b": [
+      16,
+      6144
+    ],
+    "backbone.model.layers.13.self_attn.1.kv_a_proj_with_mqa.lora_a": [
+      3072,
+      16
+    ],
+    "backbone.model.layers.13.self_attn.1.kv_a_proj_with_mqa.lora_b": [
+      16,
+      576
+    ],
+    "backbone.model.layers.13.self_attn.1.o_proj.lora_a": [
+      4096,
+      16
+    ],
+    "backbone.model.layers.13.self_attn.1.o_proj.lora_b": [
+      16,
+      3072
+    ],
+    "memory.tables.0.weight": [
+      12,
+      128
+    ],
+    "memory.tables.1.weight": [
+      16,
+      128
+    ],
+    "memory.tables.2.weight": [
+      16,
+      128
+    ],
+    "memory.tables.3.weight": [
+      2,
+      128
+    ],
+    "memory.tables.4.weight": [
+      2,
+      128
+    ],
+    "memory.tables.5.weight": [
+      2,
+      128
+    ],
+    "memory.tables.6.weight": [
+      4,
+      128
+    ],
+    "memory.projection.weight": [
+      3072,
+      896
+    ],
+    "memory.norm.weight": [
+      3072
+    ],
+    "memory.gate": []
+  }
+}

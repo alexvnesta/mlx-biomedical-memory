@@ -1,0 +1,13 @@
+{
+  "mode": "memory",
+  "seed": 1201,
+  "started_utc": "2026-10-19T02:42:25.008748+00:00",
+  "source_sha256": "cb2248b1e08436471b026333e635d5ef23a6f97afb6697de5733031de5064640",
+  "dataset_sha256": "54aaeb3f4a83d6ae3e3114f09b4ac56f20747f53da4384d02a2f25cdc95f3f91",
+  "checkpoint_sha256": "737bc9e338a190f788a8fdbbc5d2aa4efa355011f498fbc8c7adfa391984e012",
+  "checkpoint_name": "best-1024.safetensors",
+  "max_tokens": 256,
+  "development": true,
+  "dependency_sha256": "52404f05449c9d8e699dfdd976274ab1ca9b9a63b397d66fd92e13fe9370e2de",
+  "supplemental_sha256": null
+}

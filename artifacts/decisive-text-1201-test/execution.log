@@ -1,0 +1,30 @@
+Loading full text reader
+Evaluated 16 {"pressure_level": 1, "swap_used_gb": 5.008056640625, "process_peak_rss_gb": 21.691416576, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.477150524}
+Evaluated 32 {"pressure_level": 1, "swap_used_gb": 5.008056640625, "process_peak_rss_gb": 21.70486784, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.47792077}
+Evaluated 48 {"pressure_level": 1, "swap_used_gb": 5.008056640625, "process_peak_rss_gb": 21.709848576, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.47792077}
+Evaluated 64 {"pressure_level": 1, "swap_used_gb": 5.008056640625, "process_peak_rss_gb": 21.71314176, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.47792077}
+Evaluated 80 {"pressure_level": 1, "swap_used_gb": 5.008056640625, "process_peak_rss_gb": 21.714550784, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.47792077}
+Evaluated 96 {"pressure_level": 1, "swap_used_gb": 5.008056640625, "process_peak_rss_gb": 21.718843392, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.47792077}
+Evaluated 112 {"pressure_level": 1, "swap_used_gb": 5.008056640625, "process_peak_rss_gb": 21.771452416, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.47792077}
+Evaluated 128 {"pressure_level": 1, "swap_used_gb": 5.008056640625, "process_peak_rss_gb": 21.775532032, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.47792077}
+Evaluated 144 {"pressure_level": 1, "swap_used_gb": 5.008056640625, "process_peak_rss_gb": 21.775695872, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.47792077}
+Evaluated 160 {"pressure_level": 1, "swap_used_gb": 5.008056640625, "process_peak_rss_gb": 21.779611648, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.524853276}
+Evaluated 176 {"pressure_level": 1, "swap_used_gb": 5.008056640625, "process_peak_rss_gb": 21.782003712, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.524853276}
+Evaluated 192 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.785001984, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+Evaluated 208 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.785083904, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+Evaluated 224 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.785083904, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+Evaluated 240 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.785116672, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+Evaluated 256 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.786607616, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+Evaluated 272 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.786624, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+Evaluated 288 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.786673152, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+Evaluated 304 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.786689536, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.525640676}
+Evaluated 320 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.786755072, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.525640676}
+Evaluated 336 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.786755072, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+Evaluated 352 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.788934144, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+Evaluated 368 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.788966912, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.525640676}
+Evaluated 384 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.789032448, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.525640676}
+Evaluated 400 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.789032448, "active_metal_gb": 20.921875232, "peak_metal_gb": 21.525640676}
+Evaluated 416 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.790523392, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+Evaluated 432 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.790867456, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+Evaluated 448 {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.790900224, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}
+COMPLETED {"completed": true, "rows": 448, "resource": {"pressure_level": 1, "swap_used_gb": 5.000244140625, "process_peak_rss_gb": 21.790900224, "active_metal_gb": 20.921875288, "peak_metal_gb": 21.525640676}, "frozen_constants": {"before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb", "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb", "unchanged": true}}

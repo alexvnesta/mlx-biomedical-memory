@@ -1,0 +1,19 @@
+{
+  "completed": true,
+  "updates": 512,
+  "seconds": 176.21665366699744,
+  "trainable_parameters": 5719809,
+  "best_dev_nll": 0.37497246453616145,
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 5.015869140625,
+    "process_peak_rss_gb": 6.731579392,
+    "active_metal_gb": 6.219125382,
+    "peak_metal_gb": 7.532096342
+  },
+  "frozen_constants": {
+    "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+    "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+    "unchanged": true
+  }
+}

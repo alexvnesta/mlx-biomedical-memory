@@ -1,0 +1,10 @@
+{
+  "source_sha256": "8d6c165d2e172989fc90f0e7d2523a0f1aac1ede06a62793f6ec39621ffa893d",
+  "seed": 1201,
+  "fixed_tokens": 32,
+  "repeats": 2,
+  "dataset_sha256": "54aaeb3f4a83d6ae3e3114f09b4ac56f20747f53da4384d02a2f25cdc95f3f91",
+  "setup": "One shared frozen model; adapter hot swaps excluded; prefix serialization, tokenization and KV priming are setup costs; warm requests tokenize only the unprimed suffix.",
+  "scope": "EOS suppressed fixed-length performance; no time-to-correct-answer claim.",
+  "dependency_sha256": "52404f05449c9d8e699dfdd976274ab1ca9b9a63b397d66fd92e13fe9370e2de"
+}

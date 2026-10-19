@@ -1,0 +1,68 @@
+{
+  "final-1024.safetensors": {
+    "sha256": "005a244104ea1ef527dec7484c4c8c40a5e148044d0ac9e8e44b7d6518fd5406",
+    "bytes": 11448555,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "final.safetensors": {
+    "sha256": "005a244104ea1ef527dec7484c4c8c40a5e148044d0ac9e8e44b7d6518fd5406",
+    "bytes": 11448555,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "last.safetensors": {
+    "sha256": "1e7a95c4d2fd0f6837f1457d38e2a5d281421b6c9a4318b0be15fca9fcf9e008",
+    "bytes": 22888207,
+    "published": false,
+    "role": "Local FP32 optimizer/resume state; regenerate with archived training source"
+  },
+  "initial.safetensors": {
+    "sha256": "f60f2bc3313c682833dc0ff86c20f9d8dc063d18470e221699667d2202b6d33f",
+    "bytes": 11448555,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "trained-selected.safetensors": {
+    "sha256": "737bc9e338a190f788a8fdbbc5d2aa4efa355011f498fbc8c7adfa391984e012",
+    "bytes": 11448555,
+    "published": true,
+    "role": "Exact evaluated BF16 reader"
+  },
+  "final-0512.safetensors": {
+    "sha256": "63acc78de73b700219a8c597302157cd1f6ab1967369a06d475e70f7ef6a8aa6",
+    "bytes": 11448555,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "best.safetensors": {
+    "sha256": "737bc9e338a190f788a8fdbbc5d2aa4efa355011f498fbc8c7adfa391984e012",
+    "bytes": 11448555,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "optimizer.safetensors": {
+    "sha256": "89bc6599837f60dd08ceecc368939a5f57a872a82a13ff92b4c933ce07ef41f5",
+    "bytes": 45778282,
+    "published": false,
+    "role": "Local FP32 optimizer/resume state; regenerate with archived training source"
+  },
+  "best-1024.safetensors": {
+    "sha256": "737bc9e338a190f788a8fdbbc5d2aa4efa355011f498fbc8c7adfa391984e012",
+    "bytes": 11448555,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "selected.safetensors": {
+    "sha256": "f60f2bc3313c682833dc0ff86c20f9d8dc063d18470e221699667d2202b6d33f",
+    "bytes": 11448555,
+    "published": true,
+    "role": "Exact evaluated BF16 reader"
+  },
+  "best-0512.safetensors": {
+    "sha256": "737bc9e338a190f788a8fdbbc5d2aa4efa355011f498fbc8c7adfa391984e012",
+    "bytes": 11448555,
+    "published": true,
+    "role": "BF16 training candidate"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "completed": true,
+  "rows": 352,
+  "dataset_sha256": "54aaeb3f4a83d6ae3e3114f09b4ac56f20747f53da4384d02a2f25cdc95f3f91",
+  "timing": "100 traversals per world, mean wall time; Python-only, no LLM verbalization",
+  "source_sha256": "a8c5daf0395b97c58b11cff6eb45567c82792b0c72b43572c0783f761fb1d196",
+  "semantics_sha256": "74b8721b8b80be268805a2e6e339fd46562e0f403bf5454816eb5d5240b561db"
+}

@@ -1,0 +1,5 @@
+Loading full memory reader
+Evaluated 16 {"pressure_level": 1, "swap_used_gb": 4.9730859375, "process_peak_rss_gb": 21.45091584, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.342487806}
+Evaluated 32 {"pressure_level": 1, "swap_used_gb": 4.9730859375, "process_peak_rss_gb": 21.45091584, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.342487806}
+Evaluated 48 {"pressure_level": 1, "swap_used_gb": 4.9730859375, "process_peak_rss_gb": 21.45091584, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.342487806}
+COMPLETED {"completed": true, "rows": 48, "resource": {"pressure_level": 1, "swap_used_gb": 4.9730859375, "process_peak_rss_gb": 21.641691136, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.342487806}, "frozen_constants": {"before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb", "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb", "unchanged": true}}

@@ -1,0 +1,53 @@
+{
+  "budget": 1024,
+  "candidates": [
+    {
+      "checkpoint_name": "initial.safetensors",
+      "checkpoint_sha256": "d4013ef84f27c7a56e3a6a29c64b3a47bd38622bbe89db5c725d5c8690fda46c",
+      "evaluation": "runs/decisive-memory-1202-dev-1024-initial",
+      "reasoning_proofs": 12,
+      "reasoning_correct": 12,
+      "atomic_correct": 0,
+      "reasoning_total": 48,
+      "atomic_total": 24,
+      "step": 0,
+      "weighted_dev_nll": 1.39052613488295
+    },
+    {
+      "checkpoint_name": "best-1024.safetensors",
+      "checkpoint_sha256": "787e3171b68db478b701f24e2782caaf80394ed82ac900980fe248cffff2a253",
+      "evaluation": "runs/decisive-memory-1202-dev-1024-best-1024",
+      "reasoning_proofs": 0,
+      "reasoning_correct": 12,
+      "atomic_correct": 0,
+      "reasoning_total": 48,
+      "atomic_total": 24,
+      "step": 256,
+      "weighted_dev_nll": 0.3693359216170696
+    },
+    {
+      "checkpoint_name": "final-1024.safetensors",
+      "checkpoint_sha256": "83c1a49c4e3dd9e85624c4ad0088015089c5337c96b30ca686741c0b4132d618",
+      "evaluation": "runs/decisive-memory-1202-dev-1024-final-1024",
+      "reasoning_proofs": 1,
+      "reasoning_correct": 13,
+      "atomic_correct": 0,
+      "reasoning_total": 48,
+      "atomic_total": 24,
+      "step": 1024,
+      "weighted_dev_nll": 0.7283063163340557
+    }
+  ],
+  "selected": {
+    "checkpoint_name": "initial.safetensors",
+    "checkpoint_sha256": "d4013ef84f27c7a56e3a6a29c64b3a47bd38622bbe89db5c725d5c8690fda46c",
+    "evaluation": "runs/decisive-memory-1202-dev-1024-initial",
+    "reasoning_proofs": 12,
+    "reasoning_correct": 12,
+    "atomic_correct": 0,
+    "reasoning_total": 48,
+    "atomic_total": 24,
+    "step": 0,
+    "weighted_dev_nll": 1.39052613488295
+  }
+}

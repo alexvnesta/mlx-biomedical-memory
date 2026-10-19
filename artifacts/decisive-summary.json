@@ -1,0 +1,3061 @@
+{
+  "readers": {
+    "text": {
+      "iid_reason": {
+        "n": 192,
+        "correct": 96,
+        "proof": 84,
+        "invalid": 0,
+        "mean_seconds": 0.5726967632511636
+      },
+      "iid_atomic": {
+        "n": 96,
+        "correct": 96,
+        "proof": 96,
+        "invalid": 0,
+        "mean_seconds": 0.6259755634067309
+      },
+      "structure_reason": {
+        "n": 192,
+        "correct": 64,
+        "proof": 7,
+        "invalid": 1,
+        "mean_seconds": 0.6312923353282258
+      },
+      "structure_atomic": {
+        "n": 96,
+        "correct": 96,
+        "proof": 96,
+        "invalid": 0,
+        "mean_seconds": 0.6801616046039575
+      },
+      "depth_only_reason": {
+        "n": 192,
+        "correct": 52,
+        "proof": 13,
+        "invalid": 0,
+        "mean_seconds": 0.6204443774218665
+      },
+      "intervention_reason": {
+        "n": 128,
+        "correct": 74,
+        "proof": 44,
+        "invalid": 0,
+        "mean_seconds": 0.6360211923824863
+      },
+      "binding_reason": {
+        "n": 128,
+        "correct": 50,
+        "proof": 36,
+        "invalid": 2,
+        "mean_seconds": 0.6249678290463407
+      },
+      "order_reason": {
+        "n": 64,
+        "correct": 17,
+        "proof": 8,
+        "invalid": 0,
+        "mean_seconds": 0.6148337610939052
+      },
+      "intervention_pairs": {
+        "n": 128,
+        "both_labels": 25,
+        "both_proofs": 13,
+        "changed_output": 59
+      },
+      "binding_pairs": {
+        "n": 128,
+        "both_labels": 37,
+        "both_proofs": 24,
+        "changed_output": 47
+      },
+      "order_pairs": {
+        "n": 64,
+        "both_labels": 14,
+        "both_proofs": 3,
+        "changed_output": 25
+      },
+      "label_breakdown": {
+        "iid": {
+          "UP": {
+            "n": 48,
+            "proof": 27,
+            "correct": 29
+          },
+          "DOWN": {
+            "n": 48,
+            "proof": 34,
+            "correct": 39
+          },
+          "BOTH": {
+            "n": 48,
+            "proof": 12,
+            "correct": 17
+          },
+          "UNKNOWN": {
+            "n": 48,
+            "proof": 11,
+            "correct": 11
+          }
+        },
+        "structure": {
+          "UP": {
+            "n": 48,
+            "proof": 1,
+            "correct": 20
+          },
+          "DOWN": {
+            "n": 48,
+            "proof": 5,
+            "correct": 37
+          },
+          "BOTH": {
+            "n": 48,
+            "proof": 0,
+            "correct": 6
+          },
+          "UNKNOWN": {
+            "n": 48,
+            "proof": 1,
+            "correct": 1
+          }
+        },
+        "depth_only": {
+          "UP": {
+            "n": 48,
+            "proof": 2,
+            "correct": 12
+          },
+          "DOWN": {
+            "n": 48,
+            "proof": 8,
+            "correct": 30
+          },
+          "BOTH": {
+            "n": 48,
+            "proof": 0,
+            "correct": 7
+          },
+          "UNKNOWN": {
+            "n": 48,
+            "proof": 3,
+            "correct": 3
+          }
+        }
+      },
+      "depth_breakdown": {
+        "1": {
+          "n": 96,
+          "proof": 51,
+          "correct": 54
+        },
+        "2": {
+          "n": 96,
+          "proof": 33,
+          "correct": 42
+        },
+        "3": {
+          "n": 96,
+          "proof": 7,
+          "correct": 21
+        },
+        "4": {
+          "n": 96,
+          "proof": 6,
+          "correct": 31
+        }
+      },
+      "depth_path_breakdown": {
+        "1": {
+          "n": 72,
+          "proof": 41
+        },
+        "2": {
+          "n": 72,
+          "proof": 32
+        },
+        "3": {
+          "n": 72,
+          "proof": 6
+        },
+        "4": {
+          "n": 72,
+          "proof": 4
+        }
+      },
+      "atomic_fields": {
+        "record": {
+          "n": 192,
+          "correct": 192
+        },
+        "subject": {
+          "n": 192,
+          "correct": 192
+        },
+        "object": {
+          "n": 192,
+          "correct": 192
+        },
+        "sign": {
+          "n": 192,
+          "correct": 192
+        },
+        "species": {
+          "n": 192,
+          "correct": 192
+        },
+        "variant": {
+          "n": 192,
+          "correct": 192
+        },
+        "source": {
+          "n": 192,
+          "correct": 192
+        }
+      }
+    },
+    "memory": {
+      "iid_reason": {
+        "n": 192,
+        "correct": 48,
+        "proof": 44,
+        "invalid": 0,
+        "mean_seconds": 0.7348172109689889
+      },
+      "iid_atomic": {
+        "n": 96,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.33852746311519394
+      },
+      "structure_reason": {
+        "n": 192,
+        "correct": 48,
+        "proof": 39,
+        "invalid": 0,
+        "mean_seconds": 0.8417719379266752
+      },
+      "structure_atomic": {
+        "n": 96,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.3059993589898416
+      },
+      "depth_only_reason": {
+        "n": 192,
+        "correct": 48,
+        "proof": 44,
+        "invalid": 0,
+        "mean_seconds": 0.7228286970935945
+      },
+      "intervention_reason": {
+        "n": 128,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.7840357805621352
+      },
+      "binding_reason": {
+        "n": 128,
+        "correct": 32,
+        "proof": 30,
+        "invalid": 0,
+        "mean_seconds": 0.8582200578823631
+      },
+      "order_reason": {
+        "n": 64,
+        "correct": 16,
+        "proof": 16,
+        "invalid": 0,
+        "mean_seconds": 0.9082015195301665
+      },
+      "masked_reason": {
+        "n": 128,
+        "correct": 32,
+        "proof": 28,
+        "invalid": 0,
+        "mean_seconds": 0.826427468750353
+      },
+      "intervention_pairs": {
+        "n": 128,
+        "both_labels": 0,
+        "both_proofs": 0,
+        "changed_output": 0
+      },
+      "binding_pairs": {
+        "n": 128,
+        "both_labels": 32,
+        "both_proofs": 26,
+        "changed_output": 0
+      },
+      "order_pairs": {
+        "n": 64,
+        "both_labels": 16,
+        "both_proofs": 14,
+        "changed_output": 0
+      },
+      "label_breakdown": {
+        "iid": {
+          "UP": {
+            "n": 48,
+            "proof": 0,
+            "correct": 0
+          },
+          "DOWN": {
+            "n": 48,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 48,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 48,
+            "proof": 44,
+            "correct": 48
+          }
+        },
+        "structure": {
+          "UP": {
+            "n": 48,
+            "proof": 0,
+            "correct": 0
+          },
+          "DOWN": {
+            "n": 48,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 48,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 48,
+            "proof": 39,
+            "correct": 48
+          }
+        },
+        "depth_only": {
+          "UP": {
+            "n": 48,
+            "proof": 0,
+            "correct": 0
+          },
+          "DOWN": {
+            "n": 48,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 48,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 48,
+            "proof": 44,
+            "correct": 48
+          }
+        }
+      },
+      "depth_breakdown": {
+        "1": {
+          "n": 96,
+          "proof": 20,
+          "correct": 24
+        },
+        "2": {
+          "n": 96,
+          "proof": 24,
+          "correct": 24
+        },
+        "3": {
+          "n": 96,
+          "proof": 20,
+          "correct": 24
+        },
+        "4": {
+          "n": 96,
+          "proof": 24,
+          "correct": 24
+        }
+      },
+      "depth_path_breakdown": {
+        "1": {
+          "n": 72,
+          "proof": 0
+        },
+        "2": {
+          "n": 72,
+          "proof": 0
+        },
+        "3": {
+          "n": 72,
+          "proof": 0
+        },
+        "4": {
+          "n": 72,
+          "proof": 0
+        }
+      },
+      "atomic_fields": {
+        "record": {
+          "n": 192,
+          "correct": 18
+        },
+        "subject": {
+          "n": 192,
+          "correct": 0
+        },
+        "object": {
+          "n": 192,
+          "correct": 0
+        },
+        "sign": {
+          "n": 192,
+          "correct": 0
+        },
+        "species": {
+          "n": 192,
+          "correct": 0
+        },
+        "variant": {
+          "n": 192,
+          "correct": 0
+        },
+        "source": {
+          "n": 192,
+          "correct": 0
+        }
+      },
+      "mask_comparison": {
+        "n": 128,
+        "normal_proofs": 28,
+        "masked_proofs": 28,
+        "normal_labels": 32,
+        "masked_labels": 32
+      }
+    },
+    "memory_trained": {
+      "iid_reason": {
+        "n": 192,
+        "correct": 45,
+        "proof": 3,
+        "invalid": 0,
+        "mean_seconds": 0.4783679190208356
+      },
+      "iid_atomic": {
+        "n": 96,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.5880935647286
+      },
+      "structure_reason": {
+        "n": 192,
+        "correct": 48,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.5008135681296153
+      },
+      "structure_atomic": {
+        "n": 96,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.6489718333443003
+      },
+      "depth_only_reason": {
+        "n": 192,
+        "correct": 50,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.48199011020293864
+      },
+      "intervention_reason": {
+        "n": 128,
+        "correct": 58,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.524392089499429
+      },
+      "binding_reason": {
+        "n": 128,
+        "correct": 27,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.5173166123364581
+      },
+      "order_reason": {
+        "n": 64,
+        "correct": 15,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.5140658977356907
+      },
+      "masked_reason": {
+        "n": 128,
+        "correct": 35,
+        "proof": 2,
+        "invalid": 0,
+        "mean_seconds": 0.5030906364295333
+      },
+      "intervention_pairs": {
+        "n": 128,
+        "both_labels": 3,
+        "both_proofs": 0,
+        "changed_output": 37
+      },
+      "binding_pairs": {
+        "n": 128,
+        "both_labels": 13,
+        "both_proofs": 0,
+        "changed_output": 58
+      },
+      "order_pairs": {
+        "n": 64,
+        "both_labels": 8,
+        "both_proofs": 0,
+        "changed_output": 27
+      },
+      "label_breakdown": {
+        "iid": {
+          "UP": {
+            "n": 48,
+            "proof": 2,
+            "correct": 37
+          },
+          "DOWN": {
+            "n": 48,
+            "proof": 1,
+            "correct": 7
+          },
+          "BOTH": {
+            "n": 48,
+            "proof": 0,
+            "correct": 1
+          },
+          "UNKNOWN": {
+            "n": 48,
+            "proof": 0,
+            "correct": 0
+          }
+        },
+        "structure": {
+          "UP": {
+            "n": 48,
+            "proof": 0,
+            "correct": 36
+          },
+          "DOWN": {
+            "n": 48,
+            "proof": 0,
+            "correct": 5
+          },
+          "BOTH": {
+            "n": 48,
+            "proof": 0,
+            "correct": 6
+          },
+          "UNKNOWN": {
+            "n": 48,
+            "proof": 1,
+            "correct": 1
+          }
+        },
+        "depth_only": {
+          "UP": {
+            "n": 48,
+            "proof": 0,
+            "correct": 36
+          },
+          "DOWN": {
+            "n": 48,
+            "proof": 0,
+            "correct": 9
+          },
+          "BOTH": {
+            "n": 48,
+            "proof": 0,
+            "correct": 4
+          },
+          "UNKNOWN": {
+            "n": 48,
+            "proof": 1,
+            "correct": 1
+          }
+        }
+      },
+      "depth_breakdown": {
+        "1": {
+          "n": 96,
+          "proof": 3,
+          "correct": 25
+        },
+        "2": {
+          "n": 96,
+          "proof": 0,
+          "correct": 20
+        },
+        "3": {
+          "n": 96,
+          "proof": 1,
+          "correct": 29
+        },
+        "4": {
+          "n": 96,
+          "proof": 0,
+          "correct": 21
+        }
+      },
+      "depth_path_breakdown": {
+        "1": {
+          "n": 72,
+          "proof": 3
+        },
+        "2": {
+          "n": 72,
+          "proof": 0
+        },
+        "3": {
+          "n": 72,
+          "proof": 0
+        },
+        "4": {
+          "n": 72,
+          "proof": 0
+        }
+      },
+      "atomic_fields": {
+        "record": {
+          "n": 192,
+          "correct": 192
+        },
+        "subject": {
+          "n": 192,
+          "correct": 11
+        },
+        "object": {
+          "n": 192,
+          "correct": 8
+        },
+        "sign": {
+          "n": 192,
+          "correct": 98
+        },
+        "species": {
+          "n": 192,
+          "correct": 99
+        },
+        "variant": {
+          "n": 192,
+          "correct": 111
+        },
+        "source": {
+          "n": 192,
+          "correct": 50
+        }
+      },
+      "mask_comparison": {
+        "n": 128,
+        "normal_proofs": 0,
+        "masked_proofs": 2,
+        "normal_labels": 22,
+        "masked_labels": 35
+      }
+    }
+  },
+  "by_seed": {
+    "text-1201": {
+      "iid_reason": {
+        "n": 96,
+        "correct": 49,
+        "proof": 43,
+        "invalid": 0,
+        "mean_seconds": 0.556549215719618
+      },
+      "iid_atomic": {
+        "n": 48,
+        "correct": 48,
+        "proof": 48,
+        "invalid": 0,
+        "mean_seconds": 0.6143539973966957
+      },
+      "structure_reason": {
+        "n": 96,
+        "correct": 36,
+        "proof": 2,
+        "invalid": 1,
+        "mean_seconds": 0.6303511358758745
+      },
+      "structure_atomic": {
+        "n": 48,
+        "correct": 48,
+        "proof": 48,
+        "invalid": 0,
+        "mean_seconds": 0.6561285841665571
+      },
+      "depth_only_reason": {
+        "n": 96,
+        "correct": 23,
+        "proof": 5,
+        "invalid": 0,
+        "mean_seconds": 0.6222787162078021
+      },
+      "intervention_reason": {
+        "n": 64,
+        "correct": 38,
+        "proof": 22,
+        "invalid": 0,
+        "mean_seconds": 0.6196504564061343
+      },
+      "binding_reason": {
+        "n": 64,
+        "correct": 24,
+        "proof": 18,
+        "invalid": 2,
+        "mean_seconds": 0.6242060337960993
+      },
+      "order_reason": {
+        "n": 32,
+        "correct": 11,
+        "proof": 4,
+        "invalid": 0,
+        "mean_seconds": 0.6030771185619415
+      },
+      "intervention_pairs": {
+        "n": 64,
+        "both_labels": 11,
+        "both_proofs": 7,
+        "changed_output": 27
+      },
+      "binding_pairs": {
+        "n": 64,
+        "both_labels": 17,
+        "both_proofs": 12,
+        "changed_output": 23
+      },
+      "order_pairs": {
+        "n": 32,
+        "both_labels": 8,
+        "both_proofs": 2,
+        "changed_output": 10
+      },
+      "label_breakdown": {
+        "iid": {
+          "UP": {
+            "n": 24,
+            "proof": 16,
+            "correct": 16
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 18,
+            "correct": 21
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 8,
+            "correct": 11
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 1,
+            "correct": 1
+          }
+        },
+        "structure": {
+          "UP": {
+            "n": 24,
+            "proof": 1,
+            "correct": 14
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 1,
+            "correct": 16
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 6
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          }
+        },
+        "depth_only": {
+          "UP": {
+            "n": 24,
+            "proof": 1,
+            "correct": 7
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 4,
+            "correct": 14
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 2
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          }
+        }
+      },
+      "depth_breakdown": {
+        "1": {
+          "n": 48,
+          "proof": 22,
+          "correct": 23
+        },
+        "2": {
+          "n": 48,
+          "proof": 21,
+          "correct": 26
+        },
+        "3": {
+          "n": 48,
+          "proof": 3,
+          "correct": 10
+        },
+        "4": {
+          "n": 48,
+          "proof": 2,
+          "correct": 13
+        }
+      },
+      "depth_path_breakdown": {
+        "1": {
+          "n": 36,
+          "proof": 21
+        },
+        "2": {
+          "n": 36,
+          "proof": 21
+        },
+        "3": {
+          "n": 36,
+          "proof": 3
+        },
+        "4": {
+          "n": 36,
+          "proof": 2
+        }
+      },
+      "atomic_fields": {
+        "record": {
+          "n": 96,
+          "correct": 96
+        },
+        "subject": {
+          "n": 96,
+          "correct": 96
+        },
+        "object": {
+          "n": 96,
+          "correct": 96
+        },
+        "sign": {
+          "n": 96,
+          "correct": 96
+        },
+        "species": {
+          "n": 96,
+          "correct": 96
+        },
+        "variant": {
+          "n": 96,
+          "correct": 96
+        },
+        "source": {
+          "n": 96,
+          "correct": 96
+        }
+      }
+    },
+    "text-1202": {
+      "iid_reason": {
+        "n": 96,
+        "correct": 47,
+        "proof": 41,
+        "invalid": 0,
+        "mean_seconds": 0.5888443107827092
+      },
+      "iid_atomic": {
+        "n": 48,
+        "correct": 48,
+        "proof": 48,
+        "invalid": 0,
+        "mean_seconds": 0.637597129416766
+      },
+      "structure_reason": {
+        "n": 96,
+        "correct": 28,
+        "proof": 5,
+        "invalid": 0,
+        "mean_seconds": 0.6322335347805771
+      },
+      "structure_atomic": {
+        "n": 48,
+        "correct": 48,
+        "proof": 48,
+        "invalid": 0,
+        "mean_seconds": 0.7041946250413579
+      },
+      "depth_only_reason": {
+        "n": 96,
+        "correct": 29,
+        "proof": 8,
+        "invalid": 0,
+        "mean_seconds": 0.6186100386359309
+      },
+      "intervention_reason": {
+        "n": 64,
+        "correct": 36,
+        "proof": 22,
+        "invalid": 0,
+        "mean_seconds": 0.6523919283588384
+      },
+      "binding_reason": {
+        "n": 64,
+        "correct": 26,
+        "proof": 18,
+        "invalid": 0,
+        "mean_seconds": 0.6257296242965822
+      },
+      "order_reason": {
+        "n": 32,
+        "correct": 6,
+        "proof": 4,
+        "invalid": 0,
+        "mean_seconds": 0.6265904036258689
+      },
+      "intervention_pairs": {
+        "n": 64,
+        "both_labels": 13,
+        "both_proofs": 6,
+        "changed_output": 26
+      },
+      "binding_pairs": {
+        "n": 64,
+        "both_labels": 19,
+        "both_proofs": 12,
+        "changed_output": 22
+      },
+      "order_pairs": {
+        "n": 32,
+        "both_labels": 5,
+        "both_proofs": 1,
+        "changed_output": 13
+      },
+      "label_breakdown": {
+        "iid": {
+          "UP": {
+            "n": 24,
+            "proof": 11,
+            "correct": 13
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 16,
+            "correct": 18
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 4,
+            "correct": 6
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 10,
+            "correct": 10
+          }
+        },
+        "structure": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 6
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 4,
+            "correct": 21
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 1,
+            "correct": 1
+          }
+        },
+        "depth_only": {
+          "UP": {
+            "n": 24,
+            "proof": 1,
+            "correct": 5
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 4,
+            "correct": 16
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 5
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 3,
+            "correct": 3
+          }
+        }
+      },
+      "depth_breakdown": {
+        "1": {
+          "n": 48,
+          "proof": 29,
+          "correct": 31
+        },
+        "2": {
+          "n": 48,
+          "proof": 12,
+          "correct": 16
+        },
+        "3": {
+          "n": 48,
+          "proof": 4,
+          "correct": 11
+        },
+        "4": {
+          "n": 48,
+          "proof": 4,
+          "correct": 18
+        }
+      },
+      "depth_path_breakdown": {
+        "1": {
+          "n": 36,
+          "proof": 20
+        },
+        "2": {
+          "n": 36,
+          "proof": 11
+        },
+        "3": {
+          "n": 36,
+          "proof": 3
+        },
+        "4": {
+          "n": 36,
+          "proof": 2
+        }
+      },
+      "atomic_fields": {
+        "record": {
+          "n": 96,
+          "correct": 96
+        },
+        "subject": {
+          "n": 96,
+          "correct": 96
+        },
+        "object": {
+          "n": 96,
+          "correct": 96
+        },
+        "sign": {
+          "n": 96,
+          "correct": 96
+        },
+        "species": {
+          "n": 96,
+          "correct": 96
+        },
+        "variant": {
+          "n": 96,
+          "correct": 96
+        },
+        "source": {
+          "n": 96,
+          "correct": 96
+        }
+      }
+    },
+    "memory-1201": {
+      "iid_reason": {
+        "n": 96,
+        "correct": 24,
+        "proof": 22,
+        "invalid": 0,
+        "mean_seconds": 0.7167825920835943
+      },
+      "iid_atomic": {
+        "n": 48,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.33956744441729825
+      },
+      "structure_reason": {
+        "n": 96,
+        "correct": 24,
+        "proof": 19,
+        "invalid": 0,
+        "mean_seconds": 0.8329894496349274
+      },
+      "structure_atomic": {
+        "n": 48,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.3061585486251109
+      },
+      "depth_only_reason": {
+        "n": 96,
+        "correct": 24,
+        "proof": 22,
+        "invalid": 0,
+        "mean_seconds": 0.7121124093331067
+      },
+      "intervention_reason": {
+        "n": 64,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.7664488469508797
+      },
+      "binding_reason": {
+        "n": 64,
+        "correct": 16,
+        "proof": 15,
+        "invalid": 0,
+        "mean_seconds": 0.8115467603595334
+      },
+      "order_reason": {
+        "n": 32,
+        "correct": 8,
+        "proof": 8,
+        "invalid": 0,
+        "mean_seconds": 0.8973745612174753
+      },
+      "masked_reason": {
+        "n": 64,
+        "correct": 16,
+        "proof": 14,
+        "invalid": 0,
+        "mean_seconds": 0.7953015546725055
+      },
+      "intervention_pairs": {
+        "n": 64,
+        "both_labels": 0,
+        "both_proofs": 0,
+        "changed_output": 0
+      },
+      "binding_pairs": {
+        "n": 64,
+        "both_labels": 16,
+        "both_proofs": 13,
+        "changed_output": 0
+      },
+      "order_pairs": {
+        "n": 32,
+        "both_labels": 8,
+        "both_proofs": 7,
+        "changed_output": 0
+      },
+      "label_breakdown": {
+        "iid": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 22,
+            "correct": 24
+          }
+        },
+        "structure": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 19,
+            "correct": 24
+          }
+        },
+        "depth_only": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 22,
+            "correct": 24
+          }
+        }
+      },
+      "depth_breakdown": {
+        "1": {
+          "n": 48,
+          "proof": 10,
+          "correct": 12
+        },
+        "2": {
+          "n": 48,
+          "proof": 12,
+          "correct": 12
+        },
+        "3": {
+          "n": 48,
+          "proof": 10,
+          "correct": 12
+        },
+        "4": {
+          "n": 48,
+          "proof": 12,
+          "correct": 12
+        }
+      },
+      "depth_path_breakdown": {
+        "1": {
+          "n": 36,
+          "proof": 0
+        },
+        "2": {
+          "n": 36,
+          "proof": 0
+        },
+        "3": {
+          "n": 36,
+          "proof": 0
+        },
+        "4": {
+          "n": 36,
+          "proof": 0
+        }
+      },
+      "atomic_fields": {
+        "record": {
+          "n": 96,
+          "correct": 11
+        },
+        "subject": {
+          "n": 96,
+          "correct": 0
+        },
+        "object": {
+          "n": 96,
+          "correct": 0
+        },
+        "sign": {
+          "n": 96,
+          "correct": 0
+        },
+        "species": {
+          "n": 96,
+          "correct": 0
+        },
+        "variant": {
+          "n": 96,
+          "correct": 0
+        },
+        "source": {
+          "n": 96,
+          "correct": 0
+        }
+      },
+      "mask_comparison": {
+        "n": 64,
+        "normal_proofs": 14,
+        "masked_proofs": 14,
+        "normal_labels": 16,
+        "masked_labels": 16
+      }
+    },
+    "memory-1202": {
+      "iid_reason": {
+        "n": 96,
+        "correct": 24,
+        "proof": 22,
+        "invalid": 0,
+        "mean_seconds": 0.7528518298543835
+      },
+      "iid_atomic": {
+        "n": 48,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.3374874818130896
+      },
+      "structure_reason": {
+        "n": 96,
+        "correct": 24,
+        "proof": 20,
+        "invalid": 0,
+        "mean_seconds": 0.850554426218423
+      },
+      "structure_atomic": {
+        "n": 48,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.3058401693545723
+      },
+      "depth_only_reason": {
+        "n": 96,
+        "correct": 24,
+        "proof": 22,
+        "invalid": 0,
+        "mean_seconds": 0.7335449848540824
+      },
+      "intervention_reason": {
+        "n": 64,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.8016227141733907
+      },
+      "binding_reason": {
+        "n": 64,
+        "correct": 16,
+        "proof": 15,
+        "invalid": 0,
+        "mean_seconds": 0.9048933554051928
+      },
+      "order_reason": {
+        "n": 32,
+        "correct": 8,
+        "proof": 8,
+        "invalid": 0,
+        "mean_seconds": 0.9190284778428577
+      },
+      "masked_reason": {
+        "n": 64,
+        "correct": 16,
+        "proof": 14,
+        "invalid": 0,
+        "mean_seconds": 0.8575533828282005
+      },
+      "intervention_pairs": {
+        "n": 64,
+        "both_labels": 0,
+        "both_proofs": 0,
+        "changed_output": 0
+      },
+      "binding_pairs": {
+        "n": 64,
+        "both_labels": 16,
+        "both_proofs": 13,
+        "changed_output": 0
+      },
+      "order_pairs": {
+        "n": 32,
+        "both_labels": 8,
+        "both_proofs": 7,
+        "changed_output": 0
+      },
+      "label_breakdown": {
+        "iid": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 22,
+            "correct": 24
+          }
+        },
+        "structure": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 20,
+            "correct": 24
+          }
+        },
+        "depth_only": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 22,
+            "correct": 24
+          }
+        }
+      },
+      "depth_breakdown": {
+        "1": {
+          "n": 48,
+          "proof": 10,
+          "correct": 12
+        },
+        "2": {
+          "n": 48,
+          "proof": 12,
+          "correct": 12
+        },
+        "3": {
+          "n": 48,
+          "proof": 10,
+          "correct": 12
+        },
+        "4": {
+          "n": 48,
+          "proof": 12,
+          "correct": 12
+        }
+      },
+      "depth_path_breakdown": {
+        "1": {
+          "n": 36,
+          "proof": 0
+        },
+        "2": {
+          "n": 36,
+          "proof": 0
+        },
+        "3": {
+          "n": 36,
+          "proof": 0
+        },
+        "4": {
+          "n": 36,
+          "proof": 0
+        }
+      },
+      "atomic_fields": {
+        "record": {
+          "n": 96,
+          "correct": 7
+        },
+        "subject": {
+          "n": 96,
+          "correct": 0
+        },
+        "object": {
+          "n": 96,
+          "correct": 0
+        },
+        "sign": {
+          "n": 96,
+          "correct": 0
+        },
+        "species": {
+          "n": 96,
+          "correct": 0
+        },
+        "variant": {
+          "n": 96,
+          "correct": 0
+        },
+        "source": {
+          "n": 96,
+          "correct": 0
+        }
+      },
+      "mask_comparison": {
+        "n": 64,
+        "normal_proofs": 14,
+        "masked_proofs": 14,
+        "normal_labels": 16,
+        "masked_labels": 16
+      }
+    },
+    "memory_trained-1201": {
+      "iid_reason": {
+        "n": 96,
+        "correct": 24,
+        "proof": 2,
+        "invalid": 0,
+        "mean_seconds": 0.4512600151466965
+      },
+      "iid_atomic": {
+        "n": 48,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.5986297648532855
+      },
+      "structure_reason": {
+        "n": 96,
+        "correct": 24,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.49054457983296135
+      },
+      "structure_atomic": {
+        "n": 48,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.6844155304382488
+      },
+      "depth_only_reason": {
+        "n": 96,
+        "correct": 24,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.45967497738456586
+      },
+      "intervention_reason": {
+        "n": 64,
+        "correct": 32,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.537298882795767
+      },
+      "binding_reason": {
+        "n": 64,
+        "correct": 16,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.5139080762351114
+      },
+      "order_reason": {
+        "n": 32,
+        "correct": 8,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.4987580130000424
+      },
+      "masked_reason": {
+        "n": 64,
+        "correct": 16,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.5151767819058932
+      },
+      "intervention_pairs": {
+        "n": 64,
+        "both_labels": 0,
+        "both_proofs": 0,
+        "changed_output": 0
+      },
+      "binding_pairs": {
+        "n": 64,
+        "both_labels": 16,
+        "both_proofs": 0,
+        "changed_output": 0
+      },
+      "order_pairs": {
+        "n": 32,
+        "both_labels": 8,
+        "both_proofs": 1,
+        "changed_output": 0
+      },
+      "label_breakdown": {
+        "iid": {
+          "UP": {
+            "n": 24,
+            "proof": 2,
+            "correct": 24
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          }
+        },
+        "structure": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 24
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          }
+        },
+        "depth_only": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 24
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          }
+        }
+      },
+      "depth_breakdown": {
+        "1": {
+          "n": 48,
+          "proof": 2,
+          "correct": 12
+        },
+        "2": {
+          "n": 48,
+          "proof": 0,
+          "correct": 12
+        },
+        "3": {
+          "n": 48,
+          "proof": 0,
+          "correct": 12
+        },
+        "4": {
+          "n": 48,
+          "proof": 0,
+          "correct": 12
+        }
+      },
+      "depth_path_breakdown": {
+        "1": {
+          "n": 36,
+          "proof": 2
+        },
+        "2": {
+          "n": 36,
+          "proof": 0
+        },
+        "3": {
+          "n": 36,
+          "proof": 0
+        },
+        "4": {
+          "n": 36,
+          "proof": 0
+        }
+      },
+      "atomic_fields": {
+        "record": {
+          "n": 96,
+          "correct": 96
+        },
+        "subject": {
+          "n": 96,
+          "correct": 5
+        },
+        "object": {
+          "n": 96,
+          "correct": 3
+        },
+        "sign": {
+          "n": 96,
+          "correct": 43
+        },
+        "species": {
+          "n": 96,
+          "correct": 47
+        },
+        "variant": {
+          "n": 96,
+          "correct": 48
+        },
+        "source": {
+          "n": 96,
+          "correct": 25
+        }
+      },
+      "mask_comparison": {
+        "n": 64,
+        "normal_proofs": 1,
+        "masked_proofs": 1,
+        "normal_labels": 16,
+        "masked_labels": 16
+      }
+    },
+    "memory_trained-1202": {
+      "iid_reason": {
+        "n": 96,
+        "correct": 21,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.5054758228949746
+      },
+      "iid_atomic": {
+        "n": 48,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.5775573646039144
+      },
+      "structure_reason": {
+        "n": 96,
+        "correct": 24,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.5110825564262692
+      },
+      "structure_atomic": {
+        "n": 48,
+        "correct": 0,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.613528136250352
+      },
+      "depth_only_reason": {
+        "n": 96,
+        "correct": 26,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.5043052430213114
+      },
+      "intervention_reason": {
+        "n": 64,
+        "correct": 26,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.5114852962030909
+      },
+      "binding_reason": {
+        "n": 64,
+        "correct": 11,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.5207251484378048
+      },
+      "order_reason": {
+        "n": 32,
+        "correct": 7,
+        "proof": 0,
+        "invalid": 0,
+        "mean_seconds": 0.5293737824713389
+      },
+      "masked_reason": {
+        "n": 64,
+        "correct": 19,
+        "proof": 1,
+        "invalid": 0,
+        "mean_seconds": 0.49100449095317344
+      },
+      "intervention_pairs": {
+        "n": 64,
+        "both_labels": 0,
+        "both_proofs": 0,
+        "changed_output": 7
+      },
+      "binding_pairs": {
+        "n": 64,
+        "both_labels": 6,
+        "both_proofs": 0,
+        "changed_output": 28
+      },
+      "order_pairs": {
+        "n": 32,
+        "both_labels": 4,
+        "both_proofs": 0,
+        "changed_output": 13
+      },
+      "label_breakdown": {
+        "iid": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 13
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 1,
+            "correct": 7
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 1
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 0
+          }
+        },
+        "structure": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 12
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 5
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 6
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 1,
+            "correct": 1
+          }
+        },
+        "depth_only": {
+          "UP": {
+            "n": 24,
+            "proof": 0,
+            "correct": 12
+          },
+          "DOWN": {
+            "n": 24,
+            "proof": 0,
+            "correct": 9
+          },
+          "BOTH": {
+            "n": 24,
+            "proof": 0,
+            "correct": 4
+          },
+          "UNKNOWN": {
+            "n": 24,
+            "proof": 1,
+            "correct": 1
+          }
+        }
+      },
+      "depth_breakdown": {
+        "1": {
+          "n": 48,
+          "proof": 1,
+          "correct": 13
+        },
+        "2": {
+          "n": 48,
+          "proof": 0,
+          "correct": 8
+        },
+        "3": {
+          "n": 48,
+          "proof": 1,
+          "correct": 17
+        },
+        "4": {
+          "n": 48,
+          "proof": 0,
+          "correct": 9
+        }
+      },
+      "depth_path_breakdown": {
+        "1": {
+          "n": 36,
+          "proof": 1
+        },
+        "2": {
+          "n": 36,
+          "proof": 0
+        },
+        "3": {
+          "n": 36,
+          "proof": 0
+        },
+        "4": {
+          "n": 36,
+          "proof": 0
+        }
+      },
+      "atomic_fields": {
+        "record": {
+          "n": 96,
+          "correct": 96
+        },
+        "subject": {
+          "n": 96,
+          "correct": 6
+        },
+        "object": {
+          "n": 96,
+          "correct": 5
+        },
+        "sign": {
+          "n": 96,
+          "correct": 55
+        },
+        "species": {
+          "n": 96,
+          "correct": 52
+        },
+        "variant": {
+          "n": 96,
+          "correct": 63
+        },
+        "source": {
+          "n": 96,
+          "correct": 25
+        }
+      },
+      "mask_comparison": {
+        "n": 64,
+        "normal_proofs": 0,
+        "masked_proofs": 1,
+        "normal_labels": 11,
+        "masked_labels": 19
+      }
+    }
+  },
+  "training": {
+    "text-1201": {
+      "summary": {
+        "completed": true,
+        "updates": 1024,
+        "seconds": 209.56874674999563,
+        "trainable_parameters": 5914624,
+        "best_dev_nll": 0.03946764578687281,
+        "resource": {
+          "pressure_level": 1,
+          "swap_used_gb": 5.015869140625,
+          "process_peak_rss_gb": 6.762676224,
+          "active_metal_gb": 6.223967264,
+          "peak_metal_gb": 7.7892236
+        },
+        "frozen_constants": {
+          "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+          "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+          "unchanged": true
+        }
+      },
+      "selection": {
+        "budget": 1024,
+        "candidates": [
+          {
+            "checkpoint_name": "initial.safetensors",
+            "checkpoint_sha256": "6b8bd93f46040fe0f978e8db4d77821732ba4dd978b2b34feb889dcd37decee7",
+            "evaluation": "runs/decisive-text-1201-dev-1024-initial",
+            "reasoning_proofs": 4,
+            "reasoning_correct": 16,
+            "atomic_correct": 5,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 0,
+            "weighted_dev_nll": 0.27528825831703013
+          },
+          {
+            "checkpoint_name": "best-1024.safetensors",
+            "checkpoint_sha256": "9e882ab4292c77c169ec764d335fae8efc609112c1db1f398558776f7e39d3a1",
+            "evaluation": "runs/decisive-text-1201-dev-1024-best-1024",
+            "reasoning_proofs": 20,
+            "reasoning_correct": 25,
+            "atomic_correct": 24,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 768,
+            "weighted_dev_nll": 0.03946764578687281
+          },
+          {
+            "checkpoint_name": "final-1024.safetensors",
+            "checkpoint_sha256": "4bac767acf8f2fc3368cad547464dbb576341a5bd3221c354cd72f127b7a9495",
+            "evaluation": "runs/decisive-text-1201-dev-1024-final-1024",
+            "reasoning_proofs": 24,
+            "reasoning_correct": 27,
+            "atomic_correct": 24,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 1024,
+            "weighted_dev_nll": 0.05425175027062363
+          },
+          {
+            "checkpoint_name": "best-0512.safetensors",
+            "checkpoint_sha256": "17460dcdd40378f4622f62f60c8177431c18cfd99008af3689474651219d2f72",
+            "evaluation": "runs/decisive-text-1201-dev-512-best-0512",
+            "reasoning_proofs": 21,
+            "reasoning_correct": 29,
+            "atomic_correct": 24,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 448,
+            "weighted_dev_nll": 0.04962649608945608
+          },
+          {
+            "checkpoint_name": "final-0512.safetensors",
+            "checkpoint_sha256": "c871a1ea9d7f4fe522fa327b7e4e873f6e84fc84c0a740e691438660cb58408a",
+            "evaluation": "runs/decisive-text-1201-dev-512-final-0512",
+            "reasoning_proofs": 18,
+            "reasoning_correct": 24,
+            "atomic_correct": 24,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 512,
+            "weighted_dev_nll": 0.05905083953274312
+          }
+        ],
+        "selected": {
+          "checkpoint_name": "final-1024.safetensors",
+          "checkpoint_sha256": "4bac767acf8f2fc3368cad547464dbb576341a5bd3221c354cd72f127b7a9495",
+          "evaluation": "runs/decisive-text-1201-dev-1024-final-1024",
+          "reasoning_proofs": 24,
+          "reasoning_correct": 27,
+          "atomic_correct": 24,
+          "reasoning_total": 48,
+          "atomic_total": 24,
+          "step": 1024,
+          "weighted_dev_nll": 0.05425175027062363
+        }
+      },
+      "phases": [
+        {
+          "completed": true,
+          "updates": 512,
+          "seconds": 266.87267216699547,
+          "trainable_parameters": 5914624,
+          "best_dev_nll": 0.04962649608945608,
+          "resource": {
+            "pressure_level": 1,
+            "swap_used_gb": 5.015869140625,
+            "process_peak_rss_gb": 6.765166592,
+            "active_metal_gb": 6.223967264,
+            "peak_metal_gb": 7.7892236
+          },
+          "frozen_constants": {
+            "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "unchanged": true
+          }
+        },
+        {
+          "completed": true,
+          "updates": 1024,
+          "seconds": 209.56874674999563,
+          "trainable_parameters": 5914624,
+          "best_dev_nll": 0.03946764578687281,
+          "resource": {
+            "pressure_level": 1,
+            "swap_used_gb": 5.015869140625,
+            "process_peak_rss_gb": 6.762676224,
+            "active_metal_gb": 6.223967264,
+            "peak_metal_gb": 7.7892236
+          },
+          "frozen_constants": {
+            "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "unchanged": true
+          }
+        }
+      ],
+      "training_seconds_total": 476.4414189169911
+    },
+    "text-1202": {
+      "summary": {
+        "completed": true,
+        "updates": 1024,
+        "seconds": 431.20006795800873,
+        "trainable_parameters": 5914624,
+        "best_dev_nll": 0.032749402209178574,
+        "resource": {
+          "pressure_level": 1,
+          "swap_used_gb": 5.015869140625,
+          "process_peak_rss_gb": 6.765969408,
+          "active_metal_gb": 6.223967264,
+          "peak_metal_gb": 7.789239984
+        },
+        "frozen_constants": {
+          "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+          "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+          "unchanged": true
+        }
+      },
+      "selection": {
+        "budget": 1024,
+        "candidates": [
+          {
+            "checkpoint_name": "initial.safetensors",
+            "checkpoint_sha256": "f0edfd88dd56f7a7d8e3bb963c0b897aae41d4d559bbeb32bc68a6e210cc0897",
+            "evaluation": "runs/decisive-text-1202-dev-1024-initial",
+            "reasoning_proofs": 4,
+            "reasoning_correct": 16,
+            "atomic_correct": 5,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 0,
+            "weighted_dev_nll": 0.27528825831703013
+          },
+          {
+            "checkpoint_name": "best-1024.safetensors",
+            "checkpoint_sha256": "b0eee6afe33f917c8d739893047c65bbb7fa743de151a4c9c87d85ac3b1b2f34",
+            "evaluation": "runs/decisive-text-1202-dev-1024-best-1024",
+            "reasoning_proofs": 21,
+            "reasoning_correct": 27,
+            "atomic_correct": 24,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 960,
+            "weighted_dev_nll": 0.032749402209178574
+          },
+          {
+            "checkpoint_name": "final-1024.safetensors",
+            "checkpoint_sha256": "80088ff576cc33ef783b8263bc5890174d0563099f9c56b85c81084cf03d7a15",
+            "evaluation": "runs/decisive-text-1202-dev-1024-final-1024",
+            "reasoning_proofs": 24,
+            "reasoning_correct": 26,
+            "atomic_correct": 24,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 1024,
+            "weighted_dev_nll": 0.03771987204063976
+          }
+        ],
+        "selected": {
+          "checkpoint_name": "final-1024.safetensors",
+          "checkpoint_sha256": "80088ff576cc33ef783b8263bc5890174d0563099f9c56b85c81084cf03d7a15",
+          "evaluation": "runs/decisive-text-1202-dev-1024-final-1024",
+          "reasoning_proofs": 24,
+          "reasoning_correct": 26,
+          "atomic_correct": 24,
+          "reasoning_total": 48,
+          "atomic_total": 24,
+          "step": 1024,
+          "weighted_dev_nll": 0.03771987204063976
+        }
+      },
+      "phases": [
+        {
+          "completed": true,
+          "updates": 1024,
+          "seconds": 431.20006795800873,
+          "trainable_parameters": 5914624,
+          "best_dev_nll": 0.032749402209178574,
+          "resource": {
+            "pressure_level": 1,
+            "swap_used_gb": 5.015869140625,
+            "process_peak_rss_gb": 6.765969408,
+            "active_metal_gb": 6.223967264,
+            "peak_metal_gb": 7.789239984
+          },
+          "frozen_constants": {
+            "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "unchanged": true
+          }
+        }
+      ],
+      "training_seconds_total": 431.20006795800873
+    },
+    "memory-1201": {
+      "summary": {
+        "completed": true,
+        "updates": 1024,
+        "seconds": 158.91596804199798,
+        "trainable_parameters": 5719809,
+        "best_dev_nll": 0.37497246453616145,
+        "resource": {
+          "pressure_level": 1,
+          "swap_used_gb": 5.015869140625,
+          "process_peak_rss_gb": 6.721404928,
+          "active_metal_gb": 6.219121334,
+          "peak_metal_gb": 7.53201003
+        },
+        "frozen_constants": {
+          "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+          "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+          "unchanged": true
+        }
+      },
+      "selection": {
+        "budget": 1024,
+        "candidates": [
+          {
+            "checkpoint_name": "initial.safetensors",
+            "checkpoint_sha256": "f60f2bc3313c682833dc0ff86c20f9d8dc063d18470e221699667d2202b6d33f",
+            "evaluation": "runs/decisive-memory-1201-dev-1024-initial",
+            "reasoning_proofs": 12,
+            "reasoning_correct": 12,
+            "atomic_correct": 0,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 0,
+            "weighted_dev_nll": 1.3866424614874024
+          },
+          {
+            "checkpoint_name": "best-1024.safetensors",
+            "checkpoint_sha256": "737bc9e338a190f788a8fdbbc5d2aa4efa355011f498fbc8c7adfa391984e012",
+            "evaluation": "runs/decisive-memory-1201-dev-1024-best-1024",
+            "reasoning_proofs": 0,
+            "reasoning_correct": 12,
+            "atomic_correct": 0,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 256,
+            "weighted_dev_nll": 0.37497246453616145
+          },
+          {
+            "checkpoint_name": "final-1024.safetensors",
+            "checkpoint_sha256": "005a244104ea1ef527dec7484c4c8c40a5e148044d0ac9e8e44b7d6518fd5406",
+            "evaluation": "runs/decisive-memory-1201-dev-1024-final-1024",
+            "reasoning_proofs": 0,
+            "reasoning_correct": 12,
+            "atomic_correct": 0,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 1024,
+            "weighted_dev_nll": 0.7265261492187468
+          },
+          {
+            "checkpoint_name": "final-0512.safetensors",
+            "checkpoint_sha256": "63acc78de73b700219a8c597302157cd1f6ab1967369a06d475e70f7ef6a8aa6",
+            "evaluation": "runs/decisive-memory-1201-dev-512-final-0512",
+            "reasoning_proofs": 0,
+            "reasoning_correct": 12,
+            "atomic_correct": 0,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 512,
+            "weighted_dev_nll": 0.49202119946453926
+          }
+        ],
+        "selected": {
+          "checkpoint_name": "initial.safetensors",
+          "checkpoint_sha256": "f60f2bc3313c682833dc0ff86c20f9d8dc063d18470e221699667d2202b6d33f",
+          "evaluation": "runs/decisive-memory-1201-dev-1024-initial",
+          "reasoning_proofs": 12,
+          "reasoning_correct": 12,
+          "atomic_correct": 0,
+          "reasoning_total": 48,
+          "atomic_total": 24,
+          "step": 0,
+          "weighted_dev_nll": 1.3866424614874024
+        }
+      },
+      "phases": [
+        {
+          "completed": true,
+          "updates": 512,
+          "seconds": 176.21665366699744,
+          "trainable_parameters": 5719809,
+          "best_dev_nll": 0.37497246453616145,
+          "resource": {
+            "pressure_level": 1,
+            "swap_used_gb": 5.015869140625,
+            "process_peak_rss_gb": 6.731579392,
+            "active_metal_gb": 6.219125382,
+            "peak_metal_gb": 7.532096342
+          },
+          "frozen_constants": {
+            "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "unchanged": true
+          }
+        },
+        {
+          "completed": true,
+          "updates": 1024,
+          "seconds": 158.91596804199798,
+          "trainable_parameters": 5719809,
+          "best_dev_nll": 0.37497246453616145,
+          "resource": {
+            "pressure_level": 1,
+            "swap_used_gb": 5.015869140625,
+            "process_peak_rss_gb": 6.721404928,
+            "active_metal_gb": 6.219121334,
+            "peak_metal_gb": 7.53201003
+          },
+          "frozen_constants": {
+            "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "unchanged": true
+          }
+        }
+      ],
+      "training_seconds_total": 335.13262170899543
+    },
+    "memory-1202": {
+      "summary": {
+        "completed": true,
+        "updates": 1024,
+        "seconds": 352.4660552909918,
+        "trainable_parameters": 5719809,
+        "best_dev_nll": 0.3693359216170696,
+        "resource": {
+          "pressure_level": 1,
+          "swap_used_gb": 5.008056640625,
+          "process_peak_rss_gb": 6.73153024,
+          "active_metal_gb": 6.219118486,
+          "peak_metal_gb": 7.532095046
+        },
+        "frozen_constants": {
+          "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+          "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+          "unchanged": true
+        }
+      },
+      "selection": {
+        "budget": 1024,
+        "candidates": [
+          {
+            "checkpoint_name": "initial.safetensors",
+            "checkpoint_sha256": "d4013ef84f27c7a56e3a6a29c64b3a47bd38622bbe89db5c725d5c8690fda46c",
+            "evaluation": "runs/decisive-memory-1202-dev-1024-initial",
+            "reasoning_proofs": 12,
+            "reasoning_correct": 12,
+            "atomic_correct": 0,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 0,
+            "weighted_dev_nll": 1.39052613488295
+          },
+          {
+            "checkpoint_name": "best-1024.safetensors",
+            "checkpoint_sha256": "787e3171b68db478b701f24e2782caaf80394ed82ac900980fe248cffff2a253",
+            "evaluation": "runs/decisive-memory-1202-dev-1024-best-1024",
+            "reasoning_proofs": 0,
+            "reasoning_correct": 12,
+            "atomic_correct": 0,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 256,
+            "weighted_dev_nll": 0.3693359216170696
+          },
+          {
+            "checkpoint_name": "final-1024.safetensors",
+            "checkpoint_sha256": "83c1a49c4e3dd9e85624c4ad0088015089c5337c96b30ca686741c0b4132d618",
+            "evaluation": "runs/decisive-memory-1202-dev-1024-final-1024",
+            "reasoning_proofs": 1,
+            "reasoning_correct": 13,
+            "atomic_correct": 0,
+            "reasoning_total": 48,
+            "atomic_total": 24,
+            "step": 1024,
+            "weighted_dev_nll": 0.7283063163340557
+          }
+        ],
+        "selected": {
+          "checkpoint_name": "initial.safetensors",
+          "checkpoint_sha256": "d4013ef84f27c7a56e3a6a29c64b3a47bd38622bbe89db5c725d5c8690fda46c",
+          "evaluation": "runs/decisive-memory-1202-dev-1024-initial",
+          "reasoning_proofs": 12,
+          "reasoning_correct": 12,
+          "atomic_correct": 0,
+          "reasoning_total": 48,
+          "atomic_total": 24,
+          "step": 0,
+          "weighted_dev_nll": 1.39052613488295
+        }
+      },
+      "phases": [
+        {
+          "completed": true,
+          "updates": 1024,
+          "seconds": 352.4660552909918,
+          "trainable_parameters": 5719809,
+          "best_dev_nll": 0.3693359216170696,
+          "resource": {
+            "pressure_level": 1,
+            "swap_used_gb": 5.008056640625,
+            "process_peak_rss_gb": 6.73153024,
+            "active_metal_gb": 6.219118486,
+            "peak_metal_gb": 7.532095046
+          },
+          "frozen_constants": {
+            "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+            "unchanged": true
+          }
+        }
+      ],
+      "training_seconds_total": 352.4660552909918
+    }
+  },
+  "development_gate": {
+    "budget": 1024,
+    "selection": {
+      "text": {
+        "checkpoint_name": "final-1024.safetensors",
+        "checkpoint_sha256": "4bac767acf8f2fc3368cad547464dbb576341a5bd3221c354cd72f127b7a9495",
+        "evaluation": "runs/decisive-text-1201-dev-1024-final-1024",
+        "reasoning_proofs": 24,
+        "reasoning_correct": 27,
+        "atomic_correct": 24,
+        "reasoning_total": 48,
+        "atomic_total": 24,
+        "step": 1024,
+        "weighted_dev_nll": 0.05425175027062363
+      },
+      "memory": {
+        "checkpoint_name": "initial.safetensors",
+        "checkpoint_sha256": "f60f2bc3313c682833dc0ff86c20f9d8dc063d18470e221699667d2202b6d33f",
+        "evaluation": "runs/decisive-memory-1201-dev-1024-initial",
+        "reasoning_proofs": 12,
+        "reasoning_correct": 12,
+        "atomic_correct": 0,
+        "reasoning_total": 48,
+        "atomic_total": 24,
+        "step": 0,
+        "weighted_dev_nll": 1.3866424614874024
+      }
+    },
+    "passed": false,
+    "candidate_retention_amended": true
+  },
+  "trained_selections": {
+    "1201": {
+      "candidates": [
+        {
+          "checkpoint_name": "best-1024.safetensors",
+          "checkpoint_sha256": "737bc9e338a190f788a8fdbbc5d2aa4efa355011f498fbc8c7adfa391984e012",
+          "evaluation": "runs/decisive-memory-1201-dev-1024-best-1024",
+          "reasoning_proofs": 0,
+          "reasoning_correct": 12,
+          "atomic_correct": 0,
+          "reasoning_total": 48,
+          "atomic_total": 24,
+          "step": 256,
+          "weighted_dev_nll": 0.37497246453616145
+        },
+        {
+          "checkpoint_name": "final-1024.safetensors",
+          "checkpoint_sha256": "005a244104ea1ef527dec7484c4c8c40a5e148044d0ac9e8e44b7d6518fd5406",
+          "evaluation": "runs/decisive-memory-1201-dev-1024-final-1024",
+          "reasoning_proofs": 0,
+          "reasoning_correct": 12,
+          "atomic_correct": 0,
+          "reasoning_total": 48,
+          "atomic_total": 24,
+          "step": 1024,
+          "weighted_dev_nll": 0.7265261492187468
+        },
+        {
+          "checkpoint_name": "final-0512.safetensors",
+          "checkpoint_sha256": "63acc78de73b700219a8c597302157cd1f6ab1967369a06d475e70f7ef6a8aa6",
+          "evaluation": "runs/decisive-memory-1201-dev-512-final-0512",
+          "reasoning_proofs": 0,
+          "reasoning_correct": 12,
+          "atomic_correct": 0,
+          "reasoning_total": 48,
+          "atomic_total": 24,
+          "step": 512,
+          "weighted_dev_nll": 0.49202119946453926
+        }
+      ],
+      "selected": {
+        "checkpoint_name": "best-1024.safetensors",
+        "checkpoint_sha256": "737bc9e338a190f788a8fdbbc5d2aa4efa355011f498fbc8c7adfa391984e012",
+        "evaluation": "runs/decisive-memory-1201-dev-1024-best-1024",
+        "reasoning_proofs": 0,
+        "reasoning_correct": 12,
+        "atomic_correct": 0,
+        "reasoning_total": 48,
+        "atomic_total": 24,
+        "step": 256,
+        "weighted_dev_nll": 0.37497246453616145
+      },
+      "purpose": "Pre-test registered trained-only diagnostic; initial fallback remains a separate primary result"
+    },
+    "1202": {
+      "candidates": [
+        {
+          "checkpoint_name": "best-1024.safetensors",
+          "checkpoint_sha256": "787e3171b68db478b701f24e2782caaf80394ed82ac900980fe248cffff2a253",
+          "evaluation": "runs/decisive-memory-1202-dev-1024-best-1024",
+          "reasoning_proofs": 0,
+          "reasoning_correct": 12,
+          "atomic_correct": 0,
+          "reasoning_total": 48,
+          "atomic_total": 24,
+          "step": 256,
+          "weighted_dev_nll": 0.3693359216170696
+        },
+        {
+          "checkpoint_name": "final-1024.safetensors",
+          "checkpoint_sha256": "83c1a49c4e3dd9e85624c4ad0088015089c5337c96b30ca686741c0b4132d618",
+          "evaluation": "runs/decisive-memory-1202-dev-1024-final-1024",
+          "reasoning_proofs": 1,
+          "reasoning_correct": 13,
+          "atomic_correct": 0,
+          "reasoning_total": 48,
+          "atomic_total": 24,
+          "step": 1024,
+          "weighted_dev_nll": 0.7283063163340557
+        }
+      ],
+      "selected": {
+        "checkpoint_name": "final-1024.safetensors",
+        "checkpoint_sha256": "83c1a49c4e3dd9e85624c4ad0088015089c5337c96b30ca686741c0b4132d618",
+        "evaluation": "runs/decisive-memory-1202-dev-1024-final-1024",
+        "reasoning_proofs": 1,
+        "reasoning_correct": 13,
+        "atomic_correct": 0,
+        "reasoning_total": 48,
+        "atomic_total": 24,
+        "step": 1024,
+        "weighted_dev_nll": 0.7283063163340557
+      },
+      "purpose": "Pre-test registered trained-only diagnostic; initial fallback remains a separate primary result"
+    }
+  },
+  "training_audit": {
+    "1201": {
+      "normal": {
+        "n": 16,
+        "correct": 0
+      },
+      "masked": {
+        "n": 16,
+        "correct": 0
+      },
+      "changed": {
+        "n": 16,
+        "correct": 0
+      },
+      "same_response_after_edit": 8
+    },
+    "1202": {
+      "normal": {
+        "n": 16,
+        "correct": 8
+      },
+      "masked": {
+        "n": 16,
+        "correct": 0
+      },
+      "changed": {
+        "n": 16,
+        "correct": 0
+      },
+      "same_response_after_edit": 7
+    }
+  },
+  "paired_world_proof_differences": [
+    {
+      "stage": "iid",
+      "memory_minus_text": -0.421875,
+      "world_bootstrap_95": [
+        -0.5,
+        -0.3385416666666667
+      ],
+      "scope": "World resampling conditional on two fixed fitted readers; no population-level training-seed inference."
+    },
+    {
+      "stage": "structure",
+      "memory_minus_text": -0.03125,
+      "world_bootstrap_95": [
+        -0.06770833333333333,
+        -0.005208333333333333
+      ],
+      "scope": "World resampling conditional on two fixed fitted readers; no population-level training-seed inference."
+    },
+    {
+      "stage": "depth_only",
+      "memory_minus_text": -0.0625,
+      "world_bootstrap_95": [
+        -0.109375,
+        -0.020833333333333332
+      ],
+      "scope": "World resampling conditional on two fixed fitted readers; no population-level training-seed inference."
+    }
+  ],
+  "latency": {
+    "text-fresh": {
+      "n": 24,
+      "median_seconds": 0.5887771669949871,
+      "median_ttft": 0.17511743750219466,
+      "median_prompt_tokens": 424.5,
+      "median_evaluated_tokens": 424.5
+    },
+    "text-reused": {
+      "n": 24,
+      "median_seconds": 0.47990777099767,
+      "median_ttft": 0.08316368750092806,
+      "median_prompt_tokens": 424.5,
+      "median_evaluated_tokens": 30.5
+    },
+    "memory-fresh": {
+      "n": 24,
+      "median_seconds": 0.5320090210007038,
+      "median_ttft": 0.1436131465015933,
+      "median_prompt_tokens": 263.5,
+      "median_evaluated_tokens": 263.5
+    },
+    "memory-reused": {
+      "n": 24,
+      "median_seconds": 0.4699378334917128,
+      "median_ttft": 0.07967004150123103,
+      "median_prompt_tokens": 263.5,
+      "median_evaluated_tokens": 30.5
+    }
+  },
+  "latency_summary": {
+    "completed": true,
+    "rows": 96,
+    "priming": [
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "iid-0000",
+        "tokens": 371,
+        "seconds": 0.632613499998115
+      },
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "iid-0001",
+        "tokens": 373,
+        "seconds": 0.16459579099318944
+      },
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "iid-0002",
+        "tokens": 370,
+        "seconds": 0.15279466699576005
+      },
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "iid-0003",
+        "tokens": 374,
+        "seconds": 0.1562271669972688
+      },
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "iid-0004",
+        "tokens": 373,
+        "seconds": 0.17959925001196098
+      },
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "iid-0005",
+        "tokens": 374,
+        "seconds": 0.20194004199584015
+      },
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "structure-0000",
+        "tokens": 414,
+        "seconds": 0.23531362500216346
+      },
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "structure-0001",
+        "tokens": 419,
+        "seconds": 0.22675000000162981
+      },
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "structure-0002",
+        "tokens": 417,
+        "seconds": 0.22075287500047125
+      },
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "structure-0003",
+        "tokens": 416,
+        "seconds": 0.21760899999935646
+      },
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "structure-0004",
+        "tokens": 414,
+        "seconds": 0.21756425000785384
+      },
+      {
+        "mode": "text",
+        "repeat": 0,
+        "case_id": "structure-0005",
+        "tokens": 414,
+        "seconds": 0.21615537500474602
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "iid-0000",
+        "tokens": 227,
+        "seconds": 0.1347047909948742
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "iid-0001",
+        "tokens": 227,
+        "seconds": 0.12557424999249633
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "iid-0002",
+        "tokens": 227,
+        "seconds": 0.13291250000474975
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "iid-0003",
+        "tokens": 227,
+        "seconds": 0.1432924999971874
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "iid-0004",
+        "tokens": 227,
+        "seconds": 0.15594462500303052
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "iid-0005",
+        "tokens": 227,
+        "seconds": 0.1603405420028139
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "structure-0000",
+        "tokens": 239,
+        "seconds": 0.1625983330013696
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "structure-0001",
+        "tokens": 239,
+        "seconds": 0.1622977500082925
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "structure-0002",
+        "tokens": 239,
+        "seconds": 0.1603207080042921
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "structure-0003",
+        "tokens": 239,
+        "seconds": 0.1662578340037726
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "structure-0004",
+        "tokens": 239,
+        "seconds": 0.16080916598730255
+      },
+      {
+        "mode": "memory",
+        "repeat": 0,
+        "case_id": "structure-0005",
+        "tokens": 239,
+        "seconds": 0.15093550000165123
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "iid-0000",
+        "tokens": 227,
+        "seconds": 0.11676337500102818
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "iid-0001",
+        "tokens": 227,
+        "seconds": 0.12143899999500718
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "iid-0002",
+        "tokens": 227,
+        "seconds": 0.13285624999844003
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "iid-0003",
+        "tokens": 227,
+        "seconds": 0.1433877079980448
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "iid-0004",
+        "tokens": 227,
+        "seconds": 0.15541137500258628
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "iid-0005",
+        "tokens": 227,
+        "seconds": 0.16117824999673758
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "structure-0000",
+        "tokens": 239,
+        "seconds": 0.16335604099731427
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "structure-0001",
+        "tokens": 239,
+        "seconds": 0.16374533298949245
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "structure-0002",
+        "tokens": 239,
+        "seconds": 0.15887262500473298
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "structure-0003",
+        "tokens": 239,
+        "seconds": 0.16032537500723265
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "structure-0004",
+        "tokens": 239,
+        "seconds": 0.1598382079973817
+      },
+      {
+        "mode": "memory",
+        "repeat": 1,
+        "case_id": "structure-0005",
+        "tokens": 239,
+        "seconds": 0.1521986250008922
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "iid-0000",
+        "tokens": 371,
+        "seconds": 0.14167920799809508
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "iid-0001",
+        "tokens": 373,
+        "seconds": 0.15866066700255033
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "iid-0002",
+        "tokens": 370,
+        "seconds": 0.18602762500813697
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "iid-0003",
+        "tokens": 374,
+        "seconds": 0.21483700000680983
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "iid-0004",
+        "tokens": 373,
+        "seconds": 0.23033837499679066
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "iid-0005",
+        "tokens": 374,
+        "seconds": 0.2485132920119213
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "structure-0000",
+        "tokens": 414,
+        "seconds": 0.2809072920063045
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "structure-0001",
+        "tokens": 419,
+        "seconds": 0.303140459000133
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "structure-0002",
+        "tokens": 417,
+        "seconds": 0.27011487499112263
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "structure-0003",
+        "tokens": 416,
+        "seconds": 0.2504842920025112
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "structure-0004",
+        "tokens": 414,
+        "seconds": 0.23737370800517965
+      },
+      {
+        "mode": "text",
+        "repeat": 1,
+        "case_id": "structure-0005",
+        "tokens": 414,
+        "seconds": 0.22907137501169927
+      }
+    ],
+    "checkpoint_sha256": {
+      "text": "4bac767acf8f2fc3368cad547464dbb576341a5bd3221c354cd72f127b7a9495",
+      "memory": "737bc9e338a190f788a8fdbbc5d2aa4efa355011f498fbc8c7adfa391984e012"
+    },
+    "resource": {
+      "pressure_level": 1,
+      "swap_used_gb": 4.9730859375,
+      "process_peak_rss_gb": 21.7542656,
+      "active_metal_gb": 20.938390064,
+      "peak_metal_gb": 21.723072408
+    },
+    "frozen_constants": {
+      "before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+      "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+      "unchanged": true
+    }
+  },
+  "graph_reference": {
+    "completed": true,
+    "rows": 352,
+    "dataset_sha256": "54aaeb3f4a83d6ae3e3114f09b4ac56f20747f53da4384d02a2f25cdc95f3f91",
+    "timing": "100 traversals per world, mean wall time; Python-only, no LLM verbalization",
+    "source_sha256": "a8c5daf0395b97c58b11cff6eb45567c82792b0c72b43572c0783f761fb1d196",
+    "semantics_sha256": "74b8721b8b80be268805a2e6e339fd46562e0f403bf5454816eb5d5240b561db"
+  },
+  "graph_median_seconds": 3.16917e-06
+}

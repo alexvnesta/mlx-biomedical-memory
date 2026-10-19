@@ -1,0 +1,62 @@
+{
+  "final-1024.safetensors": {
+    "sha256": "4bac767acf8f2fc3368cad547464dbb576341a5bd3221c354cd72f127b7a9495",
+    "bytes": 11837276,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "final.safetensors": {
+    "sha256": "4bac767acf8f2fc3368cad547464dbb576341a5bd3221c354cd72f127b7a9495",
+    "bytes": 11837276,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "last.safetensors": {
+    "sha256": "630f5adf1cfc56ab8b43298011158e42415e3ba9fffeb90f5b66393b0c830cff",
+    "bytes": 23666514,
+    "published": false,
+    "role": "Local FP32 optimizer/resume state; regenerate with archived training source"
+  },
+  "initial.safetensors": {
+    "sha256": "6b8bd93f46040fe0f978e8db4d77821732ba4dd978b2b34feb889dcd37decee7",
+    "bytes": 11837276,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "final-0512.safetensors": {
+    "sha256": "c871a1ea9d7f4fe522fa327b7e4e873f6e84fc84c0a740e691438660cb58408a",
+    "bytes": 11837276,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "best.safetensors": {
+    "sha256": "9e882ab4292c77c169ec764d335fae8efc609112c1db1f398558776f7e39d3a1",
+    "bytes": 11837276,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "optimizer.safetensors": {
+    "sha256": "45f9bbcd25388436a35dbed2921c5708d2f2185385620ec3435523baa7a4ae1b",
+    "bytes": 47334661,
+    "published": false,
+    "role": "Local FP32 optimizer/resume state; regenerate with archived training source"
+  },
+  "best-1024.safetensors": {
+    "sha256": "9e882ab4292c77c169ec764d335fae8efc609112c1db1f398558776f7e39d3a1",
+    "bytes": 11837276,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "selected.safetensors": {
+    "sha256": "4bac767acf8f2fc3368cad547464dbb576341a5bd3221c354cd72f127b7a9495",
+    "bytes": 11837276,
+    "published": true,
+    "role": "Exact evaluated BF16 reader"
+  },
+  "best-0512.safetensors": {
+    "sha256": "17460dcdd40378f4622f62f60c8177431c18cfd99008af3689474651219d2f72",
+    "bytes": 11837276,
+    "published": true,
+    "role": "BF16 training candidate"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "budget": 1024,
+  "selection": {
+    "text": {
+      "checkpoint_name": "final-1024.safetensors",
+      "checkpoint_sha256": "4bac767acf8f2fc3368cad547464dbb576341a5bd3221c354cd72f127b7a9495",
+      "evaluation": "runs/decisive-text-1201-dev-1024-final-1024",
+      "reasoning_proofs": 24,
+      "reasoning_correct": 27,
+      "atomic_correct": 24,
+      "reasoning_total": 48,
+      "atomic_total": 24,
+      "step": 1024,
+      "weighted_dev_nll": 0.05425175027062363
+    },
+    "memory": {
+      "checkpoint_name": "initial.safetensors",
+      "checkpoint_sha256": "f60f2bc3313c682833dc0ff86c20f9d8dc063d18470e221699667d2202b6d33f",
+      "evaluation": "runs/decisive-memory-1201-dev-1024-initial",
+      "reasoning_proofs": 12,
+      "reasoning_correct": 12,
+      "atomic_correct": 0,
+      "reasoning_total": 48,
+      "atomic_total": 24,
+      "step": 0,
+      "weighted_dev_nll": 1.3866424614874024
+    }
+  },
+  "passed": false
+}

@@ -1,0 +1,358 @@
+{
+  "completed": true,
+  "rows": 96,
+  "priming": [
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "iid-0000",
+      "tokens": 371,
+      "seconds": 0.632613499998115
+    },
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "iid-0001",
+      "tokens": 373,
+      "seconds": 0.16459579099318944
+    },
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "iid-0002",
+      "tokens": 370,
+      "seconds": 0.15279466699576005
+    },
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "iid-0003",
+      "tokens": 374,
+      "seconds": 0.1562271669972688
+    },
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "iid-0004",
+      "tokens": 373,
+      "seconds": 0.17959925001196098
+    },
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "iid-0005",
+      "tokens": 374,
+      "seconds": 0.20194004199584015
+    },
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "structure-0000",
+      "tokens": 414,
+      "seconds": 0.23531362500216346
+    },
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "structure-0001",
+      "tokens": 419,
+      "seconds": 0.22675000000162981
+    },
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "structure-0002",
+      "tokens": 417,
+      "seconds": 0.22075287500047125
+    },
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "structure-0003",
+      "tokens": 416,
+      "seconds": 0.21760899999935646
+    },
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "structure-0004",
+      "tokens": 414,
+      "seconds": 0.21756425000785384
+    },
+    {
+      "mode": "text",
+      "repeat": 0,
+      "case_id": "structure-0005",
+      "tokens": 414,
+      "seconds": 0.21615537500474602
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "iid-0000",
+      "tokens": 227,
+      "seconds": 0.1347047909948742
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "iid-0001",
+      "tokens": 227,
+      "seconds": 0.12557424999249633
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "iid-0002",
+      "tokens": 227,
+      "seconds": 0.13291250000474975
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "iid-0003",
+      "tokens": 227,
+      "seconds": 0.1432924999971874
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "iid-0004",
+      "tokens": 227,
+      "seconds": 0.15594462500303052
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "iid-0005",
+      "tokens": 227,
+      "seconds": 0.1603405420028139
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "structure-0000",
+      "tokens": 239,
+      "seconds": 0.1625983330013696
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "structure-0001",
+      "tokens": 239,
+      "seconds": 0.1622977500082925
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "structure-0002",
+      "tokens": 239,
+      "seconds": 0.1603207080042921
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "structure-0003",
+      "tokens": 239,
+      "seconds": 0.1662578340037726
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "structure-0004",
+      "tokens": 239,
+      "seconds": 0.16080916598730255
+    },
+    {
+      "mode": "memory",
+      "repeat": 0,
+      "case_id": "structure-0005",
+      "tokens": 239,
+      "seconds": 0.15093550000165123
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "iid-0000",
+      "tokens": 227,
+      "seconds": 0.11676337500102818
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "iid-0001",
+      "tokens": 227,
+      "seconds": 0.12143899999500718
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "iid-0002",
+      "tokens": 227,
+      "seconds": 0.13285624999844003
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "iid-0003",
+      "tokens": 227,
+      "seconds": 0.1433877079980448
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "iid-0004",
+      "tokens": 227,
+      "seconds": 0.15541137500258628
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "iid-0005",
+      "tokens": 227,
+      "seconds": 0.16117824999673758
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "structure-0000",
+      "tokens": 239,
+      "seconds": 0.16335604099731427
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "structure-0001",
+      "tokens": 239,
+      "seconds": 0.16374533298949245
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "structure-0002",
+      "tokens": 239,
+      "seconds": 0.15887262500473298
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "structure-0003",
+      "tokens": 239,
+      "seconds": 0.16032537500723265
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "structure-0004",
+      "tokens": 239,
+      "seconds": 0.1598382079973817
+    },
+    {
+      "mode": "memory",
+      "repeat": 1,
+      "case_id": "structure-0005",
+      "tokens": 239,
+      "seconds": 0.1521986250008922
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "iid-0000",
+      "tokens": 371,
+      "seconds": 0.14167920799809508
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "iid-0001",
+      "tokens": 373,
+      "seconds": 0.15866066700255033
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "iid-0002",
+      "tokens": 370,
+      "seconds": 0.18602762500813697
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "iid-0003",
+      "tokens": 374,
+      "seconds": 0.21483700000680983
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "iid-0004",
+      "tokens": 373,
+      "seconds": 0.23033837499679066
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "iid-0005",
+      "tokens": 374,
+      "seconds": 0.2485132920119213
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "structure-0000",
+      "tokens": 414,
+      "seconds": 0.2809072920063045
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "structure-0001",
+      "tokens": 419,
+      "seconds": 0.303140459000133
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "structure-0002",
+      "tokens": 417,
+      "seconds": 0.27011487499112263
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "structure-0003",
+      "tokens": 416,
+      "seconds": 0.2504842920025112
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "structure-0004",
+      "tokens": 414,
+      "seconds": 0.23737370800517965
+    },
+    {
+      "mode": "text",
+      "repeat": 1,
+      "case_id": "structure-0005",
+      "tokens": 414,
+      "seconds": 0.22907137501169927
+    }
+  ],
+  "checkpoint_sha256": {
+    "text": "4bac767acf8f2fc3368cad547464dbb576341a5bd3221c354cd72f127b7a9495",
+    "memory": "737bc9e338a190f788a8fdbbc5d2aa4efa355011f498fbc8c7adfa391984e012"
+  },
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 4.9730859375,
+    "process_peak_rss_gb": 21.7542656,
+    "active_metal_gb": 20.938390064,
+    "peak_metal_gb": 21.723072408
+  },
+  "frozen_constants": {
+    "before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+    "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+    "unchanged": true
+  }
+}

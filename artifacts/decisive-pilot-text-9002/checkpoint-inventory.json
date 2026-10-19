@@ -1,0 +1,20 @@
+{
+  "last.safetensors": {
+    "sha256": "75ec87d2fe9a42e2c3a057d31dafb0aa5d310753b301e1222f9181a497c50ab7",
+    "bytes": 23666514,
+    "published": false,
+    "role": "Local FP32 optimizer/resume state; regenerate with archived training source"
+  },
+  "best.safetensors": {
+    "sha256": "5937d01012f9205504dc340edf35d2069ac856c05c3da6b5880ade0ea316a23d",
+    "bytes": 11837276,
+    "published": true,
+    "role": "BF16 training candidate"
+  },
+  "optimizer.safetensors": {
+    "sha256": "7a949ffb65e5fcfd9df9bbfef52781e14d1011cfa2046b684d3afab324990d35",
+    "bytes": 47334659,
+    "published": false,
+    "role": "Local FP32 optimizer/resume state; regenerate with archived training source"
+  }
+}

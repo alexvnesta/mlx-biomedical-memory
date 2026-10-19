@@ -1,0 +1,5 @@
+{
+  "step": 960,
+  "weighted_dev_nll": 0.032749402209178574,
+  "checkpoint_sha256": "b0eee6afe33f917c8d739893047c65bbb7fa743de151a4c9c87d85ac3b1b2f34"
+}

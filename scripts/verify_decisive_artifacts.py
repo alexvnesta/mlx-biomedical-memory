@@ -62,6 +62,22 @@ def verify():
                 row=json.loads(line);assert parser_for(str(pilot))(row['generation'],row['kind'])==row['parsed']
                 case=dict(kind=row['kind'],query=row['query'],records=row['records'],record_id=row['record_id'])
                 assert all(row[k]==v for k,v in semantics['grade'](case,row['parsed']).items())
+    development_cases={c['id']:c for c in dataset['splits']['dev']};development_replayed=0
+    for directory in sorted(root.glob('decisive-*-dev-*')):
+        if not re.fullmatch(r'decisive-(?:text|memory)-120[12]-dev-.+',directory.name):continue
+        cfg=json.loads((directory/'config.json').read_text());done=json.loads((directory/'summary.json').read_text())
+        assert cfg['development'] and done['completed'] and done['rows']==72
+        assert source_hash(directory,'evaluate_decisive_reader.py')==cfg['source_sha256']
+        assert cfg['dataset_sha256']==config['dataset_sha256'] and done['frozen_constants']['unchanged']
+        semantics=runpy.run_path(str(directory/'source/decisive_data.py'))
+        rows=[json.loads(x) for x in (directory/'predictions.jsonl').read_text().splitlines()]
+        assert {r['case_id'] for r in rows}==set(development_cases) and len(rows)==72
+        for row in rows:
+            case=development_cases[row['case_id']]
+            assert row['records']==case['records'] and row['query']==case['query']
+            assert parser_for(str(directory))(row['generation'],row['kind'])==row['parsed']
+            assert all(row[k]==v for k,v in semantics['grade'](case,row['parsed']).items())
+        development_replayed+=len(rows)
     evaluated=0;trained_evaluated=0
     for evaluation in sorted(root.glob('decisive-*-test')):
         if not re.fullmatch(r'decisive-(?:text|memory)-120[12](?:-trained)?-test',evaluation.name):continue
@@ -206,7 +222,7 @@ def verify():
             assert semantics['grade'](depth_by_id[row['case_id']],row['parsed'])['proof_valid']
         for row in graph_rows:assert semantics['grade'](base[row['case_id']],row['parsed'])['proof_valid']
 
-    print(json.dumps(dict(decisive_feature_sources=True,causal_parity=True,matched_targets=True,no_test_prefix_states=True,regraded_heldout=evaluated,trained_diagnostic_outcomes=trained_evaluated,depth_only_outcomes=depth_evaluated,training_audit_outcomes=audited)))
+    print(json.dumps(dict(decisive_feature_sources=True,causal_parity=True,matched_targets=True,no_test_prefix_states=True,regraded_heldout=evaluated,trained_diagnostic_outcomes=trained_evaluated,depth_only_outcomes=depth_evaluated,training_audit_outcomes=audited,development_outcomes_replayed=development_replayed)))
 
 
 if __name__=='__main__':verify()

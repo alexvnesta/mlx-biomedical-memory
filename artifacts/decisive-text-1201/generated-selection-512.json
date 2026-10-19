@@ -1,0 +1,53 @@
+{
+  "budget": 512,
+  "candidates": [
+    {
+      "checkpoint_name": "initial.safetensors",
+      "checkpoint_sha256": "6b8bd93f46040fe0f978e8db4d77821732ba4dd978b2b34feb889dcd37decee7",
+      "evaluation": "runs/decisive-text-1201-dev-512-initial",
+      "reasoning_proofs": 4,
+      "reasoning_correct": 16,
+      "atomic_correct": 5,
+      "reasoning_total": 48,
+      "atomic_total": 24,
+      "step": 0,
+      "weighted_dev_nll": 0.27528825831703013
+    },
+    {
+      "checkpoint_name": "best-0512.safetensors",
+      "checkpoint_sha256": "17460dcdd40378f4622f62f60c8177431c18cfd99008af3689474651219d2f72",
+      "evaluation": "runs/decisive-text-1201-dev-512-best-0512",
+      "reasoning_proofs": 21,
+      "reasoning_correct": 29,
+      "atomic_correct": 24,
+      "reasoning_total": 48,
+      "atomic_total": 24,
+      "step": 448,
+      "weighted_dev_nll": 0.04962649608945608
+    },
+    {
+      "checkpoint_name": "final-0512.safetensors",
+      "checkpoint_sha256": "c871a1ea9d7f4fe522fa327b7e4e873f6e84fc84c0a740e691438660cb58408a",
+      "evaluation": "runs/decisive-text-1201-dev-512-final-0512",
+      "reasoning_proofs": 18,
+      "reasoning_correct": 24,
+      "atomic_correct": 24,
+      "reasoning_total": 48,
+      "atomic_total": 24,
+      "step": 512,
+      "weighted_dev_nll": 0.05905083953274312
+    }
+  ],
+  "selected": {
+    "checkpoint_name": "best-0512.safetensors",
+    "checkpoint_sha256": "17460dcdd40378f4622f62f60c8177431c18cfd99008af3689474651219d2f72",
+    "evaluation": "runs/decisive-text-1201-dev-512-best-0512",
+    "reasoning_proofs": 21,
+    "reasoning_correct": 29,
+    "atomic_correct": 24,
+    "reasoning_total": 48,
+    "atomic_total": 24,
+    "step": 448,
+    "weighted_dev_nll": 0.04962649608945608
+  }
+}

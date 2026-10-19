@@ -1,0 +1,29 @@
+RUN run_decisive_depth_tests.py
+RUN /Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python -u scripts/evaluate_decisive_reader.py --training runs/decisive-text-1201 --checkpoint-name selected.safetensors --supplemental-data data/processed/decisive-v1/depth-only.json --output runs/decisive-text-1201-depth-test
+RUN /Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python -u scripts/evaluate_decisive_reader.py --training runs/decisive-memory-1201 --checkpoint-name selected.safetensors --supplemental-data data/processed/decisive-v1/depth-only.json --output runs/decisive-memory-1201-depth-test
+RUN /Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python -u scripts/evaluate_decisive_reader.py --training runs/decisive-text-1202 --checkpoint-name selected.safetensors --supplemental-data data/processed/decisive-v1/depth-only.json --output runs/decisive-text-1202-depth-test
+RUN /Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python -u scripts/evaluate_decisive_reader.py --training runs/decisive-memory-1202 --checkpoint-name selected.safetensors --supplemental-data data/processed/decisive-v1/depth-only.json --output runs/decisive-memory-1202-depth-test
+RUN run_decisive_trained_diagnostic.py
+RUN /Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python -u scripts/evaluate_decisive_reader.py --training runs/decisive-memory-1201 --checkpoint-name trained-selected.safetensors --output runs/decisive-memory-1201-trained-test
+RUN /Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python -u scripts/evaluate_decisive_reader.py --training runs/decisive-memory-1201 --checkpoint-name trained-selected.safetensors --output runs/decisive-memory-1201-trained-depth-test --supplemental-data data/processed/decisive-v1/depth-only.json
+RUN /Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python -u scripts/evaluate_decisive_reader.py --training runs/decisive-memory-1201 --checkpoint-name trained-selected.safetensors --output runs/decisive-memory-1201-training-audit --supplemental-data data/processed/decisive-v1/training-audit.json
+RUN /Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python -u scripts/evaluate_decisive_reader.py --training runs/decisive-memory-1202 --checkpoint-name trained-selected.safetensors --output runs/decisive-memory-1202-trained-test
+RUN /Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python -u scripts/evaluate_decisive_reader.py --training runs/decisive-memory-1202 --checkpoint-name trained-selected.safetensors --output runs/decisive-memory-1202-trained-depth-test --supplemental-data data/processed/decisive-v1/depth-only.json
+RUN /Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python -u scripts/evaluate_decisive_reader.py --training runs/decisive-memory-1202 --checkpoint-name trained-selected.safetensors --output runs/decisive-memory-1202-training-audit --supplemental-data data/processed/decisive-v1/training-audit.json
+RUN benchmark_decisive_latency.py
+Measured 16 {'pressure_level': 1, 'swap_used_gb': 4.9730859375, 'process_peak_rss_gb': 21.423915008, 'active_metal_gb': 21.13660876, 'peak_metal_gb': 21.723071644}
+Measured 32 {'pressure_level': 1, 'swap_used_gb': 4.9730859375, 'process_peak_rss_gb': 21.423915008, 'active_metal_gb': 21.037380772, 'peak_metal_gb': 21.723071644}
+Measured 48 {'pressure_level': 1, 'swap_used_gb': 4.9730859375, 'process_peak_rss_gb': 21.423915008, 'active_metal_gb': 21.020784028, 'peak_metal_gb': 21.723071644}
+Measured 64 {'pressure_level': 1, 'swap_used_gb': 4.9730859375, 'process_peak_rss_gb': 21.423915008, 'active_metal_gb': 21.036823716, 'peak_metal_gb': 21.723071644}
+Measured 80 {'pressure_level': 1, 'swap_used_gb': 4.9730859375, 'process_peak_rss_gb': 21.423915008, 'active_metal_gb': 21.120093656, 'peak_metal_gb': 21.723071644}
+Measured 96 {'pressure_level': 1, 'swap_used_gb': 4.9730859375, 'process_peak_rss_gb': 21.423915008, 'active_metal_gb': 21.13660876, 'peak_metal_gb': 21.723072408}
+RUN report_decisive.py
+| Reader | Fresh-world labels | Fresh-world valid proofs | Depth 3–4 labels | Depth 3–4 valid proofs | Atomic exact |
+|---|---:|---:|---:|---:|---:|
+| Text + LoRA | 96/192 (50.0%) | 84/192 (43.8%) | 52/192 (27.1%) | 13/192 (6.8%) | 192/192 (100.0%) |
+| Trained memory | 45/192 (23.4%) | 3/192 (1.6%) | 50/192 (26.0%) | 1/192 (0.5%) | 0/192 (0.0%) |
+| Registered memory selection | 48/192 (25.0%) | 44/192 (22.9%) | 48/192 (25.0%) | 44/192 (22.9%) | 0/192 (0.0%) |
+| Exact graph solver (oracle) | 100% | 100% | 100% | 100% | 100% |
+RUN publish_decisive_artifacts.py
+{"copied": 1285, "checksummed": 1797}
+All model work and artifact export completed

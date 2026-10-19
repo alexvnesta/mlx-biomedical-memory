@@ -1,6 +1,6 @@
 # MLX Biomedical Memory
 
-An experimental, local Apple-silicon test of whether a frozen language model can
+An experimental, local Apple-silicon test of whether a frozen backbone with trained readers can
 compose independently stored graph facts into answers that were never training
 targets. The biomedical case studies use live NCATS Translator ARAX queries for
 Fabry disease, Gaucher disease, and Rett syndrome.
@@ -9,7 +9,24 @@ Fabry disease, Gaucher disease, and Rett syndrome.
 is not a treatment recommendation, and a composed graph answer is not a new
 biological discovery.** See [measured results](docs/RESULTS.md).
 
-The current experiment uses **native pretrained LongCat-Flash-Lite conditional
+The latest **[trained-memory versus text comparison](docs/DECISIVE-RESULTS.md)**
+uses a query-independent seven-field codec, LoRA readers, two training seeds and
+fresh worlds with held-out longer paths. It reports actual generated proofs,
+atomic readout, evidence changes, record bindings, masking and fair text-prefix
+reuse. [Reproduce it](docs/DECISIVE-REPRODUCTION.md), or inspect the
+[architecture and registered protocol](docs/DECISIVE-PROTOCOL.md). The learned
+codec is an engineered interface, not an EngramEdit replication.
+
+**Measured result:** the trained-memory diagnostic gets 0/192 exact record
+readouts and 0/72 valid two-hop proofs, versus 192/192 and 32/72 for trained text.
+This recipe failed the memory-access prerequisite; it does not establish that
+reliably trained conditional memory cannot support reasoning.
+
+Read-only disk-backed lookup preserves the native n-gram tables while keeping
+this experiment's model allocations below its 27 GB Metal limit. Large model
+runs are serialized and aggregate host pressure/swap are monitored.
+
+The earlier experiment uses **native pretrained LongCat-Flash-Lite conditional
 memory**, with a quantization-aware MLX adaptation for fitting new atomic edits.
 See the **[controlled KG/RAG/memory comparison](docs/COMPARISON.md)** for answer
 quality, fixed-length latency, corrections, rollback and scaling limits.
@@ -31,6 +48,10 @@ templates and local frequency calibration; it is not an exact paper replication.
 
 ## What is implemented
 
+- Matched reader training with frozen causal-prefix features, exact atomic
+  reconstruction targets, executable path grading, two fitted seeds and public
+  BF16 candidate checkpoints. Training success and development gate failures
+  are reported explicitly; implementing an interface does not establish utility.
 - Native LongCat-Flash-Lite 4-bit on MLX, pinned model and edited-state revisions,
   cached exact-key residual replay, and base / edited-memory / text-edit controls.
 - Fresh atomic target-vector fitting with a frozen backbone, joint regularized
@@ -82,10 +103,14 @@ flowchart LR
 ## Run on an Apple-silicon Mac
 
 Tested on an M5 Max MacBook Pro with 64 GB unified memory. Python 3.13 is used in
-an isolated environment. Models are cached locally and are not checked into Git.
+an isolated environment. Original upstream base weights are cached locally;
+adapters and codecs are published with source, input and checkpoint receipts.
+For the latest learned-reader study, use the
+[reproduction instructions](docs/DECISIVE-REPRODUCTION.md). The commands below
+retain the earlier experiments and their original loading profiles.
 
 ```bash
-# Current native-memory experiment: about 38.6 GB of base weights.
+# Earlier native-memory experiment: about 38.6 GB of base weights.
 uv sync --extra dev --extra longcat
 uv run --extra longcat python scripts/prepare_longcat.py --download-model
 uv run python scripts/run_longcat.py --cases 30 --questions-per-case 3 \

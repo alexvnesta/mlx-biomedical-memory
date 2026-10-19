@@ -1,0 +1,16 @@
+{
+  "mode": "memory",
+  "seed": 9001,
+  "started_utc": "2026-10-19T02:04:29.879484+00:00",
+  "source_sha256": "00ea47bad9441cc9ffc4e0a1c1138500eef4a9f927fe8bda980deac420ac5943",
+  "dataset_sha256": "54aaeb3f4a83d6ae3e3114f09b4ac56f20747f53da4384d02a2f25cdc95f3f91",
+  "feature_manifest_sha256": "0f58466189b3fc95c407774d9e18f29e3e2919d3ebf3bd9bc479b404a2679945",
+  "maximum_updates": 1024,
+  "learning_rate": 0.0003,
+  "gradient_accumulation": 2,
+  "atomic_warmup_updates": 64,
+  "later_mixture": "one reasoning and one atomic example per optimizer update",
+  "checkpoint_selection": "lowest weighted development teacher-forced target NLL",
+  "published_precision": "BF16 adapters and codec; frozen native 4-bit backbone",
+  "dependency_sha256": "52404f05449c9d8e699dfdd976274ab1ca9b9a63b397d66fd92e13fe9370e2de"
+}

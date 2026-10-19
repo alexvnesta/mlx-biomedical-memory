@@ -1,0 +1,41 @@
+{
+  "candidates": [
+    {
+      "checkpoint_name": "best-1024.safetensors",
+      "checkpoint_sha256": "787e3171b68db478b701f24e2782caaf80394ed82ac900980fe248cffff2a253",
+      "evaluation": "runs/decisive-memory-1202-dev-1024-best-1024",
+      "reasoning_proofs": 0,
+      "reasoning_correct": 12,
+      "atomic_correct": 0,
+      "reasoning_total": 48,
+      "atomic_total": 24,
+      "step": 256,
+      "weighted_dev_nll": 0.3693359216170696
+    },
+    {
+      "checkpoint_name": "final-1024.safetensors",
+      "checkpoint_sha256": "83c1a49c4e3dd9e85624c4ad0088015089c5337c96b30ca686741c0b4132d618",
+      "evaluation": "runs/decisive-memory-1202-dev-1024-final-1024",
+      "reasoning_proofs": 1,
+      "reasoning_correct": 13,
+      "atomic_correct": 0,
+      "reasoning_total": 48,
+      "atomic_total": 24,
+      "step": 1024,
+      "weighted_dev_nll": 0.7283063163340557
+    }
+  ],
+  "selected": {
+    "checkpoint_name": "final-1024.safetensors",
+    "checkpoint_sha256": "83c1a49c4e3dd9e85624c4ad0088015089c5337c96b30ca686741c0b4132d618",
+    "evaluation": "runs/decisive-memory-1202-dev-1024-final-1024",
+    "reasoning_proofs": 1,
+    "reasoning_correct": 13,
+    "atomic_correct": 0,
+    "reasoning_total": 48,
+    "atomic_total": 24,
+    "step": 1024,
+    "weighted_dev_nll": 0.7283063163340557
+  },
+  "purpose": "Pre-test registered trained-only diagnostic; initial fallback remains a separate primary result"
+}

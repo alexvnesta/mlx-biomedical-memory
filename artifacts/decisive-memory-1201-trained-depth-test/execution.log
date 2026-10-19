@@ -1,0 +1,8 @@
+Loading full memory reader
+Evaluated 16 {"pressure_level": 1, "swap_used_gb": 5.074765625, "process_peak_rss_gb": 21.472247808, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.362868298}
+Evaluated 32 {"pressure_level": 1, "swap_used_gb": 5.074765625, "process_peak_rss_gb": 21.480390656, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.362868298}
+Evaluated 48 {"pressure_level": 1, "swap_used_gb": 5.074765625, "process_peak_rss_gb": 21.481570304, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.362868298}
+Evaluated 64 {"pressure_level": 1, "swap_used_gb": 5.074765625, "process_peak_rss_gb": 21.481930752, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.362868298}
+Evaluated 80 {"pressure_level": 1, "swap_used_gb": 5.074765625, "process_peak_rss_gb": 21.482471424, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.362868298}
+Evaluated 96 {"pressure_level": 1, "swap_used_gb": 5.074765625, "process_peak_rss_gb": 21.4827008, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.362868298}
+COMPLETED {"completed": true, "rows": 96, "resource": {"pressure_level": 1, "swap_used_gb": 5.074765625, "process_peak_rss_gb": 21.60132096, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.362868298}, "frozen_constants": {"before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb", "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb", "unchanged": true}}
