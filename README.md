@@ -22,6 +22,9 @@ all primary outcomes, development attempts and post-hoc diagnostics. The scoped
 bank is an engineered addition to the native model, rather than native addressing.
 See [the practical rationale and decision criteria](docs/RATIONALE.md) for what
 would justify this approach beyond an ordinary graph, RAG or a rule library.
+The follow-up **[registered memory-use experiment](docs/DECISIVE-PROTOCOL.md)**
+trains an atomic codec and reader on actual executions, with a larger text
+adapter, fresh-world and structural tests, and a bounded resource policy.
 The earlier [released-checkpoint replay](docs/LONGCAT-RESULTS.md) is retained
 separately. This is a 4-bit adaptation of EngramEdit, with fixed expression
 templates and local frequency calibration; it is not an exact paper replication.

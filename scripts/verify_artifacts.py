@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import runpy
+from verify_decisive_artifacts import verify as verify_decisive
 
 
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -126,6 +127,7 @@ def main():
             assert ngram['updates_sha256']==digest(boundary/'ngram/updates.safetensors')
     print(json.dumps(dict(verified_artifacts=len(actual),checksums=True,comparison_sources=True,
         relational_sources=fit.exists(),checkpoint_hashes=True)))
+    verify_decisive()
 
 
 if __name__=='__main__':main()

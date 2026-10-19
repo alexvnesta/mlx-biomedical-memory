@@ -1,0 +1,8 @@
+{
+  "model": "mlx-community/LongCat-Flash-Lite-4bit",
+  "revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "dataset_sha256": "54aaeb3f4a83d6ae3e3114f09b4ac56f20747f53da4384d02a2f25cdc95f3f91",
+  "source_sha256": "7537c99ac348631ddf479f268ea2a94d34757382fe760926fc412805fc43bdc6",
+  "split_layer": 10,
+  "feature_semantics": "Frozen causal teacher-forced prefix, train/dev only; no test labels encoded"
+}

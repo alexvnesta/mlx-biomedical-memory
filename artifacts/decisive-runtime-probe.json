@@ -1,0 +1,95 @@
+{
+  "model": "mlx-community/LongCat-Flash-Lite-4bit",
+  "revision": "0435b3bca4418830335d784317fe7f67f8383253",
+  "tables": [
+    {
+      "table": "model.ngram_embeddings.embedders.0",
+      "rows": 10223617,
+      "dims": 256,
+      "shard": "model-00001-of-00008.safetensors",
+      "sampled_rows_exact": true
+    },
+    {
+      "table": "model.ngram_embeddings.embedders.1",
+      "rows": 10223619,
+      "dims": 256,
+      "shard": "model-00001-of-00008.safetensors",
+      "sampled_rows_exact": true
+    },
+    {
+      "table": "model.ngram_embeddings.embedders.2",
+      "rows": 10223621,
+      "dims": 256,
+      "shard": "model-00001-of-00008.safetensors",
+      "sampled_rows_exact": true
+    },
+    {
+      "table": "model.ngram_embeddings.embedders.3",
+      "rows": 10223623,
+      "dims": 256,
+      "shard": "model-00002-of-00008.safetensors",
+      "sampled_rows_exact": true
+    },
+    {
+      "table": "model.ngram_embeddings.embedders.4",
+      "rows": 10223625,
+      "dims": 256,
+      "shard": "model-00002-of-00008.safetensors",
+      "sampled_rows_exact": true
+    },
+    {
+      "table": "model.ngram_embeddings.embedders.5",
+      "rows": 10223627,
+      "dims": 256,
+      "shard": "model-00002-of-00008.safetensors",
+      "sampled_rows_exact": true
+    },
+    {
+      "table": "model.ngram_embeddings.embedders.6",
+      "rows": 10223629,
+      "dims": 256,
+      "shard": "model-00003-of-00008.safetensors",
+      "sampled_rows_exact": true
+    },
+    {
+      "table": "model.ngram_embeddings.embedders.7",
+      "rows": 10223631,
+      "dims": 256,
+      "shard": "model-00003-of-00008.safetensors",
+      "sampled_rows_exact": true
+    },
+    {
+      "table": "model.ngram_embeddings.embedders.8",
+      "rows": 10223633,
+      "dims": 256,
+      "shard": "model-00003-of-00008.safetensors",
+      "sampled_rows_exact": true
+    },
+    {
+      "table": "model.ngram_embeddings.embedders.9",
+      "rows": 10223635,
+      "dims": 256,
+      "shard": "model-00004-of-00008.safetensors",
+      "sampled_rows_exact": true
+    },
+    {
+      "table": "model.ngram_embeddings.embedders.10",
+      "rows": 10223637,
+      "dims": 256,
+      "shard": "model-00004-of-00008.safetensors",
+      "sampled_rows_exact": true
+    },
+    {
+      "table": "model.ngram_embeddings.embedders.11",
+      "rows": 10223639,
+      "dims": 256,
+      "shard": "model-00004-of-00008.safetensors",
+      "sampled_rows_exact": true
+    }
+  ],
+  "resident_metal_gb": 20.911324752,
+  "peak_metal_gb": 20.967092216,
+  "forward_seconds": 5.375333499992848,
+  "finite": true,
+  "swap": "vm.swapusage: total = 6144.00M  used = 5272.25M  free = 871.75M  (encrypted)"
+}
