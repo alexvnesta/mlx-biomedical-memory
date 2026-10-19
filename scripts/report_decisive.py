@@ -104,11 +104,47 @@ def main():
         '|---|---:|---:|---:|---:|---:|']
     for mode in ['text','memory_trained','memory']:
         s=summary['readers'][mode];atomic=dict(n=96*2,correct=s['iid_atomic']['correct']+s['structure_atomic']['correct'])
-        table.append('| '+mode+' | '+' | '.join([pct(s['iid_reason'],'correct'),pct(s['iid_reason']),pct(s['depth_only_reason'],'correct'),pct(s['depth_only_reason']),pct(atomic,'correct')])+' |')
+        table.append('| '+{'text':'Text + LoRA','memory_trained':'Trained memory','memory':'Registered memory selection'}[mode]+' | '+' | '.join([pct(s['iid_reason'],'correct'),pct(s['iid_reason']),pct(s['depth_only_reason'],'correct'),pct(s['depth_only_reason']),pct(atomic,'correct')])+' |')
     table.append('| Exact graph traversal | 100% | 100% | 100% | 100% | 100% |')
     print('\n'.join(table))
     Path('runs/decisive-table.md').write_text('\n'.join(table)+'\n')
     render(summary,allrows)
+    markdown_report(summary,table)
+
+
+def markdown_report(summary,table):
+    fitted=summary['readers']['memory_trained'];text=summary['readers']['text']
+    access=all(x['selected']['atomic_correct']>=22 for x in summary['trained_selections'].values())
+    conclusion=('The trained memory reader passed the development atomic-access threshold. The held-out proof scores below measure whether that access transfers to unseen compositions.' if access else
+        'The training recipe did not establish reliable memory access at the registered budget. This is a failed prerequisite for the proposed reasoning advantage. The held-out results below compare the actual trained reader with the strongest text reader; they do not establish that reliable memory is intrinsically unable to support reasoning.')
+    content=['# Learned memory versus trained text on unseen relationships','',conclusion,'',
+        'Two training seeds, a pinned LongCat model, identical sample sequences and supervised path traces. Text has 5,914,624 trainable parameters; memory has 5,719,809 including its codec. Both receive every atomic fact. Longer paths in the main table retain the training bank size and record-ID vocabulary.','',*table,'',
+        'Each neural stratum has 96 worlds evaluated by two fixed fitted readers. Atomic exactness covers 96 readout questions per seed across the 10- and 12-record banks. UNKNOWN uses the correct absence label and citations to every record; UP, DOWN and BOTH require executable paths. The interactive report separates these classes. Exact graph traversal has one deterministic run per world and no LLM verbalization.','',
+        'The registered memory selection may retain an untrained checkpoint. It is shown separately and must not be described as successfully trained. The trained-memory diagnostic requires a positive training step and uses only already-scored development results for selection.','',
+        '## Changes to evidence and bindings','',
+        '| Reader | Edit pairs: both proofs valid | New record IDs: both proofs valid | Reordered rows: both proofs valid |',
+        '|---|---:|---:|---:|']
+    for mode in ['text','memory_trained','memory']:
+        row=summary['readers'][mode]
+        content.append('| '+mode+' | '+' | '.join(pct(dict(n=row[k]['n'],proof=row[k]['both_proofs'])) for k in ['intervention_pairs','binding_pairs','order_pairs'])+' |')
+    mask=fitted['mask_comparison'];content+=['',f"On the same {mask['n']} worlds, trained-memory supported proofs change from {mask['normal_proofs']} with the codec to {mask['masked_proofs']} with it disabled.",'',
+        '## Fixed-length timing','',
+        'Selected text and trained-memory readers from seed 1201, 32 generated tokens, EOS suppressed. Each condition has 24 requests. Warm requests reuse facts/instruction KV states and tokenize only the unprimed suffix. Setup costs include full prefix serialization, tokenization and prefill. Adapter changes and model loading are excluded. These are not timings to a correct answer.','',
+        '| Condition | Median wall time | Median first token | Prompt tokens evaluated |','|---|---:|---:|---:|']
+    for name,row in summary['latency'].items():content.append(f"| {name} | {row['median_seconds']:.3f} s | {row['median_ttft']:.3f} s | {row['median_evaluated_tokens']} / {row['median_prompt_tokens']} |")
+    content+=['',f"Exact in-process traversal of these small complete graphs takes a median {summary['graph_median_seconds']*1e6:.1f} microseconds per reasoning world, excluding network retrieval and LLM verbalization. A useful speed advantage requires comparable supported-answer quality.",'',
+        '## What the result addresses','',
+        'This is a new engineered tuple codec plus LoRA, not an EngramEdit replication. Text facts pass through all 14 pretrained blocks; latent records enter before the last four. The local vocabulary is closed, with 16 node aliases. Data use fresh world namespaces and facts, not new biomedical terminology. The original 12-record structural stratum also introduces two untrained record IDs, so the separately frozen 10-record depth control is essential.','',
+        'The training-bank causal audit, seed-level scores, field-level readouts, original stress stratum, every development candidate and every raw generation are available in the interactive report and public artifacts. All model runs are serial. Metal allocations are limited to 27 GB; aggregate host pressure and swap are retained without publishing other sessions or application names. Frozen backbone hashes are checked before and after training and evaluation.','',
+        'Replacement of supplied records tests updateability without fitting new weights. It does not implement autonomous evidence ingestion, retention across tasks, calibrated biomedical confidence or large-graph scaling. Neither a positive nor a negative score here establishes rare-disease discovery or a comparison with OpenEvidence or open-web retrieval.','',
+        '## Reproduce and inspect','',
+        '- [Registered protocol](DECISIVE-PROTOCOL.md) and linked pre-test clarifications.',
+        '- [Reproduction instructions](DECISIVE-REPRODUCTION.md).',
+        '- [Design and interpretation](DECISIVE-DESIGN.md).',
+        '- [Full interactive report](../artifacts/decisive.html); download and open locally or serve the artifacts directory.',
+        '- [Machine-readable summary](../artifacts/decisive-summary.json).',
+        '- [Checksums and independent replay](../scripts/verify_decisive_artifacts.py).','']
+    Path('docs/DECISIVE-RESULTS.md').write_text('\n'.join(content))
 
 
 def render(summary,rows):
