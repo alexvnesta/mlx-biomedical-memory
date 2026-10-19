@@ -90,6 +90,12 @@ def main():
     table.append('| Exact graph solver (defines gold) | 100% | 100% | 100% | 100% | 100% |')
     web.append('<tr><td>Exact graph solver (defines gold)</td>'+('<td>100%</td>'*5)+'</tr>')
     perseedtable='\n'.join('| '+METHODS[r['method']][0]+' | '+str(r['seed'])+' | '+show(r['atomic'])+' | '+show(r['iid_positive'])+' | '+show(r['structure_positive'])+' | '+str(r['selected']['step'])+' |' for r in perseed)
+    method_names={'text':'text','memory':'frozen','joint':'joint'}
+    for key in failures:
+        raw_method,seed=key.rsplit('-',1)
+        candidates=json.loads(Path('runs',f'composition-{key}','generated-selection.json').read_text())['candidates']
+        best=max(c['atomic_correct'] for c in candidates)
+        perseedtable+='\n| '+METHODS[method_names[raw_method]][0]+' | '+seed+f' | test closed; dev best {best}/64 | not evaluated | not evaluated | ineligible |'
     supporttable='\n'.join(f"| {METHODS[m][0]} vs text | {v['common']} | {v['memory_proofs']}/{v['common']} | {v['text_proofs']}/{v['common']} |" for m,v in support.items())
     qualified=all(v['retention_qualified'] for v in metrics.values() if v['eligible_seeds'])
     oracle={}
@@ -155,7 +161,7 @@ The oracle supplies path record IDs, never a sign or answer. Sweep every sign
 assignment on those edges and flip an irrelevant edge independently. Inputs
 stop before the next sign token. The table counts world/reader pairs where
 **every** setting is correct, not free path finding or complete JSON generation.
-Each depth has eight new worlds evaluated by two fitted readers. A constant,
+Each depth has eight new worlds per eligible fitted reader. A constant,
 single-edge or all-bank product shortcut cannot pass every setting.
 
 | Reader | One edge, all settings | Two edges, all settings | Three edges, all settings | Four edges, all settings |
@@ -196,7 +202,7 @@ training. Facts, queries, generation strings and proof replay are public.
 '''
     Path('docs/COMPOSITION-RESULTS.md').write_text(md)
     summary=dict(metrics=metrics,per_seed=perseed,common_support=support,gates=gates,
-        oracle_paths=oracle,all_retention_qualified=qualified,peak_metal_gb=peak)
+        oracle_paths=oracle,all_retention_qualified=qualified,development_failures=failures,peak_metal_gb=peak)
     Path('runs/composition-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     payload=json.dumps(dict(rows=rows,summary=summary),ensure_ascii=False).replace('</','<\\/')
     page='''<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Composition after memory readout</title><style>
