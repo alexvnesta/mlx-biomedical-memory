@@ -182,6 +182,9 @@ def verify():
         latency=root/'decisive-latency'
         latency_config=json.loads((latency/'config.json').read_text());latency_done=json.loads((latency/'summary.json').read_text())
         assert latency_done['completed'] and latency_done['rows']==96
+        assert latency_done['frozen_constants']['unchanged']
+        assert latency_done['frozen_constants']['before']==summary['frozen_constants']['before']
+        assert digest(latency/'cache_decisive_features.py')==latency_config['dependency_sha256']
         assert source_hash(latency,'benchmark_decisive_latency.py')==latency_config['source_sha256']
         measurements=[json.loads(x) for x in (latency/'predictions.jsonl').read_text().splitlines()]
         assert len(measurements)==96 and all(r['generated_tokens']==32 for r in measurements)

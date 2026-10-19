@@ -14,6 +14,7 @@ from engram_poc.decisive_data import fields
 from engram_poc.decisive_prompts import encode_prompt
 from engram_poc.longcat_runtime import save,append,snapshot_source
 from engram_poc.resource_guard import ResourceGuard
+from cache_decisive_features import digest_frozen
 
 
 def main():
@@ -26,7 +27,10 @@ def main():
         dataset_sha256=hashlib.sha256(Path('data/processed/decisive-v1/dataset.json').read_bytes()).hexdigest(),
         setup='One shared frozen model; adapter hot swaps excluded; prefix serialization, tokenization and KV priming are setup costs; warm requests tokenize only the unprimed suffix.',
         scope='EOS suppressed fixed-length performance; no time-to-correct-answer claim.')
+    config['dependency_sha256']=hashlib.sha256(Path('scripts/cache_decisive_features.py').read_bytes()).hexdigest()
+    (out/'cache_decisive_features.py').write_bytes(Path('scripts/cache_decisive_features.py').read_bytes())
     save(out/'config.json',config);guard=ResourceGuard();model,tokenizer=load_reader('text');mx.eval(model.parameters())
+    before=digest_frozen(model)
     backbone=model.backbone;sampler=make_sampler(temp=0);priming=[];rows=[];checksums={}
 
     def swap(mode):
@@ -85,7 +89,9 @@ def main():
                 rows.append(row);append(out/'predictions.jsonl',row);mx.clear_cache()
                 if len(rows)%16==0:print('Measured',len(rows),guard.check(),flush=True)
             del caches,prepared;mx.clear_cache()
-    save(out/'summary.json',dict(completed=True,rows=len(rows),priming=priming,checkpoint_sha256=checksums,resource=guard.check()))
+    after=digest_frozen(model);assert before==after
+    save(out/'summary.json',dict(completed=True,rows=len(rows),priming=priming,checkpoint_sha256=checksums,resource=guard.check(),
+        frozen_constants=dict(before=before,after=after,unchanged=True)))
 
 
 if __name__=='__main__':main()
