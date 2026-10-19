@@ -36,6 +36,19 @@ def verify():
     dataset=json.loads((root/'decisive-v1/dataset.json').read_text())
     base={c['id']:c for split in ['iid','structure'] for c in dataset['splits'][split]}
     base.update({c['id']:c for c in dataset['interventions']})
+    for pilot in sorted(root.glob('decisive-pilot-*')):
+        if not (pilot/'config.json').exists():continue
+        cfg=json.loads((pilot/'config.json').read_text())
+        script='train_decisive_reader.py' if (pilot/'capacity.json').exists() else 'evaluate_decisive_reader.py'
+        assert source_hash(pilot,script)==cfg['source_sha256']
+        assert cfg['dataset_sha256']==config['dataset_sha256']
+        if (pilot/'summary.json').exists():assert json.loads((pilot/'summary.json').read_text())['completed']
+        else:assert json.loads((pilot/'stopped.json').read_text())['stopped']
+        if (pilot/'predictions.jsonl').exists():
+            semantics=runpy.run_path(str(pilot/'source/decisive_data.py'))
+            for line in (pilot/'predictions.jsonl').read_text().splitlines():
+                row=json.loads(line);case=dict(kind=row['kind'],query=row['query'],records=row['records'],record_id=row['record_id'])
+                assert all(row[k]==v for k,v in semantics['grade'](case,row['parsed']).items())
     evaluated=0
     for evaluation in sorted(root.glob('decisive-*-test')):
         cfg=json.loads((evaluation/'config.json').read_text());done=json.loads((evaluation/'summary.json').read_text())
