@@ -90,6 +90,24 @@ def verify():
         evaluated+=len(predictions)
     if evaluated:
         assert evaluated==1920,'Both registered seeds and both readers must be published together'
+        latency=root/'decisive-latency'
+        latency_config=json.loads((latency/'config.json').read_text());latency_done=json.loads((latency/'summary.json').read_text())
+        assert latency_done['completed'] and latency_done['rows']==96
+        assert source_hash(latency,'benchmark_decisive_latency.py')==latency_config['source_sha256']
+        measurements=[json.loads(x) for x in (latency/'predictions.jsonl').read_text().splitlines()]
+        assert len(measurements)==96 and all(r['generated_tokens']==32 for r in measurements)
+        assert len({(r['mode'],r['repeat'],r['case_id'],r['prefix_cached']) for r in measurements})==96
+        for mode in ['text','memory']:
+            assert digest(root/f'decisive-{mode}-1201/selected.safetensors')==latency_done['checkpoint_sha256'][mode]
+        graph=root/'decisive-graph-reference';reference=json.loads((graph/'summary.json').read_text())
+        assert reference['completed'] and reference['rows']==352
+        assert digest(graph/'source.py')==reference['source_sha256']
+        assert digest(graph/'decisive_data.py')==reference['semantics_sha256']
+        graph_rows=[json.loads(x) for x in (graph/'predictions.jsonl').read_text().splitlines()]
+        assert len(graph_rows)==352 and all(r['proof_valid'] for r in graph_rows)
+        semantics=runpy.run_path(str(graph/'decisive_data.py'))
+        for row in graph_rows:assert semantics['grade'](base[row['case_id']],row['parsed'])['proof_valid']
+
     print(json.dumps(dict(decisive_feature_sources=True,causal_parity=True,matched_targets=True,no_test_prefix_states=True,regraded_heldout=evaluated)))
 
 

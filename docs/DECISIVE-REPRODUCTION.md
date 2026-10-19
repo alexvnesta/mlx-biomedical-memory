@@ -76,3 +76,11 @@ otherwise reliable memory reader. Report the failed prerequisite directly.
 Conversely, successful readout without improved unseen paths would separate
 factual access from composition. Faster fixed-token generation is useful only
 at comparable supported-answer quality; text KV reuse is an essential control.
+
+Text facts traverse all 14 pretrained blocks. Memory vectors enter after block
+10, leaving four contextual blocks to interpret the interface. Both conditions
+adapt those last four blocks, but the input representations have different
+processing depth. This bounded frozen-prefix design does not test a fully
+trained memory architecture. Its record-ID and entity vocabularies also cap the
+world size; it cannot substantiate million-record scaling. Replacing atomic
+records at inference tests updateability, not autonomous continuous learning.

@@ -29,6 +29,7 @@ def aggregate(rows):
             changed_output=sum((a['parsed'] or {}).get('answer')!=(b['parsed'] or {}).get('answer') for a,b in pairs))
     atoms=[r for r in rows if r['stage'] in ['iid','structure'] and r['kind']=='atomic']
     result['label_breakdown']={stage:{label:dict(n=len(group),proof=sum(r['proof_valid'] for r in group),correct=sum(r['correct'] for r in group)) for label in ['UP','DOWN','BOTH','UNKNOWN'] if (group:=[r for r in rows if r['stage']==stage and r['kind']=='reason' and r['expected']['answer']==label])} for stage in ['iid','structure']}
+    result['depth_breakdown']={str(depth):dict(n=len(group),proof=sum(r['proof_valid'] for r in group),correct=sum(r['correct'] for r in group)) for depth in [1,2,3,4] if (group:=[r for r in rows if r['stage'] in ['iid','structure'] and r['kind']=='reason' and r['depth']==depth])}
     result['atomic_fields']={k:dict(n=len(atoms),correct=sum((r['parsed'] or {}).get(k)==r['expected'][k] for r in atoms))
         for k in ['record','subject','object','sign','species','variant','source']}
     masked=[r for r in rows if r['stage']=='masked']
