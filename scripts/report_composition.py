@@ -118,7 +118,7 @@ def main():
     oracle_md=[];oracle_web=[]
     for method,(label,_) in METHODS.items():
         values=[oracle[method][str(d)]['normal'] for d in [1,2,3,4]]
-        cells=[f"{v['worlds_all_correct']}/{v['worlds']}" if v['worlds'] else 'not evaluated' for v in values]
+        cells=[f"{v['worlds_all_correct']}/{v['worlds']} worlds; {v['correct']}/{v['total']} tokens" if v['worlds'] else 'not evaluated' for v in values]
         oracle_md.append('| '+label+' | '+' | '.join(cells)+' |')
         oracle_web.append('<tr><td>'+label+'</td>'+''.join('<td>'+c+'</td>' for c in cells)+'</tr>')
     note=('Every selected reader retained at least 95% complete atomic readout on final banks. '
@@ -188,7 +188,8 @@ exactly. This is a diagnostic subset, not a replacement primary denominator.
 The oracle supplies path record IDs, never a sign or answer. Sweep every sign
 assignment on those edges and flip an irrelevant edge independently. Inputs
 stop before the next sign token. The table counts world/reader pairs where
-**every** setting is correct, not free path finding or complete JSON generation.
+**every** setting is correct, followed by overall exact sign-token counts. This
+is not free path finding or complete JSON generation.
 Each depth has eight new worlds per eligible fitted reader. A constant,
 single-edge or all-bank product shortcut cannot pass every setting.
 
@@ -198,7 +199,7 @@ single-edge or all-bank product shortcut cannot pass every setting.
 
 Three- and four-edge chains were not reasoning-training depths. This diagnostic
 separates retrieval/search from combining supplied records. Its masks and
-per-token accuracies are in the public summary. Input-only prefix states contain
+all raw per-token decisions are in the public artifacts. Input-only prefix states contain
 oracle path IDs but no output sign-target state. It does not replace the primary
 free-proof test, and its sign algebra is not biological causal validation.
 
@@ -249,7 +250,7 @@ body{font:16px/1.55 system-ui;background:#f3f5f7;color:#182638;margin:0}main{max
 <h2 id="results">Valid paths on new queries</h2><section><table><thead><tr><th>Reader</th><th>Atomic exact</th><th>One hop</th><th>Two hops</th><th>Three hops</th><th>Four hops</th></tr></thead><tbody>__TABLE__</tbody></table><p><small>Positive paths only. UNKNOWN is excluded. Two optimization seeds share one repaired initialization. The graph solver defines gold. Readout eligibility is checked separately in every final fitted reader.</small></p></section>
 <p><b>Scope:</b> memory enters after block ten; text enters at the input. These are results for this late-slot implementation. Biomedical utility, broader Engram performance, and advantages over evidence services are unproven.</p>
 <h2>Full positive cases, matched training seeds</h2><section><table><thead><tr><th>Comparison</th><th>Common seeds</th><th>Stratum</th><th>Memory proofs</th><th>Text proofs</th></tr></thead><tbody>__PAIRED__</tbody></table><p><small>Every positive case in the primary stratum, using common eligible seeds. Cases are not selected by outcome or by support readability. Failed retention fits remain excluded.</small></p></section>
-<h2>Given the path, can it combine the stored signs?</h2><p>The oracle supplies record IDs, not the sign. Every path-sign assignment and an irrelevant-edge flip are tested. Cells count world/reader pairs with every setting correct. This is a next-sign-token diagnostic, not free path finding.</p><section><table><thead><tr><th>Reader</th><th>One edge</th><th>Two edges</th><th>Three edges</th><th>Four edges</th></tr></thead><tbody>__ORACLE__</tbody></table></section>
+<h2>Given the path, can it combine the stored signs?</h2><p>The oracle supplies record IDs, not the sign. Every path-sign assignment and an irrelevant-edge flip are tested. Cells show worlds with every setting correct, then exact sign-token counts. This is a next-sign-token diagnostic, not free path finding.</p><section><table><thead><tr><th>Reader</th><th>One edge</th><th>Two edges</th><th>Three edges</th><th>Four edges</th></tr></thead><tbody>__ORACLE__</tbody></table></section>
 <h2>Inspect the raw evidence</h2><section><label>Reader <select id="method"><option value="joint">Joint memory</option><option value="frozen">Frozen memory</option><option value="text">Full text</option></select></label><label>Seed <select id="seed"><option>2401</option><option>2402</option></select></label><label>Stage <select id="stage"><option value="iid">New queries, depth 1–2</option><option value="structure">New depth 3–4</option><option value="intervention">Changed facts</option><option value="binding">Rebound IDs</option><option value="order">Row order</option><option value="masked">Memory masked</option><option value="support_readout">Oracle support READ probes</option></select></label><label>Outcome <select id="outcome"><option value="all">All</option><option value="valid">Valid</option><option value="failed">Failed</option></select></label><button id="next">Next case</button><p id="case"></p><div class="grid"><div><h3>Expected</h3><pre id="expected"></pre></div><div><h3>Raw generation</h3><pre id="generation"></pre></div></div><details><summary>Prompt and complete fact bank</summary><p>Memory receives the record values through its codec; text receives them as text. The bank below is evaluator context, not extra support supplied to the memory reader.</p><pre id="prompt"></pre><pre id="bank"></pre></details></section>
 <h2>Required-fact access diagnostic</h2><section id="support"></section><p>The primary TRACE call never received the oracle path IDs used by these separate READ probes. This common subset is diagnostic and does not replace the full comparison.</p><p>Read the separate <a href="readout.html#results">readout repair table</a>. All raw outputs and reproduction receipts are in the public repository.</p>
 </main><script id="data" type="application/json">__DATA__</script><script>

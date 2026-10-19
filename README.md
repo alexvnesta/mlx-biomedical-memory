@@ -25,6 +25,8 @@ query endpoint pairs and longer paths. It retains a frozen-codec control and
 adds a **[joint-adaptation arm](docs/COMPOSITION-JOINT-AMENDMENT.md)** with atomic
 rehearsal. Final reasoning tests stay closed until the fitted readers retain
 reliable readout.
+The [interface diagrams](docs/MEMORY-INTERFACE.md) distinguish record lookup,
+path search and value composition, including the difference in processing depth.
 
 The earlier **[trained-memory versus text comparison](docs/DECISIVE-RESULTS.md)**
 uses a query-independent seven-field codec, LoRA readers, two training seeds and
