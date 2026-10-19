@@ -81,6 +81,14 @@ def main():
             memory_accessible=sum(v for seed in SEEDS if (memory,seed) in readers for v in accessibility[memory,seed].values()),
             text_accessible=sum(v for seed in SEEDS if (memory,seed) in readers and ('text',seed) in readers for v in accessibility['text',seed].values()),
             total=len(required)*sum((memory,s) in readers and ('text',s) in readers for s in SEEDS))
+    paired={}
+    for memory in ['frozen','joint']:
+        seeds=[s for s in SEEDS if (memory,s) in readers and ('text',s) in readers]
+        paired[memory]=dict(seeds=seeds,strata={})
+        for stage in ['iid','structure']:
+            part={method:[r for seed in seeds for r in readers[method,seed] if r['kind']=='reason' and r['stage']==stage and r['expected']['answer']!='UNKNOWN'] for method in [memory,'text']}
+            assert [(r['seed'],r['case_id']) for r in part[memory]]==[(r['seed'],r['case_id']) for r in part['text']]
+            paired[memory]['strata'][stage]={method:ratio(batch) for method,batch in part.items()}
     table=[];web=[]
     for method,(label,_) in METHODS.items():
         v=metrics[method];values=[show(v['atomic']),*[show(v['depths'][str(d)]) for d in [1,2,3,4]]]
@@ -97,6 +105,7 @@ def main():
         best=max(c['atomic_correct'] for c in candidates)
         perseedtable+='\n| '+METHODS[method_names[raw_method]][0]+' | '+seed+f' | test closed; dev best {best}/64 | not evaluated | not evaluated | ineligible |'
     supporttable='\n'.join(f"| {METHODS[m][0]} vs text | {v['common']} | {v['memory_proofs']}/{v['common']} | {v['text_proofs']}/{v['common']} |" for m,v in support.items())
+    pairedtable='\n'.join('| '+METHODS[m][0]+' vs text | '+(', '.join(map(str,v['seeds'])) or 'none')+' | '+('fresh depth 1–2' if stage=='iid' else 'new depth 3–4')+' | '+show(values[m])+' | '+show(values['text'])+' |' for m,v in paired.items() for stage,values in v['strata'].items())
     qualified=all(v['retention_qualified'] for v in metrics.values() if v['eligible_seeds'])
     oracle={}
     for method,(_,prefix) in METHODS.items():
@@ -142,6 +151,16 @@ independent production-KG or ARAX benchmark.
 | Reader | Seed | Atomic exact | Fresh positive paths | Depth 3–4 positive paths | Selected update |
 |---|---:|---:|---:|---:|---:|
 {perseedtable}
+
+## Same worlds and matched optimization seeds
+
+These are the full positive-case primary strata, restricted only to common
+eligible optimization seeds. They do not select cases by outcome or by support
+readability. A failed retention fit remains excluded and explicitly reported.
+
+| Comparison | Common seeds | Stratum | Memory valid proofs | Text valid proofs |
+|---|---|---|---:|---:|
+{pairedtable}
 
 ## Did the models have access to the required facts?
 
@@ -202,7 +221,7 @@ training. Facts, queries, generation strings and proof replay are public.
 '''
     Path('docs/COMPOSITION-RESULTS.md').write_text(md)
     summary=dict(metrics=metrics,per_seed=perseed,common_support=support,gates=gates,
-        oracle_paths=oracle,all_retention_qualified=qualified,development_failures=failures,peak_metal_gb=peak)
+        oracle_paths=oracle,matched_seed_comparisons=paired,all_retention_qualified=qualified,development_failures=failures,peak_metal_gb=peak)
     Path('runs/composition-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     payload=json.dumps(dict(rows=rows,summary=summary),ensure_ascii=False).replace('</','<\\/')
     page='''<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Composition after memory readout</title><style>

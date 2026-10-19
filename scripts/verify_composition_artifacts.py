@@ -222,6 +222,11 @@ def verify(root=Path('artifacts')):
             for depth in [1,2,3,4]:
                 part=[r for r in batch if r['kind']=='reason' and r['stage'] in ['iid','structure'] and r['expected']['answer']!='UNKNOWN' and r['depth']==depth]
                 assert metrics['depths'][str(depth)]==dict(correct=sum(r['proof_valid'] for r in part),total=len(part))
+        for memory,comparison in summary['matched_seed_comparisons'].items():
+            for stage,values in comparison['strata'].items():
+                for method,value in values.items():
+                    batch=[r for r in expected if r['method']==method and r['seed'] in comparison['seeds'] and r['kind']=='reason' and r['stage']==stage and r['expected']['answer']!='UNKNOWN']
+                    assert value==dict(correct=sum(r['proof_valid'] for r in batch),total=len(batch))
     print(json.dumps(dict(composition_features=1760,composition_generations_regraded=count,oracle_decisions_regraded=oracle_count)))
 
 
