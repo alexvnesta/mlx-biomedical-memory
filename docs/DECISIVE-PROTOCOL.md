@@ -150,3 +150,8 @@ Neither changes training facts, training targets or the common update cap.
 The [trained-only diagnostic](DECISIVE-TRAINED-DIAGNOSTIC.md) separately tests
 the strongest scored memory candidate with a positive training step, so an
 initial selection fallback cannot be misrepresented as successful training.
+
+Here, an unopened held-out outcome means a neural reader's prediction or error
+on a held-out case. Gold labels, graph-solver checks and tokenizer/input audits
+are part of benchmark construction and were available before fitting. No
+held-out neural prediction informed the recipe, candidate rules or test controls.
