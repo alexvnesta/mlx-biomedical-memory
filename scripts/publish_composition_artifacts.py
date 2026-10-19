@@ -27,6 +27,12 @@ def main():
             shutil.copyfile('scripts/run_joint_composition_experiment.py' if joint else 'scripts/run_composition_experiment.py',target/'controller.py')
             shutil.copyfile('docs/COMPOSITION-JOINT-AMENDMENT.md' if joint else 'docs/COMPOSITION-PROTOCOL.md',target/'protocol.md')
             if joint:shutil.copyfile('scripts/run_composition_experiment.py',target/'control-controller.py')
+            if joint:
+                config=json.loads((run/'config.json').read_text())
+                (target/'oracle-sources').mkdir(exist_ok=True)
+                for name in config['oracle_sources']:shutil.copyfile(Path('scripts')/name,target/'oracle-sources'/name)
+                shutil.copyfile('docs/COMPOSITION-ORACLE-PATH-PROTOCOL.md',target/'oracle-protocol.md')
+                shutil.copyfile('docs/COMPOSITION-RETENTION-AMENDMENT.md',target/'retention-amendment.md')
             log=Path('runs/composition-joint-development.log' if joint else 'runs/composition-development.log')
             if (run/'development-gate.json').exists() and log.exists():shutil.copyfile(log,target/'development.log')
     for name in ['composition.html','composition-summary.json','composition-comparison.png']:

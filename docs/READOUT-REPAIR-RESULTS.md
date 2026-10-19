@@ -64,8 +64,10 @@ or evidence of better reasoning than text, RAG, or graph traversal. The earlier
 0/192 readout result used a different prompt/training protocol and remains
 historical evidence of that recipe's failure, not a matched effect estimate.
 Reasoning must be compared on fresh cases after freezing a working interface.
-New entity names outside the finite categorical vocabulary require an encoder
-extension. Reading a stored source label does not assess that source's quality.
+Direct lexical use of additional entity names requires an encoder extension.
+External IDs can instead be mapped to these local aliases, with the same small
+subgraph bound and without entity-specific biological meaning. Reading a stored
+source label does not assess that source's quality.
 
 Peak Metal allocation during this evaluation was 21.13 GB;
 aggregate host pressure level was 1 at completion.
