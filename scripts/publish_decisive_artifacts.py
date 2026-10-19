@@ -31,7 +31,7 @@ def main():
     for name in ['decisive-development-gate.json','decisive-development-gate-before-retention.json','decisive-slot-audit.json','decisive-slot-audit-source.py','decisive-summary.json']:
         source=Path('runs')/name
         if source.exists():shutil.copyfile(source,public/name)
-    for name in ['decisive.html','decisive-study.log','decisive-candidate-retention.log']:
+    for name in ['decisive.html','decisive-study.log','decisive-candidate-retention.log','decisive-finish.log']:
         source=Path('runs')/name
         if source.exists():shutil.copyfile(source,public/name)
     inventory={str(p):digest(p) for p in sorted(public.rglob('*')) if p.is_file() and p.name!='SHA256SUMS.json'}

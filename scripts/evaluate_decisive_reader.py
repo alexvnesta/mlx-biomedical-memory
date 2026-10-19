@@ -88,7 +88,7 @@ def main():
         assert not args.development
         supplement=json.loads(args.supplemental_data.read_text())
         assert hashlib.sha256(args.supplemental_data.read_bytes()).hexdigest()==config['supplemental_sha256']
-        cases=[(supplement['stage'],c,'normal') for c in supplement['cases']]
+        cases=[(supplement['stage'],c,c.get('condition','normal')) for c in supplement['cases']]
     if mode=='text':cases=[item for item in cases if item[0]!='masked']
     for stage,case,condition in cases:
         if (stage,case['id']) in existing:continue

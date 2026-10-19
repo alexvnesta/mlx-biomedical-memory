@@ -125,7 +125,23 @@ def verify():
             assert row['stage']=='depth_only' and row['records']==case['records'] and row['query']==case['query']
             assert all(row[k]==v for k,v in semantics['grade'](case,row['parsed']).items())
         depth_evaluated+=len(depth_rows)
+    audit_cases={c['id']:c for c in json.loads((root/'decisive-v1/training-audit.json').read_text())['cases']};audited=0
+    for directory in root.glob('decisive-memory-120[12]-training-audit'):
+        cfg=json.loads((directory/'config.json').read_text());done=json.loads((directory/'summary.json').read_text())
+        assert done['completed'] and done['rows']==48 and not cfg['development']
+        assert cfg['supplemental_sha256']==digest(root/'decisive-v1/training-audit.json')
+        assert source_hash(directory,'evaluate_decisive_reader.py')==cfg['source_sha256']
+        assert digest(root/directory.name.removesuffix('-training-audit')/'trained-selected.safetensors')==cfg['checkpoint_sha256']
+        semantics=runpy.run_path(str(directory/'source/decisive_data.py'))
+        audit_rows=[json.loads(x) for x in (directory/'predictions.jsonl').read_text().splitlines()]
+        assert len(audit_rows)==len({r['case_id'] for r in audit_rows})==48
+        for row in audit_rows:
+            case=audit_cases[row['case_id']]
+            assert row['records']==case['records'] and row['condition']==case['condition']
+            assert all(row[k]==v for k,v in semantics['grade'](case,row['parsed']).items())
+        audited+=len(audit_rows)
     if evaluated:
+        assert audited==96
         assert depth_evaluated==576
         assert trained_evaluated==1024
         assert evaluated==1920,'Both registered seeds and both readers must be published together'
@@ -153,7 +169,7 @@ def verify():
             assert semantics['grade'](depth_by_id[row['case_id']],row['parsed'])['proof_valid']
         for row in graph_rows:assert semantics['grade'](base[row['case_id']],row['parsed'])['proof_valid']
 
-    print(json.dumps(dict(decisive_feature_sources=True,causal_parity=True,matched_targets=True,no_test_prefix_states=True,regraded_heldout=evaluated,trained_diagnostic_outcomes=trained_evaluated,depth_only_outcomes=depth_evaluated)))
+    print(json.dumps(dict(decisive_feature_sources=True,causal_parity=True,matched_targets=True,no_test_prefix_states=True,regraded_heldout=evaluated,trained_diagnostic_outcomes=trained_evaluated,depth_only_outcomes=depth_evaluated,training_audit_outcomes=audited)))
 
 
 if __name__=='__main__':verify()

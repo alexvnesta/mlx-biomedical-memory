@@ -1,0 +1,5142 @@
+{
+  "stage": "training_readout_audit",
+  "cases": [
+    {
+      "id": "train-0000-atomic-audit-normal",
+      "namespace": "train-0000",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 15,
+        "target": 13,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 15,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F1"
+        },
+        {
+          "subject": 15,
+          "object": 7,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 1,
+          "object": 9,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 7,
+          "object": 4,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 15,
+          "object": 13,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F4"
+        },
+        {
+          "subject": 13,
+          "object": 15,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 6,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F7"
+        },
+        {
+          "subject": 14,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 4,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F0"
+        },
+        {
+          "subject": 14,
+          "object": 11,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0000-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0000-atomic-audit-masked",
+      "namespace": "train-0000",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 15,
+        "target": 13,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 15,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F1"
+        },
+        {
+          "subject": 15,
+          "object": 7,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 1,
+          "object": 9,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 7,
+          "object": 4,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 15,
+          "object": 13,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F4"
+        },
+        {
+          "subject": 13,
+          "object": 15,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 6,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F7"
+        },
+        {
+          "subject": 14,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 4,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F0"
+        },
+        {
+          "subject": 14,
+          "object": 11,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0000-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0000-atomic-audit-changed",
+      "namespace": "train-0000",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 15,
+        "target": 13,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 0,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 15,
+          "object": 7,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 1,
+          "object": 9,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 7,
+          "object": 4,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 15,
+          "object": 13,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F4"
+        },
+        {
+          "subject": 13,
+          "object": 15,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 6,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F7"
+        },
+        {
+          "subject": 14,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 4,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F0"
+        },
+        {
+          "subject": 14,
+          "object": 11,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0000-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0001-atomic-audit-normal",
+      "namespace": "train-0001",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 12,
+        "target": 2,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 11,
+          "object": 6,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 1,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F6"
+        },
+        {
+          "subject": 1,
+          "object": 3,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F4"
+        },
+        {
+          "subject": 12,
+          "object": 2,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F3"
+        },
+        {
+          "subject": 0,
+          "object": 3,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 12,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 12,
+          "object": 2,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        },
+        {
+          "subject": 5,
+          "object": 9,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 10,
+          "object": 15,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 2,
+          "object": 12,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F1"
+        }
+      ],
+      "record_id": "F2",
+      "parent_id": "train-0001-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0001-atomic-audit-masked",
+      "namespace": "train-0001",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 12,
+        "target": 2,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 11,
+          "object": 6,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 1,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F6"
+        },
+        {
+          "subject": 1,
+          "object": 3,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F4"
+        },
+        {
+          "subject": 12,
+          "object": 2,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F3"
+        },
+        {
+          "subject": 0,
+          "object": 3,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 12,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 12,
+          "object": 2,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        },
+        {
+          "subject": 5,
+          "object": 9,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 10,
+          "object": 15,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 2,
+          "object": 12,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F1"
+        }
+      ],
+      "record_id": "F2",
+      "parent_id": "train-0001-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0001-atomic-audit-changed",
+      "namespace": "train-0001",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 12,
+        "target": 2,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 11,
+          "object": 6,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 1,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F6"
+        },
+        {
+          "subject": 1,
+          "object": 3,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F4"
+        },
+        {
+          "subject": 12,
+          "object": 2,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F3"
+        },
+        {
+          "subject": 0,
+          "object": 3,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 12,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 12,
+          "object": 2,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        },
+        {
+          "subject": 6,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F2"
+        },
+        {
+          "subject": 10,
+          "object": 15,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 2,
+          "object": 12,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F1"
+        }
+      ],
+      "record_id": "F2",
+      "parent_id": "train-0001-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0002-atomic-audit-normal",
+      "namespace": "train-0002",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 0,
+        "target": 13,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 9,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 3,
+          "object": 8,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 5,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 8,
+          "object": 15,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 0,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 13,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 11,
+          "object": 7,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F2"
+        },
+        {
+          "subject": 3,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 0,
+          "object": 13,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 0,
+          "object": 13,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        }
+      ],
+      "record_id": "F8",
+      "parent_id": "train-0002-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0002-atomic-audit-masked",
+      "namespace": "train-0002",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 0,
+        "target": 13,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 9,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 3,
+          "object": 8,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 5,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 8,
+          "object": 15,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 0,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 13,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 11,
+          "object": 7,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F2"
+        },
+        {
+          "subject": 3,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 0,
+          "object": 13,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 0,
+          "object": 13,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        }
+      ],
+      "record_id": "F8",
+      "parent_id": "train-0002-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0002-atomic-audit-changed",
+      "namespace": "train-0002",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 0,
+        "target": 13,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 9,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 3,
+          "object": 8,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 5,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 8,
+          "object": 15,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 1,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 13,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 11,
+          "object": 7,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F2"
+        },
+        {
+          "subject": 3,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 0,
+          "object": 13,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 0,
+          "object": 13,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        }
+      ],
+      "record_id": "F8",
+      "parent_id": "train-0002-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0003-atomic-audit-normal",
+      "namespace": "train-0003",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 2,
+        "target": 13,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 2,
+          "object": 13,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 0,
+          "object": 11,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F2"
+        },
+        {
+          "subject": 5,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        },
+        {
+          "subject": 11,
+          "object": 0,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F1"
+        },
+        {
+          "subject": 13,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 10,
+          "object": 8,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 2,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        },
+        {
+          "subject": 5,
+          "object": 7,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 12,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 14,
+          "object": 12,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F7"
+        }
+      ],
+      "record_id": "F2",
+      "parent_id": "train-0003-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0003-atomic-audit-masked",
+      "namespace": "train-0003",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 2,
+        "target": 13,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 2,
+          "object": 13,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 0,
+          "object": 11,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F2"
+        },
+        {
+          "subject": 5,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        },
+        {
+          "subject": 11,
+          "object": 0,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F1"
+        },
+        {
+          "subject": 13,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 10,
+          "object": 8,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 2,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        },
+        {
+          "subject": 5,
+          "object": 7,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 12,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 14,
+          "object": 12,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F7"
+        }
+      ],
+      "record_id": "F2",
+      "parent_id": "train-0003-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0003-atomic-audit-changed",
+      "namespace": "train-0003",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 2,
+        "target": 13,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 2,
+          "object": 13,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 1,
+          "object": 12,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 5,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        },
+        {
+          "subject": 11,
+          "object": 0,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F1"
+        },
+        {
+          "subject": 13,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 10,
+          "object": 8,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 2,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        },
+        {
+          "subject": 5,
+          "object": 7,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 12,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 14,
+          "object": 12,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F7"
+        }
+      ],
+      "record_id": "F2",
+      "parent_id": "train-0003-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0004-atomic-audit-normal",
+      "namespace": "train-0004",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 15,
+        "target": 5,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 0,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 15,
+          "object": 5,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F2"
+        },
+        {
+          "subject": 5,
+          "object": 15,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 11,
+          "object": 3,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 12,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 6,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F6"
+        },
+        {
+          "subject": 15,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 8,
+          "object": 11,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 0,
+          "object": 10,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F0"
+        },
+        {
+          "subject": 14,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F9"
+        }
+      ],
+      "record_id": "F0",
+      "parent_id": "train-0004-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0004-atomic-audit-masked",
+      "namespace": "train-0004",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 15,
+        "target": 5,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 0,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 15,
+          "object": 5,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F2"
+        },
+        {
+          "subject": 5,
+          "object": 15,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 11,
+          "object": 3,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 12,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 6,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F6"
+        },
+        {
+          "subject": 15,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 8,
+          "object": 11,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 0,
+          "object": 10,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F0"
+        },
+        {
+          "subject": 14,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F9"
+        }
+      ],
+      "record_id": "F0",
+      "parent_id": "train-0004-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0004-atomic-audit-changed",
+      "namespace": "train-0004",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 15,
+        "target": 5,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 0,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 15,
+          "object": 5,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F2"
+        },
+        {
+          "subject": 5,
+          "object": 15,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 11,
+          "object": 3,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 12,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 6,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F6"
+        },
+        {
+          "subject": 15,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 8,
+          "object": 11,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 1,
+          "object": 11,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 14,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F9"
+        }
+      ],
+      "record_id": "F0",
+      "parent_id": "train-0004-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0005-atomic-audit-normal",
+      "namespace": "train-0005",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 13,
+        "target": 5,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 1,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 8,
+          "object": 7,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F1"
+        },
+        {
+          "subject": 13,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 8,
+          "object": 3,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F2"
+        },
+        {
+          "subject": 13,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F0"
+        },
+        {
+          "subject": 2,
+          "object": 8,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F7"
+        },
+        {
+          "subject": 6,
+          "object": 12,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 3,
+          "id": "F6"
+        },
+        {
+          "subject": 5,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 11,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 9,
+          "object": 14,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0005-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0005-atomic-audit-masked",
+      "namespace": "train-0005",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 13,
+        "target": 5,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 1,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 8,
+          "object": 7,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F1"
+        },
+        {
+          "subject": 13,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 8,
+          "object": 3,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F2"
+        },
+        {
+          "subject": 13,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F0"
+        },
+        {
+          "subject": 2,
+          "object": 8,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F7"
+        },
+        {
+          "subject": 6,
+          "object": 12,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 3,
+          "id": "F6"
+        },
+        {
+          "subject": 5,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 11,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 9,
+          "object": 14,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0005-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0005-atomic-audit-changed",
+      "namespace": "train-0005",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 13,
+        "target": 5,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 1,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 8,
+          "object": 7,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F1"
+        },
+        {
+          "subject": 13,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 8,
+          "object": 3,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F2"
+        },
+        {
+          "subject": 13,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F0"
+        },
+        {
+          "subject": 3,
+          "object": 9,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 6,
+          "object": 12,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 3,
+          "id": "F6"
+        },
+        {
+          "subject": 5,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 11,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 9,
+          "object": 14,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0005-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0006-atomic-audit-normal",
+      "namespace": "train-0006",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 0,
+        "target": 4,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 0,
+          "object": 7,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 7,
+          "object": 4,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 6,
+          "object": 4,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F8"
+        },
+        {
+          "subject": 3,
+          "object": 12,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 0,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F1"
+        },
+        {
+          "subject": 4,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 0,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 10,
+          "object": 3,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 14,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 11,
+          "object": 3,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F7"
+        }
+      ],
+      "record_id": "F8",
+      "parent_id": "train-0006-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0006-atomic-audit-masked",
+      "namespace": "train-0006",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 0,
+        "target": 4,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 0,
+          "object": 7,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 7,
+          "object": 4,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 6,
+          "object": 4,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F8"
+        },
+        {
+          "subject": 3,
+          "object": 12,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 0,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F1"
+        },
+        {
+          "subject": 4,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 0,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 10,
+          "object": 3,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 14,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 11,
+          "object": 3,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F7"
+        }
+      ],
+      "record_id": "F8",
+      "parent_id": "train-0006-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0006-atomic-audit-changed",
+      "namespace": "train-0006",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 0,
+        "target": 4,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 0,
+          "object": 7,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 7,
+          "object": 4,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 7,
+          "object": 5,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F8"
+        },
+        {
+          "subject": 3,
+          "object": 12,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 0,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F1"
+        },
+        {
+          "subject": 4,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 0,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 10,
+          "object": 3,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 14,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 11,
+          "object": 3,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F7"
+        }
+      ],
+      "record_id": "F8",
+      "parent_id": "train-0006-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0007-atomic-audit-normal",
+      "namespace": "train-0007",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 9,
+        "target": 5,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 0,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 1,
+          "object": 7,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F1"
+        },
+        {
+          "subject": 11,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 13,
+          "object": 4,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 11,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F5"
+        },
+        {
+          "subject": 3,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 4,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 5,
+          "object": 9,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F3"
+        },
+        {
+          "subject": 9,
+          "object": 3,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 9,
+          "object": 5,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F7"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0007-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0007-atomic-audit-masked",
+      "namespace": "train-0007",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 9,
+        "target": 5,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 0,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 1,
+          "object": 7,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F1"
+        },
+        {
+          "subject": 11,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 13,
+          "object": 4,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 11,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F5"
+        },
+        {
+          "subject": 3,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 4,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 5,
+          "object": 9,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F3"
+        },
+        {
+          "subject": 9,
+          "object": 3,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 9,
+          "object": 5,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F7"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0007-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0007-atomic-audit-changed",
+      "namespace": "train-0007",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 9,
+        "target": 5,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 0,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F8"
+        },
+        {
+          "subject": 1,
+          "object": 7,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F1"
+        },
+        {
+          "subject": 11,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 13,
+          "object": 4,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 11,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F5"
+        },
+        {
+          "subject": 3,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 4,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 5,
+          "object": 9,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F3"
+        },
+        {
+          "subject": 9,
+          "object": 3,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 10,
+          "object": 6,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F7"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0007-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0008-atomic-audit-normal",
+      "namespace": "train-0008",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 4,
+        "target": 10,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 13,
+          "object": 5,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 3,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 12,
+          "object": 13,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 3,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 10,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 10,
+          "object": 4,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 14,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 4,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        },
+        {
+          "subject": 3,
+          "object": 0,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 4,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F1"
+        }
+      ],
+      "record_id": "F5",
+      "parent_id": "train-0008-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0008-atomic-audit-masked",
+      "namespace": "train-0008",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 4,
+        "target": 10,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 13,
+          "object": 5,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 3,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 12,
+          "object": 13,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 3,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 10,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 10,
+          "object": 4,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 14,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 4,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        },
+        {
+          "subject": 3,
+          "object": 0,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 4,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F1"
+        }
+      ],
+      "record_id": "F5",
+      "parent_id": "train-0008-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0008-atomic-audit-changed",
+      "namespace": "train-0008",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 4,
+        "target": 10,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 13,
+          "object": 5,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 3,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 12,
+          "object": 13,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 3,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 10,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 10,
+          "object": 4,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 15,
+          "object": 2,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F5"
+        },
+        {
+          "subject": 4,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        },
+        {
+          "subject": 3,
+          "object": 0,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 4,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F1"
+        }
+      ],
+      "record_id": "F5",
+      "parent_id": "train-0008-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0009-atomic-audit-normal",
+      "namespace": "train-0009",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 7,
+        "target": 0,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 2,
+          "object": 11,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 3,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 7,
+          "object": 0,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 5,
+          "object": 11,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F1"
+        },
+        {
+          "subject": 14,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 7,
+          "object": 0,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 3,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 0,
+          "object": 7,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 12,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 10,
+          "object": 15,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0009-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0009-atomic-audit-masked",
+      "namespace": "train-0009",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 7,
+        "target": 0,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 2,
+          "object": 11,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 3,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 7,
+          "object": 0,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 5,
+          "object": 11,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F1"
+        },
+        {
+          "subject": 14,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 7,
+          "object": 0,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 3,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 0,
+          "object": 7,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 12,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 10,
+          "object": 15,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0009-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0009-atomic-audit-changed",
+      "namespace": "train-0009",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 7,
+        "target": 0,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 2,
+          "object": 11,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 3,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 7,
+          "object": 0,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 6,
+          "object": 12,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F1"
+        },
+        {
+          "subject": 14,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 7,
+          "object": 0,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 3,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F3"
+        },
+        {
+          "subject": 0,
+          "object": 7,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 4,
+          "object": 12,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 10,
+          "object": 15,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0009-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0010-atomic-audit-normal",
+      "namespace": "train-0010",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 8,
+        "target": 5,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 8,
+          "object": 5,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 1,
+          "object": 13,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 2,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F5"
+        },
+        {
+          "subject": 9,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 5,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 8,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 12,
+          "object": 14,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 15,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F8"
+        },
+        {
+          "subject": 8,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 11,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0010-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0010-atomic-audit-masked",
+      "namespace": "train-0010",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 8,
+        "target": 5,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 8,
+          "object": 5,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 1,
+          "object": 13,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 2,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F5"
+        },
+        {
+          "subject": 9,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 5,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 8,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 12,
+          "object": 14,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 15,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F8"
+        },
+        {
+          "subject": 8,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 11,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0010-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0010-atomic-audit-changed",
+      "namespace": "train-0010",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 8,
+        "target": 5,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 9,
+          "object": 6,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 1,
+          "object": 13,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 2,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F5"
+        },
+        {
+          "subject": 9,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        },
+        {
+          "subject": 5,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 8,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 12,
+          "object": 14,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 15,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F8"
+        },
+        {
+          "subject": 8,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 3,
+          "id": "F0"
+        },
+        {
+          "subject": 11,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F9"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0010-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0011-atomic-audit-normal",
+      "namespace": "train-0011",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 14,
+        "target": 12,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 14,
+          "object": 10,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 11,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 0,
+          "object": 10,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 14,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 15,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F9"
+        },
+        {
+          "subject": 0,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 13,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        },
+        {
+          "subject": 14,
+          "object": 12,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F7"
+        },
+        {
+          "subject": 10,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 12,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0011-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0011-atomic-audit-masked",
+      "namespace": "train-0011",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 14,
+        "target": 12,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 14,
+          "object": 10,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 11,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 0,
+          "object": 10,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 14,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 15,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F9"
+        },
+        {
+          "subject": 0,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 13,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        },
+        {
+          "subject": 14,
+          "object": 12,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F7"
+        },
+        {
+          "subject": 10,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 12,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0011-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0011-atomic-audit-changed",
+      "namespace": "train-0011",
+      "kind": "atomic",
+      "depth": 1,
+      "query": {
+        "root": 14,
+        "target": 12,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 14,
+          "object": 10,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 11,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 0,
+          "object": 10,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 14,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 15,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F9"
+        },
+        {
+          "subject": 0,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 13,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        },
+        {
+          "subject": 15,
+          "object": 13,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 10,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 12,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        }
+      ],
+      "record_id": "F7",
+      "parent_id": "train-0011-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0012-atomic-audit-normal",
+      "namespace": "train-0012",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 14,
+        "target": 2,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 2,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 11,
+          "object": 12,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 0,
+          "object": 11,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 14,
+          "object": 2,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F4"
+        },
+        {
+          "subject": 7,
+          "object": 11,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F1"
+        },
+        {
+          "subject": 7,
+          "object": 3,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 8,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F2"
+        },
+        {
+          "subject": 11,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 14,
+          "object": 5,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 5,
+          "object": 2,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F0"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0012-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0012-atomic-audit-masked",
+      "namespace": "train-0012",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 14,
+        "target": 2,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 2,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 11,
+          "object": 12,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 0,
+          "object": 11,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 14,
+          "object": 2,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F4"
+        },
+        {
+          "subject": 7,
+          "object": 11,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F1"
+        },
+        {
+          "subject": 7,
+          "object": 3,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 8,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F2"
+        },
+        {
+          "subject": 11,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 14,
+          "object": 5,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 5,
+          "object": 2,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F0"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0012-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0012-atomic-audit-changed",
+      "namespace": "train-0012",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 14,
+        "target": 2,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 2,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F7"
+        },
+        {
+          "subject": 11,
+          "object": 12,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 0,
+          "object": 11,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F6"
+        },
+        {
+          "subject": 14,
+          "object": 2,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F4"
+        },
+        {
+          "subject": 8,
+          "object": 12,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F1"
+        },
+        {
+          "subject": 7,
+          "object": 3,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 8,
+          "object": 10,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F2"
+        },
+        {
+          "subject": 11,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 14,
+          "object": 5,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F9"
+        },
+        {
+          "subject": 5,
+          "object": 2,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F0"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0012-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0013-atomic-audit-normal",
+      "namespace": "train-0013",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 8,
+        "target": 13,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 8,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 12,
+          "object": 13,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 13,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 6,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 0,
+          "object": 2,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F7"
+        },
+        {
+          "subject": 3,
+          "object": 6,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F1"
+        },
+        {
+          "subject": 7,
+          "object": 6,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 8,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 4,
+          "object": 9,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 9,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        }
+      ],
+      "record_id": "F5",
+      "parent_id": "train-0013-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0013-atomic-audit-masked",
+      "namespace": "train-0013",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 8,
+        "target": 13,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 8,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 12,
+          "object": 13,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 13,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 6,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 0,
+          "object": 2,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F7"
+        },
+        {
+          "subject": 3,
+          "object": 6,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F1"
+        },
+        {
+          "subject": 7,
+          "object": 6,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 8,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 4,
+          "object": 9,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 9,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        }
+      ],
+      "record_id": "F5",
+      "parent_id": "train-0013-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0013-atomic-audit-changed",
+      "namespace": "train-0013",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 8,
+        "target": 13,
+        "species": 0,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 8,
+          "object": 13,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 13,
+          "object": 14,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 1,
+          "id": "F5"
+        },
+        {
+          "subject": 13,
+          "object": 8,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 6,
+          "object": 1,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F6"
+        },
+        {
+          "subject": 0,
+          "object": 2,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F7"
+        },
+        {
+          "subject": 3,
+          "object": 6,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F1"
+        },
+        {
+          "subject": 7,
+          "object": 6,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F3"
+        },
+        {
+          "subject": 8,
+          "object": 12,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 4,
+          "object": 9,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 9,
+          "object": 4,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F8"
+        }
+      ],
+      "record_id": "F5",
+      "parent_id": "train-0013-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0014-atomic-audit-normal",
+      "namespace": "train-0014",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 1,
+        "target": 0,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 9,
+          "object": 8,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 11,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F6"
+        },
+        {
+          "subject": 0,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 9,
+          "object": 14,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 8,
+          "object": 14,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 1,
+          "object": 11,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 1,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 5,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 1,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F1"
+        },
+        {
+          "subject": 1,
+          "object": 14,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F3"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0014-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0014-atomic-audit-masked",
+      "namespace": "train-0014",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 1,
+        "target": 0,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 9,
+          "object": 8,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 11,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F6"
+        },
+        {
+          "subject": 0,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 9,
+          "object": 14,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 8,
+          "object": 14,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 1,
+          "object": 11,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 1,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 5,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 1,
+          "object": 5,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F1"
+        },
+        {
+          "subject": 1,
+          "object": 14,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F3"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0014-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0014-atomic-audit-changed",
+      "namespace": "train-0014",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 1,
+        "target": 0,
+        "species": 1,
+        "variant": 0
+      },
+      "records": [
+        {
+          "subject": 9,
+          "object": 8,
+          "sign": -1,
+          "species": 1,
+          "variant": 1,
+          "source": 0,
+          "id": "F4"
+        },
+        {
+          "subject": 11,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F6"
+        },
+        {
+          "subject": 0,
+          "object": 1,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F7"
+        },
+        {
+          "subject": 9,
+          "object": 14,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 8,
+          "object": 14,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 0,
+          "id": "F5"
+        },
+        {
+          "subject": 1,
+          "object": 11,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F2"
+        },
+        {
+          "subject": 1,
+          "object": 0,
+          "sign": 1,
+          "species": 0,
+          "variant": 0,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 5,
+          "object": 0,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 2,
+          "id": "F0"
+        },
+        {
+          "subject": 2,
+          "object": 6,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F1"
+        },
+        {
+          "subject": 1,
+          "object": 14,
+          "sign": 1,
+          "species": 1,
+          "variant": 0,
+          "source": 1,
+          "id": "F3"
+        }
+      ],
+      "record_id": "F1",
+      "parent_id": "train-0014-atomic",
+      "condition": "changed"
+    },
+    {
+      "id": "train-0015-atomic-audit-normal",
+      "namespace": "train-0015",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 5,
+        "target": 2,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 5,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 3,
+          "object": 2,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F6"
+        },
+        {
+          "subject": 14,
+          "object": 9,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F1"
+        },
+        {
+          "subject": 4,
+          "object": 9,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F7"
+        },
+        {
+          "subject": 13,
+          "object": 9,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F0"
+        },
+        {
+          "subject": 8,
+          "object": 7,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 2,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 7,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 9,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 5,
+          "object": 3,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        }
+      ],
+      "record_id": "F8",
+      "parent_id": "train-0015-atomic",
+      "condition": "normal"
+    },
+    {
+      "id": "train-0015-atomic-audit-masked",
+      "namespace": "train-0015",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 5,
+        "target": 2,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 5,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 3,
+          "object": 2,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F6"
+        },
+        {
+          "subject": 14,
+          "object": 9,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F1"
+        },
+        {
+          "subject": 4,
+          "object": 9,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F7"
+        },
+        {
+          "subject": 13,
+          "object": 9,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F0"
+        },
+        {
+          "subject": 8,
+          "object": 7,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F8"
+        },
+        {
+          "subject": 2,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 7,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 9,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 5,
+          "object": 3,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        }
+      ],
+      "record_id": "F8",
+      "parent_id": "train-0015-atomic",
+      "condition": "masked"
+    },
+    {
+      "id": "train-0015-atomic-audit-changed",
+      "namespace": "train-0015",
+      "kind": "atomic",
+      "depth": 2,
+      "query": {
+        "root": 5,
+        "target": 2,
+        "species": 0,
+        "variant": 1
+      },
+      "records": [
+        {
+          "subject": 5,
+          "object": 2,
+          "sign": 1,
+          "species": 1,
+          "variant": 1,
+          "source": 2,
+          "id": "F3"
+        },
+        {
+          "subject": 3,
+          "object": 2,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F6"
+        },
+        {
+          "subject": 14,
+          "object": 9,
+          "sign": -1,
+          "species": 1,
+          "variant": 0,
+          "source": 3,
+          "id": "F1"
+        },
+        {
+          "subject": 4,
+          "object": 9,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F7"
+        },
+        {
+          "subject": 13,
+          "object": 9,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 1,
+          "id": "F0"
+        },
+        {
+          "subject": 9,
+          "object": 8,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 3,
+          "id": "F8"
+        },
+        {
+          "subject": 2,
+          "object": 5,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 2,
+          "id": "F5"
+        },
+        {
+          "subject": 7,
+          "object": 14,
+          "sign": -1,
+          "species": 0,
+          "variant": 1,
+          "source": 0,
+          "id": "F9"
+        },
+        {
+          "subject": 9,
+          "object": 1,
+          "sign": 1,
+          "species": 0,
+          "variant": 1,
+          "source": 3,
+          "id": "F4"
+        },
+        {
+          "subject": 5,
+          "object": 3,
+          "sign": -1,
+          "species": 0,
+          "variant": 0,
+          "source": 1,
+          "id": "F2"
+        }
+      ],
+      "record_id": "F8",
+      "parent_id": "train-0015-atomic",
+      "condition": "changed"
+    }
+  ],
+  "purpose": "Training-bank causal diagnostic only; excluded from held-out scores. Change requested record values with question/slots fixed, or disable the codec. No additional fitting."
+}

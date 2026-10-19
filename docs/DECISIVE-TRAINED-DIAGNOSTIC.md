@@ -23,3 +23,10 @@ prerequisite, even when the trained diagnostic is evaluated comprehensively.
 This diagnostic was added before opening held-out outputs, based only on the
 observed development failure. It prevents an untrained selection fallback from
 being described as a successfully trained memory system.
+
+A separate causal audit uses 16 training atomic banks in three conditions:
+normal memory, codec disabled, and all six requested record values changed
+while record IDs, row order and the READ question stay fixed. It receives no
+further training and is excluded from unseen-world scores. Its purpose is to
+distinguish successful training-bank readout from sensitivity to stored values.
+The audit corpus and generating source are also frozen before held-out runs.

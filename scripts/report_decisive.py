@@ -56,18 +56,24 @@ def main():
                 phases=[read(p) for p in sorted(training.glob('summary-*.json'))],
                 training_seconds_total=sum(read(p)['seconds'] for p in training.glob('summary-*.json')))
         summary['readers'][mode]=aggregate([r for r in allrows if r['mode']==mode])
-    summary['trained_selections']={}
+    summary['trained_selections']={};summary['training_audit']={}
     for seed in [1201,1202]:
         training=Path(f'runs/decisive-memory-{seed}')
         fitted=[]
         for suffix in ['-trained-test','-trained-depth-test']:
             directory=Path(str(training)+suffix);assert read(directory/'summary.json')['completed']
             fitted+=lines(directory/'predictions.jsonl')
+        audit=lines(Path(str(training)+'-training-audit/predictions.jsonl'))
+        assert len(audit)==48
+        audit_summary={condition:dict(n=len(group),correct=sum(r['correct'] for r in group)) for condition in ['normal','masked','changed'] if (group:=[r for r in audit if r['condition']==condition])}
+        originals={r['parent_id']:r for r in audit if r['condition']=='normal'}
+        audit_summary['same_response_after_edit']=sum(r['parsed']==originals[r['parent_id']]['parsed'] for r in audit if r['condition']=='changed')
+        summary['training_audit'][str(seed)]=audit_summary;fitted+=audit
         for row in fitted:row['mode']='memory_trained'
         allrows+=fitted;summary['by_seed'][f'memory_trained-{seed}']=aggregate(fitted)
         summary['trained_selections'][str(seed)]=read(training/'trained-only-selection.json')
     summary['readers']['memory_trained']=aggregate([r for r in allrows if r['mode']=='memory_trained'])
-    assert len(allrows)==3520
+    assert len(allrows)==3616
     # A paired world bootstrap conditional on these two fixed fitted seeds.
     # Seeds are averaged within a world; they are not counted as independent worlds.
     differences=[]
