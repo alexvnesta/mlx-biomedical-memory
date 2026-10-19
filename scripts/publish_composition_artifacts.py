@@ -35,7 +35,7 @@ def main():
                 shutil.copyfile('docs/COMPOSITION-RETENTION-AMENDMENT.md',target/'retention-amendment.md')
             log=Path('runs/composition-joint-development.log' if joint else 'runs/composition-development.log')
             if (run/'development-gate.json').exists() and log.exists():shutil.copyfile(log,target/'development.log')
-    for name in ['composition.html','composition-summary.json','composition-comparison.png']:
+    for name in ['composition.html','composition-summary.json','composition-comparison.png','composition-resource-events.json']:
         path=Path('runs')/name
         if path.exists():shutil.copyfile(path,public/name)
     inventory={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(public.rglob('*')) if p.is_file() and p.name!='SHA256SUMS.json'}

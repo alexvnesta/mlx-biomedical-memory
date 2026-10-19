@@ -1,0 +1,36 @@
+[
+  {
+    "event": "resource_guard_exit",
+    "run": "composition-joint-2402-dev-2048-best-2048",
+    "observed_utc": "2026-10-19T15:08:45.578249+00:00",
+    "stage": "after all generations, during final resource check",
+    "saved_predictions": 112,
+    "state": {
+      "pressure_level": 2,
+      "swap_used_gb": 10.044921875,
+      "process_peak_rss_gb": 21.308801024,
+      "active_metal_gb": 20.921501986,
+      "peak_metal_gb": 21.368968532
+    },
+    "action": "Own model process exited; other sessions untouched. Resume only at normal host pressure.",
+    "cause": "Host warning observed; no attribution to another session or to a specific allocation.",
+    "recovery": {
+      "completed_utc": "2026-10-19T15:11:20.006443+00:00",
+      "checkpoint_sha256": "241fb35eca8ea9e289bc6cebb6045b4952b4702d8b5a17dc805f8f0e487d48fc",
+      "source_sha256": "5793831084345be668d61f41c92a45e257d873f68a8d80f8a6873e0740a7c00b",
+      "rows": 112,
+      "resource": {
+        "pressure_level": 1,
+        "swap_used_gb": 9.990234375,
+        "process_peak_rss_gb": 21.011775488,
+        "active_metal_gb": 20.921236986,
+        "peak_metal_gb": 20.921236986
+      },
+      "frozen_constants": {
+        "before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+        "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+        "unchanged": true
+      }
+    }
+  }
+]

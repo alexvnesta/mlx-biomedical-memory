@@ -92,7 +92,7 @@ def main():
     table=[];web=[]
     for method,(label,_) in METHODS.items():
         v=metrics[method];values=[show(v['atomic']),*[show(v['depths'][str(d)]) for d in [1,2,3,4]]]
-        label+=' ('+str(len(v['eligible_seeds']))+' eligible seeds)'
+        label+=' ('+str(len(v['eligible_seeds']))+' eligible seed'+('' if len(v['eligible_seeds'])==1 else 's')+')'
         table.append('| '+label+' | '+' | '.join(values)+' |')
         web.append('<tr><td>'+label+'</td>'+''.join('<td>'+html.escape(x)+'</td>' for x in values)+'</tr>')
     table.append('| Exact graph solver (defines gold) | 100% | 100% | 100% | 100% | 100% |')
@@ -104,7 +104,7 @@ def main():
         candidates=json.loads(Path('runs',f'composition-{key}','generated-selection.json').read_text())['candidates']
         best=max(c['atomic_correct'] for c in candidates)
         perseedtable+='\n| '+METHODS[method_names[raw_method]][0]+' | '+seed+f' | test closed; dev best {best}/64 | not evaluated | not evaluated | ineligible |'
-    supporttable='\n'.join(f"| {METHODS[m][0]} vs text | {v['common']} | {v['memory_proofs']}/{v['common']} | {v['text_proofs']}/{v['common']} |" for m,v in support.items())
+    supporttable='\n'.join('| '+METHODS[m][0]+' vs text | '+str(v['common'])+' | '+show(dict(correct=v['memory_proofs'],total=v['common']))+' | '+show(dict(correct=v['text_proofs'],total=v['common']))+' |' for m,v in support.items())
     pairedtable='\n'.join('| '+METHODS[m][0]+' vs text | '+(', '.join(map(str,v['seeds'])) or 'none')+' | '+('fresh depth 1–2' if stage=='iid' else 'new depth 3–4')+' | '+show(values[m])+' | '+show(values['text'])+' |' for m,v in paired.items() for stage,values in v['strata'].items())
     paired_web=''.join('<tr>'+''.join('<td>'+html.escape(cell)+'</td>' for cell in [METHODS[m][0]+' vs text',', '.join(map(str,v['seeds'])) or 'none','fresh depth 1–2' if stage=='iid' else 'new depth 3–4',show(values[m]),show(values['text'])])+'</tr>' for m,v in paired.items() for stage,values in v['strata'].items())
     qualified=all(v['retention_qualified'] for v in metrics.values() if v['eligible_seeds'])
@@ -125,7 +125,15 @@ def main():
           'The path results therefore concern relationship queries in this particular interface.' if qualified else
           'At least one reader failed final atomic retention. Its path errors cannot be interpreted as reasoning errors alone.')
     note+=' Development retention failures, excluded from final tests: '+(', '.join(failures) if failures else 'none')+'.'
-    peak=max(r['peak_metal_gb'] for r in resources)
+    for path in Path('runs').glob('composition-*/summary.json'):
+        value=json.loads(path.read_text())
+        if 'resource' in value:resources.append(value['resource'])
+    event_path=Path('runs/composition-resource-events.json')
+    resource_events=json.loads(event_path.read_text()) if event_path.exists() else []
+    peak=max([r['peak_metal_gb'] for r in resources]+[e['state']['peak_metal_gb'] for e in resource_events])
+    resource_note=(f"The guard recorded {len(resource_events)} host-warning exit(s). Saved generations were retained; "
+        "evaluation resumed with unchanged checkpoint/source hashes only after normal pressure returned. "
+        "The warning's allocation cause is not attributed. Other sessions were not stopped." if resource_events else '')
     md=f'''# Composition after reliable memory access
 
 {note}
@@ -223,6 +231,7 @@ Peak measured Metal allocation for these fits/evaluations was {peak:.2f} GB.
 Large processes were serialized with a kernel lease; tail training leaves more
 headroom than full-model training. The earlier readout handoff incident is
 retained in `artifacts/readout-resource-incident.json`.
+{resource_note}
 
 See the [base protocol](COMPOSITION-PROTOCOL.md), [joint amendment](COMPOSITION-JOINT-AMENDMENT.md),
 and public raw outputs, checkpoint/source hashes, and frozen registrations in
@@ -231,7 +240,7 @@ training. Facts, queries, generation strings and proof replay are public.
 '''
     Path('docs/COMPOSITION-RESULTS.md').write_text(md)
     summary=dict(metrics=metrics,per_seed=perseed,common_support=support,gates=gates,
-        oracle_paths=oracle,matched_seed_comparisons=paired,all_retention_qualified=qualified,development_failures=failures,peak_metal_gb=peak)
+        oracle_paths=oracle,matched_seed_comparisons=paired,all_retention_qualified=qualified,development_failures=failures,peak_metal_gb=peak,resource_events=resource_events)
     Path('runs/composition-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     payload=json.dumps(dict(rows=rows,summary=summary),ensure_ascii=False).replace('</','<\\/')
     page='''<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Composition after memory readout</title><style>

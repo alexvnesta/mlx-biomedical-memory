@@ -1,0 +1,35 @@
+Previous development process exited; starting joint development serially
+RUN train_decisive_reader.py --mode memory --seed 2401 --features runs/composition-features-v1 --output runs/composition-joint-2401 --updates 2048 --maximum-updates 2048 --warm-start runs/readout-curriculum-v5/selected.safetensors --codec-lr 1e-05 --protocol docs/COMPOSITION-JOINT-AMENDMENT.md
+RUN evaluate_decisive_reader.py --training runs/composition-joint-2401 --features runs/composition-features-v1 --output runs/composition-joint-2401-dev-2048-best-2048 --development --checkpoint-name best-2048.safetensors
+RUN evaluate_decisive_reader.py --training runs/composition-joint-2401 --features runs/composition-features-v1 --output runs/composition-joint-2401-dev-2048-final-2048 --development --checkpoint-name final-2048.safetensors
+SELECTION runs/composition-joint-2401 null
+RUN train_decisive_reader.py --mode memory --seed 2402 --features runs/composition-features-v1 --output runs/composition-joint-2402 --updates 2048 --maximum-updates 2048 --warm-start runs/readout-curriculum-v5/selected.safetensors --codec-lr 1e-05 --protocol docs/COMPOSITION-JOINT-AMENDMENT.md
+RUN evaluate_decisive_reader.py --training runs/composition-joint-2402 --features runs/composition-features-v1 --output runs/composition-joint-2402-dev-2048-best-2048 --development --checkpoint-name best-2048.safetensors
+Traceback (most recent call last):
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/run_joint_composition_experiment.py", line 69, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/run_joint_composition_experiment.py", line 38, in main
+    selections[f'joint-{seed}']=select(output,budget)
+                                ~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/run_composition_experiment.py", line 46, in select
+    run('evaluate_decisive_reader.py',args,str(output)+'.log')
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/run_composition_experiment.py", line 23, in run
+    subprocess.run([sys.executable,'-u','scripts/'+script,*map(str,args)],stdout=stream,stderr=subprocess.STDOUT,check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python', '-u', 'scripts/evaluate_decisive_reader.py', '--training', 'runs/composition-joint-2402', '--features', 'runs/composition-features-v1', '--output', 'runs/composition-joint-2402-dev-2048-best-2048', '--development', '--checkpoint-name', 'best-2048.safetensors']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "<stdin>", line 14, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/Users/alex/Documents/ChatGPT/Engrams/.venv/bin/python', '-u', 'scripts/run_joint_composition_experiment.py', '--development-only']' returned non-zero exit status 1.
+SELECTION runs/composition-joint-2401 null
+RUN evaluate_decisive_reader.py --training runs/composition-joint-2402 --features runs/composition-features-v1 --output runs/composition-joint-2402-dev-2048-best-2048 --development --checkpoint-name best-2048.safetensors --resume
+RUN evaluate_decisive_reader.py --training runs/composition-joint-2402 --features runs/composition-features-v1 --output runs/composition-joint-2402-dev-2048-final-2048 --development --checkpoint-name final-2048.safetensors
+SELECTION runs/composition-joint-2402 null
+DEVELOPMENT COMPLETE; publish every outcome and eligible checkpoint before final generations

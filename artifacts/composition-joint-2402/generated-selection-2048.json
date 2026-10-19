@@ -1,0 +1,30 @@
+{
+  "budget": 2048,
+  "candidates": [
+    {
+      "checkpoint_name": "best-2048.safetensors",
+      "checkpoint_sha256": "241fb35eca8ea9e289bc6cebb6045b4952b4702d8b5a17dc805f8f0e487d48fc",
+      "evaluation": "runs/composition-joint-2402-dev-2048-best-2048",
+      "step": 256,
+      "reasoning_proofs": 1,
+      "reasoning_correct": 10,
+      "reasoning_total": 48,
+      "atomic_correct": 60,
+      "atomic_total": 64,
+      "weighted_dev_nll": 0.11174626469009549
+    },
+    {
+      "checkpoint_name": "final-2048.safetensors",
+      "checkpoint_sha256": "fb27c1d95d663e740dd644215763466c939b72e33737b70ea2e895f720e8e0cb",
+      "evaluation": "runs/composition-joint-2402-dev-2048-final-2048",
+      "step": 2048,
+      "reasoning_proofs": 2,
+      "reasoning_correct": 18,
+      "reasoning_total": 48,
+      "atomic_correct": 59,
+      "atomic_total": 64,
+      "weighted_dev_nll": 0.16091346855952388
+    }
+  ],
+  "selected": null
+}

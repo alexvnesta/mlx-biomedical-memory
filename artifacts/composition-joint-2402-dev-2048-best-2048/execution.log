@@ -1,0 +1,20 @@
+Loading full memory reader
+Evaluated 16 {"pressure_level": 1, "swap_used_gb": 8.987490234375, "process_peak_rss_gb": 21.298757632, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.368968532}
+Evaluated 32 {"pressure_level": 1, "swap_used_gb": 8.987490234375, "process_peak_rss_gb": 21.298757632, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.368968532}
+Evaluated 48 {"pressure_level": 1, "swap_used_gb": 8.987490234375, "process_peak_rss_gb": 21.298757632, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.368968532}
+Evaluated 64 {"pressure_level": 1, "swap_used_gb": 8.987490234375, "process_peak_rss_gb": 21.298757632, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.368968532}
+Evaluated 80 {"pressure_level": 1, "swap_used_gb": 8.987490234375, "process_peak_rss_gb": 21.298757632, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.368968532}
+Evaluated 96 {"pressure_level": 1, "swap_used_gb": 8.987490234375, "process_peak_rss_gb": 21.298757632, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.368968532}
+Evaluated 112 {"pressure_level": 1, "swap_used_gb": 8.971865234375, "process_peak_rss_gb": 21.298757632, "active_metal_gb": 20.921501986, "peak_metal_gb": 21.368968532}
+Traceback (most recent call last):
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/evaluate_decisive_reader.py", line 124, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/evaluate_decisive_reader.py", line 119, in main
+    summary=dict(completed=True,rows=len(rows),resource=guard.check(),
+                                                        ~~~~~~~~~~~^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/engram_poc/resource_guard.py", line 49, in check
+    raise RuntimeError('Host resource guard requested checkpoint/exit: '+str(state))
+RuntimeError: Host resource guard requested checkpoint/exit: {'pressure_level': 2, 'swap_used_gb': 10.044921875, 'process_peak_rss_gb': 21.308801024, 'active_metal_gb': 20.921501986, 'peak_metal_gb': 21.368968532}
+Loading full memory reader
+COMPLETED {"completed": true, "rows": 112, "resource": {"pressure_level": 1, "swap_used_gb": 9.990234375, "process_peak_rss_gb": 21.011775488, "active_metal_gb": 20.921236986, "peak_metal_gb": 20.921236986}, "frozen_constants": {"before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb", "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb", "unchanged": true}}

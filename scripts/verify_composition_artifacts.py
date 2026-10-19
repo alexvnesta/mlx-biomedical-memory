@@ -153,9 +153,20 @@ def verify(root=Path('artifacts')):
                 assert item==json.loads((root/('composition-'+key)/'generated-selection.json').read_text())['selected']
                 if item is None:
                     assert not (root/('composition-'+key+'-test')).exists()
+                    assert not (root/('composition-'+key+'-oracle')).exists()
                     continue
                 assert item['atomic_correct']>=63 and item['step']>0
                 assert sha(root/('composition-'+key)/'selected.safetensors')==item['checkpoint_sha256']
+    joint=root/'composition-joint-v1'
+    if (joint/'eligibility.json').exists():
+        selections={k:v for name in ['composition-v1','composition-joint-v1'] for k,v in json.loads((root/name/'development-gate.json').read_text())['selection'].items()}
+        eligibility=json.loads((joint/'eligibility.json').read_text())
+        assert eligibility==dict(eligible=[k for k,v in selections.items() if v is not None],failed=[k for k,v in selections.items() if v is None])
+        if (joint/'summary.json').exists():
+            done_joint=json.loads((joint/'summary.json').read_text())
+            assert done_joint['completed'] and done_joint['eligible']==eligibility['eligible']
+            for key in eligibility['eligible']:
+                for suffix in ['test','oracle']:assert json.loads((root/('composition-'+key+'-'+suffix)/'summary.json').read_text())['completed']
     oracle=root/'composition-oracle-features-v1';oracle_count=0
     if oracle.exists():
         cfg_o=json.loads((oracle/'config.json').read_text());summary_o=json.loads((oracle/'summary.json').read_text())
@@ -205,6 +216,16 @@ def verify(root=Path('artifacts')):
                     assert sum(all(r['correct'] for r in part if r['world_id']==w) for w in worlds)==value['worlds_all_correct']
             oracle_count+=len(rows)
     report=root/'composition-summary.json'
+    events=root/'composition-resource-events.json'
+    if events.exists():
+        for event in json.loads(events.read_text()):
+            run=root/event['run'];cfg_e=json.loads((run/'config.json').read_text());done_e=json.loads((run/'summary.json').read_text())
+            assert event['event']=='resource_guard_exit' and event['state']['pressure_level']>=2
+            assert event['saved_predictions']<=done_e['rows'] and done_e['completed']
+            recovery=event['recovery']
+            assert recovery['checkpoint_sha256']==cfg_e['checkpoint_sha256'] and recovery['source_sha256']==cfg_e['source_sha256']
+            assert all(recovery[k]==done_e[k] for k in ['rows','resource','frozen_constants'])
+            assert recovery['resource']['pressure_level']==1 and recovery['frozen_constants']['before']==recovery['frozen_constants']['after']
     if report.exists():
         summary=json.loads(report.read_text())
         payload=json.loads(re.search(r'<script id="data" type="application/json">(.*?)</script>',(root/'composition.html').read_text(),re.S)[1])
