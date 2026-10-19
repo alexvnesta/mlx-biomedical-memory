@@ -6,6 +6,7 @@ from pathlib import Path
 import runpy
 from verify_decisive_artifacts import verify as verify_decisive
 from verify_readout_artifacts import verify as verify_readout
+from verify_composition_artifacts import verify as verify_composition
 
 
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -130,6 +131,7 @@ def main():
         relational_sources=fit.exists(),checkpoint_hashes=True)))
     verify_decisive()
     verify_readout()
+    verify_composition()
 
 
 if __name__=='__main__':main()

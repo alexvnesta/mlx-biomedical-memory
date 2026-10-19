@@ -9,7 +9,7 @@ def main():
     public=Path('artifacts')
     for run in sorted(Path('runs').glob('composition-*')):
         if not run.is_dir():continue
-        is_root=run.name=='composition-v1';is_features=run.name=='composition-features-v1'
+        is_root=run.name in ['composition-v1','composition-joint-v1']
         if not is_root and not (run/'summary.json').exists():continue
         target=public/run.name;target.mkdir(exist_ok=True)
         for source in run.rglob('*'):
@@ -23,9 +23,12 @@ def main():
         log=Path(str(run)+'.log')
         if log.exists() and not is_root:shutil.copyfile(log,target/'execution.log')
         if is_root:
-            shutil.copyfile('scripts/run_composition_experiment.py',target/'controller.py')
-            shutil.copyfile('docs/COMPOSITION-PROTOCOL.md',target/'protocol.md')
-            if (run/'development-gate.json').exists():shutil.copyfile('runs/composition-development.log',target/'development.log')
+            joint=run.name=='composition-joint-v1'
+            shutil.copyfile('scripts/run_joint_composition_experiment.py' if joint else 'scripts/run_composition_experiment.py',target/'controller.py')
+            shutil.copyfile('docs/COMPOSITION-JOINT-AMENDMENT.md' if joint else 'docs/COMPOSITION-PROTOCOL.md',target/'protocol.md')
+            if joint:shutil.copyfile('scripts/run_composition_experiment.py',target/'control-controller.py')
+            log=Path('runs/composition-joint-development.log' if joint else 'runs/composition-development.log')
+            if (run/'development-gate.json').exists() and log.exists():shutil.copyfile(log,target/'development.log')
     for name in ['composition.html','composition-summary.json','composition-comparison.png']:
         path=Path('runs')/name
         if path.exists():shutil.copyfile(path,public/name)
