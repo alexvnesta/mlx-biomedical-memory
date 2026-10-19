@@ -50,6 +50,8 @@ contain other alias combinations. Evaluation is normal free generation.
 
 A development-only intervention kept memory fixed and varied the preceding subject over all 16 aliases. Teacher-forced object value tokens were exact in 497/512 contexts before repair and 512/512 after. All 15 earlier failures occurred when the preceding subject equaled the true object. These scores exclude the closing JSON delimiter and are diagnostic, not free-generation test accuracy.
 
+The pair split puts all 16 self-relations in development and none in training or the normal test. Thus preceding subject = object was also a relation pattern absent from true training banks. With the correct preceding subject, self-relation object tokens improved from 12/19 to 19/19; non-self cases were already 13/13. This supports a decoder-history shortcut on a deliberately shifted pattern, rather than a single generic explanation for all original failures. These equality results are development diagnostics, not additional held-out accuracy.
+
 The first scalar-loss implementation error and the short BF16 warm-start pilot
 are retained as failed attempts. No fresh test outputs were used to select the
 final checkpoint. All development outcomes, not just successful checkpoints,

@@ -833,5 +833,34 @@
         "peak_metal_gb": 21.715171762
       }
     }
-  ]
+  ],
+  "pair_structure_audit": {
+    "self_pair_partition": {
+      "train": 0,
+      "dev": 16,
+      "test": 0
+    },
+    "true_prefix": {
+      "before": {
+        "self": {
+          "correct": 12,
+          "total": 19
+        },
+        "nonself": {
+          "correct": 13,
+          "total": 13
+        }
+      },
+      "after": {
+        "self": {
+          "correct": 19,
+          "total": 19
+        },
+        "nonself": {
+          "correct": 13,
+          "total": 13
+        }
+      }
+    }
+  }
 }

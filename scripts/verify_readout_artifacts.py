@@ -171,6 +171,17 @@ def verify(root=Path('artifacts')):
         embedded=json.loads(payload)
         assert embedded['config']==report['config'] and embedded['summary']==report['summary']
         assert embedded['rows']==[json.loads(x) for x in (evaluation/'predictions.jsonl').read_text().splitlines()]
+        if report.get('pair_structure_audit'):
+            split={name:sum(pair_split(i,i)==name for i in range(16)) for name in ['train','dev','test']}
+            context=root/('readout-context-audit-'+run.name.rsplit('-',1)[-1])
+            context_rows=[json.loads(x) for x in (context/'predictions.jsonl').read_text().splitlines()]
+            counts={}
+            for phase in ['before','after']:
+                counts[phase]={}
+                for key,is_self in [('self',True),('nonself',False)]:
+                    subset=[r for r in context_rows if r['phase']==phase and r['true_previous_subject'] and (r['record']['subject']==r['record']['object'])==is_self]
+                    counts[phase][key]=dict(correct=sum(r['object_token_exact'] for r in subset),total=len(subset))
+            assert report['pair_structure_audit']==embedded['pair_structure_audit']==dict(self_pair_partition=split,true_prefix=counts)
     print(json.dumps(dict(readout_diagnostic_replayed=diagnosis.exists(),readout_repair_outcomes=evaluated,frozen_test_registrations=registrations)))
 
 
