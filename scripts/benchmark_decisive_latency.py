@@ -24,7 +24,7 @@ def main():
     assert len(cases)==12
     config=dict(source_sha256=snapshot_source(__file__,out/'source'),seed=1201,fixed_tokens=32,repeats=2,
         dataset_sha256=hashlib.sha256(Path('data/processed/decisive-v1/dataset.json').read_bytes()).hexdigest(),
-        setup='One shared frozen model; adapter hot swaps excluded; priming costs separate.',
+        setup='One shared frozen model; adapter hot swaps excluded; prefix serialization, tokenization and KV priming are setup costs; warm requests tokenize only the unprimed suffix.',
         scope='EOS suppressed fixed-length performance; no time-to-correct-answer claim.')
     save(out/'config.json',config);guard=ResourceGuard();model,tokenizer=load_reader('text');mx.eval(model.parameters())
     backbone=model.backbone;sampler=make_sampler(temp=0);priming=[];rows=[];checksums={}
@@ -48,21 +48,32 @@ def main():
     # Alternate the outer method order across repetitions; use exactly one model allocation.
     for repeat in range(2):
         for mode in (['text','memory'] if repeat==0 else ['memory','text']):
-            swap(mode);caches={}
+            swap(mode);caches={};prepared={}
             for case in cases:
-                encoded=encode_prompt(tokenizer,case,mode);cut=encoded['prefix_cut'];cache=model.make_cache()
-                start=time.perf_counter();f=mx.array(fields(case['records']));model.begin(f,encoded['placements'])
+                start=time.perf_counter();encoded=encode_prompt(tokenizer,case,mode);cut=encoded['prefix_cut'];cache=model.make_cache()
+                offsets=tokenizer._tokenizer(encoded['prompt'],add_special_tokens=False,return_offsets_mapping=True)['offset_mapping']
+                suffix=encoded['prompt'][offsets[cut][0]:]
+                assert tokenizer.encode(suffix,add_special_tokens=False)==encoded['ids'][cut:]
+                f=mx.array(fields(case['records'])) if mode=='memory' else None
+                prepared[case['id']]=(encoded,suffix,f);model.begin(f,encoded['placements'])
                 value=model(mx.array([encoded['ids'][:cut]]),cache=cache);mx.eval(value)
                 priming.append(dict(mode=mode,repeat=repeat,case_id=case['id'],tokens=cut,seconds=time.perf_counter()-start))
                 caches[case['id']]=cache;del value;mx.clear_cache()
             schedule=[(case,cached) for case in cases for cached in [False,True]]
             random.Random(1201+repeat).shuffle(schedule)
             for case,cached in schedule:
-                start=time.perf_counter();encoded=encode_prompt(tokenizer,case,mode);cut=encoded['prefix_cut'] if cached else 0
-                cache=copy.deepcopy(caches[case['id']]) if cached else None
-                model.begin(mx.array(fields(case['records'])),encoded['placements'],offset=cut)
+                start=time.perf_counter()
+                if cached:
+                    encoded,suffix,f=prepared[case['id']];cut=encoded['prefix_cut']
+                    remaining=tokenizer.encode(suffix,add_special_tokens=False)
+                    assert remaining==encoded['ids'][cut:]
+                    cache=copy.deepcopy(caches[case['id']])
+                else:
+                    encoded=encode_prompt(tokenizer,case,mode);cut=0;remaining=encoded['ids'];cache=None
+                    f=mx.array(fields(case['records'])) if mode=='memory' else None
+                model.begin(f,encoded['placements'],offset=cut)
                 first=None;pieces=[];response=None
-                for response in stream_generate(model,tokenizer,encoded['ids'][cut:],prompt_cache=cache,sampler=sampler,
+                for response in stream_generate(model,tokenizer,remaining,prompt_cache=cache,sampler=sampler,
                         max_tokens=32,logits_processors=[suppress_eos]):
                     if first is None:first=time.perf_counter()
                     pieces.append(response.text)
@@ -73,7 +84,7 @@ def main():
                     decode_seconds=end-first,generation=''.join(pieces))
                 rows.append(row);append(out/'predictions.jsonl',row);mx.clear_cache()
                 if len(rows)%16==0:print('Measured',len(rows),guard.check(),flush=True)
-            del caches;mx.clear_cache()
+            del caches,prepared;mx.clear_cache()
     save(out/'summary.json',dict(completed=True,rows=len(rows),priming=priming,checkpoint_sha256=checksums,resource=guard.check()))
 
 
