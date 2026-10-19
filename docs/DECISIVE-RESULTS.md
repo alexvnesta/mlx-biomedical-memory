@@ -1,5 +1,7 @@
 # Learned memory versus trained text on unseen relationships
 
+**Historical failed training recipe.** The subsequent [readout repair](READOUT-REPAIR-RESULTS.md) achieved 256/256 fresh complete records. The results below retain the original failed-access experiment unchanged. See the [new retention-gated protocol](COMPOSITION-PROTOCOL.md) for the reasoning follow-up.
+
 The training recipe did not establish reliable memory access at the registered budget. This is a failed prerequisite for the proposed reasoning advantage. The held-out results below compare the actual trained reader with the strongest text reader; they do not establish that reliable memory is intrinsically unable to support reasoning.
 
 Two training seeds, a pinned LongCat model, identical sample sequences and supervised path traces. Text has 5,914,624 trainable parameters; memory has 5,719,809 including its codec. Both receive every atomic fact. Longer paths in the main table retain the training bank size and record-ID vocabulary.

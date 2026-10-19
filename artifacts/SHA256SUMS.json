@@ -1544,7 +1544,7 @@
   "artifacts/decisive-v1/dataset.json": "54aaeb3f4a83d6ae3e3114f09b4ac56f20747f53da4384d02a2f25cdc95f3f91",
   "artifacts/decisive-v1/depth-only.json": "ed6a9aca5af25068681e3738f8f86263af1afa27d1cadb91865afb8911ee31aa",
   "artifacts/decisive-v1/training-audit.json": "9c3d800e5d99de0b7fb5c5e3eb45bb3ccce09038ec1e7d210e5b167b7d6670a5",
-  "artifacts/decisive.html": "7b8ac36cd5070ec34f6730a44c1ea611aa724e6524d345cc27214457c47e5257",
+  "artifacts/decisive.html": "66f7cbab5c941cb1419b9eea9953fb254fe2ef8d6699dadb750456e803f2b2a7",
   "artifacts/longcat-gradient-probe/failed-before-router-fix.log": "3b8ad38da1782c123d5b069db9c09e078cf6e1b9c9d2c0d4f7f009f6a89c04d8",
   "artifacts/longcat-gradient-probe/passed-after-router-fix.log": "eec296d85dfe462553b882ae573ec864ff01afd175455a9a0bf3b8e392b4e1b3",
   "artifacts/longcat-gradient-probe/scope.json": "a15792ada8d2838dd26ddba9eae091eda20c1b07ec715303a3bfd7e7050a653e",
