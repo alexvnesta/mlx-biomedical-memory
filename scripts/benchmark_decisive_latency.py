@@ -39,7 +39,7 @@ def main():
                     value=getattr(attention,name)
                     if hasattr(value,'linear'):setattr(attention,name,value.linear)
         model=Reader(backbone,mode)
-        checkpoint=Path(f'runs/decisive-{mode}-1201/selected.safetensors')
+        checkpoint=Path(f'runs/decisive-{mode}-1201')/('trained-selected.safetensors' if mode=='memory' else 'selected.safetensors')
         checksums[mode]=hashlib.sha256(checkpoint.read_bytes()).hexdigest()
         model.load_weights(str(checkpoint),strict=False);mx.eval(model.parameters());mx.clear_cache()
 

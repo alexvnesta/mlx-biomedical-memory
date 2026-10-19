@@ -137,3 +137,16 @@ in public artifacts.
 The result concerns a bounded learned memory interface for formal relationships.
 It does not establish rare-disease discovery, calibrated clinical confidence,
 automatic evidence intake or million-edit scalability.
+
+## Pre-test clarifications
+
+The [depth-only control](DECISIVE-DEPTH-CONTROL.md) isolates longer paths from
+the larger bank and two new record IDs in the original structural stratum.
+The [candidate-retention clarification](DECISIVE-SELECTION-AMENDMENT.md) keeps
+every previously generated development candidate eligible after extending
+training. Both clarifications were public before opening held-out outcomes.
+Neither changes training facts, training targets or the common update cap.
+
+The [trained-only diagnostic](DECISIVE-TRAINED-DIAGNOSTIC.md) separately tests
+the strongest scored memory candidate with a positive training step, so an
+initial selection fallback cannot be misrepresented as successful training.

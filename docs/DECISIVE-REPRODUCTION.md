@@ -14,6 +14,7 @@ The registered data are `artifacts/decisive-v1/dataset.json`. To regenerate them
 .venv/bin/python scripts/prepare_depth_control.py
 .venv/bin/python scripts/run_decisive_experiment.py
 .venv/bin/python scripts/run_decisive_depth_tests.py
+.venv/bin/python scripts/run_decisive_trained_diagnostic.py
 .venv/bin/python scripts/benchmark_decisive_latency.py
 .venv/bin/python scripts/run_decisive_graph_reference.py
 .venv/bin/python scripts/report_decisive.py
@@ -41,8 +42,8 @@ python3 -m http.server 8769 --directory artifacts
 Open `http://127.0.0.1:8769/decisive.html`. All filtering is local.
 The complete dataset, generated development selection scores, held-out prompts,
 outputs, expected answers, executable-path scores, selected checkpoints and
-aggregate resource receipts are public. Candidate and optimizer checkpoints
-are derived intermediates; the checkpoint inventory records their hashes and
+aggregate resource receipts are public. BF16 selection candidates are also public. FP32 optimizer/resume checkpoints
+are local intermediates; the checkpoint inventory records their hashes and
 sizes, and archived source regenerates them. Frozen prefix feature tensors are
 large local intermediates with public input/source/feature hashes.
 
