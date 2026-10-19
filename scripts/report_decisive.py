@@ -56,7 +56,18 @@ def main():
                 phases=[read(p) for p in sorted(training.glob('summary-*.json'))],
                 training_seconds_total=sum(read(p)['seconds'] for p in training.glob('summary-*.json')))
         summary['readers'][mode]=aggregate([r for r in allrows if r['mode']==mode])
-    assert len(allrows)==2304
+    summary['trained_selections']={}
+    for seed in [1201,1202]:
+        training=Path(f'runs/decisive-memory-{seed}')
+        fitted=[]
+        for suffix in ['-trained-test','-trained-depth-test']:
+            directory=Path(str(training)+suffix);assert read(directory/'summary.json')['completed']
+            fitted+=lines(directory/'predictions.jsonl')
+        for row in fitted:row['mode']='memory_trained'
+        allrows+=fitted;summary['by_seed'][f'memory_trained-{seed}']=aggregate(fitted)
+        summary['trained_selections'][str(seed)]=read(training/'trained-only-selection.json')
+    summary['readers']['memory_trained']=aggregate([r for r in allrows if r['mode']=='memory_trained'])
+    assert len(allrows)==3520
     # A paired world bootstrap conditional on these two fixed fitted seeds.
     # Seeds are averaged within a world; they are not counted as independent worlds.
     differences=[]
@@ -64,8 +75,8 @@ def main():
         ids=sorted({r['case_id'] for r in allrows if r['stage']==stage and r['kind']=='reason'})
         delta=[]
         for identifier in ids:
-            scores={mode:mean([int(r['proof_valid']) for r in allrows if r['stage']==stage and r['case_id']==identifier and r['mode']==mode]) for mode in ['text','memory']}
-            delta.append(scores['memory']-scores['text'])
+            scores={mode:mean([int(r['proof_valid']) for r in allrows if r['stage']==stage and r['case_id']==identifier and r['mode']==mode]) for mode in ['text','memory_trained']}
+            delta.append(scores['memory_trained']-scores['text'])
         rng=random.Random(1210);samples=sorted(mean(rng.choices(delta,k=len(delta))) for _ in range(5000))
         differences.append(dict(stage=stage,memory_minus_text=mean(delta),world_bootstrap_95=[samples[125],samples[4874]],
             scope='World resampling conditional on two fixed fitted readers; no population-level training-seed inference.'))
@@ -85,7 +96,7 @@ def main():
     Path('runs/decisive-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     table=['| Reader | Fresh-world labels | Fresh-world valid proofs | Depth 3–4 labels | Depth 3–4 valid proofs | Atomic exact |',
         '|---|---:|---:|---:|---:|---:|']
-    for mode in ['text','memory']:
+    for mode in ['text','memory_trained','memory']:
         s=summary['readers'][mode];atomic=dict(n=96*2,correct=s['iid_atomic']['correct']+s['structure_atomic']['correct'])
         table.append('| '+mode+' | '+' | '.join([pct(s['iid_reason'],'correct'),pct(s['iid_reason']),pct(s['depth_only_reason'],'correct'),pct(s['depth_only_reason']),pct(atomic,'correct')])+' |')
     table.append('| Exact graph traversal | 100% | 100% | 100% | 100% | 100% |')

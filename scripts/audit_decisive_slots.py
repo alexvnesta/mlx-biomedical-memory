@@ -23,6 +23,7 @@ def main():
     output=Path('runs/decisive-slot-audit.json');output.write_text(json.dumps(dict(completed=True,slots=slots,cases=len(cases),all_exact=True,
         dataset_sha256=hashlib.sha256(dataset.read_bytes()).hexdigest(),depth_sha256=hashlib.sha256(depth.read_bytes()).hexdigest(),
         source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()),indent=2)+'\n')
+    Path('runs/decisive-slot-audit-source.py').write_bytes(Path(__file__).read_bytes())
     print(output.read_text())
 
 

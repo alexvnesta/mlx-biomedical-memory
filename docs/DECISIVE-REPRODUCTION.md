@@ -13,10 +13,10 @@ The registered data are `artifacts/decisive-v1/dataset.json`. To regenerate them
 .venv/bin/python scripts/cache_decisive_features.py
 .venv/bin/python scripts/prepare_depth_control.py
 .venv/bin/python scripts/run_decisive_experiment.py
+.venv/bin/python scripts/run_decisive_graph_reference.py
 .venv/bin/python scripts/run_decisive_depth_tests.py
 .venv/bin/python scripts/run_decisive_trained_diagnostic.py
 .venv/bin/python scripts/benchmark_decisive_latency.py
-.venv/bin/python scripts/run_decisive_graph_reference.py
 .venv/bin/python scripts/report_decisive.py
 ```
 

@@ -23,12 +23,12 @@ def main():
             shutil.copyfile(source,destination);copied.append(str(destination))
         checkpoints={p.name:dict(sha256=digest(p),bytes=p.stat().st_size,
             published=(target/p.name).exists(),
-            role='Exact evaluated BF16 reader' if p.name=='selected.safetensors' else 'BF16 training candidate' if p.name.startswith(('initial','best','final')) else 'Local FP32 optimizer/resume state; regenerate with archived training source')
+            role='Exact evaluated BF16 reader' if p.name in {'selected.safetensors','trained-selected.safetensors'} else 'BF16 training candidate' if p.name.startswith(('initial','best','final')) else 'Local FP32 optimizer/resume state; regenerate with archived training source')
             for p in run.glob('*.safetensors')}
         if checkpoints:(target/'checkpoint-inventory.json').write_text(json.dumps(checkpoints,indent=2)+'\n')
         log=Path(str(run)+'.log')
         if log.exists():shutil.copyfile(log,target/'execution.log')
-    for name in ['decisive-development-gate.json','decisive-development-gate-before-retention.json','decisive-slot-audit.json','decisive-summary.json']:
+    for name in ['decisive-development-gate.json','decisive-development-gate-before-retention.json','decisive-slot-audit.json','decisive-slot-audit-source.py','decisive-summary.json']:
         source=Path('runs')/name
         if source.exists():shutil.copyfile(source,public/name)
     for name in ['decisive.html','decisive-study.log','decisive-candidate-retention.log']:
