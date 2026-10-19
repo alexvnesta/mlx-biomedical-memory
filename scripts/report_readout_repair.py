@@ -9,7 +9,7 @@ from pathlib import Path
 def interval(k,n):
     z=1.959963984540054;p=k/n;d=1+z*z/n
     c=(p+z*z/(2*n))/d;r=z*math.sqrt(p*(1-p)/n+z*z/(4*n*n))/d
-    return f'{100*(c-r):.1f}–{100*(c+r):.1f}%'
+    return f'{100*max(0,c-r):.1f}–{100*min(1,c+r):.1f}%'
 
 
 def main():
@@ -43,6 +43,14 @@ def main():
         table.append(f'<tr><td>{html.escape(name)}</td><td>{k}/{n}</td><td>{100*k/n:.1f}%</td><td>{interval(k,n)}</td><td>{html.escape(note)}</td></tr>')
         mdrows.append(f'| {name} | {k}/{n} ({100*k/n:.1f}%) | {interval(k,n)} |')
     fieldrows=''.join(f'<tr><td>{k}</td><td>{v}/{normal["total"]}</td></tr>' for k,v in normal['field_correct'].items())
+    edited=[v for k,v in summary['conditions'].items() if k.startswith('change_')]
+    overview=[('Fresh relationships',normal,'Pairs excluded from every training bank'),
+        ('Hidden-field edits',dict(correct=sum(v['correct'] for v in edited),total=sum(v['total'] for v in edited)),'Six paired edits per bank; same prompts'),
+        ('Record bindings',summary['conditions']['binding'],'Same prompts, rebound values'),
+        ('Row order',summary['conditions']['order'],'Same records in a different order'),
+        ('Memory masked',summary['conditions']['masked'],'Original values should become unavailable'),
+        ('Wrong bank',summary['conditions']['wrong_bank'],'Original values should fail; follow replacement')]
+    overviewrows=''.join(f'<tr><td>{name}</td><td>{v["correct"]}/{v["total"]}</td><td>{100*v["correct"]/v["total"]:.1f}%</td><td>{note}</td></tr>' for name,v,note in overview)
     validations=[]
     for name in ['readout-curriculum-v2','readout-curriculum-v4',training.name]:
         path=Path('runs')/name/'validation.jsonl'
@@ -104,6 +112,8 @@ or evidence of better reasoning than text, RAG, or graph traversal. The earlier
 0/192 readout result used a different prompt/training protocol and remains
 historical evidence of that recipe's failure, not a matched effect estimate.
 Reasoning must be compared on fresh cases after freezing a working interface.
+New entity names outside the finite categorical vocabulary require an encoder
+extension. Reading a stored source label does not assess that source's quality.
 
 Peak Metal allocation during this evaluation was {summary['resource']['peak_metal_gb']:.2f} GB;
 aggregate host pressure level was {summary['resource']['pressure_level']} at completion.
@@ -135,7 +145,7 @@ features are recomputed; there is no test-label feature cache.
 <h1>Teach memory access before judging reasoning</h1><p>__LEAD__</p>
 <section><div class="flow"><div class="box">Seven hidden fields<br>fresh atomic record</div><b>→</b><div class="box">Original learned codec<br>one vector per record</div><b>→</b><div class="box">Adapted LongCat reader<br>no text conversion helper</div><b>→</b><div class="box">Generated record JSON<br>independent exact grading</div></div></section>
 <h2 id="results">Frozen readout results</h2><p>Every base test bank uses ten records. Subject–object pairs are absent from every training bank. The six field edits preserve exactly the same visible prompt. The record ID is visible; all six values are hidden.</p>
-<section class="scroll"><table><thead><tr><th>Condition</th><th>Exact records</th><th>Accuracy</th><th>95% interval</th><th>What it checks</th></tr></thead><tbody>__TABLE__</tbody></table></section>
+<section class="scroll"><table><thead><tr><th>Check</th><th>Exact records</th><th>Accuracy</th><th>Interpretation</th></tr></thead><tbody>__OVERVIEW__</tbody></table><p><small>Fresh-bank 95% Wilson interval: __NORMAL_CI__. Edited values share 64 parent banks; their aggregate is a count, not an independent-sample confidence estimate.</small></p><details><summary>Per-field controls and confidence intervals</summary><table><thead><tr><th>Condition</th><th>Exact records</th><th>Accuracy</th><th>95% interval</th><th>What it checks</th></tr></thead><tbody>__TABLE__</tbody></table></details></section>
 <p>Wrong-bank outputs match the actually injected replacement record in <b>__INJECTED__/64</b> cases. A low original-target score for that ablation is expected if the reader follows memory.</p>
 <div class="grid"><section><h3>Normal readout by field</h3><table><thead><tr><th>Field</th><th>Correct</th></tr></thead><tbody>__FIELDS__</tbody></table></section><section><h3>What this establishes</h3><p>Atomic readout under these conditions. The original audit found exact cached/direct and incremental-prefix parity, exact checkpoint loading, and identical FP32/BF16 answers.</p><p>Field-only supervision prevents a field's target prefix from revealing the other hidden fields. Complete-record accuracy controls curriculum advancement.</p><p><b>Reasoning, biomedical utility, and superiority over text/RAG/KG remain unproven.</b></p></section></div>
 <h2>Inspect the generated evidence</h2><section><label>Condition <select id="condition"></select></label><label>Case <input type="number" id="index" value="1" min="1" style="width:80px"></label><button id="next">Next case</button><p id="case-name"></p><div class="grid"><div><h3>Expected record</h3><pre id="expected"></pre></div><div><h3>Raw model output</h3><pre id="generation"></pre></div></div><details><summary>Prompt and injected bank</summary><pre id="prompt"></pre><pre id="bank"></pre></details></section>
@@ -146,8 +156,9 @@ const data=JSON.parse(document.querySelector('#data').textContent),c=document.qu
 for(const name of [...new Set(data.rows.map(r=>r.condition))]){const o=document.createElement('option');o.value=name;o.textContent=name.replaceAll('_',' ');c.append(o)}
 function render(){const rows=data.rows.filter(r=>r.condition===c.value);index.max=rows.length;index.value=Math.max(1,Math.min(+index.value,rows.length));const row=rows[+index.value-1];document.querySelector('#case-name').textContent=row.case_id+' · '+(row.correct?'exact original target':'differs from original target')+' · '+index.value+'/'+rows.length;for(const [key,value] of Object.entries({expected:JSON.stringify(row.expected,null,2),generation:row.generation,prompt:row.prompt,bank:JSON.stringify(row.injected_records,null,2)}))document.querySelector('#'+key).textContent=value}
 c.onchange=()=>{index.value=1;render()};index.oninput=render;document.querySelector('#next').onclick=()=>{index.value=+index.value%(+index.max)+1;render()};render();</script></body></html>'''
-    for key,value in {'STATUS':status,'LEAD':lead,'TABLE':''.join(table),'INJECTED':str(summary['conditions']['wrong_bank']['injected_correct']),
-        'FIELDS':fieldrows,'EVOLUTION':evolution,'DATA':payload}.items():page=page.replace('__'+key+'__',value if key in ['TABLE','FIELDS','EVOLUTION','DATA'] else html.escape(value))
+    for key,value in {'STATUS':status,'LEAD':lead,'TABLE':''.join(table),'OVERVIEW':overviewrows,'NORMAL_CI':interval(normal['correct'],normal['total']),'INJECTED':str(summary['conditions']['wrong_bank']['injected_correct']),
+        'FIELDS':fieldrows,'EVOLUTION':evolution,'DATA':payload}.items():page=page.replace('__'+key+'__',value if key in ['TABLE','OVERVIEW','FIELDS','EVOLUTION','DATA'] else html.escape(value))
+    if not passed:page=page.replace('color:#1d674f','color:#9c4a0c')
     Path('runs/readout.html').write_text(page)
     Path('runs/readout-summary.json').write_text(json.dumps(dict(config=config,summary=summary,selection=selection,validation=validations),indent=2)+'\n')
 

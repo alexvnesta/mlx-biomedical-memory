@@ -24,6 +24,16 @@ from cache_decisive_features import digest_frozen
 def module_at(path):
     spec=importlib.util.spec_from_file_location('frozen_readout_recipe',path)
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    # The archived trainer may import data helpers. Bind the archived helpers,
+    # rather than silently using a later checkout's generator or truth format.
+    for filename,names in [('readout_data.py',['make_case','pair_split','noisy_prefix']),
+                           ('decisive_data.py',['atomic_solution'])]:
+        frozen=path.parent/filename
+        if not frozen.exists():continue
+        data_spec=importlib.util.spec_from_file_location('frozen_'+filename.removesuffix('.py'),frozen)
+        data=importlib.util.module_from_spec(data_spec);data_spec.loader.exec_module(data)
+        for name in names:
+            if hasattr(data,name):setattr(module,name,getattr(data,name))
     return module
 
 
@@ -61,7 +71,11 @@ def main():
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--checkpoint-name',default='selected.safetensors')
     p.add_argument('--resume',action='store_true')
+    p.add_argument('--prepare-only',action='store_true')
     args=p.parse_args();out=args.output
+    selection=json.loads((args.training/'selection.json').read_text())
+    if selection['count']!=10 or selection['correct']/selection['total']<.96875:
+        raise RuntimeError('Fresh test remains closed: first pass the ten-record generated development gate.')
     recipe=module_at(args.training/'source/train_readout_curriculum.py')
     checkpoint=args.training/args.checkpoint_name
     checkpoint_sha=hashlib.sha256(checkpoint.read_bytes()).hexdigest()
@@ -70,8 +84,13 @@ def main():
         out.mkdir(exist_ok=False)
         # Freeze both test banks and checkpoint before any model outputs are opened.
         save(out/'cases.json',[dict(condition=c,case=case,parent_id=parent) for c,case,parent in cases])
+        dependencies={name:hashlib.sha256((Path('scripts')/name).read_bytes()).hexdigest()
+            for name in ['evaluate_decisive_reader.py','cache_decisive_features.py']}
+        (out/'dependencies').mkdir()
+        for name in dependencies:(out/'dependencies'/name).write_bytes((Path('scripts')/name).read_bytes())
         save(out/'config.json',dict(checkpoint_sha256=checkpoint_sha,training=str(args.training),
             checkpoint_name=args.checkpoint_name,source_sha256=snapshot_source(__file__,out/'source'),
+            dependencies=dependencies,selection_sha256=hashlib.sha256((args.training/'selection.json').read_bytes()).hexdigest(),
             case_sha256=hashlib.sha256((out/'cases.json').read_bytes()).hexdigest(),
             test_seed_start=52000000,base_test_count=256,intervention_base_count=64,
             gate='normal exact >= 95%; causal controls reported separately',reasoning_evaluated=False))
@@ -80,6 +99,15 @@ def main():
         config=json.loads((out/'config.json').read_text());assert checkpoint_sha==config['checkpoint_sha256']
         assert config['case_sha256']==hashlib.sha256((out/'cases.json').read_bytes()).hexdigest()
         assert json.loads((out/'cases.json').read_text())==[dict(condition=c,case=case,parent_id=parent) for c,case,parent in cases]
+        assert config['selection_sha256']==hashlib.sha256((args.training/'selection.json').read_bytes()).hexdigest()
+        source=hashlib.sha256()
+        for path in [Path(__file__),*sorted(Path('engram_poc').glob('*.py'))]:source.update(path.name.encode());source.update(path.read_bytes())
+        assert source.hexdigest()==config['source_sha256'],'Resume source changed'
+        for name,digest in config['dependencies'].items():
+            assert hashlib.sha256((Path('scripts')/name).read_bytes()).hexdigest()==digest
+            assert hashlib.sha256((out/'dependencies'/name).read_bytes()).hexdigest()==digest
+    if args.prepare_only:
+        print('Frozen checkpoint and test banks; no model loaded or generations opened',flush=True);return
     guard=ResourceGuard();model,tok=load_reader('memory');model.load_weights(str(checkpoint),strict=False)
     mx.eval(model.parameters());loaded=dict(tree_flatten(model.trainable_parameters()));weights=mx.load(str(checkpoint))
     assert set(loaded)==set(weights) and all(mx.array_equal(loaded[k],v).item() for k,v in weights.items())

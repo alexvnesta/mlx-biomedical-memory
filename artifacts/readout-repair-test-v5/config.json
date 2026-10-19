@@ -1,0 +1,17 @@
+{
+  "checkpoint_sha256": "3d913d797cf7209590c88336a014ca44d6a6197fe422f2ecc92d01ef9f3bb3c1",
+  "training": "runs/readout-curriculum-v5",
+  "checkpoint_name": "selected.safetensors",
+  "source_sha256": "77b41cb20d006f41430ca792e6947a43a875c7762b4ab23e47b20e6bbf10d490",
+  "dependencies": {
+    "evaluate_decisive_reader.py": "f5e164af597417b9974441d3b701decf55476ab5732a6b805379c8fed90b6638",
+    "cache_decisive_features.py": "52404f05449c9d8e699dfdd976274ab1ca9b9a63b397d66fd92e13fe9370e2de"
+  },
+  "selection_sha256": "0e9d5843798973d6639e622561e5dfbeea333434dcc03702ef286ca0692b234e",
+  "case_sha256": "d3bbff202dc138059014b5aa235007f861cb0acb5f68c8913624c0e49b07ac1c",
+  "test_seed_start": 52000000,
+  "base_test_count": 256,
+  "intervention_base_count": 64,
+  "gate": "normal exact >= 95%; causal controls reported separately",
+  "reasoning_evaluated": false
+}

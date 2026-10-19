@@ -4,6 +4,26 @@ This follow-up addresses a failed prerequisite in the earlier decisive study.
 It does not reuse the earlier reasoning test as a development set or claim a new
 reasoning result. A functioning readout interface must be frozen first.
 
+```mermaid
+flowchart TD
+    B[Fresh independent bank facts] --> C[Query-independent seven-field codec]
+    C --> V[One latent vector per record]
+    P[Prompt: record IDs and slots, no hidden values] --> F[Frozen first ten LongCat blocks]
+    F --> R[Final four blocks with trained LoRA]
+    V --> R
+    R --> J[Generated record JSON]
+    B --> G[Exact evaluator]
+    J --> G
+    G --> D{Fresh development gate}
+    D -->|below 31 of 32| T[Readout training only; retain failures]
+    T --> C
+    D -->|pass one, four, ten record stages| S[Freeze checkpoint and fresh test banks]
+    S --> A[Changes, bindings, order, masking, wrong-bank controls]
+    A --> Q{Reliable causal readout?}
+    Q -->|no| T
+    Q -->|yes| N[Separately register fresh reasoning comparison]
+```
+
 ## Implementation audit
 
 Audit the final seed-1202 reader on four old training and four old development

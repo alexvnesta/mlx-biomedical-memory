@@ -41,24 +41,34 @@ def verify(root=Path('artifacts')):
             assert r['parsed']==decoded(r['generation'])
             assert r['correct']==(r['parsed']==r['expected'])
             if r['precision']=='bf16':assert r['parsed']==bycase[r['case_id']]['parsed']
-    evaluated=0
+    evaluated=0;registrations=0
     for run in sorted(root.glob('readout-repair-test-*')):
-        cfg=json.loads((run/'config.json').read_text());summary=json.loads((run/'summary.json').read_text())
+        cfg=json.loads((run/'config.json').read_text())
         assert cfg['source_sha256']==source_hash(run,'evaluate_readout_repair.py')
         assert cfg['case_sha256']==sha(run/'cases.json')
+        for name,digest in cfg['dependencies'].items():assert sha(run/'dependencies'/name)==digest
         training=root/Path(cfg['training']).name
         assert cfg['checkpoint_sha256']==sha(training/cfg['checkpoint_name'])
         selection=json.loads((training/'selection.json').read_text())
+        assert sha(training/'selection.json')==cfg['selection_sha256']
+        assert selection['count']==10 and selection['correct']/selection['total']>=.96875
         train_cfg=json.loads((training/'config.json').read_text())
         assert train_cfg['source_sha256']==source_hash(training,'train_readout_curriculum.py')
         assert (run/'recipe.py').read_bytes()==(training/'source/train_readout_curriculum.py').read_bytes()
         dev=[json.loads(x) for x in (training/'development.jsonl').read_text().splitlines()]
         for row in dev:
+            assert row['parsed']==decoded(row['generation'])
             assert row['expected']==atomic_solution(row['case'])
             assert row['correct']==(row['parsed']==row['expected'])
             assert all(pair_split(r['subject'],r['object'])=='dev' for r in row['case']['records'])
         chosen=[r for r in dev if r['step']==selection['step']]
         assert sum(r['correct'] for r in chosen)==selection['correct'] and len(chosen)==selection['total']
+        if not (run/'summary.json').exists():
+            assert not (run/'predictions.jsonl').exists(),'An open test must not be published as completed'
+            cases=json.loads((run/'cases.json').read_text())
+            assert len(cases)==896 and len({r['case']['id'] for r in cases})==896
+            registrations+=1;continue
+        summary=json.loads((run/'summary.json').read_text())
         for line in (training/'training.jsonl').read_text().splitlines():
             row=json.loads(line)
             for draw in range(2):
@@ -100,7 +110,19 @@ def verify(root=Path('artifacts')):
         assert totals==summary['conditions']
         assert summary['frozen_constants']['before']==summary['frozen_constants']['after']=='dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb'
         evaluated+=len(rows)
-    print(json.dumps(dict(readout_diagnostic_replayed=diagnosis.exists(),readout_repair_outcomes=evaluated)))
+    reported=root/'readout-summary.json'
+    if reported.exists():
+        report=json.loads(reported.read_text());run=root/Path(report['config']['training']).name
+        assert report['selection']==json.loads((run/'selection.json').read_text())
+        evaluations=[p for p in root.glob('readout-repair-test-*/config.json') if json.loads(p.read_text())==report['config']]
+        assert len(evaluations)==1
+        evaluation=evaluations[0].parent
+        assert report['summary']==json.loads((evaluation/'summary.json').read_text())
+        page=(root/'readout.html').read_text();payload=re.search(r'<script id="data" type="application/json">(.*?)</script>',page,re.S).group(1)
+        embedded=json.loads(payload)
+        assert embedded['config']==report['config'] and embedded['summary']==report['summary']
+        assert embedded['rows']==[json.loads(x) for x in (evaluation/'predictions.jsonl').read_text().splitlines()]
+    print(json.dumps(dict(readout_diagnostic_replayed=diagnosis.exists(),readout_repair_outcomes=evaluated,frozen_test_registrations=registrations)))
 
 
 if __name__=='__main__':verify()

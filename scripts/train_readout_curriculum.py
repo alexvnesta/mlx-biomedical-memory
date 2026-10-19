@@ -82,6 +82,10 @@ def main():
     if args.checkpoint:
         model.load_weights([(k,v.astype(mx.float32)) for k,v in mx.load(str(args.checkpoint)).items()],strict=False)
     assert all(v.dtype==mx.float32 for _,v in tree_flatten(model.trainable_parameters()))
+    trainable=dict(tree_flatten(model.trainable_parameters()))
+    assert all(k.startswith('memory.') or '.lora_a' in k or '.lora_b' in k for k in trainable)
+    save(out/'capacity.json',dict(trainable_parameters=sum(v.size for v in trainable.values()),
+        shapes={k:list(v.shape) for k,v in trainable.items()}))
     print('Loaded '+json.dumps(guard.check()),flush=True)
     opts=[optim.AdamW(.001,weight_decay=0),optim.AdamW(.00005,weight_decay=0)]
     optimizer=optim.MultiOptimizer(opts,[lambda k,v:k.startswith('memory.')])
