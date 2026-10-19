@@ -50,3 +50,17 @@ def test_right_label_requires_both_signed_paths_and_complete_unknown_evidence():
     case=world('unknown',144,4,'UNKNOWN',12);expected=solution(case)
     expected['evidence'].pop()
     assert grade(case,expected)['correct'] and not grade(case,expected)['proof_valid']
+
+
+def test_frozen_depth_only_control_preserves_queries_without_new_record_ids():
+    import json
+    from pathlib import Path
+    root=Path(__file__).resolve().parents[1]/'artifacts/decisive-v1'
+    original=json.loads((root/'dataset.json').read_text())
+    deeper=json.loads((root/'depth-only.json').read_text())['cases']
+    other=[c for c in original['splits']['structure'] if c['kind']=='reason']
+    assert len(deeper)==len(other)==96
+    for case,larger in zip(deeper,other):
+        assert case['query']==larger['query'] and case['depth']==larger['depth']
+        assert len(case['records'])==10 and {r['id'] for r in case['records']}=={'F'+str(i) for i in range(10)}
+        assert solution(case)['answer']==solution(larger)['answer']

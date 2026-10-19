@@ -101,7 +101,25 @@ def verify():
             expected=semantics['atomic_solution'](case) if row['kind']=='atomic' else semantics['solution'](case)
             assert row['expected']==expected
         evaluated+=len(predictions)
+    supplement=json.loads((root/'decisive-v1/depth-only.json').read_text())
+    depth_by_id={c['id']:c for c in supplement['cases']};depth_evaluated=0
+    for directory in sorted(root.glob('decisive-*-depth-test')):
+        cfg=json.loads((directory/'config.json').read_text());done=json.loads((directory/'summary.json').read_text())
+        assert done['completed'] and done['rows']==96 and not cfg['development']
+        assert done['frozen_constants']['unchanged']
+        assert source_hash(directory,'evaluate_decisive_reader.py')==cfg['source_sha256']
+        assert cfg['supplemental_sha256']==digest(root/'decisive-v1/depth-only.json')
+        assert digest(root/directory.name.removesuffix('-depth-test')/'selected.safetensors')==cfg['checkpoint_sha256']
+        semantics=runpy.run_path(str(directory/'source/decisive_data.py'))
+        depth_rows=[json.loads(x) for x in (directory/'predictions.jsonl').read_text().splitlines()]
+        assert len(depth_rows)==len({r['case_id'] for r in depth_rows})==96
+        for row in depth_rows:
+            case=depth_by_id[row['case_id']]
+            assert row['stage']=='depth_only' and row['records']==case['records'] and row['query']==case['query']
+            assert all(row[k]==v for k,v in semantics['grade'](case,row['parsed']).items())
+        depth_evaluated+=len(depth_rows)
     if evaluated:
+        assert depth_evaluated==384
         assert evaluated==1920,'Both registered seeds and both readers must be published together'
         latency=root/'decisive-latency'
         latency_config=json.loads((latency/'config.json').read_text());latency_done=json.loads((latency/'summary.json').read_text())
@@ -118,10 +136,16 @@ def verify():
         assert digest(graph/'decisive_data.py')==reference['semantics_sha256']
         graph_rows=[json.loads(x) for x in (graph/'predictions.jsonl').read_text().splitlines()]
         assert len(graph_rows)==352 and all(r['proof_valid'] for r in graph_rows)
+        depth_graph=json.loads((graph/'depth-summary.json').read_text())
+        assert depth_graph['completed'] and depth_graph['rows']==96
+        assert depth_graph['dataset_sha256']==digest(root/'decisive-v1/depth-only.json')
+        assert depth_graph['source_sha256']==digest(graph/'depth-source.py')
         semantics=runpy.run_path(str(graph/'decisive_data.py'))
+        for row in [json.loads(x) for x in (graph/'depth-predictions.jsonl').read_text().splitlines()]:
+            assert semantics['grade'](depth_by_id[row['case_id']],row['parsed'])['proof_valid']
         for row in graph_rows:assert semantics['grade'](base[row['case_id']],row['parsed'])['proof_valid']
 
-    print(json.dumps(dict(decisive_feature_sources=True,causal_parity=True,matched_targets=True,no_test_prefix_states=True,regraded_heldout=evaluated)))
+    print(json.dumps(dict(decisive_feature_sources=True,causal_parity=True,matched_targets=True,no_test_prefix_states=True,regraded_heldout=evaluated,depth_only_outcomes=depth_evaluated)))
 
 
 if __name__=='__main__':verify()

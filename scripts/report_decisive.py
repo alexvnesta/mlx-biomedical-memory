@@ -14,7 +14,7 @@ def mean(values):return statistics.mean(values) if values else None
 
 def aggregate(rows):
     result={}
-    for stage in ['iid','structure','intervention','binding','order','masked']:
+    for stage in ['iid','structure','depth_only','intervention','binding','order','masked']:
         selected=[r for r in rows if r['stage']==stage]
         for kind in ['reason','atomic']:
             subset=[r for r in selected if r['kind']==kind]
@@ -28,8 +28,8 @@ def aggregate(rows):
             both_proofs=sum(a['proof_valid'] and b['proof_valid'] for a,b in pairs),
             changed_output=sum((a['parsed'] or {}).get('answer')!=(b['parsed'] or {}).get('answer') for a,b in pairs))
     atoms=[r for r in rows if r['stage'] in ['iid','structure'] and r['kind']=='atomic']
-    result['label_breakdown']={stage:{label:dict(n=len(group),proof=sum(r['proof_valid'] for r in group),correct=sum(r['correct'] for r in group)) for label in ['UP','DOWN','BOTH','UNKNOWN'] if (group:=[r for r in rows if r['stage']==stage and r['kind']=='reason' and r['expected']['answer']==label])} for stage in ['iid','structure']}
-    result['depth_breakdown']={str(depth):dict(n=len(group),proof=sum(r['proof_valid'] for r in group),correct=sum(r['correct'] for r in group)) for depth in [1,2,3,4] if (group:=[r for r in rows if r['stage'] in ['iid','structure'] and r['kind']=='reason' and r['depth']==depth])}
+    result['label_breakdown']={stage:{label:dict(n=len(group),proof=sum(r['proof_valid'] for r in group),correct=sum(r['correct'] for r in group)) for label in ['UP','DOWN','BOTH','UNKNOWN'] if (group:=[r for r in rows if r['stage']==stage and r['kind']=='reason' and r['expected']['answer']==label])} for stage in ['iid','structure','depth_only']}
+    result['depth_breakdown']={str(depth):dict(n=len(group),proof=sum(r['proof_valid'] for r in group),correct=sum(r['correct'] for r in group)) for depth in [1,2,3,4] if (group:=[r for r in rows if r['stage'] in ['iid','depth_only'] and r['kind']=='reason' and r['depth']==depth])}
     result['atomic_fields']={k:dict(n=len(atoms),correct=sum((r['parsed'] or {}).get(k)==r['expected'][k] for r in atoms))
         for k in ['record','subject','object','sign','species','variant','source']}
     masked=[r for r in rows if r['stage']=='masked']
@@ -47,15 +47,20 @@ def main():
         for seed in [1201,1202]:
             training=Path(f'runs/decisive-{mode}-{seed}');evaluation=Path(str(training)+'-test')
             assert read(evaluation/'summary.json')['completed']
-            rows=lines(evaluation/'predictions.jsonl');allrows+=rows
+            rows=lines(evaluation/'predictions.jsonl')
+            supplemental=Path(str(training)+'-depth-test')
+            assert read(supplemental/'summary.json')['completed']
+            rows+=lines(supplemental/'predictions.jsonl');allrows+=rows
             key=f'{mode}-{seed}';summary['by_seed'][key]=aggregate(rows)
-            summary['training'][key]=dict(summary=read(training/'summary.json'),selection=read(training/'generated-selection.json'))
+            summary['training'][key]=dict(summary=read(training/'summary.json'),selection=read(training/'generated-selection.json'),
+                phases=[read(p) for p in sorted(training.glob('summary-*.json'))],
+                training_seconds_total=sum(read(p)['seconds'] for p in training.glob('summary-*.json')))
         summary['readers'][mode]=aggregate([r for r in allrows if r['mode']==mode])
-    assert len(allrows)==1920
+    assert len(allrows)==2304
     # A paired world bootstrap conditional on these two fixed fitted seeds.
     # Seeds are averaged within a world; they are not counted as independent worlds.
     differences=[]
-    for stage in ['iid','structure']:
+    for stage in ['iid','structure','depth_only']:
         ids=sorted({r['case_id'] for r in allrows if r['stage']==stage and r['kind']=='reason'})
         delta=[]
         for identifier in ids:
@@ -82,7 +87,7 @@ def main():
         '|---|---:|---:|---:|---:|---:|']
     for mode in ['text','memory']:
         s=summary['readers'][mode];atomic=dict(n=96*2,correct=s['iid_atomic']['correct']+s['structure_atomic']['correct'])
-        table.append('| '+mode+' | '+' | '.join([pct(s['iid_reason'],'correct'),pct(s['iid_reason']),pct(s['structure_reason'],'correct'),pct(s['structure_reason']),pct(atomic,'correct')])+' |')
+        table.append('| '+mode+' | '+' | '.join([pct(s['iid_reason'],'correct'),pct(s['iid_reason']),pct(s['depth_only_reason'],'correct'),pct(s['depth_only_reason']),pct(atomic,'correct')])+' |')
     table.append('| Exact graph traversal | 100% | 100% | 100% | 100% | 100% |')
     print('\n'.join(table))
     Path('runs/decisive-table.md').write_text('\n'.join(table)+'\n')
