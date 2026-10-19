@@ -67,7 +67,7 @@ def main():
         assert len(audit)==48
         audit_summary={condition:dict(n=len(group),correct=sum(r['correct'] for r in group)) for condition in ['normal','masked','changed'] if (group:=[r for r in audit if r['condition']==condition])}
         originals={r['parent_id']:r for r in audit if r['condition']=='normal'}
-        audit_summary['same_response_after_edit']=sum(r['parsed']==originals[r['parent_id']]['parsed'] for r in audit if r['condition']=='changed')
+        audit_summary['same_response_after_edit']=sum(r['parsed'] is not None and r['parsed']==originals[r['parent_id']]['parsed'] for r in audit if r['condition']=='changed')
         summary['training_audit'][str(seed)]=audit_summary;fitted+=audit
         for row in fitted:row['mode']='memory_trained'
         allrows+=fitted;summary['by_seed'][f'memory_trained-{seed}']=aggregate(fitted)
@@ -105,7 +105,7 @@ def main():
     for mode in ['text','memory_trained','memory']:
         s=summary['readers'][mode];atomic=dict(n=96*2,correct=s['iid_atomic']['correct']+s['structure_atomic']['correct'])
         table.append('| '+{'text':'Text + LoRA','memory_trained':'Trained memory','memory':'Registered memory selection'}[mode]+' | '+' | '.join([pct(s['iid_reason'],'correct'),pct(s['iid_reason']),pct(s['depth_only_reason'],'correct'),pct(s['depth_only_reason']),pct(atomic,'correct')])+' |')
-    table.append('| Exact graph traversal | 100% | 100% | 100% | 100% | 100% |')
+    table.append('| Exact graph solver (oracle) | 100% | 100% | 100% | 100% | 100% |')
     print('\n'.join(table))
     Path('runs/decisive-table.md').write_text('\n'.join(table)+'\n')
     render(summary,allrows)
@@ -119,7 +119,7 @@ def markdown_report(summary,table):
         'The training recipe did not establish reliable memory access at the registered budget. This is a failed prerequisite for the proposed reasoning advantage. The held-out results below compare the actual trained reader with the strongest text reader; they do not establish that reliable memory is intrinsically unable to support reasoning.')
     content=['# Learned memory versus trained text on unseen relationships','',conclusion,'',
         'Two training seeds, a pinned LongCat model, identical sample sequences and supervised path traces. Text has 5,914,624 trainable parameters; memory has 5,719,809 including its codec. Both receive every atomic fact. Longer paths in the main table retain the training bank size and record-ID vocabulary.','',*table,'',
-        'Each neural stratum has 96 worlds evaluated by two fixed fitted readers. Atomic exactness covers 96 readout questions per seed across the 10- and 12-record banks. UNKNOWN uses the correct absence label and citations to every record; UP, DOWN and BOTH require executable paths. The interactive report separates these classes. Exact graph traversal has one deterministic run per world and no LLM verbalization.','',
+        'Each neural stratum has 96 worlds evaluated by two fixed fitted readers. Atomic exactness covers 96 readout questions per seed across the 10- and 12-record banks. UNKNOWN uses the correct absence label and citations to every record; UP, DOWN and BOTH require executable paths. The interactive report separates these classes. The exact graph solver defines the synthetic gold labels. Its 100% is a rule-execution oracle, not an independent production-KG or ARAX evaluation; it has no LLM verbalization.','',
         'The registered memory selection may retain an untrained checkpoint. It is shown separately and must not be described as successfully trained. The trained-memory diagnostic requires a positive training step and uses only already-scored development results for selection.','',
         '## Changes to evidence and bindings','',
         '| Reader | Edit pairs: both proofs valid | New record IDs: both proofs valid | Reordered rows: both proofs valid |',
@@ -137,7 +137,7 @@ def markdown_report(summary,table):
             groups=[row['label_breakdown'][stage][label] for label in ['UP','DOWN','BOTH']]
             values.append(pct(dict(n=sum(x['n'] for x in groups),proof=sum(x['proof'] for x in groups))))
         path_table.append('| '+mode+' | '+' | '.join(values)+' |')
-    path_table+=['| Exact graph traversal | 72/72 (100%) | 72/72 (100%) |','']
+    path_table+=['| Exact graph solver (oracle) | 72/72 (100%) | 72/72 (100%) |','']
     content[split:split]=path_table
     for mode in ['text','memory_trained','memory']:
         row=summary['readers'][mode]
