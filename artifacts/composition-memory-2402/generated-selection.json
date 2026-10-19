@@ -1,0 +1,30 @@
+{
+  "budget": 2048,
+  "candidates": [
+    {
+      "checkpoint_name": "best-2048.safetensors",
+      "checkpoint_sha256": "93fdf502c4bfffc58d3bbce3826a1c1fa7d025f25892c15492b6fd1f6001d15a",
+      "evaluation": "runs/composition-memory-2402-dev-2048-best-2048",
+      "step": 384,
+      "reasoning_proofs": 0,
+      "reasoning_correct": 12,
+      "reasoning_total": 48,
+      "atomic_correct": 62,
+      "atomic_total": 64,
+      "weighted_dev_nll": 0.1075348681316817
+    },
+    {
+      "checkpoint_name": "final-2048.safetensors",
+      "checkpoint_sha256": "eb2a104f6d35c7be4c4f74961fccd145357c8bbeb3a3eebe5c352e05ba7a5491",
+      "evaluation": "runs/composition-memory-2402-dev-2048-final-2048",
+      "step": 2048,
+      "reasoning_proofs": 1,
+      "reasoning_correct": 15,
+      "reasoning_total": 48,
+      "atomic_correct": 62,
+      "atomic_total": 64,
+      "weighted_dev_nll": 0.1600748070996474
+    }
+  ],
+  "selected": null
+}

@@ -1,0 +1,21 @@
+{
+  "controller_sha256": "32b465bfa6ef05d678c67720d4f37264d9dce27032602eef839c6f2192e632bd",
+  "control_gate_sha256": "dbb13669c4e7ed51133032ad15a2ad48a6108e64d3b5e32f5b91dc8d7383126a",
+  "controller_dependency_sha256": "acaecc227adfc4442ad4bae3f05460634a8feebcf2f73fa7e2a5da6b27d535bf",
+  "dataset_sha256": "7159149ddc33fb0d46c56feca175608081d3029bd839c6355776599f8431ec83",
+  "feature_manifest_sha256": "c6daa3e5088ab84cb35111a5d316b0326aad04594a64757367965f5f9c997bb1",
+  "amendment_sha256": "9742b0e129873a45dc4ee9a75fd7ecb897ca87bc92a660d41fc4bd2820fc18da",
+  "warm_start_sha256": "3d913d797cf7209590c88336a014ca44d6a6197fe422f2ecc92d01ef9f3bb3c1",
+  "budget": 2048,
+  "seeds": [
+    2401,
+    2402
+  ],
+  "oracle_protocol_sha256": "f7ad46b3084320b2ce062647aa42bd5bc6c9203d49a3118b91e523f2c94568ab",
+  "retention_amendment_sha256": "f14cd1b46d28b779a928b725c2e090a2c8228ad0e776ccaa4ead8a24a145e8bd",
+  "oracle_sources": {
+    "oracle_composition_data.py": "375deaf070bdda9f2b40ad1b10c8e2ae0f6f536b3ad92888e43b9ebe1542a4f6",
+    "cache_oracle_composition.py": "ac46dba7aca47768da19d762ffca1a769ab04ad8b89c3b87c07946ae6928cf66",
+    "evaluate_oracle_composition.py": "b03e72ffddf34064ea551cbe8002c9cabd6527e3a4293c503cab8eee101c8e4b"
+  }
+}

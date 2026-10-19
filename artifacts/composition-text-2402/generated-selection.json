@@ -1,0 +1,41 @@
+{
+  "budget": 2048,
+  "candidates": [
+    {
+      "checkpoint_name": "best-2048.safetensors",
+      "checkpoint_sha256": "5016fa19f90c941a38e7fe532bb6d90c6f76bc3226f517d3c3a7f17d939ba709",
+      "evaluation": "runs/composition-text-2402-dev-2048-best-2048",
+      "step": 1088,
+      "reasoning_proofs": 22,
+      "reasoning_correct": 25,
+      "reasoning_total": 48,
+      "atomic_correct": 64,
+      "atomic_total": 64,
+      "weighted_dev_nll": 0.023952438332248756
+    },
+    {
+      "checkpoint_name": "final-2048.safetensors",
+      "checkpoint_sha256": "36a58817470fa662d0d62538a62ffb3a6561e16c559904a435780413ed4e9a13",
+      "evaluation": "runs/composition-text-2402-dev-2048-final-2048",
+      "step": 2048,
+      "reasoning_proofs": 22,
+      "reasoning_correct": 26,
+      "reasoning_total": 48,
+      "atomic_correct": 64,
+      "atomic_total": 64,
+      "weighted_dev_nll": 0.042102233505722744
+    }
+  ],
+  "selected": {
+    "checkpoint_name": "best-2048.safetensors",
+    "checkpoint_sha256": "5016fa19f90c941a38e7fe532bb6d90c6f76bc3226f517d3c3a7f17d939ba709",
+    "evaluation": "runs/composition-text-2402-dev-2048-best-2048",
+    "step": 1088,
+    "reasoning_proofs": 22,
+    "reasoning_correct": 25,
+    "reasoning_total": 48,
+    "atomic_correct": 64,
+    "atomic_total": 64,
+    "weighted_dev_nll": 0.023952438332248756
+  }
+}

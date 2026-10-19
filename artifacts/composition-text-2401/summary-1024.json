@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "updates": 1024,
+  "seconds": 573.7596967919962,
+  "trainable_parameters": 5914624,
+  "best_dev_nll": 0.030552539728281505,
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 9.0576171875,
+    "process_peak_rss_gb": 6.774177792,
+    "active_metal_gb": 6.223967264,
+    "peak_metal_gb": 7.789207216
+  },
+  "frozen_codec": {
+    "before": null,
+    "after": null,
+    "unchanged": true
+  },
+  "frozen_constants": {
+    "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+    "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+    "unchanged": true
+  }
+}

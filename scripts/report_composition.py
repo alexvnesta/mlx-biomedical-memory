@@ -108,7 +108,7 @@ def main():
     oracle_md=[];oracle_web=[]
     for method,(label,_) in METHODS.items():
         values=[oracle[method][str(d)]['normal'] for d in [1,2,3,4]]
-        cells=[f"{v['worlds_all_correct']}/{v['worlds']}" for v in values]
+        cells=[f"{v['worlds_all_correct']}/{v['worlds']}" if v['worlds'] else 'not evaluated' for v in values]
         oracle_md.append('| '+label+' | '+' | '.join(cells)+' |')
         oracle_web.append('<tr><td>'+label+'</td>'+''.join('<td>'+c+'</td>' for c in cells)+'</tr>')
     note=('Every selected reader retained at least 95% complete atomic readout on final banks. '

@@ -1,0 +1,37 @@
+{
+  "final.safetensors": {
+    "sha256": "eb2a104f6d35c7be4c4f74961fccd145357c8bbeb3a3eebe5c352e05ba7a5491",
+    "bytes": 11448555,
+    "published": true
+  },
+  "final-2048.safetensors": {
+    "sha256": "eb2a104f6d35c7be4c4f74961fccd145357c8bbeb3a3eebe5c352e05ba7a5491",
+    "bytes": 11448555,
+    "published": true
+  },
+  "last.safetensors": {
+    "sha256": "89986ba972a380fa8d93ce59cbfce8cc2544200394ab50e97db592e17b1f32fd",
+    "bytes": 17363161,
+    "published": false
+  },
+  "initial.safetensors": {
+    "sha256": "3d913d797cf7209590c88336a014ca44d6a6197fe422f2ecc92d01ef9f3bb3c1",
+    "bytes": 11448555,
+    "published": true
+  },
+  "best.safetensors": {
+    "sha256": "93fdf502c4bfffc58d3bbce3826a1c1fa7d025f25892c15492b6fd1f6001d15a",
+    "bytes": 11448555,
+    "published": true
+  },
+  "optimizer.safetensors": {
+    "sha256": "d2bd23c9b51b7834d93b43a2a5b9a157e25883bb3dba097eb1e33779ff1db20d",
+    "bytes": 23676103,
+    "published": false
+  },
+  "best-2048.safetensors": {
+    "sha256": "93fdf502c4bfffc58d3bbce3826a1c1fa7d025f25892c15492b6fd1f6001d15a",
+    "bytes": 11448555,
+    "published": true
+  }
+}
