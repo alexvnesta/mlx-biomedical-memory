@@ -20,7 +20,7 @@ def main():
     if not Path('runs/decisive-graph-reference/summary.json').exists():steps.append('run_decisive_graph_reference.py')
     steps+=['run_decisive_depth_tests.py','run_decisive_trained_diagnostic.py']
     if not Path('runs/decisive-latency/summary.json').exists():steps.append('benchmark_decisive_latency.py')
-    steps+=['report_decisive.py','publish_decisive_artifacts.py']
+    steps+=['audit_decisive_parameters.py','report_decisive.py','publish_decisive_artifacts.py']
     for script in steps:
         print('RUN',script,flush=True)
         subprocess.run([sys.executable,'-u','scripts/'+script],check=True)

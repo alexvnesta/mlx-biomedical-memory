@@ -28,7 +28,7 @@ def main():
         if checkpoints:(target/'checkpoint-inventory.json').write_text(json.dumps(checkpoints,indent=2)+'\n')
         log=Path(str(run)+'.log')
         if log.exists():shutil.copyfile(log,target/'execution.log')
-    for name in ['decisive-development-gate.json','decisive-development-gate-before-retention.json','decisive-slot-audit.json','decisive-slot-audit-source.py','decisive-summary.json']:
+    for name in ['decisive-development-gate.json','decisive-development-gate-before-retention.json','decisive-slot-audit.json','decisive-slot-audit-source.py','decisive-parameter-audit.json','decisive-parameter-audit-source.py','decisive-summary.json']:
         source=Path('runs')/name
         if source.exists():shutil.copyfile(source,public/name)
     for name in ['decisive.html','decisive-study.log','decisive-candidate-retention.log','decisive-finish.log']:
