@@ -16,7 +16,7 @@ def main():
         target=public/run.name;target.mkdir(exist_ok=True)
         for source in run.rglob('*'):
             if not source.is_file() or 'features' in source.parts:continue
-            if source.suffix=='.safetensors' and not (source.name in {'selected.safetensors','trained-selected.safetensors','initial.safetensors'} or source.name.startswith(('best-','final-'))):continue
+            if source.suffix=='.safetensors' and source.name in {'last.safetensors','optimizer.safetensors'}:continue
             if source.name=='state.json':continue # Optimizer-resume bookkeeping is not a published checkpoint.
             if source.suffix not in {'.json','.jsonl','.py','.md','.safetensors'}:continue
             destination=target/source.relative_to(run);destination.parent.mkdir(parents=True,exist_ok=True)
