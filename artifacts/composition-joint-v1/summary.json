@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "budget": 2048,
+  "seeds": [
+    2401,
+    2402
+  ],
+  "eligible": [
+    "memory-2401",
+    "text-2401",
+    "text-2402"
+  ]
+}

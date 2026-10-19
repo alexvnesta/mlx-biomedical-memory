@@ -1,0 +1,16 @@
+{
+  "completed": true,
+  "rows": 960,
+  "unique_memory_prefixes": 32,
+  "frozen_constants": {
+    "before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+    "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb"
+  },
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 9.732421875,
+    "process_peak_rss_gb": 21.354119168,
+    "active_metal_gb": 20.909685352,
+    "peak_metal_gb": 21.488743174
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "completed": true,
+  "rows": 480,
+  "results": {
+    "normal": {
+      "1": {
+        "correct": 32,
+        "total": 32,
+        "worlds_all_correct": 8,
+        "worlds": 8
+      },
+      "2": {
+        "correct": 51,
+        "total": 64,
+        "worlds_all_correct": 2,
+        "worlds": 8
+      },
+      "3": {
+        "correct": 68,
+        "total": 128,
+        "worlds_all_correct": 0,
+        "worlds": 8
+      },
+      "4": {
+        "correct": 117,
+        "total": 256,
+        "worlds_all_correct": 0,
+        "worlds": 8
+      }
+    }
+  },
+  "frozen_constants": {
+    "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+    "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6"
+  },
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 9.732421875,
+    "process_peak_rss_gb": 6.644678656,
+    "active_metal_gb": 6.081623328,
+    "peak_metal_gb": 6.637992436
+  }
+}

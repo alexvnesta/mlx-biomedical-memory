@@ -1,5 +1,10 @@
 # What would make latent memory useful?
 
+The [readout repair](READOUT-REPAIR-RESULTS.md) now establishes atomic access.
+The [subsequent comparison](COMPOSITION-RESULTS.md) still finds weak multi-record
+use, including when correct record IDs are supplied. The practical advantages
+below remain hypotheses; readout success alone does not establish them.
+
 The motivating gap is reliable reuse of changing knowledge without retraining an
 entire language model. A useful system must retrieve the right qualified claim,
 apply it to a new situation, preserve its source and scope, and respond correctly

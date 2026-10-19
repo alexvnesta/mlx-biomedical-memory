@@ -35,6 +35,8 @@ def main():
                 shutil.copyfile('docs/COMPOSITION-RETENTION-AMENDMENT.md',target/'retention-amendment.md')
             log=Path('runs/composition-joint-development.log' if joint else 'runs/composition-development.log')
             if (run/'development-gate.json').exists() and log.exists():shutil.copyfile(log,target/'development.log')
+            final_log=Path('runs/composition-final.log')
+            if joint and (run/'summary.json').exists() and final_log.exists():shutil.copyfile(final_log,target/'final-execution.log')
     for name in ['composition.html','composition-summary.json','composition-comparison.png','composition-resource-events.json']:
         path=Path('runs')/name
         if path.exists():shutil.copyfile(path,public/name)

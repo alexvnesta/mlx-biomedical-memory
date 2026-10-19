@@ -1,0 +1,8 @@
+{
+  "source_sha256": "29c5f47a5066a474d2d9cf7ea2ebf2e44e7e22e166fe23bbdd93195e78e8479b",
+  "cases_sha256": "19285d431a2d344e4b9821c16d3a2ec8f6446d7ae3180e09dd4969a71fc0df9a",
+  "protocol_sha256": "f7ad46b3084320b2ce062647aa42bd5bc6c9203d49a3118b91e523f2c94568ab",
+  "producer_sha256": "375deaf070bdda9f2b40ad1b10c8e2ae0f6f536b3ad92888e43b9ebe1542a4f6",
+  "dependency_sha256": "52404f05449c9d8e699dfdd976274ab1ca9b9a63b397d66fd92e13fe9370e2de",
+  "semantics": "Input-only prefix with supplied path IDs; no output sign or answer token"
+}

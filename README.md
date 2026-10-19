@@ -19,14 +19,22 @@ atomic access within the tested vocabulary, not reasoning or biomedical utility.
 
 ![Verified readout comparison](artifacts/readout-comparison.png)
 
-The **[readout-gated composition experiment](docs/COMPOSITION-PROTOCOL.md)**
-gives text the larger adapter and identical reasoning supervision, and holds out
-query endpoint pairs and longer paths. It retains a frozen-codec control and
-adds a **[joint-adaptation arm](docs/COMPOSITION-JOINT-AMENDMENT.md)** with atomic
-rehearsal. Final reasoning tests stay closed until the fitted readers retain
-reliable readout.
+The **[comparison after readout repair](docs/COMPOSITION-RESULTS.md)** retains
+124/128 complete memory readouts (96.9%) but produces 1/144 valid positive path
+proofs, versus 38/144 for full text on the same optimization seed and worlds.
+In 30 worlds where both readers reconstruct every required record, proofs are
+0/30 versus 7/30. Correct path IDs enable perfect one-edge sign readout; combining
+multiple hidden signs remains unreliable. Both readers struggle with longer
+chains. Three other fits failed retention gates and remain untested for reasoning.
+
+The [registered protocol](docs/COMPOSITION-PROTOCOL.md) gives text the larger
+adapter and identical reasoning supervision, with held-out query endpoint pairs
+and longer paths. See the [reproduction commands](docs/COMPOSITION-REPRODUCTION.md)
+and the [joint-adaptation arm](docs/COMPOSITION-JOINT-AMENDMENT.md).
 The [interface diagrams](docs/MEMORY-INTERFACE.md) distinguish record lookup,
 path search and value composition, including the difference in processing depth.
+
+![Comparison after readout qualification](artifacts/composition-comparison.png)
 
 The earlier **[trained-memory versus text comparison](docs/DECISIVE-RESULTS.md)**
 uses a query-independent seven-field codec, LoRA readers, two training seeds and

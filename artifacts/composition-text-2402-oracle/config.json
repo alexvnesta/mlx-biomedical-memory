@@ -1,0 +1,10 @@
+{
+  "source_sha256": "512ff16952fac80ac1585b98aa10ca99da67684ddc0765a3617f163ada51d691",
+  "mode": "text",
+  "seed": 2402,
+  "training": "runs/composition-text-2402",
+  "checkpoint_sha256": "5016fa19f90c941a38e7fe532bb6d90c6f76bc3226f517d3c3a7f17d939ba709",
+  "manifest_sha256": "64542399c0c81649418375b4e4eff762a42ca0e69cb79a94d3c4269545838096",
+  "dependency_sha256": "52404f05449c9d8e699dfdd976274ab1ca9b9a63b397d66fd92e13fe9370e2de",
+  "semantics": "Next sign token, with oracle path input; no free-path credit"
+}

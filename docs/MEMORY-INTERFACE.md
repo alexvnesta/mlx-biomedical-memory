@@ -42,6 +42,10 @@ establishes access by an explicit address. A TRACE question instead names root
 and target nodes plus species and variant. It requires finding the relevant
 records, respecting direction and qualifiers, and combining their signs. Exact
 READ performance does not establish all those capabilities.
+The repair uses a focused READ prompt. Composition uses full graph-task
+instructions even for its READ probes, so its qualification gate also tests
+that context. A missed gate does not isolate weight forgetting from context
+transfer or the declared pair-distribution shift.
 
 ```mermaid
 flowchart TD

@@ -125,6 +125,24 @@ def main():
           'The path results therefore concern relationship queries in this particular interface.' if qualified else
           'At least one reader failed final atomic retention. Its path errors cannot be interpreted as reasoning errors alone.')
     note+=' Development retention failures, excluded from final tests: '+(', '.join(failures) if failures else 'none')+'.'
+    lead='Readout is learned. The qualified memory reader still lacks reliable multi-record reasoning; even supplying correct path IDs did not yield robust sign combinations in this late-slot prototype.'
+    findings=[]
+    if paired['frozen']['seeds']:
+        matched=paired['frozen']['strata'];mc=sum(v['frozen']['correct'] for v in matched.values());tc=sum(v['text']['correct'] for v in matched.values());n=sum(v['text']['total'] for v in matched.values())
+        findings.append(f'On identical positive cases and the common optimization seed, memory produced {mc}/{n} valid proofs and text {tc}/{n}. '
+            f"Both readers exactly reconstructed every required record in {support['frozen']['common']} probed worlds; their valid proofs there were {support['frozen']['memory_proofs']} and {support['frozen']['text_proofs']}. "
+            'Those READ probes did not provide their IDs to the main TRACE call. '
+            f"Memory failed {support['frozen']['common']-support['frozen']['memory_proofs']}/{support['frozen']['common']} proofs despite separately successful required-record READ probes.")
+        one=oracle['frozen']['1']['normal'];two=oracle['frozen']['2']['normal'];mask=oracle['frozen']['1']['masked']
+        findings.append(f"With a supplied one-edge path, memory retrieved {one['correct']}/{one['total']} signs correctly, versus {mask['correct']}/{mask['total']} when masked. "
+            f"With two edges, it produced {two['correct']}/{two['total']} correct sign tokens and {two['worlds_all_correct']}/{two['worlds']} worlds with every setting correct. "
+            +('Supplying the path did not yield complete success on all two-edge worlds. This rules out path discovery as the sole problem; it does not isolate joint record access, representation alignment or learning the sign operation as the remaining cause.' if two['worlds_all_correct']<two['worlds'] else 'All two-edge worlds passed in this supplied-path diagnostic. This remains distinct from discovering paths in the primary question.'))
+    long_passes=sum(oracle[m][str(d)]['normal']['worlds_all_correct'] for m in METHODS for d in [3,4])
+    findings.append(('Neither interface passed a complete three- or four-edge sign truth table. ' if not long_passes else f'There were {long_passes} complete three- or four-edge world/reader truth tables. ')+
+        'Those lengths were not reasoning-training depths. These descriptive counts concern this supplied-path diagnostic, rather than free path discovery or biological inference.')
+    findings.append('This prototype demonstrates an editable record-reading interface, with no demonstrated advantage in reasoning, quality-matched latency, scale or biomedical confidence over graph/text methods. '
+        'The exact graph already executes these formal rules. Preserve the graph and evidence store; the learned interface remains experimental. '
+        f'The result is bounded to this encoder, late injection, adapter capacities and training recipe, with {len(failures)} failed fits excluded under the declared gate.')
     for path in Path('runs').glob('composition-*/summary.json'):
         value=json.loads(path.read_text())
         if 'resource' in value:resources.append(value['resource'])
@@ -203,6 +221,10 @@ all raw per-token decisions are in the public artifacts. Input-only prefix state
 oracle path IDs but no output sign-target state. It does not replace the primary
 free-proof test, and its sign algebra is not biological causal validation.
 
+## Interpretation
+
+{chr(10).join(chr(10)+p+chr(10) for p in findings)}
+
 ## Scope and costs
 
 The atomic rehearsal pool uses the pair split from readout repair. All
@@ -213,6 +235,9 @@ not evidence that every available graph fact was unreadable, or that another
 retention curriculum could not work. It keeps that fitted reader unqualified
 under this declared rule. The separate readout report documents the equality
 diagnostic and the normal test's different pair distribution.
+READ also uses the full graph-task instructions here, whereas the repair used
+a focused READ prompt. These checks qualify the actual fitted interface used
+for TRACE; they do not isolate forgetting from prompt-context transfer.
 
 The repaired encoder adds readout-alignment training before this experiment.
 Text updates 5,914,624 parameters; frozen memory updates 2,957,312 reader
@@ -235,34 +260,37 @@ retained in `artifacts/readout-resource-incident.json`.
 {resource_note}
 
 See the [base protocol](COMPOSITION-PROTOCOL.md), [joint amendment](COMPOSITION-JOINT-AMENDMENT.md),
+the [reproduction commands](COMPOSITION-REPRODUCTION.md),
 and public raw outputs, checkpoint/source hashes, and frozen registrations in
 `artifacts/composition-*`. Final test targets were never prefix-cached for
 training. Facts, queries, generation strings and proof replay are public.
 '''
     Path('docs/COMPOSITION-RESULTS.md').write_text(md)
     summary=dict(metrics=metrics,per_seed=perseed,common_support=support,gates=gates,
-        oracle_paths=oracle,matched_seed_comparisons=paired,all_retention_qualified=qualified,development_failures=failures,peak_metal_gb=peak,resource_events=resource_events)
+        oracle_paths=oracle,matched_seed_comparisons=paired,all_retention_qualified=qualified,development_failures=failures,peak_metal_gb=peak,resource_events=resource_events,interpretation=findings)
     Path('runs/composition-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     payload=json.dumps(dict(rows=rows,summary=summary),ensure_ascii=False).replace('</','<\\/')
     page='''<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Composition after memory readout</title><style>
 body{font:16px/1.55 system-ui;background:#f3f5f7;color:#182638;margin:0}main{max-width:1240px;margin:auto;padding:32px 24px}h1{font-size:36px;line-height:1.2}h2{margin-top:36px}.tag{color:#1d674f;font-weight:700}section{background:white;border:1px solid #dce3eb;border-radius:12px;padding:20px;margin:20px 0;overflow:auto}table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:11px;border-bottom:1px solid #e3e8ee;text-align:left}th{background:#edf2f6}td:not(:first-child){white-space:nowrap}select,input,button{font:inherit;padding:7px;margin:5px}pre{white-space:pre-wrap;word-break:break-word;background:#f0f3f7;padding:14px;border-radius:8px;font-size:12px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}small{color:#516174}a{color:#1761a5}@media(max-width:750px){.grid{display:block}main{padding:22px 12px}h1{font-size:28px}}</style></head><body><main>
 <div class="tag">Readout before reasoning · LongCat + MLX · complete synthetic worlds</div><h1>Can accessible memory support new relationships?</h1><p>__NOTE__</p><p>The separate readout repair decoded <b>256/256</b> unseen records. This comparison holds out query endpoint pairs and longer paths, with identical reasoning supervision and a larger text adapter.</p>
+<p><b>__LEAD__</b></p>
 <h2 id="results">Valid paths on new queries</h2><section><table><thead><tr><th>Reader</th><th>Atomic exact</th><th>One hop</th><th>Two hops</th><th>Three hops</th><th>Four hops</th></tr></thead><tbody>__TABLE__</tbody></table><p><small>Positive paths only. UNKNOWN is excluded. Two optimization seeds share one repaired initialization. The graph solver defines gold. Readout eligibility is checked separately in every final fitted reader.</small></p></section>
 <p><b>Scope:</b> memory enters after block ten; text enters at the input. These are results for this late-slot implementation. Biomedical utility, broader Engram performance, and advantages over evidence services are unproven.</p>
 <h2>Full positive cases, matched training seeds</h2><section><table><thead><tr><th>Comparison</th><th>Common seeds</th><th>Stratum</th><th>Memory proofs</th><th>Text proofs</th></tr></thead><tbody>__PAIRED__</tbody></table><p><small>Every positive case in the primary stratum, using common eligible seeds. Cases are not selected by outcome or by support readability. Failed retention fits remain excluded.</small></p></section>
 <h2>Given the path, can it combine the stored signs?</h2><p>The oracle supplies record IDs, not the sign. Every path-sign assignment and an irrelevant-edge flip are tested. Cells show worlds with every setting correct, then exact sign-token counts. This is a next-sign-token diagnostic, not free path finding.</p><section><table><thead><tr><th>Reader</th><th>One edge</th><th>Two edges</th><th>Three edges</th><th>Four edges</th></tr></thead><tbody>__ORACLE__</tbody></table></section>
-<h2>Inspect the raw evidence</h2><section><label>Reader <select id="method"><option value="joint">Joint memory</option><option value="frozen">Frozen memory</option><option value="text">Full text</option></select></label><label>Seed <select id="seed"><option>2401</option><option>2402</option></select></label><label>Stage <select id="stage"><option value="iid">New queries, depth 1–2</option><option value="structure">New depth 3–4</option><option value="intervention">Changed facts</option><option value="binding">Rebound IDs</option><option value="order">Row order</option><option value="masked">Memory masked</option><option value="support_readout">Oracle support READ probes</option></select></label><label>Outcome <select id="outcome"><option value="all">All</option><option value="valid">Valid</option><option value="failed">Failed</option></select></label><button id="next">Next case</button><p id="case"></p><div class="grid"><div><h3>Expected</h3><pre id="expected"></pre></div><div><h3>Raw generation</h3><pre id="generation"></pre></div></div><details><summary>Prompt and complete fact bank</summary><p>Memory receives the record values through its codec; text receives them as text. The bank below is evaluator context, not extra support supplied to the memory reader.</p><pre id="prompt"></pre><pre id="bank"></pre></details></section>
-<h2>Required-fact access diagnostic</h2><section id="support"></section><p>The primary TRACE call never received the oracle path IDs used by these separate READ probes. This common subset is diagnostic and does not replace the full comparison.</p><p>Read the separate <a href="readout.html#results">readout repair table</a>. All raw outputs and reproduction receipts are in the public repository.</p>
+<h2>Inspect the raw evidence</h2><section><label>Reader <select id="method"><option value="joint">Joint memory</option><option value="frozen">Frozen memory</option><option value="text">Full text</option></select></label><label>Seed <select id="seed"><option>2401</option><option>2402</option></select></label><label>Stage <select id="stage"><option value="iid">New queries, depth 1–2</option><option value="structure">New depth 3–4</option><option value="intervention">Changed facts</option><option value="binding">Rebound IDs</option><option value="order">Row order</option><option value="masked">Memory masked</option><option value="support_readout">Oracle support READ probes</option></select></label><label>Outcome <select id="outcome"><option value="all">All</option><option value="valid">Valid</option><option value="failed">Failed</option></select></label><button id="next">Next case</button><p id="case"></p><div class="grid"><div><h3>Expected</h3><pre id="expected"></pre></div><div><h3>Raw generation</h3><pre id="generation"></pre></div></div><details><summary>Prompt and complete fact bank</summary><p id="channel-note">The bank below is evaluator context.</p><pre id="prompt"></pre><pre id="bank"></pre></details></section>
+<h2>What the comparison establishes</h2><section>__FINDINGS__</section>
+<h2>Required-fact access diagnostic</h2><section id="support"></section><p>The primary TRACE call never received the oracle path IDs used by these separate READ probes. This common subset is diagnostic and does not replace the full comparison.</p><p>Read the separate <a href="readout.html#results">readout repair table</a>. All raw outputs and reproduction receipts are in the <a href="https://github.com/alexvnesta/mlx-biomedical-memory">public repository</a>. See the <a href="https://github.com/alexvnesta/mlx-biomedical-memory/blob/codex/mlx-biomedical-memory/docs/COMPOSITION-REPRODUCTION.md">reproduction instructions</a> and <a href="https://github.com/alexvnesta/mlx-biomedical-memory/blob/codex/mlx-biomedical-memory/docs/MEMORY-INTERFACE.md">interface diagrams</a>.</p>
 </main><script id="data" type="application/json">__DATA__</script><script>
 const data=JSON.parse(document.querySelector('#data').textContent);let index=0;const controls=['method','seed','stage','outcome'].map(k=>document.getElementById(k));
 for(const option of controls[0].options)option.disabled=!data.summary.metrics[option.value].eligible_seeds.length;
 if(controls[0].selectedOptions[0].disabled)controls[0].value=[...controls[0].options].find(o=>!o.disabled).value;
 function sync(){const available=data.summary.metrics[controls[0].value].eligible_seeds;for(const option of controls[1].options)option.disabled=!available.includes(+option.value);if(!available.includes(+controls[1].value))controls[1].value=String(available[0]);const masked=[...controls[2].options].find(o=>o.value==='masked');masked.disabled=controls[0].value==='text';if(masked.disabled&&controls[2].value==='masked')controls[2].value='iid'}
-function render(){let [method,seed,stage,outcome]=controls.map(e=>e.value);let rows=data.rows.filter(r=>r.method===method&&r.seed===+seed&&r.stage===stage&&(outcome==='all'||r.proof_valid===(outcome==='valid')));index=rows.length?index%rows.length:0;const row=rows[index];document.querySelector('#case').textContent=row?row.case_id+' · '+row.kind+' · '+(row.proof_valid?'valid':'failed')+' · '+(index+1)+'/'+rows.length:'No cases in this condition';for(const [key,value] of Object.entries({expected:row?JSON.stringify(row.expected,null,2):'',generation:row?.generation||'',prompt:row?.prompt||'',bank:row?JSON.stringify(row.records,null,2):''}))document.getElementById(key).textContent=value}
+function render(){let [method,seed,stage,outcome]=controls.map(e=>e.value);let rows=data.rows.filter(r=>r.method===method&&r.seed===+seed&&r.stage===stage&&(outcome==='all'||r.proof_valid===(outcome==='valid')));index=rows.length?index%rows.length:0;const row=rows[index];document.querySelector('#case').textContent=row?row.case_id+' · '+row.kind+' · '+(row.kind==='atomic'?(row.correct?'exact record':'record mismatch'):(row.proof_valid?(row.expected.answer==='UNKNOWN'?'correct absence':'valid path'):(row.correct?'correct label, invalid proof':'failed')))+' · '+(index+1)+'/'+rows.length:'No cases in this condition';document.querySelector('#channel-note').textContent=row?.condition==='masked'?'Codec injection was disabled. The bank below was withheld evaluator data.':row?.mode==='text'?'The prompt contains these facts as text. The normalized bank below is evaluator context.':'Record values were supplied through the codec. The bank below is evaluator context, not extra text supplied to the memory reader.';for(const [key,value] of Object.entries({expected:row?JSON.stringify(row.expected,null,2):'',generation:row?.generation||'',prompt:row?.prompt||'',bank:row?JSON.stringify(row.records,null,2):''}))document.getElementById(key).textContent=value}
 for(const e of controls)e.onchange=()=>{index=0;sync();render()};document.querySelector('#next').onclick=()=>{index++;render()};sync();render();
-for(const [method,v] of Object.entries(data.summary.common_support)){const p=document.createElement('p');p.textContent=(method==='joint'?'Joint memory':'Frozen memory')+' vs text: '+v.common+' common support-readable cases; memory valid proofs '+v.memory_proofs+'/'+v.common+', text '+v.text_proofs+'/'+v.common+'.';document.querySelector('#support').append(p)}
+for(const [method,v] of Object.entries(data.summary.common_support)){const p=document.createElement('p');p.textContent=(method==='joint'?'Joint memory':'Frozen memory')+(v.common?' vs text: '+v.common+' common support-readable cases; memory valid proofs '+v.memory_proofs+'/'+v.common+', text '+v.text_proofs+'/'+v.common+'.':' vs text: no common support-readable cases; this subset is not evaluated.');document.querySelector('#support').append(p)}
 </script></body></html>'''
-    page=page.replace('__NOTE__',html.escape(note)).replace('__TABLE__',''.join(web)).replace('__PAIRED__',paired_web).replace('__ORACLE__',''.join(oracle_web)).replace('__DATA__',payload)
+    page=page.replace('__NOTE__',html.escape(note)).replace('__LEAD__',html.escape(lead)).replace('__TABLE__',''.join(web)).replace('__PAIRED__',paired_web).replace('__ORACLE__',''.join(oracle_web)).replace('__FINDINGS__',''.join('<p>'+html.escape(p)+'</p>' for p in findings)).replace('__DATA__',payload)
     Path('runs/composition.html').write_text(page)
 
 

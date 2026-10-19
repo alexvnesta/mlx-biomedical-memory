@@ -1,0 +1,69 @@
+{
+  "completed": true,
+  "rows": 960,
+  "results": {
+    "masked": {
+      "1": {
+        "correct": 16,
+        "total": 32,
+        "worlds_all_correct": 0,
+        "worlds": 8
+      },
+      "2": {
+        "correct": 32,
+        "total": 64,
+        "worlds_all_correct": 0,
+        "worlds": 8
+      },
+      "3": {
+        "correct": 64,
+        "total": 128,
+        "worlds_all_correct": 0,
+        "worlds": 8
+      },
+      "4": {
+        "correct": 128,
+        "total": 256,
+        "worlds_all_correct": 0,
+        "worlds": 8
+      }
+    },
+    "normal": {
+      "1": {
+        "correct": 32,
+        "total": 32,
+        "worlds_all_correct": 8,
+        "worlds": 8
+      },
+      "2": {
+        "correct": 38,
+        "total": 64,
+        "worlds_all_correct": 0,
+        "worlds": 8
+      },
+      "3": {
+        "correct": 64,
+        "total": 128,
+        "worlds_all_correct": 0,
+        "worlds": 8
+      },
+      "4": {
+        "correct": 128,
+        "total": 256,
+        "worlds_all_correct": 0,
+        "worlds": 8
+      }
+    }
+  },
+  "frozen_constants": {
+    "before": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6",
+    "after": "9d06632f740f45de839147fed0a19e5c14263ceaea962868bc37128fe15f60d6"
+  },
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 9.732421875,
+    "process_peak_rss_gb": 6.640484352,
+    "active_metal_gb": 6.081250082,
+    "peak_metal_gb": 6.489456676
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "source_sha256": "512ff16952fac80ac1585b98aa10ca99da67684ddc0765a3617f163ada51d691",
+  "mode": "memory",
+  "seed": 2401,
+  "training": "runs/composition-memory-2401",
+  "checkpoint_sha256": "cce6fecb39e6b22756235ff9cfd715abff5d4394fb42529b1d836153f5f0eb2d",
+  "manifest_sha256": "64542399c0c81649418375b4e4eff762a42ca0e69cb79a94d3c4269545838096",
+  "dependency_sha256": "52404f05449c9d8e699dfdd976274ab1ca9b9a63b397d66fd92e13fe9370e2de",
+  "semantics": "Next sign token, with oracle path input; no free-path credit"
+}

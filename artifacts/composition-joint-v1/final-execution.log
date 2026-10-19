@@ -1,0 +1,7 @@
+RUN evaluate_decisive_reader.py --training runs/composition-memory-2401 --features runs/composition-features-v1 --output runs/composition-memory-2401-test --checkpoint-name selected.safetensors --include-support-readouts
+RUN evaluate_decisive_reader.py --training runs/composition-text-2401 --features runs/composition-features-v1 --output runs/composition-text-2401-test --checkpoint-name selected.safetensors --include-support-readouts
+RUN evaluate_decisive_reader.py --training runs/composition-text-2402 --features runs/composition-features-v1 --output runs/composition-text-2402-test --checkpoint-name selected.safetensors --include-support-readouts
+RUN cache_oracle_composition.py --output runs/composition-oracle-features-v1
+RUN evaluate_oracle_composition.py --training runs/composition-memory-2401 --features runs/composition-oracle-features-v1 --output runs/composition-memory-2401-oracle
+RUN evaluate_oracle_composition.py --training runs/composition-text-2401 --features runs/composition-oracle-features-v1 --output runs/composition-text-2401-oracle
+RUN evaluate_oracle_composition.py --training runs/composition-text-2402 --features runs/composition-oracle-features-v1 --output runs/composition-text-2402-oracle

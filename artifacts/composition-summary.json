@@ -1,0 +1,793 @@
+{
+  "metrics": {
+    "text": {
+      "atomic": {
+        "correct": 256,
+        "total": 256
+      },
+      "depths": {
+        "1": {
+          "correct": 47,
+          "total": 72
+        },
+        "2": {
+          "correct": 26,
+          "total": 72
+        },
+        "3": {
+          "correct": 2,
+          "total": 72
+        },
+        "4": {
+          "correct": 3,
+          "total": 72
+        }
+      },
+      "iid_labels": {
+        "correct": 91,
+        "total": 192
+      },
+      "iid_proofs": {
+        "correct": 77,
+        "total": 192
+      },
+      "structure_labels": {
+        "correct": 77,
+        "total": 192
+      },
+      "structure_proofs": {
+        "correct": 6,
+        "total": 192
+      },
+      "controls": {
+        "intervention": {
+          "correct": 35,
+          "total": 128
+        },
+        "binding": {
+          "correct": 29,
+          "total": 128
+        },
+        "order": {
+          "correct": 11,
+          "total": 64
+        }
+      },
+      "masked_positive": {
+        "correct": 0,
+        "total": 0
+      },
+      "median_prompt_tokens": 405.0,
+      "retention_qualified": true,
+      "eligible_seeds": [
+        2401,
+        2402
+      ]
+    },
+    "frozen": {
+      "atomic": {
+        "correct": 124,
+        "total": 128
+      },
+      "depths": {
+        "1": {
+          "correct": 1,
+          "total": 36
+        },
+        "2": {
+          "correct": 0,
+          "total": 36
+        },
+        "3": {
+          "correct": 0,
+          "total": 36
+        },
+        "4": {
+          "correct": 0,
+          "total": 36
+        }
+      },
+      "iid_labels": {
+        "correct": 24,
+        "total": 96
+      },
+      "iid_proofs": {
+        "correct": 1,
+        "total": 96
+      },
+      "structure_labels": {
+        "correct": 28,
+        "total": 96
+      },
+      "structure_proofs": {
+        "correct": 0,
+        "total": 96
+      },
+      "controls": {
+        "intervention": {
+          "correct": 2,
+          "total": 64
+        },
+        "binding": {
+          "correct": 0,
+          "total": 64
+        },
+        "order": {
+          "correct": 0,
+          "total": 32
+        }
+      },
+      "masked_positive": {
+        "correct": 1,
+        "total": 48
+      },
+      "median_prompt_tokens": 258.0,
+      "retention_qualified": true,
+      "eligible_seeds": [
+        2401
+      ]
+    },
+    "joint": {
+      "atomic": {
+        "correct": 0,
+        "total": 0
+      },
+      "depths": {
+        "1": {
+          "correct": 0,
+          "total": 0
+        },
+        "2": {
+          "correct": 0,
+          "total": 0
+        },
+        "3": {
+          "correct": 0,
+          "total": 0
+        },
+        "4": {
+          "correct": 0,
+          "total": 0
+        }
+      },
+      "iid_labels": {
+        "correct": 0,
+        "total": 0
+      },
+      "iid_proofs": {
+        "correct": 0,
+        "total": 0
+      },
+      "structure_labels": {
+        "correct": 0,
+        "total": 0
+      },
+      "structure_proofs": {
+        "correct": 0,
+        "total": 0
+      },
+      "controls": {
+        "intervention": {
+          "correct": 0,
+          "total": 0
+        },
+        "binding": {
+          "correct": 0,
+          "total": 0
+        },
+        "order": {
+          "correct": 0,
+          "total": 0
+        }
+      },
+      "masked_positive": {
+        "correct": 0,
+        "total": 0
+      },
+      "median_prompt_tokens": null,
+      "retention_qualified": false,
+      "eligible_seeds": []
+    }
+  },
+  "per_seed": [
+    {
+      "method": "text",
+      "seed": 2401,
+      "atomic": {
+        "correct": 128,
+        "total": 128
+      },
+      "iid_positive": {
+        "correct": 36,
+        "total": 72
+      },
+      "structure_positive": {
+        "correct": 2,
+        "total": 72
+      },
+      "selected": {
+        "checkpoint_name": "final-2048.safetensors",
+        "checkpoint_sha256": "46c2f5eac69eff7af9b39d4eac08d7f8c8699e126803007de9e1a5c607ec7e66",
+        "evaluation": "runs/composition-text-2401-dev-2048-final-2048",
+        "step": 2048,
+        "reasoning_proofs": 20,
+        "reasoning_correct": 26,
+        "reasoning_total": 48,
+        "atomic_correct": 64,
+        "atomic_total": 64,
+        "weighted_dev_nll": 0.04287602306013013
+      }
+    },
+    {
+      "method": "text",
+      "seed": 2402,
+      "atomic": {
+        "correct": 128,
+        "total": 128
+      },
+      "iid_positive": {
+        "correct": 37,
+        "total": 72
+      },
+      "structure_positive": {
+        "correct": 3,
+        "total": 72
+      },
+      "selected": {
+        "checkpoint_name": "best-2048.safetensors",
+        "checkpoint_sha256": "5016fa19f90c941a38e7fe532bb6d90c6f76bc3226f517d3c3a7f17d939ba709",
+        "evaluation": "runs/composition-text-2402-dev-2048-best-2048",
+        "step": 1088,
+        "reasoning_proofs": 22,
+        "reasoning_correct": 25,
+        "reasoning_total": 48,
+        "atomic_correct": 64,
+        "atomic_total": 64,
+        "weighted_dev_nll": 0.023952438332248756
+      }
+    },
+    {
+      "method": "frozen",
+      "seed": 2401,
+      "atomic": {
+        "correct": 124,
+        "total": 128
+      },
+      "iid_positive": {
+        "correct": 1,
+        "total": 72
+      },
+      "structure_positive": {
+        "correct": 0,
+        "total": 72
+      },
+      "selected": {
+        "checkpoint_name": "best-1024.safetensors",
+        "checkpoint_sha256": "cce6fecb39e6b22756235ff9cfd715abff5d4394fb42529b1d836153f5f0eb2d",
+        "evaluation": "runs/composition-memory-2401-dev-1024-best-1024",
+        "step": 448,
+        "reasoning_proofs": 0,
+        "reasoning_correct": 11,
+        "reasoning_total": 48,
+        "atomic_correct": 63,
+        "atomic_total": 64,
+        "weighted_dev_nll": 0.10663036108037106
+      }
+    }
+  ],
+  "common_support": {
+    "frozen": {
+      "common": 30,
+      "memory_proofs": 0,
+      "text_proofs": 7,
+      "cases": [
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0000",
+          "depth": 1,
+          "memory_proof": false,
+          "text_proof": true
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0001",
+          "depth": 1,
+          "memory_proof": false,
+          "text_proof": true
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0002",
+          "depth": 1,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0004",
+          "depth": 2,
+          "memory_proof": false,
+          "text_proof": true
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0005",
+          "depth": 2,
+          "memory_proof": false,
+          "text_proof": true
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0006",
+          "depth": 2,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0008",
+          "depth": 1,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0009",
+          "depth": 1,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0010",
+          "depth": 1,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0012",
+          "depth": 2,
+          "memory_proof": false,
+          "text_proof": true
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0013",
+          "depth": 2,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0014",
+          "depth": 2,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0016",
+          "depth": 1,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0017",
+          "depth": 1,
+          "memory_proof": false,
+          "text_proof": true
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0018",
+          "depth": 1,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-iid-0020",
+          "depth": 2,
+          "memory_proof": false,
+          "text_proof": true
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0000",
+          "depth": 3,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0001",
+          "depth": 3,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0002",
+          "depth": 3,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0004",
+          "depth": 4,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0005",
+          "depth": 4,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0006",
+          "depth": 4,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0008",
+          "depth": 3,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0009",
+          "depth": 3,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0010",
+          "depth": 3,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0012",
+          "depth": 4,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0016",
+          "depth": 3,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0017",
+          "depth": 3,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0018",
+          "depth": 3,
+          "memory_proof": false,
+          "text_proof": false
+        },
+        {
+          "seed": 2401,
+          "case_id": "composition-structure-0020",
+          "depth": 4,
+          "memory_proof": false,
+          "text_proof": false
+        }
+      ],
+      "memory_accessible": 30,
+      "text_accessible": 32,
+      "total": 32
+    },
+    "joint": {
+      "common": 0,
+      "memory_proofs": 0,
+      "text_proofs": 0,
+      "cases": [],
+      "memory_accessible": 0,
+      "text_accessible": 0,
+      "total": 0
+    }
+  },
+  "gates": {
+    "composition-v1": {
+      "budget": 2048,
+      "selection": {
+        "memory-2401": {
+          "checkpoint_name": "best-1024.safetensors",
+          "checkpoint_sha256": "cce6fecb39e6b22756235ff9cfd715abff5d4394fb42529b1d836153f5f0eb2d",
+          "evaluation": "runs/composition-memory-2401-dev-1024-best-1024",
+          "step": 448,
+          "reasoning_proofs": 0,
+          "reasoning_correct": 11,
+          "reasoning_total": 48,
+          "atomic_correct": 63,
+          "atomic_total": 64,
+          "weighted_dev_nll": 0.10663036108037106
+        },
+        "text-2401": {
+          "checkpoint_name": "final-2048.safetensors",
+          "checkpoint_sha256": "46c2f5eac69eff7af9b39d4eac08d7f8c8699e126803007de9e1a5c607ec7e66",
+          "evaluation": "runs/composition-text-2401-dev-2048-final-2048",
+          "step": 2048,
+          "reasoning_proofs": 20,
+          "reasoning_correct": 26,
+          "reasoning_total": 48,
+          "atomic_correct": 64,
+          "atomic_total": 64,
+          "weighted_dev_nll": 0.04287602306013013
+        },
+        "memory-2402": null,
+        "text-2402": {
+          "checkpoint_name": "best-2048.safetensors",
+          "checkpoint_sha256": "5016fa19f90c941a38e7fe532bb6d90c6f76bc3226f517d3c3a7f17d939ba709",
+          "evaluation": "runs/composition-text-2402-dev-2048-best-2048",
+          "step": 1088,
+          "reasoning_proofs": 22,
+          "reasoning_correct": 25,
+          "reasoning_total": 48,
+          "atomic_correct": 64,
+          "atomic_total": 64,
+          "weighted_dev_nll": 0.023952438332248756
+        }
+      },
+      "passed": false
+    },
+    "composition-joint-v1": {
+      "budget": 2048,
+      "selection": {
+        "joint-2401": null,
+        "joint-2402": null
+      },
+      "passed": false
+    }
+  },
+  "oracle_paths": {
+    "text": {
+      "1": {
+        "normal": {
+          "correct": 64,
+          "total": 64,
+          "worlds_all_correct": 16,
+          "worlds": 16
+        }
+      },
+      "2": {
+        "normal": {
+          "correct": 103,
+          "total": 128,
+          "worlds_all_correct": 5,
+          "worlds": 16
+        }
+      },
+      "3": {
+        "normal": {
+          "correct": 133,
+          "total": 256,
+          "worlds_all_correct": 0,
+          "worlds": 16
+        }
+      },
+      "4": {
+        "normal": {
+          "correct": 245,
+          "total": 512,
+          "worlds_all_correct": 0,
+          "worlds": 16
+        }
+      }
+    },
+    "frozen": {
+      "1": {
+        "masked": {
+          "correct": 16,
+          "total": 32,
+          "worlds_all_correct": 0,
+          "worlds": 8
+        },
+        "normal": {
+          "correct": 32,
+          "total": 32,
+          "worlds_all_correct": 8,
+          "worlds": 8
+        }
+      },
+      "2": {
+        "masked": {
+          "correct": 32,
+          "total": 64,
+          "worlds_all_correct": 0,
+          "worlds": 8
+        },
+        "normal": {
+          "correct": 38,
+          "total": 64,
+          "worlds_all_correct": 0,
+          "worlds": 8
+        }
+      },
+      "3": {
+        "masked": {
+          "correct": 64,
+          "total": 128,
+          "worlds_all_correct": 0,
+          "worlds": 8
+        },
+        "normal": {
+          "correct": 64,
+          "total": 128,
+          "worlds_all_correct": 0,
+          "worlds": 8
+        }
+      },
+      "4": {
+        "masked": {
+          "correct": 128,
+          "total": 256,
+          "worlds_all_correct": 0,
+          "worlds": 8
+        },
+        "normal": {
+          "correct": 128,
+          "total": 256,
+          "worlds_all_correct": 0,
+          "worlds": 8
+        }
+      }
+    },
+    "joint": {
+      "1": {
+        "normal": {
+          "correct": 0,
+          "total": 0,
+          "worlds_all_correct": 0,
+          "worlds": 0
+        }
+      },
+      "2": {
+        "normal": {
+          "correct": 0,
+          "total": 0,
+          "worlds_all_correct": 0,
+          "worlds": 0
+        }
+      },
+      "3": {
+        "normal": {
+          "correct": 0,
+          "total": 0,
+          "worlds_all_correct": 0,
+          "worlds": 0
+        }
+      },
+      "4": {
+        "normal": {
+          "correct": 0,
+          "total": 0,
+          "worlds_all_correct": 0,
+          "worlds": 0
+        }
+      }
+    }
+  },
+  "matched_seed_comparisons": {
+    "frozen": {
+      "seeds": [
+        2401
+      ],
+      "strata": {
+        "iid": {
+          "frozen": {
+            "correct": 1,
+            "total": 72
+          },
+          "text": {
+            "correct": 36,
+            "total": 72
+          }
+        },
+        "structure": {
+          "frozen": {
+            "correct": 0,
+            "total": 72
+          },
+          "text": {
+            "correct": 2,
+            "total": 72
+          }
+        }
+      }
+    },
+    "joint": {
+      "seeds": [],
+      "strata": {
+        "iid": {
+          "joint": {
+            "correct": 0,
+            "total": 0
+          },
+          "text": {
+            "correct": 0,
+            "total": 0
+          }
+        },
+        "structure": {
+          "joint": {
+            "correct": 0,
+            "total": 0
+          },
+          "text": {
+            "correct": 0,
+            "total": 0
+          }
+        }
+      }
+    }
+  },
+  "all_retention_qualified": true,
+  "development_failures": [
+    "memory-2402",
+    "joint-2401",
+    "joint-2402"
+  ],
+  "peak_metal_gb": 21.671040608,
+  "resource_events": [
+    {
+      "event": "resource_guard_exit",
+      "run": "composition-joint-2402-dev-2048-best-2048",
+      "observed_utc": "2026-10-19T15:08:45.578249+00:00",
+      "stage": "after all generations, during final resource check",
+      "saved_predictions": 112,
+      "state": {
+        "pressure_level": 2,
+        "swap_used_gb": 10.044921875,
+        "process_peak_rss_gb": 21.308801024,
+        "active_metal_gb": 20.921501986,
+        "peak_metal_gb": 21.368968532
+      },
+      "action": "Own model process exited; other sessions untouched. Resume only at normal host pressure.",
+      "cause": "Host warning observed; no attribution to another session or to a specific allocation.",
+      "recovery": {
+        "completed_utc": "2026-10-19T15:11:20.006443+00:00",
+        "checkpoint_sha256": "241fb35eca8ea9e289bc6cebb6045b4952b4702d8b5a17dc805f8f0e487d48fc",
+        "source_sha256": "5793831084345be668d61f41c92a45e257d873f68a8d80f8a6873e0740a7c00b",
+        "rows": 112,
+        "resource": {
+          "pressure_level": 1,
+          "swap_used_gb": 9.990234375,
+          "process_peak_rss_gb": 21.011775488,
+          "active_metal_gb": 20.921236986,
+          "peak_metal_gb": 20.921236986
+        },
+        "frozen_constants": {
+          "before": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+          "after": "dc059288f9bd691462722252054f8e9707f8dc700339c8731fca98f454839edb",
+          "unchanged": true
+        }
+      }
+    }
+  ],
+  "interpretation": [
+    "On identical positive cases and the common optimization seed, memory produced 1/144 valid proofs and text 38/144. Both readers exactly reconstructed every required record in 30 probed worlds; their valid proofs there were 0 and 7. Those READ probes did not provide their IDs to the main TRACE call. Memory failed 30/30 proofs despite separately successful required-record READ probes.",
+    "With a supplied one-edge path, memory retrieved 32/32 signs correctly, versus 16/32 when masked. With two edges, it produced 38/64 correct sign tokens and 0/8 worlds with every setting correct. Supplying the path did not yield complete success on all two-edge worlds. This rules out path discovery as the sole problem; it does not isolate joint record access, representation alignment or learning the sign operation as the remaining cause.",
+    "Neither interface passed a complete three- or four-edge sign truth table. Those lengths were not reasoning-training depths. These descriptive counts concern this supplied-path diagnostic, rather than free path discovery or biological inference.",
+    "This prototype demonstrates an editable record-reading interface, with no demonstrated advantage in reasoning, quality-matched latency, scale or biomedical confidence over graph/text methods. The exact graph already executes these formal rules. Preserve the graph and evidence store; the learned interface remains experimental. The result is bounded to this encoder, late injection, adapter capacities and training recipe, with 3 failed fits excluded under the declared gate."
+  ]
+}
