@@ -40,6 +40,13 @@ def select(training,budget):
             step=min(grouped,key=grouped.get)
         item['step']=step;item['weighted_dev_nll']=sum(x['weighted_nll'] for x in losses if x['step']==step)/72
         by_hash[digest]=item;candidates.append(item)
+    # Retain every already scored candidate from an earlier budget. Extending
+    # training must not discard a better generated-development checkpoint.
+    for previous in sorted(training.glob('generated-selection-[0-9]*.json')):
+        prior=json.loads(previous.read_text())
+        for candidate in prior['candidates']:
+            if candidate['checkpoint_sha256'] not in {c['checkpoint_sha256'] for c in candidates}:
+                candidates.append(candidate)
     chosen=max(candidates,key=lambda x:(x['reasoning_proofs'],x['atomic_correct'],-x['weighted_dev_nll']))
     shutil.copyfile(training/chosen['checkpoint_name'],training/'selected.safetensors')
     receipt=dict(budget=budget,candidates=candidates,selected=chosen)
