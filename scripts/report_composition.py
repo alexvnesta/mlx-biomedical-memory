@@ -196,6 +196,15 @@ free-proof test, and its sign algebra is not biological causal validation.
 
 ## Scope and costs
 
+The atomic rehearsal pool uses the pair split from readout repair. All
+self-relations fall in its development partition, so the retention gate also
+tests that structural shift. Edges in TRACE training banks are unrestricted;
+they are not all excluded by the atomic pair split. A failed gate is therefore
+not evidence that every available graph fact was unreadable, or that another
+retention curriculum could not work. It keeps that fitted reader unqualified
+under this declared rule. The separate readout report documents the equality
+diagnostic and the normal test's different pair distribution.
+
 The repaired encoder adds readout-alignment training before this experiment.
 Text updates 5,914,624 parameters; frozen memory updates 2,957,312 reader
 parameters and retains its fixed encoder; joint memory updates 5,719,809.
