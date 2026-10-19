@@ -6,6 +6,8 @@ from pathlib import Path
 import runpy
 import struct
 import re
+import ast
+from functools import lru_cache
 
 
 def digest(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -16,6 +18,15 @@ def source_hash(directory,script):
     for p in [root/script,*sorted(p for p in root.glob('*.py') if p.name!=script)]:
         h.update(p.name.encode());h.update(p.read_bytes())
     return h.hexdigest()
+
+
+@lru_cache(maxsize=None)
+def parser_for(directory):
+    source=Path(directory)/'source/evaluate_decisive_reader.py'
+    function=next(n for n in ast.parse(source.read_text()).body if isinstance(n,ast.FunctionDef) and n.name=='parse')
+    namespace={'json':json}
+    exec(compile(ast.Module(body=[function],type_ignores=[]),str(source),'exec'),namespace)
+    return namespace['parse']
 
 
 def verify():
@@ -48,7 +59,8 @@ def verify():
         if (pilot/'predictions.jsonl').exists():
             semantics=runpy.run_path(str(pilot/'source/decisive_data.py'))
             for line in (pilot/'predictions.jsonl').read_text().splitlines():
-                row=json.loads(line);case=dict(kind=row['kind'],query=row['query'],records=row['records'],record_id=row['record_id'])
+                row=json.loads(line);assert parser_for(str(pilot))(row['generation'],row['kind'])==row['parsed']
+                case=dict(kind=row['kind'],query=row['query'],records=row['records'],record_id=row['record_id'])
                 assert all(row[k]==v for k,v in semantics['grade'](case,row['parsed']).items())
     evaluated=0;trained_evaluated=0
     for evaluation in sorted(root.glob('decisive-*-test')):
@@ -68,6 +80,12 @@ def verify():
         assert digest(training/'protocol.md')==trained['protocol_sha256']
         assert digest(training/'cache_decisive_features.py')==trained['dependency_sha256']
         assert digest(features/'manifest.jsonl')==trained['feature_manifest_sha256']
+        assert cfg['checkpoint_name']==checkpoint_name
+        assert trained['mode']==cfg['mode'] and trained['seed']==cfg['seed']
+        inventory=json.loads((training/'checkpoint-inventory.json').read_text())
+        for name,entry in inventory.items():
+            if entry['published']:
+                assert digest(training/name)==entry['sha256'] and (training/name).stat().st_size==entry['bytes']
         assert digest(training/checkpoint_name)==cfg['checkpoint_sha256']
         selection=json.loads((training/('trained-only-selection.json' if is_trained else 'generated-selection.json')).read_text())
         if is_trained:assert all(c['step']>0 for c in selection['candidates'])
@@ -92,6 +110,8 @@ def verify():
         assert len(predictions)==done['rows']==(512 if cfg['mode']=='memory' else 448)
         assert len({(r['stage'],r['case_id']) for r in predictions})==len(predictions)
         for row in predictions:
+            assert parser_for(str(evaluation))(row['generation'],row['kind'])==row['parsed']
+            assert row['seed']==cfg['seed'] and row['mode']==cfg['mode']
             case=dict(id=row['case_id'],kind=row['kind'],query=row['query'],records=row['records'],record_id=row['record_id'])
             reference=base.get(row['case_id']) or base[row['parent_id']]
             assert row['query']==reference['query']
@@ -121,6 +141,7 @@ def verify():
         depth_rows=[json.loads(x) for x in (directory/'predictions.jsonl').read_text().splitlines()]
         assert len(depth_rows)==len({r['case_id'] for r in depth_rows})==96
         for row in depth_rows:
+            assert parser_for(str(directory))(row['generation'],row['kind'])==row['parsed']
             case=depth_by_id[row['case_id']]
             assert row['stage']=='depth_only' and row['records']==case['records'] and row['query']==case['query']
             assert all(row[k]==v for k,v in semantics['grade'](case,row['parsed']).items())
@@ -136,11 +157,24 @@ def verify():
         audit_rows=[json.loads(x) for x in (directory/'predictions.jsonl').read_text().splitlines()]
         assert len(audit_rows)==len({r['case_id'] for r in audit_rows})==48
         for row in audit_rows:
+            assert parser_for(str(directory))(row['generation'],row['kind'])==row['parsed']
             case=audit_cases[row['case_id']]
             assert row['records']==case['records'] and row['condition']==case['condition']
             assert all(row[k]==v for k,v in semantics['grade'](case,row['parsed']).items())
         audited+=len(audit_rows)
     if evaluated:
+        slots=json.loads((root/'decisive-slot-audit.json').read_text())
+        assert slots['completed'] and slots['all_exact'] and slots['slots']==10672
+        assert slots['source_sha256']==digest(root/'decisive-slot-audit-source.py')
+        parameters=json.loads((root/'decisive-parameter-audit.json').read_text())
+        assert parameters['completed'] and parameters['source_sha256']==digest(root/'decisive-parameter-audit-source.py')
+        for key,change in parameters['results'].items():
+            assert change['initial_sha256']==digest(root/f'decisive-{key}/initial.safetensors')
+            assert change['final_sha256']==digest(root/f'decisive-{key}/final-1024.safetensors')
+            assert any(v>0 for k,v in change['max_absolute_changes'].items() if '.lora_' in k)
+            if key.startswith('memory'):
+                assert change['record_id_rows_10_11_unchanged']
+                assert all(change['max_absolute_changes'][f'memory.tables.{i}.weight']>0 for i in range(7))
         assert audited==96
         assert depth_evaluated==576
         assert trained_evaluated==1024
