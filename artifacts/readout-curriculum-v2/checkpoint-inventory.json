@@ -1,0 +1,42 @@
+{
+  "step-0256.safetensors": {
+    "sha256": "31f692e7101d9982c00764c294a832d26f2b10b64132440211809072d6da2a5e",
+    "published": true,
+    "bytes": 11448555
+  },
+  "last.safetensors": {
+    "sha256": "18ab53557528a5129231d116fd3c5420f92c897f8fc6c45e8c1d8f014326dbaf",
+    "published": false,
+    "bytes": 22888207
+  },
+  "step-0384.safetensors": {
+    "sha256": "6d7f5599a7125ff4488856916310dc3e1ec2dc6ed87663100870713995f0ff41",
+    "published": true,
+    "bytes": 11448555
+  },
+  "step-0640.safetensors": {
+    "sha256": "1753c55ea94a095ba423895999e4e9126dc088c4c8adfb92a1c4130e4113875f",
+    "published": true,
+    "bytes": 11448555
+  },
+  "step-0512.safetensors": {
+    "sha256": "527b6e311b2acc21606822fde41bdc9276bc3d630b231ec8196a88fd0573a7da",
+    "published": true,
+    "bytes": 11448555
+  },
+  "step-0768.safetensors": {
+    "sha256": "0444872f37537f3ae4443fe421dbc86169c7fece717c4e0ad572352f2c5cbb28",
+    "published": true,
+    "bytes": 11448555
+  },
+  "selected.safetensors": {
+    "sha256": "527b6e311b2acc21606822fde41bdc9276bc3d630b231ec8196a88fd0573a7da",
+    "published": true,
+    "bytes": 11448555
+  },
+  "step-0128.safetensors": {
+    "sha256": "82b5bcb21782629d8c20f2b5ef8578f429ecc4dae0f22ca6701cc705cef376f9",
+    "published": true,
+    "bytes": 11448555
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "completed": true,
+  "counts": {
+    "full": 18,
+    "subject": 30,
+    "object": 28,
+    "sign": 32,
+    "species": 32,
+    "variant": 32,
+    "source": 32
+  },
+  "per_condition": 32,
+  "all_six_fields_correct": 26,
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 12.49224609375,
+    "process_peak_rss_gb": 21.537456128,
+    "active_metal_gb": 20.921501734,
+    "peak_metal_gb": 21.058579116
+  }
+}

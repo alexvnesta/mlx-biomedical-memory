@@ -1,0 +1,26 @@
+{
+  "seed": 2302,
+  "updates": 3072,
+  "model": "LongCat-Flash-Lite-4bit",
+  "source_sha256": "86dfa907588d567e0a72705e4dd4ca6fcc6560ddb5b125b504befd215574a7af",
+  "training": "2 fresh independent banks per update; atomic JSON only",
+  "stages": [
+    1,
+    4,
+    10
+  ],
+  "advancement": "at least 31/32 exact generated development records",
+  "learning_rates": {
+    "lora": 5e-05,
+    "codec": 0.001
+  },
+  "selection": "generated exact record accuracy",
+  "development_seeds": "41000000 + record_count * 10000 + index",
+  "test_seeds": "not yet evaluated",
+  "pair_holdout": "(5*subject+3*object)%8: dev=0, test=1, train=2..7, across every bank record",
+  "field_curriculum": true,
+  "field_schedule": "256 field-only updates, then alternating field-only/full-record draws",
+  "checkpoint": "runs/readout-curriculum-v2/selected.safetensors",
+  "checkpoint_sha256": "527b6e311b2acc21606822fde41bdc9276bc3d630b231ec8196a88fd0573a7da",
+  "start_count": 1
+}

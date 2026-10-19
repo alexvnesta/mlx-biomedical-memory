@@ -1,0 +1,5 @@
+{
+  "reason": "Warm-start BF16 checkpoint had not been promoted to FP32 for optimization. Stop pilot and restart correctly before assessing field curriculum.",
+  "test_evaluated": false,
+  "signal": "SIGINT; checkpoint saved"
+}

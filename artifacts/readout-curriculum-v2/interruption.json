@@ -1,0 +1,7 @@
+{
+  "stopped_after": 841,
+  "reason": "Development exact readout peaked at 28/32 then stagnated despite near-zero training loss; preserve checkpoints and test field-isolated supervision.",
+  "signal": "SIGINT; graceful last checkpoint saved",
+  "last_evaluated_step": 768,
+  "test_evaluated": false
+}

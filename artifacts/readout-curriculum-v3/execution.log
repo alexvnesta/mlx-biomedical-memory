@@ -1,0 +1,14 @@
+Loading full frozen prefix and trainable tail
+Loaded {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.038526976, "active_metal_gb": 20.909682688, "peak_metal_gb": 20.97932186}
+{"step": 1, "count": 1, "loss": 1.9310509227216244, "gradient_norm": 137.0, "seconds": 2.602035457995953, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.038526976, "active_metal_gb": 20.967618368, "peak_metal_gb": 21.211082926}}
+{"step": 16, "count": 1, "loss": 0.5979604981839657, "gradient_norm": 23.5, "seconds": 9.703796250003506, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.038526976, "active_metal_gb": 20.967600384, "peak_metal_gb": 21.25490302}}
+{"step": 32, "count": 1, "loss": 0.12265931069850922, "gradient_norm": 6.65625, "seconds": 15.954197416998795, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.038526976, "active_metal_gb": 20.967584336, "peak_metal_gb": 21.25490302}}
+{"step": 48, "count": 1, "loss": 1.157813161611557, "gradient_norm": 9.5625, "seconds": 22.429685124996467, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.038526976, "active_metal_gb": 20.967584336, "peak_metal_gb": 21.25490302}}
+{"step": 64, "count": 1, "loss": 0.08886820677435026, "gradient_norm": 6.9375, "seconds": 28.592342292002286, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.038526976, "active_metal_gb": 20.967600672, "peak_metal_gb": 21.25490302}}
+{"step": 80, "count": 1, "loss": 0.01338819455850171, "gradient_norm": 2.28125, "seconds": 34.966700917007984, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.038526976, "active_metal_gb": 20.967584336, "peak_metal_gb": 21.254922248}}
+Traceback (most recent call last):
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/train_readout_curriculum.py", line 149, in <module>
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/train_readout_curriculum.py", line 122, in main
+    weights=[2. if any(a<end and b>start for start,end in spans) else .1 for a,b in encoded['offset_mapping']]+[.1]
+                                                          ^^^^^^^^^^
+KeyboardInterrupt

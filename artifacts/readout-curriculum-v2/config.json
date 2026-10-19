@@ -1,0 +1,22 @@
+{
+  "seed": 2301,
+  "updates": 2048,
+  "model": "LongCat-Flash-Lite-4bit",
+  "source_sha256": "9222e9ec94c5c32d98010c459c141d1bc003356b20ba0eda1aa39f4ed76616fc",
+  "training": "2 fresh independent banks per update; atomic JSON only",
+  "stages": [
+    1,
+    4,
+    10
+  ],
+  "advancement": "at least 31/32 exact generated development records",
+  "learning_rates": {
+    "lora": 5e-05,
+    "codec": 0.001
+  },
+  "selection": "generated exact record accuracy",
+  "development_seeds": "41000000 + record_count * 10000 + index",
+  "test_seeds": "not yet evaluated",
+  "pair_holdout": "(5*subject+3*object)%8: dev=0, test=1, train=2..7, across every bank record",
+  "checkpoint": null
+}

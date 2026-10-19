@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import runpy
 from verify_decisive_artifacts import verify as verify_decisive
+from verify_readout_artifacts import verify as verify_readout
 
 
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -128,6 +129,7 @@ def main():
     print(json.dumps(dict(verified_artifacts=len(actual),checksums=True,comparison_sources=True,
         relational_sources=fit.exists(),checkpoint_hashes=True)))
     verify_decisive()
+    verify_readout()
 
 
 if __name__=='__main__':main()

@@ -1,0 +1,7 @@
+{
+  "source_sha256": "8f37792a88434154d2ba1cd6f7490b83d08c70fe3dd70a1c896172f966f2a9fc",
+  "checkpoint_sha256": "ea752c601aad314f0a9b8b3caffd6c6a94446ddb79ae640d2858064edf61858e",
+  "training": "runs/readout-curriculum-v4",
+  "checkpoint_name": "step-0512.safetensors",
+  "purpose": "Development diagnostic only; no test cases"
+}

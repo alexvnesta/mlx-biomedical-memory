@@ -1,0 +1,7 @@
+{
+  "stopped_after": 662,
+  "reason": "Field-isolated development audit before changing objective; see resource incident during process handoff.",
+  "last_checkpoint": "last.safetensors",
+  "last_completed_validation": 640,
+  "test_evaluated": false
+}

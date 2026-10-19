@@ -1,0 +1,13 @@
+{
+  "completed": false,
+  "updates": 841,
+  "count": 1,
+  "seconds": 418.4604124579928,
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 4.5902734375,
+    "process_peak_rss_gb": 14.553694208,
+    "active_metal_gb": 21.02529162,
+    "peak_metal_gb": 21.51970869
+  }
+}

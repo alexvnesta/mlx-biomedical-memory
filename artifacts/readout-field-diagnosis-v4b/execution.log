@@ -1,0 +1,4 @@
+{"banks": 8, "resource": {"pressure_level": 1, "swap_used_gb": 12.62505859375, "process_peak_rss_gb": 21.49056512, "active_metal_gb": 20.921501734, "peak_metal_gb": 21.058579116}}
+{"banks": 16, "resource": {"pressure_level": 1, "swap_used_gb": 12.60162109375, "process_peak_rss_gb": 21.515190272, "active_metal_gb": 20.921501734, "peak_metal_gb": 21.058579116}}
+{"banks": 24, "resource": {"pressure_level": 1, "swap_used_gb": 12.56255859375, "process_peak_rss_gb": 21.527281664, "active_metal_gb": 20.921501734, "peak_metal_gb": 21.058579116}}
+{"banks": 32, "resource": {"pressure_level": 1, "swap_used_gb": 12.49224609375, "process_peak_rss_gb": 21.537456128, "active_metal_gb": 20.921501734, "peak_metal_gb": 21.058579116}}

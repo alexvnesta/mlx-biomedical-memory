@@ -1,0 +1,91 @@
+Loading full frozen prefix and trainable tail
+Loaded {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 20.909682688, "peak_metal_gb": 20.970933252}
+{"step": 1, "count": 1, "loss": 1.9346014317125082, "gradient_norm": 138.01593017578125, "seconds": 1.265547458009678, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024660548, "peak_metal_gb": 21.265431212}}
+{"step": 16, "count": 1, "loss": 0.5977570377290249, "gradient_norm": 23.251636505126953, "seconds": 7.014177792007104, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024693668, "peak_metal_gb": 21.344373824}}
+{"step": 32, "count": 1, "loss": 0.1577730756253004, "gradient_norm": 7.518721103668213, "seconds": 13.57806262500526, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024693212, "peak_metal_gb": 21.344373824}}
+{"step": 48, "count": 1, "loss": 1.1459465026855469, "gradient_norm": 9.661761283874512, "seconds": 19.818802833004156, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024693212, "peak_metal_gb": 21.344389352}}
+{"step": 64, "count": 1, "loss": 0.03894500562455505, "gradient_norm": 2.9322423934936523, "seconds": 25.755660125010763, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.02469102, "peak_metal_gb": 21.344389352}}
+{"step": 80, "count": 1, "loss": 0.290946389810415, "gradient_norm": 29.529592514038086, "seconds": 31.935607874998823, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024693212, "peak_metal_gb": 21.344389352}}
+{"step": 96, "count": 1, "loss": 1.0046603796072304, "gradient_norm": 25.946704864501953, "seconds": 38.01381308300188, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024692532, "peak_metal_gb": 21.344474854}}
+{"step": 112, "count": 1, "loss": 7.944905883050524e-05, "gradient_norm": 0.007411313243210316, "seconds": 44.24184225000499, "resource": {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024692988, "peak_metal_gb": 21.344474854}}
+{"step": 128, "count": 1, "loss": 0.04878555051982403, "gradient_norm": 4.153400897979736, "seconds": 50.950553083006525, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024676828, "peak_metal_gb": 21.34449367}}
+VALIDATION {"step": 128, "count": 1, "correct": 7, "total": 32, "field_correct": {"record": 32, "subject": 21, "object": 11, "sign": 32, "species": 31, "variant": 32, "source": 30}, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.036428666, "peak_metal_gb": 21.34449367}}
+{"step": 144, "count": 1, "loss": 2.026034891605377, "gradient_norm": 26.459144592285156, "seconds": 76.44301241700305, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024658556, "peak_metal_gb": 21.34449367}}
+{"step": 160, "count": 1, "loss": 0.0018124486086890101, "gradient_norm": 0.20343758165836334, "seconds": 82.51963900000555, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024692988, "peak_metal_gb": 21.34449367}}
+{"step": 176, "count": 1, "loss": 0.00012138606143707875, "gradient_norm": 0.018277376890182495, "seconds": 88.5123615420016, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024693212, "peak_metal_gb": 21.34449367}}
+{"step": 192, "count": 1, "loss": 0.7983164489269257, "gradient_norm": 12.070043563842773, "seconds": 94.59332529200765, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024660668, "peak_metal_gb": 21.344545062}}
+{"step": 208, "count": 1, "loss": 5.1489324960130034e-05, "gradient_norm": 0.0036282960791140795, "seconds": 100.8554489579983, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024692332, "peak_metal_gb": 21.344545062}}
+{"step": 224, "count": 1, "loss": 3.226250373700168e-05, "gradient_norm": 0.006110574118793011, "seconds": 106.9972831250052, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024677508, "peak_metal_gb": 21.344545062}}
+{"step": 240, "count": 1, "loss": 0.5061151869595051, "gradient_norm": 14.355216026306152, "seconds": 113.11620625000796, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024677052, "peak_metal_gb": 21.344545062}}
+{"step": 256, "count": 1, "loss": 8.221165171562461e-05, "gradient_norm": 0.008574264124035835, "seconds": 119.39177433300938, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024707404, "peak_metal_gb": 21.344545062}}
+VALIDATION {"step": 256, "count": 1, "correct": 7, "total": 32, "field_correct": {"record": 30, "subject": 25, "object": 10, "sign": 30, "species": 29, "variant": 29, "source": 19}, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.036459402, "peak_metal_gb": 21.344545062}}
+{"step": 272, "count": 1, "loss": 0.0002536877682359773, "gradient_norm": 0.018807170912623405, "seconds": 144.9130798749975, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.02470982, "peak_metal_gb": 21.51845935}}
+{"step": 288, "count": 1, "loss": 0.211005587130785, "gradient_norm": 7.335552215576172, "seconds": 150.9288557920081, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024661052, "peak_metal_gb": 21.51845935}}
+{"step": 304, "count": 1, "loss": 0.3164361810668197, "gradient_norm": 7.834681034088135, "seconds": 156.67005466700357, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.02470998, "peak_metal_gb": 21.51845935}}
+{"step": 320, "count": 1, "loss": 0.008218664140258625, "gradient_norm": 0.9798823595046997, "seconds": 162.53500420800992, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024710412, "peak_metal_gb": 21.51845935}}
+{"step": 336, "count": 1, "loss": 0.007581757934531197, "gradient_norm": 0.838760256767273, "seconds": 168.57309970800998, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024640572, "peak_metal_gb": 21.518640458}}
+{"step": 352, "count": 1, "loss": 0.01069110883099711, "gradient_norm": 1.319852590560913, "seconds": 174.63861862500198, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.02470998, "peak_metal_gb": 21.518640458}}
+{"step": 368, "count": 1, "loss": 0.0013938536683326674, "gradient_norm": 0.5410940051078796, "seconds": 180.9106100830104, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024706316, "peak_metal_gb": 21.518640458}}
+{"step": 384, "count": 1, "loss": 0.00269972963269538, "gradient_norm": 0.3768930435180664, "seconds": 186.76745912501065, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.0246895, "peak_metal_gb": 21.518640458}}
+VALIDATION {"step": 384, "count": 1, "correct": 18, "total": 32, "field_correct": {"record": 32, "subject": 32, "object": 18, "sign": 32, "species": 32, "variant": 32, "source": 32}, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.036281594, "peak_metal_gb": 21.518640458}}
+{"step": 400, "count": 1, "loss": 0.00014371922907230328, "gradient_norm": 0.0177072212100029, "seconds": 213.94631041699904, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.0246895, "peak_metal_gb": 21.518645938}}
+{"step": 416, "count": 1, "loss": 0.005024073972890619, "gradient_norm": 0.7521868348121643, "seconds": 219.89595008300967, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024693372, "peak_metal_gb": 21.518645938}}
+{"step": 432, "count": 1, "loss": 0.00044900522061652737, "gradient_norm": 0.060388315469026566, "seconds": 226.45111862500198, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024742972, "peak_metal_gb": 21.518645938}}
+{"step": 448, "count": 1, "loss": 0.0009808053564483998, "gradient_norm": 0.18148404359817505, "seconds": 232.80153033300303, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024726364, "peak_metal_gb": 21.518645938}}
+{"step": 464, "count": 1, "loss": 0.0002767399531649062, "gradient_norm": 0.03325871378183365, "seconds": 239.0194267080078, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024689276, "peak_metal_gb": 21.518645938}}
+{"step": 480, "count": 1, "loss": 7.828739035176113e-05, "gradient_norm": 0.005837184377014637, "seconds": 245.46519658299803, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024689724, "peak_metal_gb": 21.518645938}}
+{"step": 496, "count": 1, "loss": 4.282730333216023e-05, "gradient_norm": 0.0034442550968378782, "seconds": 251.71871616700082, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.02471066, "peak_metal_gb": 21.518645938}}
+{"step": 512, "count": 1, "loss": 0.004837581904212129, "gradient_norm": 0.33865970373153687, "seconds": 258.35105112500605, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024693372, "peak_metal_gb": 21.518648402}}
+VALIDATION {"step": 512, "count": 1, "correct": 18, "total": 32, "field_correct": {"record": 32, "subject": 31, "object": 19, "sign": 32, "species": 32, "variant": 32, "source": 32}, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.036331674, "peak_metal_gb": 21.518648402}}
+{"step": 528, "count": 1, "loss": 0.01993207239138428, "gradient_norm": 3.091928005218506, "seconds": 287.80944779200945, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024689724, "peak_metal_gb": 21.518662194}}
+{"step": 544, "count": 1, "loss": 0.004521767895994344, "gradient_norm": 0.2838081419467926, "seconds": 294.1885897080065, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.02470998, "peak_metal_gb": 21.518686514}}
+{"step": 560, "count": 1, "loss": 0.00013677370043296833, "gradient_norm": 0.014472328126430511, "seconds": 300.6391699579981, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.02470982, "peak_metal_gb": 21.518686514}}
+{"step": 576, "count": 1, "loss": 0.00983044793974841, "gradient_norm": 2.1133625507354736, "seconds": 306.89050683300593, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024710044, "peak_metal_gb": 21.518686514}}
+{"step": 592, "count": 1, "loss": 5.117104365126579e-05, "gradient_norm": 0.004121963866055012, "seconds": 313.5748842500034, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024690396, "peak_metal_gb": 21.518686514}}
+{"step": 608, "count": 1, "loss": 4.4127090177426e-05, "gradient_norm": 0.006592357996851206, "seconds": 319.94712533299753, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024709756, "peak_metal_gb": 21.518686514}}
+{"step": 624, "count": 1, "loss": 0.002382216858677566, "gradient_norm": 0.24907733500003815, "seconds": 326.18478629201127, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024640572, "peak_metal_gb": 21.518710898}}
+{"step": 640, "count": 1, "loss": 1.0515891233353614e-05, "gradient_norm": 0.0008069926989264786, "seconds": 332.60795083300036, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024703844, "peak_metal_gb": 21.518710898}}
+Exception ignored in: <generator object stream_generate at 0x124116400>
+Traceback (most recent call last):
+  File "/Users/alex/Documents/ChatGPT/Engrams/.venv/lib/python3.13/site-packages/mlx_lm/generate.py", line 714, in stream_generate
+    with wired_limit(model, [generation_stream]):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+  File "/Users/alex/Documents/ChatGPT/Engrams/.venv/lib/python3.13/site-packages/mlx_lm/generate.py", line 266, in wired_limit
+    mx.set_wired_limit(old_limit)
+KeyboardInterrupt: 
+VALIDATION {"step": 640, "count": 1, "correct": 21, "total": 32, "field_correct": {"record": 32, "subject": 32, "object": 21, "sign": 32, "species": 32, "variant": 32, "source": 32}, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.045536826, "peak_metal_gb": 21.518710898}}
+{"step": 656, "count": 1, "loss": 1.1139976322738221e-05, "gradient_norm": 0.0009148875251412392, "seconds": 364.2601213330054, "resource": {"pressure_level": 1, "swap_used_gb": 4.5824609375, "process_peak_rss_gb": 16.422223872, "active_metal_gb": 21.024671308, "peak_metal_gb": 21.518710898}}
+Traceback (most recent call last):
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/train_readout_curriculum.py", line 124, in main
+    h=model.prefix(mx.array([e['ids']+e['target'][:-1]]));mx.eval(h)
+  File "/Users/alex/Documents/ChatGPT/Engrams/engram_poc/decisive_model.py", line 62, in prefix
+    core=self.backbone.model;h=core.ngram_embeddings(tokens)
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/.venv/lib/python3.13/site-packages/mlx_lm/models/longcat_flash_ngram.py", line 139, in __call__
+    x_ngram = self.embedders[index](new_ids)
+  File "/Users/alex/Documents/ChatGPT/Engrams/engram_poc/disk_embeddings.py", line 47, in __call__
+    return mx.dequantize(self._weight.take(ids),self._scales.take(ids),self._biases.take(ids),
+                                                                       ~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/engram_poc/disk_embeddings.py", line 29, in take
+    value=mx.array(np.array(self.array[indices],copy=True))
+                            ~~~~~~~~~~^^^^^^^^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/.venv/lib/python3.13/site-packages/numpy/_core/memmap.py", line 359, in __getitem__
+    res = super().__getitem__(index)
+  File "/Users/alex/Documents/ChatGPT/Engrams/.venv/lib/python3.13/site-packages/numpy/_core/memmap.py", line 311, in __array_finalize__
+    def __array_finalize__(self, obj):
+    
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/train_readout_curriculum.py", line 151, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/train_readout_curriculum.py", line 148, in main
+    updates=completed,count=count,seconds=time.perf_counter()-start,resource=guard.check()))
+                                                                             ~~~~~~~~~~~^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/engram_poc/resource_guard.py", line 28, in check
+    raise RuntimeError('Host resource guard requested checkpoint/exit: '+str(state))
+RuntimeError: Host resource guard requested checkpoint/exit: {'pressure_level': 1, 'swap_used_gb': 13.72259765625, 'process_peak_rss_gb': 16.422223872, 'active_metal_gb': 21.024819004, 'peak_metal_gb': 21.518710898}

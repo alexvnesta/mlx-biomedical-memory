@@ -1,0 +1,13 @@
+Loading full frozen prefix and trainable tail
+Loaded {"pressure_level": 1, "swap_used_gb": 4.5902734375, "process_peak_rss_gb": 14.31494656, "active_metal_gb": 20.932660228, "peak_metal_gb": 20.941048836}
+Traceback (most recent call last):
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/train_readout_curriculum.py", line 130, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/scripts/train_readout_curriculum.py", line 104, in main
+    value,grad=vg(model,h,mx.array(fields(case['records'])),e['positions'],len(e['ids'])-1,e['target'])
+               ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alex/Documents/ChatGPT/Engrams/.venv/lib/python3.13/site-packages/mlx/nn/utils.py", line 35, in wrapped_value_grad_fn
+    value, grad = value_grad_fn(model.trainable_parameters(), *args, **kwargs)
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: [vjp] Output shape (1,37) does not match cotangent shape ().

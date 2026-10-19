@@ -1,0 +1,19 @@
+{
+  "phase": "Development handoff after readout-curriculum-v4 step 640",
+  "cause": "Inference generator cleanup swallowed KeyboardInterrupt; a diagnostic model load began before training process had exited.",
+  "baseline_swap_gib": 4.5824609375,
+  "observed_peak_swap_gib": 13.72259765625,
+  "pressure_level_observed": 1,
+  "response": "Stopped both own model processes. Confirmed neither PID remained before restart. Did not stop or change other sessions.",
+  "fix": [
+    "exclusive kernel model lease",
+    "deferred cancellation outside generator",
+    "warning-pressure stop",
+    "unconditional cleanup telemetry receipt"
+  ],
+  "affected_runs": [
+    "readout-curriculum-v4",
+    "readout-field-diagnosis-v4"
+  ],
+  "unaffected_diagnostic": "readout-field-diagnosis-v4b ran alone after both prior processes exited"
+}

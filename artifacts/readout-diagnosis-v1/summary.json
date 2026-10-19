@@ -1,0 +1,11 @@
+{
+  "completed": true,
+  "checkpoint_load_exact": true,
+  "resource": {
+    "pressure_level": 1,
+    "swap_used_gb": 4.5980859375,
+    "process_peak_rss_gb": 10.146299904,
+    "active_metal_gb": 20.944550334,
+    "peak_metal_gb": 21.573053544
+  }
+}
